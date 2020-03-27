@@ -1,0 +1,49 @@
+.clearfix{ overflow: auto }
+
+.wrapper{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+body {
+    background-color: rgb(252, 250, 224);
+}
+
+.top-bar{
+    width: 1100px;
+    border-radius: 8px;
+    background-image: linear-gradient(black, rgb(32, 32, 32),black);
+}
+
+.top-bar-title h1 {
+    margin: 7px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
+
+.intro{
+    width: 1000px;
+    margin: 20px;
+}
+
+.introimage{
+    margin-left: 50px;
+    float: left;
+}
+
+.introtext{
+    width: 550px;
+    float: right;
+}
+
+.introtext h1{
+    margin-top: 35px;
+    margin-bottom: 0px;
+    font-size: 80px;
+}
+
+.introtext p{
+    font-size: 20px;
+}
