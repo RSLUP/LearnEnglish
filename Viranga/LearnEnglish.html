@@ -5,27 +5,29 @@
         <style type="text/css">
         /* For Header */
 			#header { background:#fff; }
-			#header-inner { margin:0 auto; padding:0px; width:1300px;background:#fff;font-size:45px;}
+			#header-inner { margin:0 auto; padding:0px; width:1200px;background:#fff;font-size:45px;}
         /* For Logo */
 			#logo { padding:0px; width:auto; float:left;}
 			#logo h1 a, h1 a:hover { color:#9b0606; text-decoration:none;}
 			#logo h1 span { color:#ffc300;}
         /* Feature */
 			.feature { background:rgb(255, 255, 255);padding:0;}
-			.feature-inner { margin:auto;padding:5px;width:1200px;background:rgb(120, 121, 126); }
-			.feature-inner h1 {color:#9b0606;font-size:35px;}
+			.feature-inner { margin:auto;padding:0px;width:1200px;height:70px;background:rgb(120, 121, 126); }
+			.feature-inner h1 {color:#9b0606;font-size:40px;}
             .feature-inner h1 span {color: #ffc300;}
         /* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
         /*paragraph settings*/
-            #para {font-size:18px ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+            #para {padding:10px;font-size:18px ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
             #subheads {font-size:25px ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
         /*content settings*/
-            .content {max-width: 1200;margin: auto;}
+            #page { background-image:url('back.png'); background-repeat: repeat;background-attachment: fixed;background-size:100% 100%;}
+            .content {background:rgb(255, 255, 255);max-width: 1200;margin: auto;}
             
         </style>
     </head>
     <body>
+    <div id="page">
     <div class = "content">
         <header id="header">
             <div id="header-inner">	
@@ -83,6 +85,7 @@
             </ul>
         </div>  
             <!--add  youtube link-->
+                
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tquecIG-Pws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
         <h3 style="font-size: 25px ; color:#FFC300";>Examples &#128071</h3>
         <div id = "para">
@@ -424,6 +427,7 @@
         <footer>
          <p>&copy; Copyright | LearnEnglish</p>   
         </footer>   
+    </div>
     </div>
     </body>
         
