@@ -1,0 +1,10 @@
+.image{
+	background-image: url("black.jpg");
+	background-position: center;
+	height: 950px;
+	 background-size: cover;
+
+}
+p{
+    text-align: center;
+}
