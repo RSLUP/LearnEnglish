@@ -2,6 +2,15 @@
 <head>
   <title> Welcome to EnglishHub</title>
    <link rel="stylesheet" type="text/css" href="sytle.css">
+   <script type = "text/javascript">
+
+    
+    function highlight()
+    {
+     document.getElementById("clr").style.color=yellow;
+     
+    }
+   </script>
   
 </head>
 <body>
@@ -50,23 +59,41 @@
             <center><img src="POS.png"  height="175" width="175"></center>
         </div></td>
       
-        <td>
+        <td id="list">
             <h3>There are mainly 8 parts of a speech: 
                 <ol>
                     <li>Nouns </li>
-                    <li>Pronouns</li>
-                    <li>Verbs </li>
+                    <li>Pronouns </li>
+                    <li>Verbs  </li>
                     <li>Adjectives </li>
-                    <li>Adverbs</li>
-                    <li>Prepositions</li>
-                    <li>Conjuctions</li>
-                    <li>Interjections</li>
+                    <li>Adverbs </li>
+                    <li>Prepositions </li>
+                    <li>Conjunctions </li>
+                    <li>Interjections </li>
                 </ol>
             </h3>
         </td>
       </tr>
   </table>
-  
+  <h3>1.NOUN</h3>
+  <ul>
+      <li>A noun is a word for a <em><b>person/animal, place, things, or idea.</b></em></li>
+      <li>Nouns are often used with an article (the, a, an), but not always.</li>
+      <li>Nouns can be singular or plural, concrete or abstract.</li>
+      <li>Nouns can function in different roles within a sentence; <br>for example,
+          a noun can be a subject, direct object, indirect object, subject complement, or object of a preposition.</li>
+      
+      <br>  Anna, Bob, Garden, Music, Kandy, Cat, work, teacher...
+      <br>Examples:
+       <ul>
+           <li><div id="clr">Anna </div>goes to school</li>
+           <li>the sun shines</li>
+           <li>The young girl brought me a very long letter from the teacher</li>
+           <li>Cat drinks milk</li>
+       </ul>
+       <form><button type = "button" onclick = "highlight();">Highlight nouns</button></form>
+       
+  </ul>
 
 </body>
 </html>
