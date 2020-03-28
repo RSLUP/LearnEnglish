@@ -39,11 +39,84 @@ body {
 }
 
 .introtext h1{
-    margin-top: 35px;
+    margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 80px;
+    font-size: 90px;
 }
 
 .introtext p{
     font-size: 20px;
+}
+
+.home-content{
+    width: 1100px;
+}
+
+.home-col1{
+    margin-left: 12px;
+    margin-top: 50px;
+    width: 440px;
+    height: 280px;
+    border-style: solid;
+    background: white;
+    box-shadow: 2.5px 2.5px 6px grey;
+    border-radius: 8px ;
+    float: left;
+}
+
+.home-col{
+    margin-left: 12px;
+    margin-top: 50px;
+    width: 300px;
+    height: 280px;
+    border-style: solid;
+    background: white;
+    box-shadow: 2.5px 2.5px 6px grey;
+    border-radius: 8px ;
+    float: left;
+}
+
+sup { 
+    vertical-align: super; 
+    font-size: 23px; 
+} 
+
+.home-col1 h1{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 49px;
+    font-family: Arial;
+    color: maroon;
+}
+
+.home-col1 p{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.home-col h1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 26px;
+    font-family: Arial;
+}
+
+.home-col p{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.home-col ul{
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Arial;
+    float: left;
 }
