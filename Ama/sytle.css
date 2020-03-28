@@ -1,6 +1,6 @@
 body
 {
-		height:1500px;
+		height:3000px;
 }
 
 .image{
@@ -31,4 +31,19 @@ body
 	width:500px;
 	background-size: cover;
 
+}
+.parts
+{
+	margin: 30px 50px;
+}
+.parts img
+{
+	transition: 1.5s;
+	padding: 15px;
+	width: 175;
+}
+.parts img:hover
+{
+	filter: grayscale(100%);
+	transform: scale(2.2);
 }
