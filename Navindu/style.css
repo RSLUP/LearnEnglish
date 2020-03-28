@@ -3,20 +3,32 @@
 .wrapper{
     margin: 0 auto;
     width: 1100px;
+    margin-top: 70px;
+    border-radius: 8px;
+    background-color: rgb(252, 250, 224);
+    box-shadow: 0px 0px 10px grey;
 }
 
 body {
-    background-color: rgb(252, 250, 224);
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 .top-bar{
     width: 1100px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
     border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
     background-image: linear-gradient(black, rgb(32, 32, 32),black);
 }
 
 .top-bar-title h1 {
-    margin: 13px;
+    margin: 10px;
     text-align: center;
     font-size: 35px;
     font-family: Arial;
@@ -28,9 +40,19 @@ body {
     margin: 50px;
 }
 
+@keyframes imgteacher {
+    from {transform: rotate(1deg);}
+    to {transform: rotate(-1deg);}
+  }
+
 .introimage{
+    margin-top: 40px;
     margin-left: 30px;
     float: left;
+    animation-name: imgteacher;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .introtext{
@@ -39,10 +61,17 @@ body {
 }
 
 .introtext h1{
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 0px;
     font-size: 90px;
 }
+
+.introtext a:hover{
+    background: rgb(190, 184, 241);
+    font-size: 23px;
+    color: maroon;
+}
+
 
 .introtext p{
     font-size: 20px;
@@ -59,10 +88,10 @@ b{
 .home-col1{
     margin-left: 12px;
     margin-top: 50px;
-    width: 440px;
+    width: 435px;
     height: 280px;
     border-style: solid;
-    background: white;
+    background: rgb(252, 250, 224);
     box-shadow: 2.5px 2.5px 6px grey;
     border-radius: 8px ;
     float: left;
@@ -74,7 +103,7 @@ b{
     width: 300px;
     height: 280px;
     border-style: solid;
-    background: white;
+    background: rgb(252, 250, 224);
     box-shadow: 2.5px 2.5px 6px grey;
     border-radius: 8px ;
     float: left;
@@ -126,3 +155,18 @@ sup {
     float: left;
 }
 
+.bottom-bar{
+    width: 1100px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    background-image: linear-gradient(black, rgb(22, 22, 22),black);
+}
+
+.bottom-bar-title h1 {
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
