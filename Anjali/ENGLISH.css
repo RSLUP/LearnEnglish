@@ -6,10 +6,10 @@ body{
 	background-image: url("back.jpg");
 
 }
-.dropdwn{
+.pagetitle{
     margin: 0 auto;
     text-align: left;
-    height: 60px;
+    height: 70px;
 	background:#8BB3BE;
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
     font-family: Ink Free;
@@ -19,7 +19,7 @@ body{
 	text-decoration: none;
 	line-height: 70px;
 	font-size: 19px;
-	transition: .5s;
+    transition: .5s;
 }
 /*.homecontent{
     text-align: center;
@@ -82,11 +82,11 @@ body{
   .containerr span{
     text-transform: uppercase;
     display: block;
-    margin-top: -200px;
+    margin-top: -180px;
   }
   .text1{
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
