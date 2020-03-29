@@ -34,6 +34,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  img {
+  border-radius: 50%;
+}
 }
 
 p {
@@ -52,4 +55,33 @@ h2 {
 
 .tool__keyword {
   background-color: #FFFF00;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* code for the quotes */
+q {
+	font-family: 'Gotham SSm A', 'Gotham SSm B', 'Proxima Nova', Futura, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	color: #84c8ff;
+	float: right;
+	max-width: 350px;
+  margin: 10px -15% 10px 20px;
+	background: -webkit-linear-gradient(top, #fd0b58 0px, #a32b68 100%);
+	background: linear-gradient(top, #fd0b58 0px, #a32b68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	&:before { content: ''; }
+	&:after { content: ''; }
 }
