@@ -12,11 +12,13 @@
 <body>
 
 
-<!-- container for the main content -->
+  <!-- container for the main content -->
   <div class="wrapper">
 
     <!-- code to display the date using javascript -->
-    <script type="text/javascript">showDate();</script>
+    <script type="text/javascript">
+      showDate();
+    </script>
 
 
     <h1 id="mainheading">Parts of Speech</h2>
@@ -66,9 +68,13 @@
           and <mark class="tool__keyword">round</mark>
           .</p>
 
-          <!-- used this code to generate random quotes stored in an array -->
+        <!-- used this code to generate random quotes stored in an array -->
 
-          <q class="center"><script type="text/javascript">writeRandomQuote()</script></q>
+        <q class="center">
+          <script type="text/javascript">
+            writeRandomQuote()
+          </script>
+        </q>
 
         <h2>Verbs</h2>
         <p>Verbs are action words: that’s a rather simplified explanation, but it’s the clearest one. Verbs tell you what the subject of the sentence is up to.</p>
@@ -151,11 +157,28 @@
 
   <div class="imgsection">
 
-  <h2 class="center" id="imageheading">simplified chart of Grammer</h2>
+    <h2 class="center" id="imageheading">simplified chart of Grammer</h2>
 
-  <img class="center" id="imgsum" src="C:\Users\RAVINDU FERNANDO\Documents\GitHub\LearnEnglish\Ravindu\image.png" alt="google.com">
+    <img class="center" id="imgsum" src="C:\Users\RAVINDU FERNANDO\Documents\GitHub\LearnEnglish\Ravindu\image.png" alt="google.com">
 
   </div>
+
+  <!-- this is just for the front end development -->
+
+  <div class="contact-section">
+
+    <h2 class="center" id="imageheading">Contact Us</h2>
+    <div class="border"></div>
+    <form class="contact-form" action="index.html" method="post">
+      <input type="text" class="contact-form-text" placeholder="Your name">
+      <input type="email" class="contact-form-text" placeholder="Your email">
+      <input type="text" class="contact-form-text" placeholder="Your phone">
+      <textarea class="contact-form-text" placeholder="Your message"></textarea>
+      <input type="submit" class="contact-form-btn" value="Send">
+    </form>
+  </div>
+
+
 
 </body>
 
