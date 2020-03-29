@@ -3,8 +3,8 @@ body
 		height:3000px;
 		margin-left: 75;
 		margin-right: 70;
+		background-color: silver;
 }
-
 .image{
 	background-image: url("wall3.jpg");
 	background-position: center;
