@@ -1,6 +1,6 @@
 body
 {
-		height:3000px;
+		/*height:4000px;*/
 		margin-left: 75;
 		margin-right: 70;
 		background-color: white;
@@ -8,7 +8,7 @@ body
 .image{
 	background-image: url("wall3.jpg");
 	background-position: center;
-	height: 550px;
+	height: 500px;
 	background-size: cover;
 
 }
@@ -43,13 +43,33 @@ body
 	transition: 1.5s;
 	padding: 15px;
 	width: 175;
+	-webkit-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
+
 }
 .parts img:hover
 {
 	filter: grayscale(100%);
 	transform: scale(2.2);
+	-webkit-filter: grayscale(0) !important;
+	filter: grayscale(0) !important;
 }
 #list
 {
 	line-height: 30px;
+}
+.each
+{
+	font-size: 18px;
+	line-height: 30px;
+	
+
+}
+.eachTD1
+{
+	width:700px;
+}
+.eachTD2
+{
+	width:500px;
 }
