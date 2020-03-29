@@ -21,6 +21,7 @@ body{
 	font-size: 13px;
     transition: .5s;
     margin-top: -15px;
+    border-bottom:5px solid rgb(120, 196, 168);
 }
 .box2{
     width: 800px;
