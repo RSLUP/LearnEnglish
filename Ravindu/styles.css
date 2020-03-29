@@ -1,11 +1,11 @@
 body {
-  background-color: #41B3A3;
+
   font-family: Georgia, serif, monospace, sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  background-color: #d0eaff;
   font-weight: normal;
+  background-image: url(lemons.jpg);
 }
 
 .wrapper {
