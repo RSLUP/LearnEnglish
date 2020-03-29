@@ -1,0 +1,14 @@
+header .logo h1 {
+    font-variant: small-caps;
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: white;
+    
+}
+
+header .slog h1 {
+    font-variant: small-caps;
+    font-size: 36px;
+    letter-spacing: -1px;
+    
+}
