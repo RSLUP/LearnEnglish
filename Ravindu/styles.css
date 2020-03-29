@@ -13,7 +13,7 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5908/food.png);
+  background-image: url(food.png);
 }
 
 #mainheading {
@@ -37,7 +37,17 @@ body {
 }
 
 p {
-  color: red;
+  color: #555;
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  color: #F90B6D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 14px;
 }
 
 .tool__keyword {
