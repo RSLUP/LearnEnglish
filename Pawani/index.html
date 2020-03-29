@@ -461,24 +461,399 @@
 
         /*responsive*/
         @media(min-width: 320px)and (max-width: 375px) {
+            header {
+                background-color: #e49292;
+                height: 32px;
+                width: 100%;
+                /* margin-top: 29px; */
+                position: fixed;
+                z-index: 3;
+            }
+            header>img {
+                height: 63px;
+                position: absolute;
+                top: -8px;
+                left: 6px;
+            }
+            header>h1 {
+                font-size: 12px;
+                position: fixed;
+                left: 69px;
+                font-family: cursive;
+                color: white;
+            }
+
             #back1 {
-                width: 1019px;
-
+                width: 100%;
+                margin-top: 31px;
             }
+
             body>div {
-                width: 1019px;
-            }
-            #tdiv1, #tdiv2, #tdiv3, #tdiv4, #tdiv5, #tdiv6, #tdiv7, #tdiv8 {
-                width: 1019px;
-            }
-
-            #summarydiv{
-                top: 4366px;
+                width: 100%;
+                height: 40px;
+                background-color: #e49292;
+                position: relative;
+                top: -42px;
+                z-index: 1;
             }
 
+            #maintopic {
+                font-family: cursive;
+                position: absolute;
+                left: 20px;
+                font-size: 22px;
+                top: 212px;
+            }
+
+
+            #p1 {
+                font-family: cursive;
+                font-size: 18px;
+                position: absolute;
+                left: 20px;
+                top: 254px;
+            }
+
+
+            #list1 {
+                position: absolute;
+                top: 397px;
+                left: 5px;
+                font-size: 15px;
+                font-family: cursive;
+                color: black;
+            }
+
+            #Tnoun, #Tverb, #Tpronoun, #Tadver, #Tadj, #Tconj, #Tinter, #Tprepo {
+                font-family: cursive;
+                font-size: 21px;
+                color: white;
+                margin-left: 23px;
+                margin-top: 34px;
+                background-color: black;
+            }
+
+
+            #paranoun, #paraverb, #parapronoun, #paraadj, #paraadver, #paraprepo, #paraconj, #parainter {
+                font-family: cursive;
+                font-size: 13px;
+                margin-left: 11px;
+                /* background-color: white; */
+            }
+
+
+            #nounimg {
+                width: 113px;
+                position: absolute;
+                right: 174px;
+                top: 284px;
+            }
+
+            #noungif {
+                width: 130px;
+                position: absolute;
+                top: 179px;
+                right: 32px;
+            }
+
+            #nounex1 {
+                font-family: cursive;
+                position: absolute;
+                right: 172px;
+                bottom: 131px;
+                font-size: 17px;
+            }
+
+            #nounex2 {
+                position: absolute;
+                right: 7px;
+                font-size: 17px;
+                font-family: cursive;
+                bottom: 5px;
+            }
+
+            #verbgif {
+                width: 209px;
+                position: absolute;
+                right: 66px;
+                top: 228px;
+            }
+
+            #verbex1 {
+                position: absolute;
+                bottom: -10px;
+                right: 44px;
+                font-family: cursive;
+                font-size: 17px;
+            }
+
+            #pronounimg {
+                position: absolute;
+                width: 155px;
+                right: 86px;
+                top: 214px;
+            }
+
+            #pronounex {
+                position: absolute;
+                font-size: 17px;
+                font-family: cursive;
+                right: 36px;
+                bottom: -11px;
+            }
+
+
+            #adjimage {
+                position: absolute;
+                width: 189px;
+                right: 71px;
+                top: 223px;
+            }
+
+
+            #adjex2 {
+                position: absolute;
+                font-size: 17px;
+                font-family: cursive;
+                right: 8px;
+                bottom: 93px;
+            }
+
+            #adjex1 {
+                position: absolute;
+                font-size: 17px;
+                font-family: cursive;
+                right: 250px;
+                bottom: 99px;
+            }
+
+            #advgif {
+                position: absolute;
+                top: 220px;
+                width: 229px;
+                height: 155px;
+                right: 50px;
+            }
+
+            #advex1 {
+                position: absolute;
+                bottom: -14px;
+                font-size: 17px;
+                font-family: cursive;
+                right: 131px;
+            }
+
+            #conjgif {
+                width: 216px;
+                position: absolute;
+                right: 53px;
+                top: 234px;
+            }
+
+            #conjex1 {
+                font-size: 17px;
+                font-family: cursive;
+                position: absolute;
+                right: 37px;
+                bottom: -13px;
+            }
+
+            #interimg {
+                position: absolute;
+                top: 215px;
+                width: 109px;
+                right: 198px;
+            }
+
+            #interex {
+                font-family: cursive;
+                font-size: 17px;
+                position: absolute;
+                right: 10px;
+                bottom: 20px;
+            }
+
+
+            #summarytopic {
+                font-family: cursive;
+                font-size: 18px;
+                position: absolute;
+                left: 24%;
+                top: 21px;
+            }
+
+
+            #summaryimg {
+                width: 258px;
+                height: 303px;
+                position: absolute;
+                top: 82px;
+                left: 31px;
+            }
+
+            #summarydiv {
+                position: absolute;
+                top: 3906px;
+                height: 410px;
+                background-color: #e4d6d6;
+            }
             footer {
-                width: 1019px;
+                width: 100%;
+                height: 41px;
+                background-color: #6e3e45;
+                color: black;
+                position: relative;
+                z-index: 4;
+                top: 483px;
             }
+
+            #footercontent {
+                position: absolute;
+                bottom: 0px;
+                font-size: 11px;
+                right: 10px;
+                color: white;
+            }
+
+
+            #preposimg2 {
+                width: 93px;
+                position: absolute;
+                top: 236px;
+                right: 16px;
+                animation: thirdanim 3s infinite;
+            }
+
+            @keyframes thirdanim{
+                0%{
+                    width: 93px;
+                    position: absolute;
+                    top: 236px;
+                    right: 16px;
+                }
+                50%{
+                    width: 98px;
+                    position: absolute;
+                    top: 218px;
+                    right: 14px;
+                }
+                100%{
+                    width: 93px;
+                    position: absolute;
+                    top: 236px;
+                    right: 16px;
+                }
+
+            }
+            #preposimg1 {
+                position: absolute;
+                right: 67PX;
+                top: 242px;
+                width: 88px;
+            }
+
+            #preposex1 {
+                font-family: cursive;
+                font-size: 17px;
+                position: absolute;
+                right: 13px;
+                top: 192px;
+            }
+
+
+            #tdiv1, #tdiv2, #tdiv3, #tdiv4, #tdiv5, #tdiv6, #tdiv7, #tdiv8 {
+                background-color: #e49292;
+                height: 400px;
+                display: flow-root;
+                position: relative;
+                top: 76px;
+            }
+
+
+
+
+
+            #ul1 {
+                display: inline-flex;
+                position: relative;
+                left: -45px;
+                top: 272px;
+                animation: firstanim 3s infinite;
+            }
+
+
+
+
+
+
+            #ul2 {
+                display: inline-flex;
+                position: relative;
+                left: -5px;
+                top: 106px;
+                animation: secondanim 3s infinite;
+            }
+
+
+            ul>li {
+                padding: 15px;
+                list-style: none;
+            }
+
+            #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8 {
+                width: 38px;
+            }
+
+
+
+
+            @keyframes firstanim {
+                0% {
+                    position: relative;
+                    left: 4px;
+                    top: 272px;
+
+                }
+                50% {
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 310px;
+
+                }
+
+                100% {
+                    position: relative;
+                    left: 4px;
+                    top: 272px;
+
+                }
+            }
+            @keyframes secondanim{
+                0%{
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 106px;
+                }
+
+                50%{
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 68px;
+                }
+
+                100%{
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 106px;
+
+                }
+
+            }
+
 
         }
 
@@ -569,19 +944,21 @@
 
         </ol>
 
-        <ul id="ul1">
-            <li><img id="b1" src="images/baloon1_noun.png" alt=""></li>
-            <li><img id="b2" src="images/baloon2_verb.png" alt=""></li>
-            <li><img id="b3" src="images/balloon3_pronoun.png" alt=""></li>
-            <li><img id="b4" src="images/balloon_adjective.png" alt=""></li>
-        </ul>
-        <ul id="ul2">
-            <li><img id="b5" src="images/baloon5_adverb.png" alt=""></li>
-            <li><img id="b6" src="images/balloon6_preposition.png" alt=""></li>
-            <li><img id="b7" src="images/balloon7_conjunction.png" alt=""></li>
-            <li><img id="b8" src="images/balloon8_interjection.png" alt=""></li>
-        </ul>
-    </div>
+            <ul id="ul1">
+                <li><img id="b1" src="images/baloon1_noun.png" alt=""></li>
+                <li><img id="b2" src="images/baloon2_verb.png" alt=""></li>
+                <li><img id="b3" src="images/balloon3_pronoun.png" alt=""></li>
+                <li><img id="b4" src="images/balloon_adjective.png" alt=""></li>
+            </ul>
+            <ul id="ul2">
+                <li><img id="b5" src="images/baloon5_adverb.png" alt=""></li>
+                <li><img id="b6" src="images/balloon6_preposition.png" alt=""></li>
+                <li><img id="b7" src="images/balloon7_conjunction.png" alt=""></li>
+                <li><img id="b8" src="images/balloon8_interjection.png" alt=""></li>
+            </ul>
+
+
+            </div>
 
     <div id="tdiv1">
         <h1 id="Tnoun">1.Noun</h1>
