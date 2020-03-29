@@ -86,29 +86,36 @@ body{
   }
   .text1{
     color: black;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
-  
     position: relative;
     animation: text 3s 1;
-      font-family: serif;
+    font-family: serif;
   }
   .title-box{
 	text-align: left;
-    margin-bottom: 30px;
-    transition: 0.25s;
+    
     font-family: Ink Free;
+    
+	padding: 0 15px;
+	color: black;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 19px;
+    transition: .5s;
 }
 .info-box{
     text-align: justify;
-    font-size: medium;
+    font-size: 19px;
+    font-family: Catamaran;
+   
 }
 .noun-box{
-    padding: 70px 0px;
+    padding: 60px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -117,14 +124,15 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:650px;
+    margin-top:750px;
     border: 1px;
    margin-left: auto;
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .pronoun-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -133,15 +141,15 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:1050px;
+    margin-top:1250px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .verb-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -150,32 +158,15 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:1450px;
+    margin-top:1750px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .adjective-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background:rgba(255, 255, 255, 0.945);
-    color: rgb(20, 20, 20);
-    text-align: center;
-    margin-top:1850px;
-    border: 1px;
-   margin-left: auto;
-   
-}
-.adverbs-box{
-    padding: 70px 0px;
-    width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -187,12 +178,29 @@ body{
     margin-top:2250px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
+}
+.adverbs-box{
+    padding: 70px 0px;
+    width: 1000px;
+    height: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgba(255, 255, 255, 0.945);
+    color: rgb(20, 20, 20);
+    text-align: center;
+    margin-top:2750px;
+    border: 1px;
+   margin-left: auto;
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .articles-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -201,15 +209,15 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:2650px;
+    margin-top:3250px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .prepositions-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -218,15 +226,15 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:3050px;
+    margin-top:3750px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .conjunctions-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -235,15 +243,15 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:3450px;
+    margin-top:4250px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 .interjections-box{
     padding: 70px 0px;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -252,10 +260,10 @@ body{
     background:rgba(255, 255, 255, 0.945);
     color: rgb(20, 20, 20);
     text-align: center;
-    margin-top:3850px;
+    margin-top:4750px;
     border: 1px;
    margin-left: auto;
-   
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
 footer {
     left: 0;
@@ -265,5 +273,5 @@ footer {
     background-color: gray;
     color: white;
     text-align: center;
-    margin-top:4230px;
+    margin-top:5250px;
  }
