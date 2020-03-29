@@ -1,3 +1,10 @@
+body{
+    background-color: seashell;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
 table {
     width: 1000px;
     
@@ -18,5 +25,12 @@ th{
 }
 
 .td1{
-    font-size: 50px;
+    font-size: 45px;
+    text-align: left;
 }
+
+td{
+    font-size: 17px;
+    text-align: center;
+}
+
