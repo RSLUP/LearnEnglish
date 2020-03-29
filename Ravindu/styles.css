@@ -1,54 +1,45 @@
 body {
   background-color: #41B3A3;
-  font-family:Georgia ,serif, monospace ,sans-serif  ;
+  font-family: Georgia, serif, monospace, sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   word-spacing: 2px;
   background-color: #d0eaff;
   font-weight: normal;
-
-
 }
 
-.wrapper
-    {
-    width:980px;
-    text-align:left;
-    margin-left:auto;
-    margin-right:auto;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5908/food.png);
+.wrapper {
+  width: 980px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5908/food.png);
 }
 
-
- h1 {
-    font-size: 36px;
-    font: 600 1.5em/1 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    position:relative;
-    top: 25%;
-    width: 100%;
-
+#mainheading {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-
-
-
-#imgsum{
+#imgsum {
   position: relative;
   top: auto;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-
 }
-
 
 p {
   color: red;
 }
 
-.tool__keyword {}
+.tool__keyword {
+  background-color: #FFFF00;
+}
