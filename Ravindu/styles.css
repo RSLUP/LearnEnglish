@@ -1,0 +1,163 @@
+body {
+
+  font-family: Georgia, serif, monospace, sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: normal;
+  background-image: url(lemons1.jpg);
+}
+
+.wrapper {
+  width: 980px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(food.png);
+}
+
+#mainheading {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#imgsum {
+  position: relative;
+  top: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  img {
+  border-radius: 50%;
+}
+}
+
+p {
+  color: #555;
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  color: #F90B6D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 14px;
+}
+
+.tool__keyword {
+  background-color: #FFFF00;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#imageheading{
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/* code for the quotes */
+q {
+	font-family: 'Gotham SSm A', 'Gotham SSm B', 'Proxima Nova', Futura, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	color: #84c8ff;
+	float: right;
+	max-width: 350px;
+  margin: 10px -15% 10px 20px;
+	background: -webkit-linear-gradient(top, #fd0b58 0px, #a32b68 100%);
+	background: linear-gradient(top, #fd0b58 0px, #a32b68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	&:before { content: ''; }
+	&:after { content: ''; }
+}
+
+
+/* Styling for the contant section */
+.contact-section{
+  background: url(bg.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
