@@ -3,8 +3,7 @@
         <meta charset="UTF - 8">
         <title>LearnEnglish</title>
         <style type="text/css">
-            html {scroll-behavior: smooth;
-}
+            html {scroll-behavior: smooth;}
         /* style For Header */
 			#header { background:#fff; }
 			#header-inner { margin:0 auto; padding:10px; width:1180px; /*background:#fff*/ background-image:url('header.jpg');background-size:cover;font-size:45px;}
@@ -29,7 +28,18 @@
             #video{padding-left:100px ;}
         /* Add shadows to create the "bars" effect */	
 			.bars {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;}
+
+        /*create column*/    
+            .column {float: left; width: 50%;}
+
+        /* Clear floats after the columns */
+            .row:after {content: "";display: table;clear: both;}
+           
+       
         </style>
+
+
+    <!--Start web page-->
     </head>
     <body>
     <div id="page">
@@ -54,13 +64,20 @@
             <p>
                 Being able to speak English is not just about being able to communicate with native English speakers, it is the most common second language in the world. Learning English is important as it enables you to communicate easily with your fellow global citizens.
             </p> 
-            <h3 style="font-size: 25px ; color:rgb(112, 0, 0)";>4 Reasons Why Learning English is so Important &#128552</h3>
-            <ol>
-                <li>English is the Language of International Communication.</li>
-                <li>English is the Language of Business.</li>
-                <li>Speaking English gives you Access to a World of Entertainment.</li>
-                <li>Learning English gives you Access to more of the Internet.</li>
-            </ol>
+            <h3 style="font-size: 25px ; color:rgb(112, 0, 0);text-align:center";>4 Reasons Why Learning English is so Important &#128552</h3>
+            <div class="row">
+                <div class="column">
+                    <img src="think.png" alt="Man think about something" align="right" style="size: 30%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                </div>
+                <div class="column">
+                <ol>
+                    <li>English is the Language of International Communication.</li>
+                    <li>English is the Language of Business.</li>
+                    <li>Speaking English gives you Access to a World of Entertainment.</li>
+                    <li>Learning English gives you Access to more of the Internet.</li>
+                </ol>
+                </div>
+            </div>
             
             <p>&#9997 So, here below some fundamentals you should know.</p> 
        
@@ -106,11 +123,23 @@
         </div>
         
             <h3 style="font-size: 25px ; color:#FFC300";>Examples &#128071</h3>
-            <p>cat, sock, ship, hero, monkey, baby, match and boy etc</p>
-            <ul>
-                <li>The <strong><em>sun</em></strong> shines</li>
-                <li><strong><em>Anna</em></strong> goes to school</li>
-            </ul>
+            <!--create column-->
+            <div class="row">
+                <div class="column">
+                    <p>cat, sock, ship, hero, monkey, baby, match and boy etc</p>
+                    <ul>
+                        <li>The <strong><em>sun</em></strong> shines</li>
+                        <li><strong><em>Bunny</em></strong> goes to school</li>
+                    </ul>
+                </div>
+                <!--add gif-->
+                <div class="column">
+                    
+                    <img src="bunny.gif" alt="bunny goes to school" align="left" style="size:10%;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  
+                </div>
+                
+            </div>
             <!--add sources for details-->
             <p><strong>Sources</strong></p>
             <ul>
@@ -193,13 +222,24 @@
             </div>
         
             <h3 style="font-size: 25px ; color:rgb(9, 255, 0)";>Examples &#128071</h3>
-            <p>run, catch, sing ,swim, dance, eat, drive and walk etc.</p>
-            <ul>
-            <li>Mark <strong><em>eats</em></strong> his dinner quickly.</li>
-            <li>We <strong><em>went</em></strong> to the market.</li>
-            <li>You <strong><em>write</em></strong> neatly in your notebook.</li>
-            <li>They <strong><em>thought</em></strong> about all the prizes in the competition.</li> 
-            </ul> 
+            <!--create column-->
+            <div class="row">
+                <div class="column">
+                    <p>run, catch, sing ,swim, dance, eat, drive and walk etc.</p>
+                    <ul>
+                        <li>Buuny <strong><em>eats</em></strong> her lunch.</li>
+                        <li>We <strong><em>went</em></strong> to the market.</li>
+                        <li>You <strong><em>write</em></strong> neatly in your notebook.</li>
+                        <li>They <strong><em>thought</em></strong> about all the prizes in the competition.</li> 
+                    </ul> 
+                </div>
+                <!--add gif-->
+                <div class="column">
+                    
+                    <img src="eat.gif" alt="bunny eats her lunch" align="left" style="size:10%;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  
+                </div>
+            </div>
             <!--add sources for details-->
             <p><strong>Sources</strong></p>
             <ul>
@@ -284,12 +324,23 @@
         </div>
         
             <h3 style="font-size: 25px ; color:rgb(224, 228, 5)";>Examples &#128071</h3>
-            <ul>
-                <li>He swims <strong><em>well</em></strong>.</li>
-                <li>He ran <strong><em>quickly</em></strong>.</li>
-                <li>She spoke <strong><em>softly</em></strong>.</li>
-                <li>James coughed <strong><em>loudly</em></strong> to attract her attention.</li>
-            </ul>
+            <!--create column-->
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li>He swims <strong><em>well</em></strong>.</li>
+                        <li>Bunny runs <strong><em>quickly</em></strong>.</li>
+                        <li>She spoke <strong><em>softly</em></strong>.</li>
+                        <li>James coughed <strong><em>loudly</em></strong> to attract her attention.</li>
+                    </ul>
+                </div>
+                <!--add gif-->
+                <div class="column">
+                    
+                    <img src="fast.gif" alt="bunny runs quickly" align="left" style="size:10%;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  
+                </div>
+            </div>
             <!--add sources for details-->
             <p><strong>Sources</strong></p>
             <ul>
@@ -416,15 +467,27 @@
                 <li>When using conjunctions, make sure that all the parts of your sentences agree. For example: “I work busily <strong>yet</strong> am careful” does not agree. “I work busily <strong>yet</strong> carefully” shows agreement.</li>
             </ul>
             <h3 style="font-size: 25px ; color:rgb(2, 167, 24)";>Examples &#128071</h3>
-            <ul>
-                <li>I tried to hit the nail <strong>but</strong> hit my thumb instead.</li>
-                <li>I have two goldfish <strong>and</strong> a cat.</li>
-                <li>I’d like a bike <strong>for</strong> commuting to work.</li>
-                <li>You can have peach ice cream <strong>or</strong> a brownie sundae.</li>
-                <li>Neither the black dress <strong>nor</strong> the gray one looks right on me.</li>
-                <li>My dad always worked hard <strong>so</strong> we could afford the things we wanted.</li>
-                <li>I try very hard in school <strong>yet</strong> I am not receiving good grades.</li>
-            </ul>
+            
+            <!--create column-->
+            <div class="row">
+                <div class="column">
+                    <ul>
+                        <li>Bunny wants to surprise Mat <strong>but</strong> Mat scared.</li>
+                        <li>I have two goldfish <strong>and</strong> a cat.</li>
+                        <li>I’d like a bike <strong>for</strong> commuting to work.</li>
+                        <li>You can have peach ice cream <strong>or</strong> a brownie sundae.</li>
+                        <li>Neither the black dress <strong>nor</strong> the gray one looks right on me.</li>
+                        <li>My dad always worked hard <strong>so</strong> we could afford the things we wanted.</li>
+                        <li>I try very hard in school <strong>yet</strong> I am not receiving good grades.</li>
+                    </ul>
+                </div>
+                <!--add gif-->
+                <div class="column">
+                    
+                    <img src="conj.gif" alt="conjunction gif" align="left" style="size:10%;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                  
+                </div>
+            </div>
             <!--add sources for details-->
             <p><strong>Sources</strong></p>
             <ul>
@@ -438,7 +501,7 @@
         <!--add  INTERJECTION-->
 
         
-        <div class="bars"></div>
+        <div class="bars">
             <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(153, 0, 0); text-align:center";><a target name = "Interjections">INTERJECTION</a></h2>
         </div>
         <div id = "para">
@@ -487,8 +550,10 @@
         <footer>
          <p align = "center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
         </footer>   
+    
     </div>
     </div>
+    
     </body>
         
 </html>        
