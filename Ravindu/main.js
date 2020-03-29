@@ -1,4 +1,4 @@
-
+// code to display random quotes
   writeRandomQuote = function () {
     var quotes = new Array();
     quotes[0] = "Action is the real measure of intelligence.";
@@ -9,11 +9,16 @@
     document.write(quotes[rand]);
   }
 
-
+// code to show the date at the top of the webpage
   function showDate() {
       var d = new Date();
       var curr_date = d.getDate();
       var curr_month = d.getMonth() + 1; //months are zero based
       var curr_year = d.getFullYear();
       document.write(curr_date + "-" + curr_month + "-" + curr_year);
+    }
+
+
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
     }
