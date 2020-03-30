@@ -1,0 +1,36 @@
+body{
+    background-color: seashell;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+table {
+    width: 1000px;
+    
+}
+
+table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 10px;
+}
+
+th{
+    background-color: #000;
+    color: white;
+}
+
+.td1{
+    font-size: 45px;
+    text-align: left;
+}
+
+td{
+    font-size: 17px;
+    text-align: center;
+}
+
