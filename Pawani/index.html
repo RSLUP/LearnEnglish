@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eight Parts of Speech</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+        /*..........header.......*/
+
+        header>h1{
+            font-size: 26px;
+            position: fixed;
+            left: 131px;
+            font-family: cursive;
+            color: white;
+
+        }
+
+        header {
+            background-color: #e49292;
+            height: 54px;
+            width: 100%;
+            /* margin-top: 29px; */
+            position: fixed;
+            z-index: 3;
+        }
+
+        header>img {
+            height: 106px;
+            position: absolute;
+            top: -8px;
+            left: 17px;
+        }
+
+        /*......introduction......*/
+
+        #back1{
+            width: 100%;
+            margin-top: 44px;
+        }
+
+        body>div{
+            width: 100%;
+            height: 92px;
+            background-color: #e49292;
+            position: relative;
+            top: -71px;
+            z-index: 1;
+        }
+
+        #maintopic{
+            font-family: cursive;
+            position: absolute;
+            left: 26px;
+            top: 632px;
+        }
+
+        #p1{
+            font-family: cursive;
+            font-size: 27px;
+            position: absolute;
+            left: 27px;
+            top: 692px;
+        }
+
+
+        #list1 {
+            position: absolute;
+            top: 825px;
+            left: 48px;
+            font-size: 24px;
+            font-family: cursive;
+            color: black;
+
+
+        }
+        /*.......eight baloons..........*/
+        #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8{
+            width: 84px;
+
+        }
+
+        /*......two lists(each list has four baloons)......*/
+        #ul1{
+            display: inline-flex;
+            position: relative;
+            left: 145px;
+            top: 56px;
+            animation: firstanim 3s infinite;
+        }
+        #ul2{
+            display: inline-flex;
+            position: relative;
+            left: 243px;
+            top: -251px;
+            animation: secondanim 3s infinite;
+        }
+
+        ul>li{
+            padding: 50px;
+            list-style: none;
+        }
+
+        /*......main topics......*/
+
+        #Tnoun,#Tverb,#Tpronoun,#Tadver,#Tadj,#Tconj,#Tinter,#Tprepo{
+            font-family: cursive;
+            font-size: 35px;
+            color: white;
+            margin-left: 67px;
+            margin-top: 62px;
+            background-color: black;
+
+        }
+
+        /*.........topic div.........    */
+
+        #tdiv1,#tdiv2,#tdiv3,#tdiv4,#tdiv5,#tdiv6,#tdiv7,#tdiv8{
+            background-color: #e49292;
+            height: 400px;
+            display: flow-root;
+            position: relative;
+            top: -257px;
+
+
+        }
+
+        /*..........topic paragraphs........*/
+
+        #paranoun,#paraverb,#parapronoun,#paraadj,#paraadver,#paraprepo,#paraconj,#parainter{
+            font-family: cursive;
+            font-size: 25px;
+            margin-left: 20px;
+            /*background-color: white;*/
+        }
+
+        /*.........noun examples.........*/
+        #noungif{
+            width: 200px;
+            position: absolute;
+            top: 116px;
+            right: 60px;
+        }
+
+        #nounex1{
+            font-family: cursive;
+            position: absolute;
+            right: 268px;
+            bottom: 218px;
+            font-size: 20px;
+
+        }
+
+        #nounimg{
+            width: 150px;
+            position: absolute;
+            right: 289px;
+            top: 237px;
+
+        }
+
+        #nounex2{
+            position: absolute;
+            right: 90px;
+            font-size: 20px;
+            font-family: cursive;
+            bottom: 5px;
+
+        }
+
+        /*.....verb example.....*/
+
+        #verbgif{
+            width: 320px;
+            position: absolute;
+            right: 131px;
+            top: 121px;
+        }
+
+        #verbex1{
+            position: absolute;
+            bottom: 3px;
+            right: 141px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+
+        /*adjective examples*/
+        #advgif{
+            position: absolute;
+            top: 124px;
+            width: 340px;
+            height: 239px;
+            right: 50px;
+        }
+
+        #advex1{
+            position: absolute;
+            bottom: -10px;
+            font-size: 20px;
+            font-family: cursive;
+            right: 167px;
+        }
+
+        /*.....conjunction examples....*/
+        #conjgif{
+            width: 313px;
+            position: absolute;
+            right: 51px;
+            top: 141px;
+        }
+
+        #conjex1{
+            font-size: 20px;
+            font-family: cursive;
+            position: absolute;
+            right: 55px;
+            bottom: -2px;
+        }
+
+        /*.....preposition examples......*/
+        #preposimg1{
+            position: absolute;
+            right: 343px;
+            top: 136px;
+            width: 122px;
+        }
+
+        #preposimg2{
+            width: 100px;
+            position: absolute;
+            top: 113px;
+            right: 280px;
+            animation: thirdanim 3s infinite;
+
+
+        }
+
+        #preposex1{
+            font-family: cursive;
+            font-size: 20px;
+            position: absolute;
+            right: 9px;
+            top: 176px;
+        }
+
+        /*interjection examples*/
+
+        #interimg{
+            position: absolute;
+            top: 129px;
+            width: 176px;
+            right: 274px;
+        }
+        #interex{
+            font-family: cursive;
+            font-size: 20px;
+            position: absolute;
+            right: 29px;
+            bottom: 105px;
+        }
+
+
+        /*adjective examples*/
+        #adjimage {
+            position: absolute;
+            width: 293px;
+            right: 102px;
+            top: 201px;
+        }
+
+        #adjex1{
+            position: absolute;
+            font-size: 20px;
+            font-family: cursive;
+            right: 395px;
+            bottom: 76px;
+        }
+
+        #adjex2 {
+            position: absolute;
+            font-size: 20px;
+            font-family: cursive;
+            right: 24px;
+            bottom: 82px;
+        }
+
+        /*pronouns examples*/
+        #pronounimg{
+            position: absolute;
+            width: 230px;
+            right: 134px;
+            top: 117px;
+        }
+        #pronounex{
+            position: absolute;
+            font-size: 20px;
+            font-family: cursive;
+            right: 92px;
+            bottom: -2px;
+        }
+        /*summary of lesson*/
+        #summarydiv{
+            position: absolute;
+            top: 4367px;
+            height: 866px;
+            background-color: #e4d6d6;
+        }
+
+        #summarytopic{
+            font-family: cursive;
+            font-size: 26px;
+            position: absolute;
+            left: 37%;
+            top: 21px;
+
+        }
+
+        #summaryimg{
+            width: 800px;
+            position: absolute;
+            top: 104px;
+            left: 113px;
+        }
+
+        footer{
+            width: 100%;
+            height: 48px;
+            background-color: #6e3e45;
+            color: black;
+            position: relative;
+            z-index: 4;
+            top: 600px;
+        }
+
+        #footercontent{
+            position: absolute;
+            bottom: 0px;
+            font-size: 15px;
+            right: 10px;
+            color: white;
+
+        }
+
+
+        /*transition*/
+        #noun,#verb,#pron,#adj,#adv,#prepo,#conj,#inter{
+            transition: color,font-size 1s;
+        }
+
+        #inter:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #conj:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #noun:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #verb:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #pron:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #adj:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #adv:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+        #prepo:hover{
+            color: darkred;
+            font-size: 30px;
+        }
+
+        /*..........keyframes.........*/
+
+        @keyframes firstanim {
+            0% {
+                position: relative;
+                left: 145px;
+                top: 56px;
+
+            }
+            50% {
+                display: inline-flex;
+                position: relative;
+                left: 145px;
+                top: 100px;
+
+            }
+
+            100% {
+                position: relative;
+                left: 145px;
+                top: 56px;
+
+            }
+        }
+        @keyframes secondanim{
+            0%{
+                display: inline-flex;
+                position: relative;
+                left: 243px;
+                top: -251px;
+            }
+
+            50%{
+                display: inline-flex;
+                position: relative;
+                left: 243px;
+                top: -295px;
+            }
+
+            100%{
+                display: inline-flex;
+                position: relative;
+                left: 243px;
+                top: -251px;
+
+            }
+
+        }
+
+        @keyframes thirdanim{
+            0%{
+                width: 100px;
+                position: absolute;
+                top: 113px;
+                right: 280px;
+            }
+            50%{
+                width: 105px;
+                position: absolute;
+                top: 95px;
+                right: 278px;
+            }
+            100%{
+                width: 100px;
+                position: absolute;
+                top: 113px;
+                right: 280px;
+            }
+
+        }
+
+
+        /*responsive*/
+        @media(min-width: 320px)and (max-width: 375px) {
+            header {
+                background-color: #e49292;
+                height: 32px;
+                width: 100%;
+                /* margin-top: 29px; */
+                position: fixed;
+                z-index: 3;
+            }
+            header>img {
+                height: 63px;
+                position: absolute;
+                top: -8px;
+                left: 6px;
+            }
+            header>h1 {
+                font-size: 12px;
+                position: fixed;
+                left: 69px;
+                font-family: cursive;
+                color: white;
+            }
+
+            #back1 {
+                width: 100%;
+                margin-top: 31px;
+            }
+
+            body>div {
+                width: 100%;
+                height: 40px;
+                background-color: #e49292;
+                position: relative;
+                top: -42px;
+                z-index: 1;
+            }
+
+            #maintopic {
+                font-family: cursive;
+                position: absolute;
+                left: 20px;
+                font-size: 22px;
+                top: 212px;
+            }
+
+
+            #p1 {
+                font-family: cursive;
+                font-size: 18px;
+                position: absolute;
+                left: 20px;
+                top: 254px;
+            }
+
+
+            #list1 {
+                position: absolute;
+                top: 397px;
+                left: 5px;
+                font-size: 15px;
+                font-family: cursive;
+                color: black;
+            }
+
+            #Tnoun, #Tverb, #Tpronoun, #Tadver, #Tadj, #Tconj, #Tinter, #Tprepo {
+                font-family: cursive;
+                font-size: 21px;
+                color: white;
+                margin-left: 23px;
+                margin-top: 34px;
+                background-color: black;
+            }
+
+
+            #paranoun, #paraverb, #parapronoun, #paraadj, #paraadver, #paraprepo, #paraconj, #parainter {
+                font-family: cursive;
+                font-size: 13px;
+                margin-left: 11px;
+                /* background-color: white; */
+            }
+
+
+            #nounimg {
+                width: 113px;
+                position: absolute;
+                right: 174px;
+                top: 284px;
+            }
+
+            #noungif {
+                width: 130px;
+                position: absolute;
+                top: 179px;
+                right: 32px;
+            }
+
+            #nounex1 {
+                font-family: cursive;
+                position: absolute;
+                right: 172px;
+                bottom: 131px;
+                font-size: 17px;
+            }
+
+            #nounex2 {
+                position: absolute;
+                right: 7px;
+                font-size: 17px;
+                font-family: cursive;
+                bottom: 5px;
+            }
+
+            #verbgif {
+                width: 209px;
+                position: absolute;
+                right: 66px;
+                top: 228px;
+            }
+
+            #verbex1 {
+                position: absolute;
+                bottom: -10px;
+                right: 44px;
+                font-family: cursive;
+                font-size: 17px;
+            }
+
+            #pronounimg {
+                position: absolute;
+                width: 155px;
+                right: 86px;
+                top: 214px;
+            }
+
+            #pronounex {
+                position: absolute;
+                font-size: 17px;
+                font-family: cursive;
+                right: 36px;
+                bottom: -11px;
+            }
+
+
+            #adjimage {
+                position: absolute;
+                width: 189px;
+                right: 71px;
+                top: 223px;
+            }
+
+
+            #adjex2 {
+                position: absolute;
+                font-size: 17px;
+                font-family: cursive;
+                right: 8px;
+                bottom: 93px;
+            }
+
+            #adjex1 {
+                position: absolute;
+                font-size: 17px;
+                font-family: cursive;
+                right: 250px;
+                bottom: 99px;
+            }
+
+            #advgif {
+                position: absolute;
+                top: 220px;
+                width: 229px;
+                height: 155px;
+                right: 50px;
+            }
+
+            #advex1 {
+                position: absolute;
+                bottom: -14px;
+                font-size: 17px;
+                font-family: cursive;
+                right: 131px;
+            }
+
+            #conjgif {
+                width: 216px;
+                position: absolute;
+                right: 53px;
+                top: 234px;
+            }
+
+            #conjex1 {
+                font-size: 17px;
+                font-family: cursive;
+                position: absolute;
+                right: 37px;
+                bottom: -13px;
+            }
+
+            #interimg {
+                position: absolute;
+                top: 215px;
+                width: 109px;
+                right: 198px;
+            }
+
+            #interex {
+                font-family: cursive;
+                font-size: 17px;
+                position: absolute;
+                right: 10px;
+                bottom: 20px;
+            }
+
+
+            #summarytopic {
+                font-family: cursive;
+                font-size: 18px;
+                position: absolute;
+                left: 24%;
+                top: 21px;
+            }
+
+
+            #summaryimg {
+                width: 258px;
+                height: 303px;
+                position: absolute;
+                top: 82px;
+                left: 31px;
+            }
+
+            #summarydiv {
+                position: absolute;
+                top: 3860px;
+                height: 410px;
+                background-color: #e4d6d6;
+            }
+            footer {
+                width: 100%;
+                height: 41px;
+                background-color: #6e3e45;
+                color: black;
+                position: relative;
+                z-index: 4;
+                top: 483px;
+            }
+
+            #footercontent {
+                position: absolute;
+                bottom: 0px;
+                font-size: 11px;
+                right: 10px;
+                color: white;
+            }
+
+
+            #preposimg2 {
+                width: 93px;
+                position: absolute;
+                top: 236px;
+                right: 16px;
+                animation: thirdanim 3s infinite;
+            }
+
+            @keyframes thirdanim{
+                0%{
+                    width: 93px;
+                    position: absolute;
+                    top: 236px;
+                    right: 16px;
+                }
+                50%{
+                    width: 98px;
+                    position: absolute;
+                    top: 218px;
+                    right: 14px;
+                }
+                100%{
+                    width: 93px;
+                    position: absolute;
+                    top: 236px;
+                    right: 16px;
+                }
+
+            }
+            #preposimg1 {
+                position: absolute;
+                right: 67PX;
+                top: 242px;
+                width: 88px;
+            }
+
+            #preposex1 {
+                font-family: cursive;
+                font-size: 17px;
+                position: absolute;
+                right: 13px;
+                top: 192px;
+            }
+
+
+            #tdiv1, #tdiv2, #tdiv3, #tdiv4, #tdiv5, #tdiv6, #tdiv7, #tdiv8 {
+                background-color: #e49292;
+                height: 400px;
+                display: flow-root;
+                position: relative;
+                top: 76px;
+            }
+
+
+
+
+
+            #ul1 {
+                display: inline-flex;
+                position: relative;
+                left: -45px;
+                top: 272px;
+                animation: firstanim 3s infinite;
+            }
+
+
+
+
+
+
+            #ul2 {
+                display: inline-flex;
+                position: relative;
+                left: -5px;
+                top: 106px;
+                animation: secondanim 3s infinite;
+            }
+
+
+            ul>li {
+                padding: 15px;
+                list-style: none;
+            }
+
+            #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8 {
+                width: 38px;
+            }
+
+
+
+
+            @keyframes firstanim {
+                0% {
+                    position: relative;
+                    left: 4px;
+                    top: 272px;
+
+                }
+                50% {
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 310px;
+
+                }
+
+                100% {
+                    position: relative;
+                    left: 4px;
+                    top: 272px;
+
+                }
+            }
+            @keyframes secondanim{
+                0%{
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 106px;
+                }
+
+                50%{
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 68px;
+                }
+
+                100%{
+                    display: inline-flex;
+                    position: relative;
+                    left: 4px;
+                    top: 106px;
+
+                }
+
+            }
+
+
+        }
+
+        /*!*@media (min-width: 375px) and (max-width: 425px) {*!*/
+        /*    #list1 {*/
+        /*        position: absolute;*/
+        /*        top: 892px;*/
+        /*    }*/
+        /*    #ul1 {*/
+        /*     left: 163px;*/
+        /*      top: 143px;*/
+        /*    }*/
+        /*}*/
+
+        /*@media (min-width: 768px) and (max-width: 1024px) {*/
+        /*    #back1 {*/
+        /*        width: 1019px;*/
+        /*        margin-top: 44px;*/
+        /*    }*/
+
+        /*    body>div {*/
+        /*        width: 1019px;*/
+        /*    }*/
+
+        /*    #tdiv1, #tdiv2, #tdiv3, #tdiv4, #tdiv5, #tdiv6, #tdiv7, #tdiv8 {*/
+        /*        width: 1019px;*/
+        /*    }*/
+
+        /*    footer {*/
+        /*        width: 1019px;*/
+        /*    }*/
+
+        /*}*/
+
+
+        /*@media (min-width: 1024px) and (max-width: 1444px) {*/
+        /*    #back1 {*/
+        /*        width: 1024px;*/
+        /*        margin-top: 44px;*/
+        /*    }*/
+
+        /*    body>div {*/
+        /*        width: 1024px;*/
+        /*    }*/
+
+        /*    #tdiv1, #tdiv2, #tdiv3, #tdiv4, #tdiv5, #tdiv6, #tdiv7, #tdiv8{*/
+        /*        width: 1024px;*/
+        /*    }*/
+
+
+        /*    footer {*/
+        /*        width: 1024px;*/
+        /*    }*/
+        /*}*/
+
+
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <img src="images/LOGO.png" alt="">
+    <h1>It's Time to Learn English</h1>
+
+</header>
+
+
+<img id="back1" src="images/bavkground.png" alt="">
+<div></div>
+
+<section id="section1">
+    <div>
+        <h1 id="maintopic">Eight Parts of Speech</h1>
+        <p id="p1">Words are divided into different kinds <br> according to the works they do in sentence.<br>
+            The Parts of Speech are 8 in numbers.<br>
+        </p>
+        <ol id="list1">
+            <li id="noun"><a href="#tdiv1" style="text-decoration: none; color: black " >Noun</a></li>
+            <li id="verb"><a href="#tdiv2" style="text-decoration: none; color: black " >Verb</a></li>
+            <li id="pron"><a href="#tdiv3" style="text-decoration: none; color: black " >Pronoun</a></li>
+            <li id="adj"><a href="#tdiv4" style="text-decoration: none; color: black " >Adjective</a></li>
+            <li id="adv"><a href="#tdiv5" style="text-decoration: none; color: black " >Adverb</a></li>
+            <li id="prepo"><a href="#tdiv6" style="text-decoration: none; color: black " >Preposition</a></li>
+            <li id="conj"><a href="#tdiv7" style="text-decoration: none; color: black " >Conjunction</a></li>
+            <li id="inter"><a href="#tdiv8" style="text-decoration: none; color: black " >Interjection</a></li>
+
+        </ol>
+
+            <ul id="ul1">
+                <li><img id="b1" src="images/baloon1_noun.png" alt=""></li>
+                <li><img id="b2" src="images/baloon2_verb.png" alt=""></li>
+                <li><img id="b3" src="images/balloon3_pronoun.png" alt=""></li>
+                <li><img id="b4" src="images/balloon_adjective.png" alt=""></li>
+            </ul>
+            <ul id="ul2">
+                <li><img id="b5" src="images/baloon5_adverb.png" alt=""></li>
+                <li><img id="b6" src="images/balloon6_preposition.png" alt=""></li>
+                <li><img id="b7" src="images/balloon7_conjunction.png" alt=""></li>
+                <li><img id="b8" src="images/balloon8_interjection.png" alt=""></li>
+            </ul>
+
+
+            </div>
+
+    <div id="tdiv1">
+        <h1 id="Tnoun">1.Noun</h1>
+
+        <p id="paranoun">
+            It is a word used to <br>name a person,animal,place,thing <br>or an abstract idea.<br><br>
+            <b>Examples:-</b><br>
+            dog,cat,garden,work,music,town,teacher,Jack,
+        </p>
+
+        <h3 id="nounex1">
+            The <i style="color: darkred">sun</i> shines
+        </h3>
+        <h3 id="nounex2">
+            <i style="color: darkred">Anna</i> goes to <i style="color: darkred">school</i>
+        </h3>
+
+        <img id="noungif" src="gif/sunshines.gif" alt="">
+        <img id="nounimg" src="images/school_noun.png" alt="">
+    </div>
+
+    <div id="tdiv2">
+        <h1 id="Tverb">2.Verb</h1>
+        <p id="paraverb">
+            A verb indicates thought & actions.<br>They show when the action happened,<br>how many things were acting & <br>can describe the action..<br><br>
+            <b>Examples:-</b><br>
+            run,go,have,invite,laugh,listen,playing,<br>singing,walk
+        </p>
+
+        <img id="verbgif" src="gif/dancing.gif" alt="">
+        <h3 id="verbex1">
+            The girl and boy are <i style="color: darkred">dancing.</i>
+        </h3>
+
+    </div>
+
+    <div id="tdiv3">
+        <h1 id="Tpronoun" >3.Pronoun</h1>
+        <p id="parapronoun">
+            A word which is used in the place of a noun.<br>It is <b>pro+nun</b> i.e.<br>it refers to a noun whose identity is made <br>clear previously.<br><br>
+            <b>Examples:-</b><br>
+            he,I,its,me,my,she,that,this,those,us,<br>who,whom,you
+        </p>
+
+        <img id="pronounimg" src="images/hungry%20boy.jpg" alt="">
+        <h3 id="pronounex">
+            Jack is hungry.<i style="color: darkred">He</i> wants to eat
+        </h3>
+    </div>
+
+    <div id="tdiv4">
+        <h1 id="Tadj" >4.Adjective</h1>
+        <p id="paraadj">
+            An adjective tells us more about the noun or pronoun i.e.<br>It gives us more information about <br>something or someone.<br><br>
+            <b>Examples:-</b><br>
+            angry,brave,healthy,little,old,smart,small,two,<br>some,good,big,interesting
+        </p>
+
+        <img id="adjimage" src="images/cat.png" alt="">
+
+        <h3 id="adjex1">
+            <i style="color: darkred">Thin</i> cat
+        </h3>
+        <h3 id="adjex2">
+            <i style="color: darkred">Fat</i> cat
+        </h3>
+    </div>
+    <div id="tdiv5">
+        <h1 id="Tadver">5.Adverb</h1>
+        <p id="paraadver">
+            An adeverb tells us more about <br>the action of the noun(not the noun itself).<br>It can add to the verb,<br>adjective or another adverb.<br><br>
+            <b>Examples:-</b><br>
+            badly,fully,hardly,nearly,never,quickly,<br>silently,well,very,really,almost
+        </p>
+
+        <img id="advgif" src="gif/running.gif" alt="">
+
+        <h3 id="advex1">
+            Runs <i style="color: darkred">quickly</i>
+        </h3>
+    </div>
+    <div id="tdiv6">
+        <h1 id="Tprepo">6.Preposition</h1>
+        <p id="paraprepo">
+            A word placed before noun or <br>a thing referring by it,<br>has with something else.<br><br>
+            <b>Examples:-</b><br>
+            above,before,except,from,in,near,of,<br>since,between,upon,while,with,to,<br>at,after,on
+        </p>
+        <img id="preposimg1" src="images/flower.png" alt="">
+        <img id="preposimg2" src="images/butterfly.png" alt="">
+
+        <h3 id="preposex1">
+            The butterfly flies <i style="color: darkred">near</i> the flower
+        </h3>
+    </div>
+    <div id="tdiv7">
+        <h1 id="Tconj">7.Conjunction</h1>
+        <p id="paraconj">
+            A word that joins <br>words,sentences and phrases.<br>It is also known as a joiner as it connects(conjoins)<br> parts of a sentence.<br><br>
+            <b>Examples:-</b><br>
+            and,or,but,so,after,before,unless,either,neither,<br>because,since
+        </p>
+
+        <img id="conjgif" src="gif/tired.gif" alt="">
+        <h3 id="conjex1">I'was tired <i style="color: darkred">so </i>I went to sleep</h3>
+
+    </div>
+    <div id="tdiv8">
+        <h1 id="Tinter">8.Interjection</h1>
+        <p id="parainter">
+            A spoken word that express<br>an emotion or a sudden feeling of mind.<br>It ends with the sign of exclamation(!).<br><br>
+            <b>Examples:-</b><br>
+            aha!,gosh!,great!,hey!,hi!,hooray!,<br>oh!,ouch!,wel!,phew!,ops!
+        </p>
+
+        <img id="interimg" src="images/ops.png" alt="">
+
+        <h3 id="interex"><i style="color: darkred">Ops!</i> I broke the glass</h3>
+    </div>
+
+
+</section>
+
+<div id="summarydiv">
+    <h1 id="summarytopic"><u>Summary of Lesson</u></h1>
+    <img  id="summaryimg" src="images/summaryimg.png" alt="">
+
+</div>
+
+<footer>
+    <a href="mailto:pubudikalwp@gmail.com"><h3 id="footercontent" style="font-family: cursive">contact me :pubudikalwp@gmail.com</h3></a>
+</footer>
+
+
+
+</body>
+
+
+</html>
