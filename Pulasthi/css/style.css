@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Georgia", sans-serif;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: #f1f1f1;
+    width: 30%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 70%;
+    height: 520px;
+    font-size: large;
+    border-top: none;
+}
+
+/* Style the top content */
+.topcontent {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.head {
+    margin: auto;
+}
+
+.helpdesc {
+    margin: auto;
+    font-size: large;
+    border: solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
