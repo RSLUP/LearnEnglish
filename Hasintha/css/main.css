@@ -1,6 +1,6 @@
 header .logo h1 {
     font-variant: small-caps;
-    font-size: 48px;
+    font-size: 60px;
     letter-spacing: -1px;
     color: white;
     
@@ -20,7 +20,7 @@ table .tableBorder td,h2,h3,h4 {
 
 }
 table .tableBorder td, tr{
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 20px;
     /*background-image: linear-gradient(-90deg, red, yellow);*/
 
