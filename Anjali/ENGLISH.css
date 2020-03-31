@@ -1,5 +1,5 @@
 body{
-	background: #b0e6f5;
+	background: #4ec7ff;
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
@@ -9,8 +9,8 @@ body{
 .pagetitle{
     margin: 0 auto;
     text-align: left;
-    height: 70px;
-	background:rgb(119, 152, 161);
+    height: 75px;
+	background:rgb(10, 13, 14);
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
     font-family: Ink Free;
     display: block;
@@ -21,11 +21,11 @@ body{
 	font-size: 13px;
     transition: .5s;
     margin-top: -15px;
-    border-bottom:5px solid rgb(120, 196, 168);
+    border-bottom:5px #a6ddf7;
 }
-.box2{
+.box1{
     width: 800px;
-    height: 450px;
+    height: 400px;
     padding: 40px;
     border-radius: 30px;
     position: absolute;
@@ -40,13 +40,13 @@ body{
    margin-left: auto;
    background-image: url("dark.jpg");
   }
-  .box2 h1{
+  .box1 h1{
     color: white;
     text-transform: uppercase;
     font-weight: 500;
     font-style: normal;
   }
-  .box2 input[type = "button"]{
+  .box1 input[type = "button"]{
     border:0;
     background: none;
     display: block;
@@ -60,7 +60,7 @@ body{
     transition: 0.25s;
     cursor: pointer;
   }
-  .box2 input[type = "button"]:hover{
+  .box1 input[type = "button"]:hover{
     background: #2ecc71;
     color: white;
    
@@ -192,7 +192,7 @@ body{
    margin-left: auto;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
-.articles-box{
+.prepositions-box{
     padding: 70px 0px;
     width: 1000px;
     height: 350px;
@@ -209,7 +209,7 @@ body{
    margin-left: auto;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
-.prepositions-box{
+.conjunctions-box{
     padding: 70px 0px;
     width: 1000px;
     height: 350px;
@@ -226,7 +226,7 @@ body{
    margin-left: auto;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
-.conjunctions-box{
+.interjections-box{
     padding: 70px 0px;
     width: 1000px;
     height: 350px;
@@ -243,23 +243,6 @@ body{
    margin-left: auto;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
-.interjections-box{
-    padding: 70px 0px;
-    width: 1000px;
-    height: 350px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background:rgb(255, 255, 255);
-    color: rgb(20, 20, 20);
-    text-align: center;
-    margin-top:4750px;
-    border: 1px;
-   margin-left: auto;
-   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
-}
 footer {
     left: 0;
     bottom: 0;
@@ -268,5 +251,5 @@ footer {
     background-color: rgb(95, 95, 95);
     color: white;
     text-align: center;
-    margin-top:5250px;
+    margin-top:4750px;
  }
