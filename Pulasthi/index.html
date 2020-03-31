@@ -5,70 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE EIGHT PARTS OF SPEECH</title>
-    <style>
-        * {
-            box-sizing: border-box
-        }
-
-        body {
-            font-family: "Georgia", sans-serif;
-        }
-
-        /* Style the tab */
-        .tab {
-            float: left;
-            background-color: #f1f1f1;
-            width: 30%;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-            display: block;
-            color: black;
-            padding: 22px 16px;
-            width: 100%;
-            border: none;
-            outline: none;
-            text-align: left;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-            float: left;
-            padding: 0px 12px;
-            border: 1px solid rgb(0, 0, 0);
-            width: 70%;
-            height: 520px;
-            font-size: large;
-            border-top: none;
-        }
-
-        /* Style the top content */
-        .topcontent {
-            text-align: center;
-            background-color: black;
-            color: white;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding-top: 26px;
-            padding-bottom: 26px;
-        }
-
-        .head {
-            margin: auto;
-        }
-        .helpdesc {
-            margin: auto;
-            font-size: large;
-            border: solid 1px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 8px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -77,14 +14,15 @@
     </div>
 
     <div class="maincontent">
-        <div class="help"><p class="helpdesc">Click any "Part of Speech" on left side for view description</p></div>
+        <div class="help">
+            <p class="helpdesc">Click any "Part of Speech" on left side for view description</p>
+        </div>
         <div class="tab">
-            <button style="background-color: #85e1ee;" class="tablinks" 
-                onclick="openPart(event, 'NOUN')" id="defaultOpen">NOUN</button>
+            <button style="background-color: #85e1ee;" class="tablinks" onclick="openPart(event, 'NOUN')"
+                id="defaultOpen">NOUN</button>
             <button style="background-color: #fdff7a;" class="tablinks"
                 onclick="openPart(event, 'ADVERB')">ADVERB</button>
-            <button style="background-color: #fe7e7b;" class="tablinks" 
-                onclick="openPart(event, 'VERB')">VERB</button>
+            <button style="background-color: #fe7e7b;" class="tablinks" onclick="openPart(event, 'VERB')">VERB</button>
             <button style="background-color: #80fe83;" class="tablinks"
                 onclick="openPart(event, 'ADJECTIVE')">ADJECTIVE</button>
             <button style="background-color: #fcc17f;" class="tablinks"
@@ -170,25 +108,7 @@
             </ul>
         </div>
     </div>
-
-    <script>
-        function openPart(evt, partName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(partName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
+    <script type="text/javascript" src="js/functions.js"></script>  
 </body>
 
 </html>
