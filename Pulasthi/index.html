@@ -52,8 +52,8 @@
         padding: 0px 12px;
         border: 1px solid #ccc;
         width: 70%;
-        border-left: none;
-        height: 300px;
+        border-left: thin;
+        height: 500px;
         }
     </style>
 </head>
@@ -63,14 +63,14 @@
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'NOUN')" id="defaultOpen">NOUN</button>
-  <button class="tablinks" onclick="openCity(event, 'ADVERB')">ADVERB</button>
-  <button class="tablinks" onclick="openCity(event, 'VERB')">VERB</button>
-  <button class="tablinks" onclick="openCity(event, 'ADJECTIVE')">ADJECTIVE</button>
-  <button class="tablinks" onclick="openCity(event, 'PREPOSITION')">PREPOSITION</button>
-  <button class="tablinks" onclick="openCity(event, 'CONJUNCTION')">CONJUNCTION</button>
-  <button class="tablinks" onclick="openCity(event, 'PRONOUN')">PRONOUN</button>
-  <button class="tablinks" onclick="openCity(event, 'INTERJECTION')">INTERJECTION</button>
+  <button class="tablinks" onclick="openPart(event, 'NOUN')" id="defaultOpen">NOUN</button>
+  <button class="tablinks" onclick="openPart(event, 'ADVERB')">ADVERB</button>
+  <button class="tablinks" onclick="openPart(event, 'VERB')">VERB</button>
+  <button class="tablinks" onclick="openPart(event, 'ADJECTIVE')">ADJECTIVE</button>
+  <button class="tablinks" onclick="openPart(event, 'PREPOSITION')">PREPOSITION</button>
+  <button class="tablinks" onclick="openPart(event, 'CONJUNCTION')">CONJUNCTION</button>
+  <button class="tablinks" onclick="openPart(event, 'PRONOUN')">PRONOUN</button>
+  <button class="tablinks" onclick="openPart(event, 'INTERJECTION')">INTERJECTION</button>
 </div>
 
 <div id="NOUN" class="tabcontent">
@@ -118,7 +118,7 @@
   </div>
   
 <script>
-function openCity(evt, cityName) {
+function openPart(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
