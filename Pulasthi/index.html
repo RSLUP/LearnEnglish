@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,132 +9,162 @@
         * {
             box-sizing: border-box
         }
+
         body {
             font-family: "Lato", sans-serif;
         }
 
         /* Style the tab */
         .tab {
-        float: left;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-        width: 30%;
-        height: 300px;
+            float: left;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 300px;
         }
 
         /* Style the buttons inside the tab */
         .tab button {
-        display: block;
-        background-color: inherit;
-        color: black;
-        padding: 22px 16px;
-        width: 100%;
-        border: none;
-        outline: none;
-        text-align: left;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 17px;
+            display: block;
+            background-color: white;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
         }
 
         /* Change background color of buttons on hover */
         .tab button:hover {
-        background-color: #ddd;
+            background-color: #ddd;
         }
 
         /* Create an active/current "tab button" class */
         .tab button.active {
-        background-color: #ccc;
+            background-color: #ccc;
         }
 
         /* Style the tab content */
         .tabcontent {
-        float: left;
-        padding: 0px 12px;
-        border: 1px solid #ccc;
-        width: 70%;
-        border-left: thin;
-        height: 500px;
+            float: left;
+            padding: 0px 12px;
+            /*border: 1px solid #ccc;*/
+            width: 70%;
+            /*border-left: thin;*/
+            height: 520px;
         }
     </style>
 </head>
+
 <body>
 
-<h2 style="text-align: center;">THE EIGHT PARTS OF SPEECH</h2>
+    <h2 style="text-align: center;">THE EIGHT PARTS OF SPEECH</h2>
 
 
-<div class="tab">
-  <button class="tablinks" onclick="openPart(event, 'NOUN')" id="defaultOpen">NOUN</button>
-  <button class="tablinks" onclick="openPart(event, 'ADVERB')">ADVERB</button>
-  <button class="tablinks" onclick="openPart(event, 'VERB')">VERB</button>
-  <button class="tablinks" onclick="openPart(event, 'ADJECTIVE')">ADJECTIVE</button>
-  <button class="tablinks" onclick="openPart(event, 'PREPOSITION')">PREPOSITION</button>
-  <button class="tablinks" onclick="openPart(event, 'CONJUNCTION')">CONJUNCTION</button>
-  <button class="tablinks" onclick="openPart(event, 'PRONOUN')">PRONOUN</button>
-  <button class="tablinks" onclick="openPart(event, 'INTERJECTION')">INTERJECTION</button>
-</div>
+    <div class="tab">
+        <button style="background-color: #85e1ee;" class="tablinks" onclick="openPart(event, 'NOUN')" id="defaultOpen">NOUN</button>
+        <button style="background-color: #fdff7a;" class="tablinks" onclick="openPart(event, 'ADVERB')">ADVERB</button>
+        <button style="background-color: #fe7e7b;" class="tablinks" onclick="openPart(event, 'VERB')">VERB</button>
+        <button style="background-color: #80fe83;" class="tablinks" onclick="openPart(event, 'ADJECTIVE')">ADJECTIVE</button>
+        <button style="background-color: #fcc17f;" class="tablinks" onclick="openPart(event, 'PREPOSITION')">PREPOSITION</button>
+        <button style="background-color: #d6d6d6;" class="tablinks" onclick="openPart(event, 'CONJUNCTION')">CONJUNCTION</button>
+        <button style="background-color: #d384ff;" class="tablinks" onclick="openPart(event, 'PRONOUN')">PRONOUN</button>
+        <button style="background-color: #ff78d7;" class="tablinks" onclick="openPart(event, 'INTERJECTION')">INTERJECTION</button>
+    </div>
 
-<div id="NOUN" class="tabcontent">
-  <h3>NOUN</h3>
-  <ul>
-    <li>A noun names a person, place, things or idea.</li>
-    <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
-    <li>Example Sentence: The teacher gives us a lot of homework.</li>
-  </ul>
-</div>
+    <div id="NOUN" class="tabcontent">
+        <h3>NOUN</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-<div id="ADVERB" class="tabcontent">
-  <h3>ADVERB</h3>
-  
-</div>
+    <div id="ADVERB" class="tabcontent">
+        <h3>ADVERB</h3>
+        <ul>
+            <li>An adverb tells how often, how, when, where. It can describe a verb, an adjective or an adverb.</li>
+            <li>Examples: frequently, seldom, sometimes, early, soon, etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-<div id="VERB" class="tabcontent">
-  <h3>VERB</h3>
-  
-</div>
+    <div id="VERB" class="tabcontent">
+        <h3>VERB</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-<div id="ADJECTIVE" class="tabcontent">
-    <h3>ADJECTIVE</h3>
-    
-  </div>
+    <div id="ADJECTIVE" class="tabcontent">
+        <h3>ADJECTIVE</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-  <div id="PREPOSITION" class="tabcontent">
-    <h3>PREPOSITION</h3>
-    
-  </div>
+    <div id="PREPOSITION" class="tabcontent">
+        <h3>PREPOSITION</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-  <div id="CONJUNCTION" class="tabcontent">
-    <h3>CONJUNCTION</h3>
-    
-  </div>
+    <div id="CONJUNCTION" class="tabcontent">
+        <h3 class="head">CONJUNCTION</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-  <div id="PRONOUN" class="tabcontent">
-    <h3>PRONOUN</h3>
-    
-  </div>
+    <div id="PRONOUN" class="tabcontent">
+        <h3>PRONOUN</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-  <div id="INTERJECTION" class="tabcontent">
-    <h3>INTERJECTION</h3>
-    
-  </div>
-  
-<script>
-function openPart(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+    <div id="INTERJECTION" class="tabcontent">
+        <h3>INTERJECTION</h3>
+        <ul>
+            <li>A noun names a person, place, things or idea.</li>
+            <li>Examples: pen, house, book, teacher, students, daughter, thief, Mary, and etc.</li>
+            <li>Example Sentence: The teacher gives us a lot of homework.</li>
+        </ul>
+    </div>
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+    <script>
+        function openPart(evt, partName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(partName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
+
 </html>
