@@ -1,55 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title> Welcome to EnglishHub</title>
    <link rel="stylesheet" type="text/css" href="sytle.css">
    <script type="text/javascript" src="javascript.js"> </script>
 
-  <!--<script type = "text/javascript">
-
-    function nounHighlight()
-    {
-        document.getElementById("noun1").style.color='yellow';
-        document.getElementById("noun2").style.color='yellow'; 
-        document.getElementById("noun3").style.color='yellow';    
-    }
-    function pronounHighlight()
-    {
-        document.getElementById("pro1").style.color='salmon';
-        document.getElementById("pro2").style.color='salmon';
-    }
-   function verbsHighlight()
-    {
-        document.getElementById("ver1").style.color='tan';
-        document.getElementById("ver2").style.color='tan';
-    }
-    function adjectiveHighlight()
-    {
-        document.getElementById("ad1").style.color='violet';   
-        document.getElementById("ad2").style.color='violet';  
-    }
-    function adverbsHighlight()
-    {
-        document.getElementById("adv1").style.color='pink';  
-        document.getElementById("adv2").style.color='pink'; 
-        document.getElementById("adv3").style.color='pink';  
-    }
-    function prepositionsHighlight()
-    {
-        document.getElementById("prepo1").style.color='springgreen';   
-    }
-    function conjunctionsHighlight()
-    {
-        document.getElementById("con1").style.color='teal';   
-    }
-    function interjectionsHighlight()
-    {
-        document.getElementById("in1").style.color='yellowgreen';   
-    }
-
-
-   </script>-->
-  
 </head>
 <body>
   <div class = "image"></div>
@@ -59,7 +16,7 @@
         </marquee></font></h2></div><br><br><br><br><br>
 
     <div id = "intro">
-      <p><font style = "color:dodgerblue; font-family:cursive;font-size:17.5;"><hr>
+      <p><font style = "color:dodgerblue; font-family:cursive;"><hr>
            EnglishHub seeks to develop in students a wide range of practical English Communication Skills needed for effective social 
             interaction in day to day life and work  to achieve this aim EnglishHub provides the participants with interesting learning opportunities to develop their practice in <b>Grammar 
             ,Vocabulary, Speech, Listening, Writing, Reading and Leadership and engage in effective, accurate and fluent Communication</b> in different contexts.
@@ -93,7 +50,7 @@
        </tr>
    </table>
   
-  <h3><font size="5.5">Parts of a speech...</font></h3>
+  <h3><font size="6.7">Parts of a speech...</font></h3>
   <table>
       <tr>
         <td width="800"><div class="parts">
@@ -117,12 +74,11 @@
       </tr>
   </table>
 
-  <h2><b>1.NOUN</b></h2>
- 
-    <table class="each">
+  <h1><b>1.NOUN</b></h1>
+    <table class="each" >
         <tr>
-            <td class="eachTD1">
-                <div class="transNoun" >  
+           
+            <td class="eachTD1" ID="transNoun">                
               <ul>
                   <li><mark>A noun is a word for a <em><b>person/animal, place, things, or idea.</mark></b></em></li>
                   <li>Nouns are often used with an article (the, a, an), but not always.</li>
@@ -131,28 +87,24 @@
                       a noun can be a subject, direct object, indirect object, subject complement, or object of a preposition.</li>
                   </ul>
                   <br>  Anna, Bob, Garden, Music, Kandy, Cat, work, teacher...
-  
                   <h4>The young <span id="noun1">girl</span> brought me a very long <span id="noun2">letter</span> from the <span id="noun3">teacher</span>, and then she quickly disappeared. Oh my!</h4>
-                  <button type = "button" class="btnHighlight" onclick = "nounHighlight();">Highlight nouns</button><br>
+                  <button type = "button" class="btnHighlight" onclick = "nounHighlight();">Highlight nouns</button>
                   <button type = "button" class="btnPop" onclick = "nounExamples();">Show Me More Examples</button>
-                </div>
-                </td>
+               
+                </td> 
             <td class="eachTD2">
               <img src="noun.jpg" width="470" height="300"/>
             </td>
         </tr>
     </table> <br><br>
 
- 
-
-    <h2><font color="black">2.PRONOUN</font></h2>
+    <h1><font color="black">2.PRONOUN</font></h1>
     <table class="each">
         <tr>
             <td class="eachTD2">
                 <img src="pronoun.jpg" height="300"/>
               </td>
-            <td class="eachTD1">
-                <div class="transPro">
+            <td class="eachTD1" id="transPro">
               <ul>
                   <li> <span style="background-color:salmon;"> A pronoun is a word used in <em><b>place of a noun.</b></em></span></li>
                   <li> A pronoun is usually substituted for a specific noun, which is called its antecedent.</li>
@@ -164,29 +116,22 @@
                           <li>POSSESSIVE pronouns : ownership</li>
                           <li>REFLEXIVE pronouns : to emphasize another noun or pronoun</li>
                           <li>RELATIVE pronouns : a subordinate clause;</li>
-                          <li>DEMONSTRATIVE pronouns : identify point to, or refer to nouns.</li>
-                          
-            
+                          <li>DEMONSTRATIVE pronouns : identify point to, or refer to nouns.</li>                                   
                       </ul>
-                      </ul>
-                  
+                      </ul>               
                   <br>  He, Its, me, she, that, this, those, us, who, whom, you...
                   <h4>The young girl brought <span id="pro1"> me</span> a very long letter from the teacher, and then<span id="pro2">  she</span> quickly disappeared. Oh my!</h4>
-                  <button type = "button" class="btnHighlight"onclick = "pronounHighlight();">Highlight pronouns</button><br>
+                  <button type = "button" class="btnHighlight"onclick = "pronounHighlight();">Highlight pronouns</button>
                   <button type = "button" class="btnPop" onclick = "pronounExamples();">Show Me More Examples</button>
-                </div>
                 </td>
          
         </tr>
     </table><br><br>
 
- 
-
-    <h2>3.VERBS</h2>
+    <h1>3.VERBS</h1>
     <table class="each">
         <tr>
-            <td class="eachTD1">
-                <div class="transVerbs">
+            <td class="eachTD1" id="transVerbs">
               <ul>
                   <li> <span style="background-color:tan"> A verb expresses <em><b>action or being.</b></em></span></li>
                   <li> There is a main verb and sometimes one or more helping verbs. <br>
@@ -196,9 +141,8 @@
                   </ul>
                   <br>  run, go, swim, study, understood, will do, sing, walk...
                   <h4>The young girl<span id="ver1"> brought</span>  me a very long letter from the teacher, and then she quickly <span id="ver2">disappeared</span>. Oh my!</h4>
-                  <button type = "button"  class="btnHighlight" onclick = "verbsHighlight();">Highlight verbs</button><br>
+                  <button type = "button"  class="btnHighlight" onclick = "verbsHighlight();">Highlight verbs</button>
                   <button type = "button" class="btnPop"onclick = "verbsExamples();">Show Me More Examples</button>
-                </div>
                 </td>
             <td class="eachTD2">
              <img src="verbs.jpg" width="450" height="300"/>
@@ -206,16 +150,13 @@
         </tr>
     </table><br><br>
 
-  
-
-    <h2>4.ADJECTIVES</h2>
+    <h1>4.ADJECTIVES</h1>
     <table class="each">
         <tr>
             <td class="eachTD2">
                 <img src="adjective.jpg" width="400" height="400"/>
                </td>
-            <td class="eachTD1">
-                <div class="transAdjectives">
+            <td class="eachTD1" id="transAdjectives">
               <ul>
                   <li><span style="background-color:violet;"> An adjective <em><b>modifies or describes</b></em>  a noun or pronoun. </span>   </li>
                   <li>  It usually answers the question of which one, what kind, or how many. </li>
@@ -224,21 +165,16 @@
                   
                   <br> good, pretty, comfortable,angry, brave, healthy...
                   <h4>The <span id="ad1"> young </span>girl brought me a very <span id="ad2"> long</span> letter from the teacher, and then she quickly disappeared. Oh my!</h4>
-                  <button type = "button" class="btnHighlight" onclick = "adjectiveHighlight();">Highlight adjectives</button><br>
+                  <button type = "button" class="btnHighlight" onclick = "adjectiveHighlight();">Highlight adjectives</button>
                   <button type = "button"  class="btnPop"onclick = "adjectiveExamples();">Show Me More Examples</button>
-                </div>
-                </td>
-           
+                </td>          
         </tr>
     </table><br><br>
 
-  
-
-    <h2>5.ADVERBS</h2>
+    <h1>5.ADVERBS</h1>
     <table class="each">
         <tr>
-            <td class="eachTD1">
-                <div class="transAdverbs">
+            <td class="eachTD1" id="transAdverbs">
               <ul>
                   <li><span style="background-color:pink;"> An adverb <em><b>modifies or describes </b></em>a verb, an adjective, or another adverb.</span></li>
                   <li>It usually answers the questions of when, where, how, why, under what conditions,
@@ -247,9 +183,8 @@
                   </ul>
                   <br>Actively, beautifully, quickly, carefully,well,nearly...
                   <h4>The young girl brought me a <span id="adv1">very</span>long letter from the teacher, and <span id="adv2">then</span> she <span id="adv3">quickly</span> disappeared. Oh my!</h4>
-                  <button type = "button" class="btnHighlight" onclick = "adverbsHighlight();">Highlight adverbs</button><br>
+                  <button type = "button" class="btnHighlight" onclick = "adverbsHighlight();">Highlight adverbs</button>
                   <button type = "button" class="btnPop" onclick = "adverbsExamples();">Show Me More Examples</button>
-                </div>
                 </td>
             <td class="eachTD2">
               <img src="adverbs.jpg" width="400" height="300"/>
@@ -257,16 +192,13 @@
         </tr>
     </table><br><br>
 
-     
-
-    <h2>6.PREPOSITION</h2>
+  <h1>6.PREPOSITION</h1>
     <table class="each">
         <tr>
             <td class="eachTD2">
                 <img src="prepositions.jpg"  width="450" height="350"/>
                </td>
-            <td class="eachTD1">
-                <div class="transPreoposition">
+            <td class="eachTD1" id="transPreoposition">
               <ul>
                   <li><span style="background-color:springgreen;"> A preposition is a word placed before a noun or pronoun to form a phrase modifying another word in the sentence.    </span></li>
                   <li>Therefore a preposition is always part of a prepositional phrase.</li>
@@ -274,22 +206,17 @@
                   </ul>
                   <br>in, on, under, near, with, without,from, by...
                   <h4>The young girl brought me a very long letter<span id="prepo1">  from </span>the teacher, and then she quickly disappeared. Oh my!</h4>
-                  <button type = "button" class="btnHighlight" onclick = "prepositionsHighlight();">Highlight preposition</button><br>
+                  <button type = "button" class="btnHighlight" onclick = "prepositionsHighlight();">Highlight preposition</button>
                   <button type = "button" class="btnPop" onclick = "prepositionsExamples();">Show Me More Examples</button>
-                </div>
                 </td>
           
         </tr>
     </table><br><br>
    
-
-  
-<h2>7.CONJUNCTION</h2>    
+  <h1>7.CONJUNCTION</h1>    
         <table class="each">
-            <tr>
-             
-                <td class="eachTD1">
-                <div class="transConjunctions">
+            <tr>            
+                <td class="eachTD1" id="transConjunctions">
                   <ul>
                       <li> <span style="background-color:teal;"> A conjunction <am><b>joins words, phrases, or clauses. </b></am>  </span></li>
                       <li>It indicates the relationship between the elements joined.</li>
@@ -299,27 +226,22 @@
                   </ul>
                       <br>and, or ,but, so, after, before,unless...
                       <h4>The young girl brought me a very long letter from the teacher, <span id="con1">and</span> then she quickly disappeared. Oh my!</h4>
-                      <button type = "button" class="btnHighlight" onclick = "conjunctionsHighlight();">Highlight conjunctions</button><br>
+                      <button type = "button" class="btnHighlight" onclick = "conjunctionsHighlight();">Highlight conjunctions</button>
                       <button type = "button" class="btnPop" onclick = "conjunctionsExamples();">Show Me More Examples</button>
-                    </div>
-                    </td>                
-            
+                    </td>                           
                  <td class="eachTD2">
                   <img src="conjunctions.png" width="500" height="300"/>
                 </td>
             </tr>
         </table><br><br>
   
-  
-    
-        <h2>8.INTERJECTION</h2>
+ <h1>8.INTERJECTION</h>
         <table class="each">
             <tr>
                 <td class="eachTD2">
                     <img src="interjection.png" width="370" height="400"/>
                    </td>
-                <td class="eachTD1">
-                    <div class="transInterjection">
+                <td class="eachTD1"  id="transInterjection">
                   <ul>
                       <li>  <span style="background-color:yellowgreen;"> Interjection is a word used to <em><b>express emotion. </b></em> </mark></span></li>
                       <li>It is often followed by an exclamation point.</li>
@@ -327,18 +249,15 @@
                 
                       <br>aha!, Oh!, hey!, hi!....
                       <h4>The young girl brought me a very long letter from the teacher, and then she quickly disappeared. <span id="in1"> Oh my!</span></h4>
-                      <button type = "button" class="btnHighlight" onclick = "interjectionsHighlight();">Highlight interjection</button><br>
+                      <button type = "button" class="btnHighlight" onclick = "interjectionsHighlight();">Highlight interjection</button>
                       <button type = "button" class="btnPop"onclick = "interjectionsExamples();">Show Me More Examples</button>
-                    </div>
-                  </td>
-              
+                  </td>             
             </tr>
         </table>
  
-  
-  <h2>summary...</h2>
+  <h2><font size="6.5">summary...</font></h2>
   <div>
-      <center><img src="summary.jpg" width="650" height="700"/></center>
+      <center><img src="summary2.jpg" width="700" height="750"/></center>
   </div>
 
   <footer class="footer" class="container">

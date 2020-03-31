@@ -10,7 +10,6 @@ body
 	background-position: center;
 	height: 500px;
 	background-size: cover;
-
 }
 #intro
 {
@@ -32,7 +31,6 @@ body
 	height: 50px;
 	width:500px;
 	background-size: cover;
-
 }
 .parts
 {
@@ -45,7 +43,6 @@ body
 	width: 250;
 	-webkit-filter: grayscale(100%) !important;
 	filter: grayscale(100%) !important;
-
 }
 .parts img:hover
 {
@@ -62,8 +59,6 @@ body
 {
 	font-size: 18px;
 	line-height: 30px;
-	
-
 }
 .eachTD1
 {
@@ -72,10 +67,9 @@ body
 .eachTD2
 {
 	width:500px;
-}
-footer {
-
 	
+}
+footer {	
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -84,51 +78,50 @@ footer {
 	color: white;
 	text-align: center;
  }
- .transNoun
+ #transNoun
  {
-	background-color: antiquewhite;
+	background-color: lightcoral;
 	 opacity: 0.7;
  }
- .transPro
+ #transPro
  {
 	 background-color: tan;
 	 opacity: 0.75;
  }
- .transVerbs
+ #transVerbs
  {
 	background-color: rosybrown;
 	 opacity: 0.75;
  }
- .transAdjectives
+ #transAdjectives
  {
 	background-color: pink;
 	 opacity: 0.7;
  }
- .transAdverbs
+ #transAdverbs
  {
-	background-color: plum;
+	background-color: antiquewhite;
 	 opacity: 0.75;
  }
- .transPreoposition
+ #transPreoposition
  {
 	background-color: palegreen ;
 	 opacity: 0.75;
  }
- .transConjunctions
+ #transConjunctions
  {
 	  background-color: paleturquoise;
 	 opacity: 0.75;
  }
- .transInterjection
+ #transInterjection
  {
 	background-color: olivedrab;
 	 opacity: 0.8;
  }
-
  .btnPop
  {
 	background-color: black;
-	padding: .7em;
+	padding: .5em;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 6px;
@@ -141,7 +134,7 @@ footer {
  .btnPop:hover
  {
 	border: none;
-	background:silver;
+	background: crimson;
 	box-shadow: 0px 0px 1px #777;
  }
 .btnHighlight
@@ -160,7 +153,7 @@ footer {
 .btnHighlight:hover
 {
 	border: none;
-	background: silver;
+	background: teal;
 	box-shadow: 0px 0px 1px #777;
 }
  
