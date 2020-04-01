@@ -86,5 +86,25 @@ function nounHighlight()
     }
     function displaySPTFullex()
     {
-        document.getElementById("SPTF").innerHTML = "I came to home very happily <br/> I wanted to follow an English tutorials <br/> We waited in the lobby for some time <br/> I was born in Sri Lanka";
+        document.getElementById("SPTF").innerHTML = "I came home very happily <br/> I wanted to follow an English tutorials <br/> We waited in the lobby for some time <br/> I was born in Sri Lanka";
+    }
+    function displaySPTBeEx()
+    {
+        document.getElementById("SPTB").innerHTML = "She wasn't at the lecture <br/> The girls were so pretty <br/> There were lot of things at the bookshop <br/> I was at a meeting";
+    }
+    function displaySFTEx()
+    {
+        document.getElementById("SFT").innerHTML = "I am going to go for a bath <br/> I will have my parcel this evening <br/> We are going to have a party next weekend<br/> I will give your book tomorror";
+    }
+    function displayPrCTEx()
+    {
+        document.getElementById("PrCT").innerHTML = "Some students are dancing in the class  <br/> I can see a boy reading a book<br/> We are listening to the radio now<br/> She is looking at something";
+    }
+    function displayPCTEx()
+    {
+        document.getElementById("PCT").innerHTML = "I was cutting vegetables <br/>They were working in the garden<br/> She was watering plants<br/> It was playing with its' toy";
+    }
+    function displayFCTEx()
+    {
+        document.getElementById("FCT").innerHTML = "I will be going Colombo tomorrow<br/She will be doing a job at that time<br/>They will be studying at a university<br/> They will be singing at the contest";
     }
