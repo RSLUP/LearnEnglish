@@ -21,7 +21,7 @@ html {
               color:#E9967A;
               padding: 80px 0px 10px 0px;
         font-family: Cambria;
-        font-weight: bold;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
               
   }
   
@@ -76,7 +76,7 @@ html {
               font-size:15px;
               text-align:center;
               color:white;
-  
+            
               
       }
   
@@ -97,7 +97,8 @@ html {
     height:53px;
     background-color:#CD5C5C;
     position: fixed;
-    top: 0;
+    padding-top:10px;
+    top:0;
     
    
   }
@@ -105,8 +106,8 @@ html {
   .menuTD
   {
     text-align: center;
-    width:120px;
-    height:50px;
+    width:180px;
+    height:40px;
     color: #E9967A;
     font-family: Franklin Gothic Medium;
   
@@ -115,11 +116,11 @@ html {
   .menuTD:hover
   {
     text-align: center;
-    width:120px;
-    height:50px;
+    width:180px;
+    height:40px;
     color:white;
-    background-color:#F08080;
-  
+    
+    
     
   }
   .cc
@@ -130,39 +131,39 @@ html {
   
   #section0 {
     height:700px;
-    background-color:#F2F3F4;
+    background-color:white;
   }
   
   #section1 {
     height:700px;
-    background-color:white;
+    background-color:#F2F3F4;
   }
   
   #section2 {
     height: 700px;
-    background-color: #F2F3F4;
+    background-color: white;
   }
   #section3 {
     height: 700px;
-    background-color: white;
+    background-color: #F2F3F4;
   }
   
   #section4 {
     height: 700px;
-    background-color: #F2F3F4;
+    background-color: white;
   }
   #section5 {
     height: 700px;
-    background-color: white;
+    background-color: #F2F3F4;
   }
   
   #section6 {
     height: 700px;
-    background-color: #F2F3F4;
+    background-color: white;
   }
   #section7 {
     height: 700px;
-    background-color: white;
+    background-color: #F2F3F4;
   }
   
   #section8 {
@@ -217,4 +218,51 @@ html {
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #CD5C5C;
+  }
+
+
+  /* dropdown list*/
+
+  .dropbtn {
+    background-color: #CD5C5C;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #CD5C5C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: small;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #F08080}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #CD5C5C;
   }
