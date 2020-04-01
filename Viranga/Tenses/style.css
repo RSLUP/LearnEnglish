@@ -38,7 +38,7 @@ html
     color: white;
     display: none;
     padding: 100px 20px;
-    height: 100%;
+    height: auto;
     animation: fadeEffect 0.5s; 
 }
   @keyframes fadeEffect 
@@ -124,6 +124,12 @@ header
     text-align: justify;
     font-size:19px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#h3
+{
+    text-align: center;
+    font-size:23px; 
 }
 
 /* 12 parts */
