@@ -1,12 +1,13 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
-html {
+
+html 
+{
     height: 100%;
     margin: 0;
-    font-family: Arial;
-  }
+}
   
   /* Style tab links */
-  .tablink {
+.tablink
+{
     background-color: #555;
     color: white;
     float: left;
@@ -17,25 +18,32 @@ html {
     font-size: 20px;
     width: 25%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+}
   
-  .tablink:hover {
+.tablink:hover 
+{
     background-color: rgb(1, 128, 167);
-  }
+}
   
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
+  /* Style the tab content  */
+.tabcontent 
+{
     color: white;
     display: none;
     padding: 100px 20px;
     height: 100%;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-  }
+    animation: fadeEffect 0.5s; 
+}
+  @keyframes fadeEffect 
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
   
   #Simple {background-color: rgb(97, 37, 37);}
   #Continuous{background-color: rgb(49, 110, 49);}
   #Perfect{background-color: rgb(65, 65, 134);}
-  #PerfectContinuous{background-color: rgb(110, 84, 36);}
+  #PerfectContinuous{background-color: rgb(122, 124, 6);}
   
 header
 { 
@@ -89,13 +97,77 @@ header
     background-attachment: scroll;
     background-size: 100%;
 }
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+
+
+
+
+/*sub headings*/
 #subheads 
 {
     font-size:25px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    text-decoration: underline;
 }
+
+/*paragraphs*/
+#para 
+{
+    padding:10px;
+    text-align: justify;
+    font-size:19px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 12 parts */
+.feature 
+{ 
+    background:rgb(255, 255, 255);
+    padding:0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.feature-inner 
+{ 
+    margin:auto;
+    padding:0px;
+    width:1200px;
+    height:70px;
+    background:rgb(120, 121, 126); 
+}
+.feature-inner h1 
+{
+    color:#9b0606;
+    font-size:40px;
+}
+.feature-inner h1 span 
+{
+    color: #ffc300;
+}
+/*----------------------------------------------------- */
+
+/*list*/
+#list
+{
+    padding:10px;
+}
+.column 
+    {
+    float: left; 
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* images */
+#img
+{
+    width: 50%;
+    height: auto;
+}
+
