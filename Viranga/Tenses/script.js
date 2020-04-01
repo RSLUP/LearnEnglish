@@ -20,9 +20,23 @@ function openPage(pageName, elmnt, color)
   
     // Add the specific color to the button used to open the tab content
     elmnt.style.backgroundColor = color;
-
-    // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
 }
   
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var tablink = document.getElementById("tablink");
+
+// Get the offset position of the navbar
+var sticky = tablink.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    tablink.classList.add("sticky")
+  } else {
+    tablink.classList.remove("sticky");
+  }
+}
  

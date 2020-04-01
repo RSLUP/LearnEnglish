@@ -3,9 +3,11 @@ html
 {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
   
   /* Style tab links */
+
 .tablink
 {
     background-color: #555;
@@ -19,7 +21,12 @@ html
     width: 25%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-  
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .tablink:hover 
 {
     background-color: rgb(1, 128, 167);
@@ -131,7 +138,7 @@ header
     margin:auto;
     padding:0px;
     width:1200px;
-    height:70px;
+    height:50px;
     background:rgb(120, 121, 126); 
 }
 .feature-inner h1 
@@ -150,7 +157,7 @@ header
 {
     padding:10px;
 }
-.column 
+.column2 
     {
     float: left; 
     width: 50%;
@@ -163,11 +170,8 @@ header
     display: table;
     clear: both;
 }
-
-/* images */
-#img
-{
-    width: 50%;
-    height: auto;
-}
-
+.column3 {
+    float: left;
+    width: 33.33%;
+  }
+  
