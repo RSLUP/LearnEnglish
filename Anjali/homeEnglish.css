@@ -3,25 +3,59 @@ body{
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	/*background-image: url("back.jpg");*/
+	background-image: url("back.jpg");
 
 }
 .pagetitle{
     margin: 0 auto;
-    text-align: left;
-    height: 75px;
-	background:rgb(10, 13, 14);
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
-    font-family: Ink Free;
     display: block;
-	padding: 0 15px;
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-	line-height: 70px;
-	font-size: 13px;
-    transition: .5s;
-    margin-top: -15px;
-    border-bottom:5px #a6ddf7;
+	
+}
+nav h1{
+  transition:1s;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-family: Ink Free;
+  font-size: 25px;
+  margin-left: 10px;
+}
+ nav{
+	height: 80px;
+  background:rgb(10, 13, 14);
+  box-shadow: 0 10px 15px rgba(0,0,0,.1);
+  border-bottom:5px #a6ddf7;
+	line-height: 75px;
+  margin-top: -15px;
+  
+}
+ nav ul{
+	transition:.5s;
+	padding: 0;
+	margin: 0;
+	float: right;
+  margin-right: 30px;
+  margin-top:-90px;
+  font-family: Ink Free;
+}
+ nav ul li{
+  background: rgba(22, 20, 20, 0.925);
+  box-shadow: 5px 5px 10px rgba(39, 38, 38, 0.986);
+	position: relative;
+	list-style: none;
+  display: inline-block;
+  
+}
+ nav ul li a{
+	display: block;
+	padding: 0 20px;
+	color: white;
+	line-height: 50px;
+	font-size: 19px;
+}
+ nav ul li a:hover{
+  background: #FBBB1B;
+  color: black;
+  font-weight:bold ;
 }
 .box1{
     width: 800px;
@@ -243,7 +277,7 @@ body{
    margin-left: auto;
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.884);
 }
-footer {
+.footer1 {
     left: 0;
     bottom: 0;
     width: 100%;
