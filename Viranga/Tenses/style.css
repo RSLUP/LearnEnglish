@@ -20,6 +20,7 @@ html
     font-size: 20px;
     width: 25%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .sticky 
 {
@@ -40,6 +41,7 @@ html
     padding: 100px 20px;
     height: auto;
     animation: fadeEffect 0.5s; 
+    
 }
   @keyframes fadeEffect 
 {
@@ -81,6 +83,7 @@ header
 {
     color:#ffc300;
 }
+/* main content */
 .content 
 {
     background:rgb(255, 255, 255);
@@ -88,7 +91,9 @@ header
     margin: auto;
     box-shadow: 0 4px 8px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
 .clr 
+/* crear previous styles */
 { 
     clear:both; 
     padding:0; 
@@ -176,8 +181,9 @@ header
     display: table;
     clear: both;
 }
-.column3 {
+.column3 
+{
     float: left;
     width: 33.33%;
-  }
-  
+}
+
