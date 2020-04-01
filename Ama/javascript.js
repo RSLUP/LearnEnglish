@@ -73,3 +73,18 @@ function nounHighlight()
     {
         alert(" Hey! How are you? \n\n aha !I knew it. \n\n What a beautiful shot! \n\n Thank god! you survived.");
     }
+
+    /*grammar*/
+
+    function displaySPrTFullex()  /*display simple present tense full verbs examples*/
+    {
+        document.getElementById("SPrTF").innerHTML = "We learn English at our college <br/> The earth rotates round the sun <br/>Light travel at speed of 180,000 miles per hour in 10s <br/> People die in their old age";       
+    }
+    function displaySPrTBEex()
+    {
+        document.getElementById("SPrTBE").innerHTML = "My pet is a cat <br/> These buildings are very high <br/> It is a cloudy day <br/> There are many handouts in the table";
+    }
+    function displaySPTFullex()
+    {
+        document.getElementById("SPTF").innerHTML = "I came to home very happily <br/> I wanted to follow an English tutorials <br/> We waited in the lobby for some time <br/> I was born in Sri Lanka";
+    }
