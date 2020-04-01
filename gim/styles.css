@@ -236,6 +236,8 @@ html {
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #CD5C5C;
+    font-size:30px;
+    text-align:center;
   }
 
 
@@ -284,3 +286,49 @@ html {
   .dropdown:hover .dropbtn {
     background-color: #CD5C5C;
   }
+
+
+  .hd
+  {
+    color:white;
+    font-size: 30px;
+    padding-top:60px ;
+    background-color: #CD5C5C;
+    text-align:center;
+    padding-bottom:10px;
+  }
+
+  .pic
+  {
+   border: 0;
+  
+  }
+
+  .pic:hover
+  {
+    width:250px ;
+    height:200px ;
+    transition: 0.5s;
+  
+  }
+
+  /*tables*/
+
+  .able {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+
+  }
+  
+  .d {
+    border: 1px solid #CD5C5C;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  r:nth-child(even) {
+    background-color: #dddddd;
+  }
+
