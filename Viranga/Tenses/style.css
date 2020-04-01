@@ -1,0 +1,93 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: rgb(1, 128, 167);
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  #Simple {background-color: rgb(97, 37, 37);}
+  #Continuous{background-color: rgb(49, 110, 49);}
+  #Perfect{background-color: rgb(65, 65, 134);}
+  #PerfectContinuous{background-color: rgb(110, 84, 36);}
+  header
+{ 
+    background:#fff; 
+}
+#header-inner
+{ 
+    margin:0 auto;
+    padding:10px; 
+    width:1180px; 
+    background-image:url('img/header.jpg');
+    background-size:cover;
+    font-size:45px;
+}
+/* style For Logo */
+#logo 
+{ 
+    padding:0px; 
+    width:auto; 
+    float:left;
+}
+#logo h1 a, h1 a:hover 
+{ 
+    color:#9b0606; 
+    text-decoration:none;
+}
+#logo h1 span 
+{
+    color:#ffc300;
+}
+.content 
+{
+    background:rgb(255, 255, 255);
+    max-width: 1200;
+    margin: auto;
+    box-shadow: 0 4px 8px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.clr 
+{ 
+    clear:both; 
+    padding:0; 
+    margin:0; 
+    width:100%; 
+    font-size:0px; 
+    line-height:0px;
+}
+#page 
+{ 
+    background-image:url('img/pattern.jpg'); 
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
