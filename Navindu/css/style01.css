@@ -9,10 +9,6 @@
     box-shadow: 0px 0px 10px grey;
 }
 
-body {
-    background-color: white;
-}
-
 a {
     text-decoration: none;
 }
@@ -71,7 +67,6 @@ a {
     font-size: 23px;
     color: maroon;
 }
-
 
 .introtext p{
     font-size: 20px;
