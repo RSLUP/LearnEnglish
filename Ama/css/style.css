@@ -8,10 +8,38 @@ body
 html{
 	scroll-behavior: smooth;
 }
+.nav
+	{
+		background: black;
+		border-top:5px solid #37f;
+		box-shadow: 3px 0px 5px grey;
+		text-align: center;
+		
+	}
+	.nav ul li
+	{	list-style-type: none;
+		padding: 20px 20px;
+		font-size: 14px;
+		color: white;
+		display: inline-block; 
+		font-family: sans-serif;
+		transition: 1s;
+	}
+	.nav ul li:hover
+	{
+		background: gray;
+		 font-weight: bold;
+	}
+	.nav li a
+	{
+		text-decoration: none;
+			color: white;
+	}
 .image{
-	background-image: url("img/wall3.jpg");
+	
 	background-position: center;
-	height: 500px;
+	height: 700px;
+	width:1500px;
 	background-size: cover;
 }
 .intro
@@ -159,7 +187,7 @@ footer {
 	background: teal;
 	box-shadow: 0px 0px 1px #777;
 }
- /*G&V styles*/
+ /*G&V styles
  .GVbody
  {
 	background-image: url("");
