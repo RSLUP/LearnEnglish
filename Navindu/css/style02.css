@@ -1,0 +1,76 @@
+.clearfix{ overflow: auto }
+
+.wrapper{
+    margin: 0 auto;
+    width: 1100px;
+    margin-top: 70px;
+    border-radius: 8px;
+    background-color: rgb(252, 250, 224);
+    box-shadow: 0px 0px 10px grey;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.top-bar{
+    width: 1100px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    background-image: linear-gradient(black, rgb(32, 32, 32),black);
+}
+
+.top-bar-title h1 {
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
+
+.intro{
+    width: 1000px;
+    margin: 50px;
+}
+
+@keyframes imgteacher {
+    from {transform: rotate(1deg);}
+    to {transform: rotate(-1deg);}
+  }
+
+.introimage{
+    margin-top: 25px;
+    float: left;
+    animation-name: imgteacher;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.introtext{
+    width: 650px;
+    float: left;
+}
+
+.introtext h1{
+    margin-top: 70px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    font-size: 90px;
+}
+
+.introtext a:hover{
+    background: rgb(190, 184, 241);
+    font-size: 23px;
+    color: maroon;
+}
+
+
+.introtext p{
+    margin-left: 35px;
+    font-size: 20px;
+}
