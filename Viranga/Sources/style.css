@@ -6,7 +6,7 @@ html
     scroll-behavior: smooth;
 }
   
-  /* Style tab links */
+/* Style tab links */
 
 .tablink
 {
@@ -53,8 +53,9 @@ html
   #Continuous{background-color: rgb(49, 110, 49);}
   #Perfect{background-color: rgb(65, 65, 134);}
   #PerfectContinuous{background-color: rgb(122, 124, 6);}
-  
-header
+
+  /*adding style for header*/
+#header
 { 
     background:#fff; 
 }
@@ -63,7 +64,8 @@ header
     margin:0 auto;
     padding:10px; 
     width:1180px; 
-    background-image:url('img/header.jpg');
+    /*background-image: url('Sources/img/header.jpg');*/
+    background-color: rgba(53, 16, 138, 0.26);
     background-size:cover;
     font-size:45px;
 }
@@ -104,13 +106,21 @@ header
 }
 #page 
 { 
-    background-image:url('img/pattern.jpg'); 
+    background-color: rgb(3, 182, 182);
     background-repeat: repeat;
     background-attachment: scroll;
     background-size: 100%;
 }
 
-
+#video
+{
+    padding-left:100px;
+}
+.bars 
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
 
 
 /*sub headings*/
