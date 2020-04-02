@@ -106,5 +106,29 @@ function nounHighlight()
     }
     function displayFCTEx()
     {
-        document.getElementById("FCT").innerHTML = "I will be going Colombo tomorrow<br/She will be doing a job at that time<br/>They will be studying at a university<br/> They will be singing at the contest";
+        document.getElementById("FCT").innerHTML = "I will be going Colombo tomorrow<br/>She will be doing a job at that time<br/>They will be studying at a university<br/> They will be singing at the contest";
     }
+    function displayPrPTEx()
+    {
+        document.getElementById("PrPT").innerHTML = "I have started watching an English film<br/>She has passed the exam well <br/> I have done my assignment today morning <br/>It has clouded afternoon today morning";
+    }
+    function displayPPTEx()
+    {
+        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
+    }
+    function displayFPTEx()
+    {
+        document.getElementById("FPT").innerHTML = "I will have finished my studies by then<br/>I won't have found a partner by then<br/>I will have finished my grammar assignment by dinner time, but I will not have done my writing assignment.<br/>We will have arrived to India by tomorrow evening" ;
+    }
+    /*function displayFPTEx()
+    {
+        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
+    }
+    function displayFPTEx()
+    {
+        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
+    }
+    function displayFPTEx()
+    {
+        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
+    }*/
