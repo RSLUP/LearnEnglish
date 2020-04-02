@@ -53,14 +53,100 @@ body{
     border: 1px;
    margin-left: auto;
    
+   
   }
-  img:hover{
+  .imagebutton:hover{
 	width:500px;
 	height:300px;
-	transform:zoom;
+  transform:zoom;
+  cursor: pointer;
+  
+}
 
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: relative;
+  bottom: 50%;
+  border: 3px solid #494949;
+  z-index: 9;
+  transition: 1s;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 1000px;
+  height: 1530px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top:700px;
+  border: 1px;
+  margin-left: auto;
+  
+}
+
+.formtitle{
+  margin: 0 auto;
+  display: block;
 
 }
+.formtitle nav h1{
+transition:1s;
+text-align: left;
+color:black;
+font-family: sans-serif;
+/*font-size: 40px;*/
+margin-left: 10px;
+text-decoration: underline;
+}
+.formtitle nav{
+height: 80px;
+background:rgba(255, 255, 255, 0.945);
+line-height: 70px;
+margin-top: -10px;
+
+}
+.formtitle nav ul{
+transition:.5s;
+padding: 0;
+margin: 0;
+text-align:right;
+margin-right: 30px;
+margin-top:-90px;
+font-family: sans-serif;
+}
+.formtitle nav ul li{
+background: rgba(204, 25, 25, 0.87);
+margin-right: 0px;
+position: relative;
+list-style: none;
+display: inline-block;
+
+}
+.formtitle nav ul li a{
+display: block;
+font-weight: bold;
+color: rgb(8, 8, 8);
+line-height: 40px;
+font-size: 15px;
+padding: 0px 20px;
+}
+.formtitle nav ul li a:hover{
+opacity: 1;
+font-weight:bold ;
+cursor: pointer;
+background: rgb(221, 5, 5);
+
+}
+
 .footer2 {
     left: 0;
     bottom: 0;
