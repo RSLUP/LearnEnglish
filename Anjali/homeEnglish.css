@@ -163,7 +163,7 @@ body{
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
-    background: #97B9C5;
+    background: rgba(71, 158, 230, 0.856);
     position: relative;
     animation: text 3s 1;
       font-family: serif;
@@ -174,6 +174,82 @@ body{
     color:  #3E3623;
     font-family: serif;
   }
+
+  .slidershow{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 450px;
+    margin-right: 1250px;
+    
+  
+  }
+  .x{ width: 280px;
+    height: 390px;
+    transition: width 1s, height 1s, transform 1s;
+    border-radius: 30px;
+  
+  }
+  img.x:hover{
+    width:320px;
+    height:470px;
+    transform:zoom;
+  }  
+  #slider{
+	
+    width: 800px;
+    height: 400px;
+    margin-top: -460px;
+    margin-left:  550px;
+    border-radius: 10px;
+  
+  }
+  #slider {
+    overflow: hidden;
+  }
+  #slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 18s slider infinite;
+  }
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+  
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -300%;
+    }
+  }
+  
+
 
   .title-box{
 	text-align: left;

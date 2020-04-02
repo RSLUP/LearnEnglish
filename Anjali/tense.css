@@ -181,6 +181,17 @@ background: rgb(221, 5, 5);
 
 }
 
+.zoom{ width: 300px;
+  height: 200px;
+  transition: width 1s, height 1s, transform 1s;
+  border-radius: 10px;
+
+}
+img.zoom:hover{
+  width:320px;
+  height:220px;
+  transform:zoom;
+}  
 .footer2 {
     left: 0;
     bottom: 0;
