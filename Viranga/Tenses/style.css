@@ -48,7 +48,7 @@ html
     from {opacity: 0;}
     to {opacity: 1;}
 }
-  
+/*adding back-clr to tabs*/
   #Simple {background-color: rgb(97, 37, 37);}
   #Continuous{background-color: rgb(49, 110, 49);}
   #Perfect{background-color: rgb(65, 65, 134);}
@@ -214,4 +214,55 @@ header
     transform: scale(1.1);
 } 
 
-
+/*-------------------------------------------*/
+/*menu*/
+/* Dropdown Button */
+.dropbtn 
+{
+    background-color: #31312f;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width:250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+  
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Dropdown Content */
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+  
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+ 
+.dropdown:hover .dropdown-content {display: block;}
+  
+  
+.dropdown:hover .dropbtn {background-color: rgb(1, 128, 167);}

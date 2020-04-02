@@ -40,22 +40,13 @@ function myFunction() {
   }
 }
  
-// go up button
-mybutton = document.getElementById("myBtn");
+/*side panel*/ 
 
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "auto";
 }
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
 }
