@@ -42,7 +42,7 @@ a {
   }
 
 .introimage{
-    margin-top: 25px;
+    margin: 25px 0 25px 0;
     float: left;
     animation-name: imgteacher;
     animation-duration: 0.2s;
@@ -82,8 +82,7 @@ a {
     float: left;
     width: 225px;
     height: 70px;
-    margin-top: 25px;
-    margin-left: 105px;
+    margin: 25px 0 0 105px;
     border-radius: 7px;
     background: black;
     color: white;
@@ -128,10 +127,6 @@ a {
 
 .present:hover .present-sub{
     display: block;
-}
-
-.present:hover .past-btn, .future-btn{
-    background: gray;
 }
 
 .past:hover .past-sub{
