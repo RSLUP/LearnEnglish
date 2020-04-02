@@ -127,7 +127,7 @@ ul>li{
 
 #tdiv1,#tdiv2,#tdiv3,#tdiv4,#tdiv5,#tdiv6,#tdiv7,#tdiv8{
     background-color: #e49292;
-    height: 400px;
+    height: 421px;
     display: flow-root;
     position: relative;
     top: -257px;
@@ -312,7 +312,7 @@ ul>li{
 /*summary of lesson*/
 #summarydiv{
     position: absolute;
-    top: 4499px;
+    top: 4672px;
     height: 999px;
     background-color: #e4d6d6;
     width: 1247px;

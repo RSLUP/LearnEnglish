@@ -3,7 +3,7 @@ html{
 }
 
 /*header*/
-header > h1 {
+#headerh1 {
     font-size: 26px;
     position: fixed;
     left: 131px;
@@ -21,12 +21,18 @@ header {
     z-index: 3;
 }
 
-header > img {
+#header_img {
     height: 106px;
     position: absolute;
     top: -8px;
     left: 17px;
 }
+
+/*#logo{*/
+/*    height: 106px;*/
+/*    position: absolute;*/
+/*    top: -6px;*/
+/*}*/
 
 /*background image*/
 #back2 {
