@@ -78,30 +78,70 @@ a {
     width: 1100px;
 }
 
-.present, .past, .future{
+.present-btn, .past-btn, .future-btn{
     float: left;
-    width: 157px;
+    width: 225px;
+    height: 70px;
     margin-top: 25px;
-    margin-left: 157px;
+    margin-left: 105px;
     border-radius: 7px;
     background: black;
     color: white;
     text-align: center;
     font-family: arial;
+    font-size: 25px;
 }
 
-.sub-tense{
-    ;
+.present-sub, .past-sub, .future-sub{
+    display: none;
+    position: absolute;
 }
 
-.sub-tense h3 a{
-    float: left;
+.present-sub a, .past-sub a, .future-sub a{
     background:  rgb(9, 8, 77);
     color: white;
-    margin: 20px 0 20px 20px;
-    padding: 10px 20px 10px 20px;
-    width: 150px;
+    margin: 110px 0 20px 15px;
+    padding: 20px 10px;
     border-radius: 7px;
     font-family: arial;
+    font-size: 17px;
     text-align: center;
+}
+
+.present-sub a{
+    float: left;
+    position: relative;
+    left: 0px;
+}
+
+.past-sub a{
+    float: left;
+    position: relative;
+    left: 225px;
+}
+
+.future-sub a{
+    float: left;
+    position: relative;
+    left: 395px;
+}
+
+.present:hover .present-sub{
+    display: block;
+}
+
+.present:hover .past-btn, .future-btn{
+    background: gray;
+}
+
+.past:hover .past-sub{
+    display: block;
+}
+
+.future:hover .future-sub{
+    display: block;
+}
+
+.b{
+    
 }
