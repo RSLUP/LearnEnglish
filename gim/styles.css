@@ -193,8 +193,8 @@ html {
   
   h2
   {
-    padding:40px 0px 0px 40px ;
-    color:black;
+    padding:40px 0px 0px 65px ;
+    color:#CD5C5C;
     font-family: 'Courier New', Courier, monospace;
     
   }
@@ -344,5 +344,7 @@ html {
 
 h4
 {
-  padding-left:40px;
+  padding-left:65px;
+  padding-right:30px ;
 }
+
