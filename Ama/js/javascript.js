@@ -120,15 +120,15 @@ function nounHighlight()
     {
         document.getElementById("FPT").innerHTML = "I will have finished my studies by then<br/>I won't have found a partner by then<br/>I will have finished my grammar assignment by dinner time, but I will not have done my writing assignment.<br/>We will have arrived to India by tomorrow evening" ;
     }
-    /*function displayFPTEx()
+    function displayPrPCT()
     {
-        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
+        document.getElementById("PrPCT").innerHTML = "I have been driving for the past seven hours<br/>They have been painting the house for New Year<br/> You have not been exercising on the machine <br/> It has been running fast in the ground";
     }
-    function displayFPTEx()
+   function displayPPCT()
     {
-        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
+        document.getElementById("PPCT").innerHTML = "He had been walking along the road for about 20 minutes<br/>When I came home they had been eating <br/> She had been waiting for me for 2 hours<br/>It hd been raining the whole day";
     }
-    function displayFPTEx()
+    function displayFPCT()
     {
-        document.getElementById("PPT").innerHTML = "He had revealed the secret to the police before the thief dead<br/>When I came to the exam hall, the exam had already started <br/> Mother had tasted the food before she served it <br/>We couldn't go to the concert becoause we had not bought tickets";
-    }*/
+        document.getElementById("FPCT").innerHTML = "They will have been playing football in that field before you reach<br/>April will have been gossiping in the coffee shop before she comes here <br/> Bob will have been studying in the library before he comes to the class <br/>They will have been getting ready for the exam";
+    }
