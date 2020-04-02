@@ -75,9 +75,9 @@ body{
 }
 
 /* Add styles to the form container */
-.form-container {
+.form-container-past {
   width: 1000px;
-  height: 1530px;
+  height: 1600px;
   padding: 10px;
   border-radius: 10px;
   position: absolute;
@@ -92,7 +92,23 @@ body{
   margin-left: auto;
   
 }
-
+.form-container-present {
+  width: 1000px;
+  height: 1630px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top:700px;
+  border: 1px;
+  margin-left: auto;
+  
+}
 .formtitle{
   margin: 0 auto;
   display: block;
