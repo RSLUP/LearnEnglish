@@ -92,10 +92,20 @@ table .tableText td, h4{
 }
 
 table .tableText td, h5{
-    font-size: 15px;
+    font-size: 18px;
+    text-align: center;
 }
 
 table .firstRaw h3 {
     font-variant: small-caps;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+ul .unorderList li {
+    list-style: none ;
+    text-align: center
+}
+
+table .imgPlace img {
+    image-orientation: unset;
 }
