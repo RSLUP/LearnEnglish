@@ -1,0 +1,239 @@
+.Grammarintro
+{
+    text-align: center;
+	position: absolute;
+	color: rgb(139, 69, 19);
+	line-height: 28px;	
+	/*top: 100%;*/
+	left: 50%;
+	width:85%;
+	height: -70%;
+	transform: translate(-50%, -50%); 
+}
+.grammarImage
+ {
+	background-position: center;
+    background-size: cover;
+    width:1800;
+    height: 600;
+ }
+#headingPastTense
+{
+    background-color: forestgreen;
+    color:yellowgreen;
+    font-size: large;
+    font-weight: bold;
+}
+#headingPresenttTense
+{
+    background-color: rgb(245, 197, 39);
+    color:rgb(170, 127, 9);
+    font-size: large;
+    font-weight: bold;
+}
+#headingFutureTense
+{
+    background-color: rgba(8, 70, 151, 0.945);
+    color: rgb(92, 181, 216);
+    font-size: large;
+    font-weight: bold;
+}
+#contentPastTense
+{
+    background-color: palegreen;
+    font-size: 100;
+}
+#contentPresentTense
+{
+    background-color: rgb(226, 228, 142);
+}
+#contentFutureTense
+{
+    background-color: skyblue;
+}
+#banner1
+{
+    background-color: rgba(224, 190, 151, 0.863);
+    /*height: 50px;*/
+    text-align: center;
+}
+#bannerST
+{
+    background-color: rgba(219, 63, 63, 0.863);
+    /*height: 50px;*/
+    text-align: center;
+}
+#banner2
+{
+    background-color: rgb(76, 112, 231);
+    height: 50px;
+    text-align: center;
+}
+#banner3
+{
+    background-color: rgb(6, 126, 70);
+    height: 50px;
+    text-align: center;
+}
+#banner4
+{
+    background-color: rgb(167, 8, 82);
+    height: 50px;
+    text-align: center;
+}
+.table1TD1
+{
+    background-color: rgba(253, 186, 109, 0.863);
+    color: rgb(95, 56, 16);
+    text-align: center;
+}
+.table1TD2
+{
+    background-color: rgba(253, 186, 109, 0.863);
+    text-align: center;
+}
+.table1TD2 :hover
+{
+    background-color:rgba(224, 190, 151, 0.863) ;
+}
+#simpleTenses-summary-TR1
+{
+    background-color:rgba(219, 63, 63, 0.863) ;
+    font-size: larger;
+    text-align: center;
+    color: rgba(223, 188, 188, 0.863);
+}
+#simpleTenses-summary-TR2
+{
+    background-color:rgba(219, 63, 63, 0.863) ;
+    opacity: 0.7;
+    font-size: larger;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.863);
+
+}
+#simpleTenses-summary-TR3
+{
+    background-color:rgba(219, 63, 63, 0.863)  ;
+    opacity: 0.4;
+    font-size: larger;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.presentCounti-TD1
+{
+    background-color: rgb(130, 157, 245);
+}
+.PastConti-TD2
+{
+    background-color: rgb(168, 180, 221);  
+}
+.FutureConti-TD1
+{
+    background-color: rgb(209, 218, 248);  
+}
+#Continuous-summary-TR1
+{
+    background-color:rgb(130, 157, 245) ;
+    font-size: larger;
+    text-align: center;
+    color: rgba(17, 1, 36, 0.863);
+}
+#Continuous-summary-TR2
+{
+    background-color:rgb(168, 180, 221); 
+    font-size: larger;
+    text-align: center;
+    color: rgba(17, 1, 36, 0.863);
+}
+#Continuous-summary-TR3
+{
+    background-color:rgb(209, 218, 248);
+    font-size: larger;
+    text-align: center;
+    color: rgba(17, 1, 36, 0.863);
+}
+.PresentPerfect-TD1
+{
+    background-color: rgb(82, 177, 133);
+}
+.PastPerfect-TD2
+{
+    background-color: rgb(116, 197, 159);
+}
+.FuturePerfect-TD1
+{
+    background-color: rgb(151, 235, 196);
+}
+#continuous-summary-TR1
+{
+    background-color: rgb(82, 177, 133);
+    font-size: larger;
+    text-align: center;
+    color: rgb(3, 44, 25);
+}
+#continuous-summary-TR2
+{
+    background-color: rgb(116, 197, 159);
+    font-size: larger;
+    text-align: center;
+    color: rgb(3, 44, 25);
+
+}
+#continuous-summary-TR3
+{
+    background-color: rgb(151, 235, 196);
+    font-size: larger;
+    text-align: center;
+    color: rgb(3, 44, 25);
+}
+#present-PC-TD1
+{
+    background-color: rgb(250, 151, 189);
+}
+#past-PC-TD2
+{
+    background-color: rgb(212, 154, 181);
+}
+#future-PC-TD1
+{
+    background-color: rgb(230, 191, 209);
+}
+#perfectConti-summary-TR1
+{
+    background-color: rgb(250, 151, 189);
+    font-size: larger;
+    text-align: center;
+    color: rgb(83, 8, 83);
+}
+#perfectConti-summary-TR2
+{
+    background-color: rgb(212, 154, 181);
+    font-size: larger;
+    text-align: center;
+    color: rgb(83, 8, 83);
+}
+#perfectConti-summary-TR3
+{
+    background-color: rgb(230, 191, 209);
+    font-size: larger;
+    text-align: center;
+    color: rgb(83, 8, 83);
+}
+.simple-present-TR1
+{
+    background-color: rgba(248, 108, 108, 0.863);
+}
+.simple-present-TR2
+{
+    background-color: rgba(248, 139, 139, 0.863);
+}
+.simple-present-TR3
+{
+    background-color: rgba(252, 166, 166, 0.863);
+}
+.simple-present-TR4
+{
+    background-color: rgba(236, 203, 203, 0.863);
+    /*background-color: silver;*/
+}

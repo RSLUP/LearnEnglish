@@ -73,3 +73,7 @@ function nounHighlight()
     {
         alert(" Hey! How are you? \n\n aha !I knew it. \n\n What a beautiful shot! \n\n Thank god! you survived.");
     }
+
+    /*grammar*/
+
+    
