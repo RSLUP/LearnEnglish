@@ -37,9 +37,27 @@
 {
     background-color: skyblue;
 }
-#banner
+#banner1
 {
     background-color: rgb(207, 161, 128);
+    height: 50px;
+    text-align: center;
+}
+#banner2
+{
+    background-color: rgb(76, 112, 231);
+    height: 50px;
+    text-align: center;
+}
+#banner3
+{
+    background-color: rgb(6, 126, 70);
+    height: 50px;
+    text-align: center;
+}
+#banner4
+{
+    background-color: rgb(167, 8, 82);
     height: 50px;
     text-align: center;
 }
