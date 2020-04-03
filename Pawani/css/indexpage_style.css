@@ -15,7 +15,7 @@ header>h1{
 header {
     background-color: #e49292;
     height: 54px;
-    width: 1247px;
+    width: 100%;
     /* margin-top: 29px; */
     position: fixed;
     z-index: 3;
@@ -35,9 +35,9 @@ header>img {
     margin-top: 44px;
 }
 
-#buttonul{
+#buttonul {
     position: absolute;
-    top: 457px;
+    top: 34vw;
 }
 #buttonul>li {
     padding: 63px;
@@ -61,24 +61,25 @@ body>div{
 #maintopic {
     font-family: cursive;
     position: absolute;
-    left: 33px;
-    top: 781px;
+    left: 2%;
+    top: 60vw;
     font-size: 31px;
 }
-#p1{
+
+#p1 {
     font-family: cursive;
     font-size: 27px;
     position: absolute;
-    left: 27px;
-    top: 847px;
+    left: 2%;
+    top: 64vw;
 }
 
 
 
 #list1 {
     position: absolute;
-    top: 988px;
-    left: 48px;
+    top: 76vw;
+    left: 4%;
     font-size: 24px;
     font-family: cursive;
     color: black;
@@ -131,10 +132,11 @@ ul>li{
     height: 421px;
     display: flow-root;
     position: relative;
-    top: -257px;
-
-
+    top: -17vw;
 }
+
+
+
 
 /*..........topic paragraphs........*/
 
@@ -311,14 +313,14 @@ ul>li{
     bottom: -2px;
 }
 /*summary of lesson*/
-#summarydiv{
+#summarydiv {
     position: absolute;
-    top: 4672px;
-    height: 999px;
-    background-color: #e4d6d6;
-    width: 1247px;
+    top: 793%;
+    /* bottom: 78%; */
+    height: 1016px;
+    background-color: white;
+    width: 99%;
 }
-
 #summarytopic{
     font-family: cursive;
     font-size: 26px;
@@ -337,14 +339,14 @@ ul>li{
     margin: auto;
 }
 
-footer{
+footer {
     width: 100%;
     height: 48px;
     background-color: #6e3e45;
     color: black;
     position: relative;
     z-index: 4;
-    top: 697px;
+    top: 867px;
 }
 
 #footercontent{

@@ -1,8 +1,6 @@
 var mov2 = 0;
 slideds2();
 
-
-
 function slideds2() {
     var a = document.getElementsByClassName("img");
     var i = 0;
