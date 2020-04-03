@@ -1,0 +1,209 @@
+.clearfix{ overflow: auto }
+
+.wrapper{
+    margin: 0 auto;
+    width: 1100px;
+    margin-top: 70px;
+    border-radius: 8px;
+    background-color: rgb(252, 250, 224);
+    box-shadow: 0px 0px 10px grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-bar{
+    width: 1100px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    background-image: linear-gradient(black, rgb(32, 32, 32),black);
+}
+
+.top-bar-logo{
+    float: left;
+    margin: 8px 8px 8px 30px;
+}
+
+.navigate{
+    float: right;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.navigate a{
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+}
+
+.top-bar-title h1{
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
+
+.intro{
+    width: 1000px;
+    margin: 50px;
+}
+
+@keyframes imgteacher {
+    from {transform: rotate(1deg);}
+    to {transform: rotate(-1deg);}
+  }
+
+.introimage{
+    margin: 25px 0 25px 0;
+    float: left;
+    animation-name: imgteacher;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.introtext{
+    width: 650px;
+    float: left;
+}
+
+.introtext h1{
+    margin-top: 70px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    font-size: 90px;
+}
+
+.introtext a:hover{
+    background: rgb(190, 184, 241);
+    font-size: 23px;
+    color: maroon;
+}
+
+
+.introtext p{
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.main-chart{
+    width: 1100px;
+}
+
+.tense, .flow{
+    
+    float: left;
+}
+
+.tense-btn{
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    height: 90px;
+    margin: 110px 0 0 20px;
+    border-radius: 7px;
+    background: rgb(73, 73, 73);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    box-shadow: 0 0 15px gray;
+    border: 2px solid white;
+}
+
+.present-btn, .past-btn, .future-btn{
+    position: relative;
+    width: 120px;
+    height: 70px;
+    margin: 25px 0 0 190px;
+    border-radius: 7px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    box-shadow: 0 0 15px gray;
+    border: 2px solid white;
+}
+
+.present-btn a, .past-btn a, .future-btn a{
+    color: white;
+}
+
+.present-sub, .past-sub, .future-sub{
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 320px;
+}
+
+.present-sub a, .past-sub a, .future-sub a{
+    z-index: 1;
+    float: left;
+    width: 150px;
+    height: 63px;
+    background:  rgb(9, 8, 77);
+    color: white;
+    margin: -30px 0 20px 15px;
+    padding: 0 10px;
+    border-radius: 7px;
+    font-family: arial;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px gray;
+    border: 2px solid white;
+}
+
+.lines{
+    margin: 25px 0 0 -235px;
+    z-index: 0;
+}
+
+.present-btn:hover, .past-btn:hover, .future-btn:hover{
+    background: maroon;
+}
+
+.present-flow:hover .present-sub a{
+    background: rgb(4, 77, 4);
+}
+
+.past-flow:hover .past-sub a{
+    background: rgb(4, 77, 4);
+}
+
+.future-flow:hover .future-sub a{
+    background: rgb(4, 77, 4);
+}
+
+.hr2{
+    margin-top: 30px;
+}
+
+.bar-present{
+    width: 900px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    background: maroon;
+    margin: 40px 100px 40px 100px;
+    text-align: center;
+}
+
+.bar-present h2{
+    padding: 10px;
+    color: white;
+    font-family: Arial;
+}
+
