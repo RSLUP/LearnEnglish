@@ -47,6 +47,7 @@ header>img {
 #button1,#button2{
     font-family: cursive;
     font-size: 31px;
+    background-color: transparent;
 }
 body>div{
     width: 100%;
