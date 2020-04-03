@@ -1,3 +1,5 @@
+.clearFix {overflow: auto;}
+
 header .logo h1 {
     font-variant: small-caps;
     font-size: 60px;
@@ -44,4 +46,56 @@ table .tableBorder td,h3 {
 table .tableBorder td,h4 {
     font-size: 24px;
     line-height: 5px;
+}
+
+nav {
+    margin-top: 20px;
+    background: #000;
+    background: linear-gradient(#333,#444,#333);
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none ;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color:#fff;
+    text-transform: uppercase;
+    margin: 10px 100px 10px 100px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+table .tableHeading tr, th {
+    font-variant: small-caps;
+}
+
+table .tableText td, h3{
+    font-size: 28px;
+}
+
+table .tableText td, h4{
+    font-size: 14px;
+    letter-spacing: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    font-weight: bolder;
+}
+
+table .tableText td, h5{
+    font-size: 15px;
+}
+
+table .firstRaw h3 {
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
 }
