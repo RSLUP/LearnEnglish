@@ -90,7 +90,7 @@ a {
     height: 90px;
     margin: 110px 0 0 20px;
     border-radius: 7px;
-    background: maroon;
+    background: rgb(73, 73, 73);
     color: white;
     text-align: center;
     font-family: arial;
@@ -112,6 +112,10 @@ a {
     font-size: 25px;
     box-shadow: 0 0 15px gray;
     border: 2px solid white;
+}
+
+.present-btn a, .past-btn a, .future-btn a{
+    color: white;
 }
 
 .present-sub, .past-sub, .future-sub{
@@ -145,18 +149,39 @@ a {
     z-index: 0;
 }
 
-.present:hover .present-sub{
-    display: block;
+.present-btn:hover, .past-btn:hover, .future-btn:hover{
+    background: maroon;
 }
 
-.past:hover .past-sub{
-    display: block;
+.present-flow:hover .present-sub a{
+    background: rgb(4, 77, 4);
 }
 
-.future:hover .future-sub{
-    display: block;
+.past-flow:hover .past-sub a{
+    background: rgb(4, 77, 4);
 }
 
-.b{
-    
+.future-flow:hover .future-sub a{
+    background: rgb(4, 77, 4);
 }
+
+.hr2{
+    margin-top: 30px;
+}
+
+.bar-present{
+    width: 900px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    background: maroon;
+    margin: 40px 100px 40px 100px;
+    text-align: center;
+}
+
+.bar-present h2{
+    padding: 10px;
+    color: white;
+    font-family: Arial;
+}
+
