@@ -106,7 +106,6 @@ a {
 
 .tense-btn{
     position: absolute;
-    z-index: 1;
     width: 120px;
     height: 90px;
     margin: 110px 0 0 20px;
@@ -196,7 +195,7 @@ a {
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
     background-image: linear-gradient(black, rgb(22, 22, 22),black);
-    margin: 40px 0px 40px 25px;
+    margin: 40px 0px 0px 25px;
     text-align: center;
 }
 
@@ -208,4 +207,33 @@ a {
     border: 2px solid white;
 }
 
+.content{
+    margin: 0 25px 25px 25px;
+}
+
+.col1, .col3{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 452.5px;
+    height: 200px;
+    border-style: solid;
+    background: rgb(252, 250, 224);
+    box-shadow: 2.5px 2.5px 6px grey;
+    float: left;
+    padding: 0 30px;
+}
+
+.col2, .col4{
+    margin-top: 10px;
+    width: 452.5px;
+    height: 200px;
+    border-style: solid;
+    background: rgb(252, 250, 224);
+    box-shadow: 2.5px 2.5px 6px grey;
+    float: left;
+    padding: 0 30px;
+}
+
+.col1, .col4{border-radius: 55px 10px 55px 10px;}
+.col2, .col3{border-radius: 10px 55px 10px;}
 
