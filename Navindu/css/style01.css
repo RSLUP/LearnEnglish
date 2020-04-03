@@ -23,7 +23,29 @@ a {
     background-image: linear-gradient(black, rgb(32, 32, 32),black);
 }
 
-.top-bar-title h1 {
+.top-bar-logo{
+    float: left;
+    margin: 8px 8px 8px 30px;
+}
+
+.navigate{
+    float: right;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.navigate a{
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+}
+
+.top-bar-title h1{
+    float: left;
     margin: 10px;
     text-align: center;
     font-size: 35px;
