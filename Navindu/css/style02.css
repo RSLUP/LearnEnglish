@@ -64,7 +64,7 @@ a {
   }
 
 .introimage{
-    margin: 25px 0 25px 0;
+    margin: 25px 0 5px 0;
     float: left;
     animation-name: imgteacher;
     animation-duration: 0.2s;
@@ -101,7 +101,6 @@ a {
 }
 
 .tense, .flow{
-    
     float: left;
 }
 
@@ -188,16 +187,16 @@ a {
 }
 
 .hr2{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .bar-present{
-    width: 900px;
+    width: 1050px;
     height: 50px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px gray;
-    background: maroon;
-    margin: 40px 100px 40px 100px;
+    background-image: linear-gradient(black, rgb(22, 22, 22),black);
+    margin: 40px 0px 40px 25px;
     text-align: center;
 }
 
@@ -205,5 +204,8 @@ a {
     padding: 10px;
     color: white;
     font-family: Arial;
+    border-radius: 10px;
+    border: 2px solid white;
 }
+
 
