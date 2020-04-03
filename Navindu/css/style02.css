@@ -78,52 +78,59 @@ a {
     width: 1100px;
 }
 
-.present-btn, .past-btn, .future-btn{
+.tense, .flow{
     float: left;
-    width: 225px;
+}
+
+.tense-btn{
+    width: 120px;
+    height: 90px;
+    margin: 110px 0 0 30px;
+    border-radius: 7px;
+    background: maroon;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    box-shadow: 0 0 15px gray;
+}
+
+.present-btn, .past-btn, .future-btn{
+    width: 120px;
     height: 70px;
-    margin: 25px 0 0 105px;
+    margin: 25px 0 0 50px;
     border-radius: 7px;
     background: black;
     color: white;
     text-align: center;
     font-family: arial;
     font-size: 25px;
+    box-shadow: 0 0 15px gray;
 }
 
 .present-sub, .past-sub, .future-sub{
-    display: none;
     position: absolute;
+    margin-top: -38px;
+    margin-left: 180px;
 }
 
 .present-sub a, .past-sub a, .future-sub a{
+    float: left;
+    width: 150px;
+    height: 65px;
     background:  rgb(9, 8, 77);
     color: white;
-    margin: 110px 0 20px 15px;
-    padding: 20px 10px;
+    margin: -30px 0 20px 15px;
+    padding: 0 10px;
     border-radius: 7px;
     font-family: arial;
     font-size: 17px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.present-sub a{
-    float: left;
-    position: relative;
-    left: 0px;
-}
-
-.past-sub a{
-    float: left;
-    position: relative;
-    left: 225px;
-}
-
-.future-sub a{
-    float: left;
-    position: relative;
-    left: 395px;
-}
 
 .present:hover .present-sub{
     display: block;
