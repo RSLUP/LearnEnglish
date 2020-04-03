@@ -79,13 +79,16 @@ a {
 }
 
 .tense, .flow{
+    
     float: left;
 }
 
 .tense-btn{
+    position: absolute;
+    z-index: 1;
     width: 120px;
     height: 90px;
-    margin: 110px 0 0 30px;
+    margin: 110px 0 0 20px;
     border-radius: 7px;
     background: maroon;
     color: white;
@@ -93,12 +96,14 @@ a {
     font-family: arial;
     font-size: 25px;
     box-shadow: 0 0 15px gray;
+    border: 2px solid white;
 }
 
 .present-btn, .past-btn, .future-btn{
+    position: relative;
     width: 120px;
     height: 70px;
-    margin: 25px 0 0 50px;
+    margin: 25px 0 0 190px;
     border-radius: 7px;
     background: black;
     color: white;
@@ -106,18 +111,20 @@ a {
     font-family: arial;
     font-size: 25px;
     box-shadow: 0 0 15px gray;
+    border: 2px solid white;
 }
 
 .present-sub, .past-sub, .future-sub{
     position: absolute;
     margin-top: -38px;
-    margin-left: 180px;
+    margin-left: 320px;
 }
 
 .present-sub a, .past-sub a, .future-sub a{
+    z-index: 1;
     float: left;
     width: 150px;
-    height: 65px;
+    height: 63px;
     background:  rgb(9, 8, 77);
     color: white;
     margin: -30px 0 20px 15px;
@@ -129,8 +136,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 15px gray;
+    border: 2px solid white;
 }
 
+.lines{
+    margin: 25px 0 0 -235px;
+    z-index: 0;
+}
 
 .present:hover .present-sub{
     display: block;
