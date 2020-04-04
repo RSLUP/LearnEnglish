@@ -3,7 +3,7 @@
 .wrapper{
     margin: 0 auto;
     width: 1100px;
-    margin-top: 80px;
+    margin-top: 70px;
     border-radius: 8px;
     background-color: rgb(252, 250, 224);
     box-shadow: 0px 0px 10px grey;
@@ -53,6 +53,7 @@ a {
     color: rgb(255, 255, 242);
 }
 
+
 .intro{
     width: 1000px;
     margin: 50px;
@@ -64,7 +65,7 @@ a {
   }
 
 .introimage{
-    margin: 25px 0 5px 0;
+    margin: 20px 0 5px 0;
     float: left;
     animation-name: imgteacher;
     animation-duration: 0.2s;
@@ -89,7 +90,6 @@ a {
     font-size: 23px;
     color: maroon;
 }
-
 
 .introtext p{
     margin-left: 35px;
