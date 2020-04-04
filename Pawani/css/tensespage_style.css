@@ -15,7 +15,7 @@ html{
 header {
     background-color: rgba(177, 166, 166, 0.46);
     height: 54px;
-    width: 1247px;
+    width: 100%;
     /* margin-top: 29px; */
     position: fixed;
     z-index: 3;
@@ -39,7 +39,7 @@ header {
     height: 512px;
     width: 828px;
     position: absolute;
-    top: 117px;
+    top: 10vw;
     right: 0;
     left: 0;
     margin: auto;
@@ -64,7 +64,7 @@ header {
     font-family: monospace;
     position: absolute;
     top: 0px;
-    left: 503px;
+    left: 46%;
     font-size: 37px;
     color: whitesmoke;
     margin: auto;
@@ -72,52 +72,66 @@ header {
 }
     /*main list image*/
 #img {
-    left: 271px;
-    width: 291px;
+    left: 22%;
+    width: 369px;
+    height: 371px;
     border-style: none;
     position: relative;
-    top: 162px;
+    top: 14vw;
     opacity: 63%;
 }
 
  /*main list */
-#li_past, #li_present, #li_future {
-    font-size: 32px;
+#li_past,#li_present,#li_future {
+    font-size: 40px;
     font-family: monospace;
     color: black;
 
 }
 
-#li_past {
+#mainlist {
     position: absolute;
-    bottom: 370px;
-    left: 328px;
+    left: 21%;
+    top: 46%;
+    list-style-type: none;
 }
 
-#li_present {
-    position: absolute;
-    bottom: 246px;
-    left: 328px;
+#mainlist>li{
+    padding: 10px;
+
 }
 
-#li_future {
-    position: absolute;
-    bottom: 120px;
-    left: 328px;
-}
+
+/*#li_past {*/
+/*    position: absolute;*/
+/*    bottom: 370px;*/
+/*    left: 328px;*/
+/*}*/
+
+/*#li_present {*/
+/*    position: absolute;*/
+/*    bottom: 246px;*/
+/*    left: 328px;*/
+/*}*/
+
+/*#li_future {*/
+/*    position: absolute;*/
+/*    bottom: 120px;*/
+/*    left: 328px;*/
+/*}*/
 
 
 #li_past:hover{
-    font-size: 34px;
+    font-size: 45px;
     transition: all 1s;
 }
 #li_present:hover{
-    font-size: 34px;
+    font-size: 45px;
     transition: all 1s;
 }
 
 #li_future:hover{
-    font-size: 34px;
+    font-size: 45px;
     transition: all 1s;
 }
 
@@ -127,15 +141,15 @@ header {
     position: relative;
     top: 300px;
     height: 500px;
-    background-color: rgba(177, 166, 166, 0.46);
+    background-color: white;
 }
 
 .selected_h1 {
     font-size: 40px;
     position: absolute;
     font-family: monospace;
-    top: 54px;
-    left: 53px;
+    top: 2vw;
+    left: 8vw;
 }
 
 /*.selected_tableheader{*/
@@ -165,7 +179,7 @@ td {
 
 table {
     position: absolute;
-    top: 141px;
+    top: 26%;
     background-color: #ECECEC;
 }
 
