@@ -88,9 +88,10 @@
 
                     <button id="Modalbtn" onclick="clickfunc()" >Learn More</button>
 
-                    <div id="Modal" class="modal" >
+                    <div id="Modal" class="modal">
                         <div class="modal-content">
                             <span class="close" onclick="closefunc()">&times;</span>
+                            
                             <p>Simple Present</p>
                         </div>
                     </div>
@@ -218,6 +219,7 @@
 
         <script>
             var modal = document.getElementById("Modal");
+            var outside = document.window;
 
             function clickfunc(){
                 modal.style.display = "block";
