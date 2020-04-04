@@ -53,6 +53,7 @@ a {
     color: rgb(255, 255, 242);
 }
 
+
 .intro{
     width: 1000px;
     margin: 50px;
@@ -64,7 +65,7 @@ a {
   }
 
 .introimage{
-    margin: 25px 0 25px 0;
+    margin: 20px 0 5px 0;
     float: left;
     animation-name: imgteacher;
     animation-duration: 0.2s;
@@ -90,7 +91,6 @@ a {
     color: maroon;
 }
 
-
 .introtext p{
     margin-left: 35px;
     font-size: 20px;
@@ -101,18 +101,16 @@ a {
 }
 
 .tense, .flow{
-    
     float: left;
 }
 
 .tense-btn{
     position: absolute;
-    z-index: 1;
     width: 120px;
     height: 90px;
     margin: 110px 0 0 20px;
     border-radius: 7px;
-    background: rgb(73, 73, 73);
+    background: rgb(9, 70, 17);
     color: white;
     text-align: center;
     font-family: arial;
@@ -166,6 +164,11 @@ a {
     border: 2px solid white;
 }
 
+.present-sub a:hover, .past-sub a:hover, .future-sub a:hover{
+    box-shadow: 0 0 15px rgb(134, 6, 6);
+    border: 2px solid rgb(143, 13, 13);
+}
+
 .lines{
     margin: 25px 0 0 -235px;
     z-index: 0;
@@ -188,22 +191,206 @@ a {
 }
 
 .hr2{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
-.bar-present{
-    width: 900px;
+.bar-type2{
+    width: 1050px;
     height: 50px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px gray;
-    background: maroon;
-    margin: 40px 100px 40px 100px;
+    background: rgb(82, 3, 3);
+    margin: 40px 0px 0px 25px;
     text-align: center;
 }
 
-.bar-present h2{
+.bar-type2 h2{
     padding: 10px;
     color: white;
     font-family: Arial;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
+.content{
+    margin: 0 25px 25px 25px;
+}
+
+.col1, .col3{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 452.5px;
+    height: 250px;
+    border-style: solid;
+    background: rgb(252, 250, 224);
+    box-shadow: 2.5px 2.5px 6px grey;
+    float: left;
+    padding: 0 30px;
+}
+
+.col2, .col4{
+    margin-top: 10px;
+    width: 452.5px;
+    height: 250px;
+    border-style: solid;
+    background: rgb(252, 250, 224);
+    box-shadow: 2.5px 2.5px 6px grey;
+    float: left;
+    padding: 0 30px;
+}
+
+.col1, .col4{border-radius: 55px 10px 55px 10px;}
+.col2, .col3{border-radius: 10px 55px 10px;}
+
+.col1 h3, .col2 h3, .col3 h3, .col4 h3{
+    font-size: 23px;
+    font-family: arial;
+    margin-top: 12px;
+    margin-bottom: -5px;
+    color: rgb(13, 13, 119);
+}
+
+.col1 p, .col2 p, .col3 p, .col4 p{
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: arial;
+}
+
+.col1 p2, .col2 p2, .col3 p2, .col4 p2{
+    margin-left: 15px;
+    font-size: 18px;
+    margin-bottom: -10px;
+    font-family: arial;
+}
+
+.bottom-bar{
+    width: 1100px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    background-image: linear-gradient(black, rgb(22, 22, 22),black);
+}
+
+.bottom-bar-title h1 {
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding: 100px 0;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 242);
+    margin: auto;
+    padding: 20px;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    width: 80%;
+    
+}
+
+.modal-content, .modal-content h2, .modal-content h3, .close, .table{
+    animation-name: anim-modal;
+    animation-duration: 0.7s;
+}
+
+.modal-content h2{
+    margin-top: 5px;
+    color: rgb(78, 7, 7);
+    font-family: arial;
+    font-size: 30px;
+}
+
+.modal-content h3{
+    color: rgb(12, 6, 97);
+    font-family: arial;
+}
+
+.modal-btn{
+    width: 150px;
+    height: 40px;
+    margin: 10px 0 0 20px;
+    border-radius: 8px;
+    background:  rgb(82, 3, 3);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    box-shadow: 0 0 5px gray;
+}
+
+.modal-btn:hover{
+    background: maroon;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    background: red;
+    cursor: pointer;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    background: rgb(97, 12, 12);
+    box-shadow: 3px -3px 5px gray;
+    padding: 0 12px;
+    border-radius: 50%;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: arial;
+    background: rgb(243, 225, 225);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.table td, .table th {
+    border: 2px solid rgb(92, 10, 10);
+    padding: 20px 10px 20px 10px;
+}
+
+.table th{
+    border: 2px solid rgb(92, 15, 15);
+    background: rgb(71, 6, 6);
+    color: white;
+    font-size: 18px;
+}
+
+.table tr{
+    font-size: 18px;
+}
+
+.special-row{
+    background-color: rgb(235, 203, 203);
+}
+
+@keyframes anim-modal {
+    from{
+      transform: scale(0.1) translateY(1000px);
+      opacity: 0;
+    }
+    to{
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
