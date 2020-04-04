@@ -64,8 +64,8 @@ html
     margin:0 auto;
     padding:10px; 
     width:1180px; 
-    /*background-image: url('Sources/img/header.jpg');*/
-    background-color: rgba(53, 16, 138, 0.26);
+    background-image: url('Sources/img/header.jpg');
+    
     background-size:cover;
     font-size:45px;
 }
