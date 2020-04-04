@@ -164,6 +164,11 @@ a {
     border: 2px solid white;
 }
 
+.present-sub a:hover, .past-sub a:hover, .future-sub a:hover{
+    box-shadow: 0 0 15px rgb(134, 6, 6);
+    border: 2px solid rgb(143, 13, 13);
+}
+
 .lines{
     margin: 25px 0 0 -235px;
     z-index: 0;
@@ -241,7 +246,7 @@ a {
     font-size: 23px;
     font-family: arial;
     margin-top: 12px;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
     color: rgb(13, 13, 119);
 }
 
@@ -285,8 +290,8 @@ a {
     top: -40px;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
+    
 }
 
 .modal-content {
@@ -296,6 +301,12 @@ a {
     border: 5px solid maroon;
     border-radius: 10px;
     width: 80%;
+    
+}
+
+.modal-content, .modal-content h2, .modal-content h3, .close, .table{
+    animation-name: anim-modal;
+    animation-duration: 0.7s;
 }
 
 .modal-content h2{
@@ -311,10 +322,10 @@ a {
 }
 
 .modal-btn{
-    width: 100px;
+    width: 150px;
     height: 40px;
     margin: 10px 0 0 20px;
-    border-radius: 4px;
+    border-radius: 8px;
     background:  rgb(82, 3, 3);
     color: white;
     text-align: center;
@@ -372,3 +383,14 @@ a {
 .special-row{
     background-color: rgb(235, 203, 203);
 }
+
+@keyframes anim-modal {
+    from{
+      transform: scale(0.1) translateY(1000px);
+      opacity: 0;
+    }
+    to{
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
