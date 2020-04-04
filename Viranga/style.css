@@ -5,7 +5,7 @@ html
     margin: 0;
     scroll-behavior: smooth;
 }
-  
+/*-------------------------------------------*/
 /* Style tab links */
 
 .tablink
@@ -53,7 +53,7 @@ html
   #Continuous{background-color: rgb(49, 110, 49);}
   #Perfect{background-color: rgb(65, 65, 134);}
   #PerfectContinuous{background-color: rgb(122, 124, 6);}
-
+/*-------------------------------------------*/
   /*adding style for header*/
 #header
 { 
@@ -69,6 +69,7 @@ html
     background-size:cover;
     font-size:45px;
 }
+/*-------------------------------------------*/
 /* style For Logo */
 #logo 
 { 
@@ -85,6 +86,7 @@ html
 {
     color:#ffc300;
 }
+/*-------------------------------------------*/
 /* main content */
 .content 
 {
@@ -93,6 +95,7 @@ html
     margin: auto;
     box-shadow: 0 4px 8px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+/*-------------------------------------------*/
 
 .clr 
 /* crear previous styles */
@@ -104,6 +107,7 @@ html
     font-size:0px; 
     line-height:0px;
 }
+/*-------------------------------------------*/
 #page 
 { 
     background-color: rgb(3, 182, 182);
@@ -111,6 +115,7 @@ html
     background-attachment: scroll;
     background-size: 100%;
 }
+/*-------------------------------------------*/
 
 #video
 {
@@ -131,7 +136,7 @@ html
     text-align: center;
     text-decoration: underline;
 }
-
+/*-------------------------------------------*/
 /*paragraphs*/
 #para 
 {
@@ -140,7 +145,7 @@ html
     font-size:19px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+/*-------------------------------------------*/
 #h3
 {
     text-align: center;
