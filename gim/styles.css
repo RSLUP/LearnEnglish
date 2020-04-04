@@ -199,6 +199,11 @@ html {
     background-color: white;
   }
   
+  #sectionQ {
+    height: 700px;
+    background-color: white;
+  }
+  
   
   
   h2
@@ -458,4 +463,22 @@ body {
 
 .active {
   background-color: #E9967A;
+}
+
+.upBtn
+{
+  top:90%;
+  left:95%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  position: fixed;
+  background-color: #CD5C5C;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: center;
+  color: white;
 }
