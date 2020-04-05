@@ -161,22 +161,22 @@
                             <span class="close" onclick="quizClose()">&times;</span>
                             <h2>Quiz - Simple Present Tense</h2>
                             <hr>
-                            <h3>Complete the sentences, put the verb into the correct form, positive or negative.</h3>
+                            <h3>Complete the sentences, put the verb into the correct form (positive/negative/questions)</h3>
                             <div class="clearfix">
                                 <p class="q">1. He <input type="text" class="inputQ" id="spr-q1"> in a Software Company. (work)</p>
                                 <p class="r" id="spr-r1"></p>
-                                <p class="q">2. I know sara is very busy, so I <input type="text" class="inputQ" id="spr-q2"> her. (disturb)</p>
+                                <p class="q">2. I know sara is very busy, so I <input type="text" class="inputQ" id="spr-q2"> her. (not/disturb)</p>
                                 <p class="r" id="spr-r2"></p>
                                 <p class="q">3. When children become teenagers, they <input type="text" class="inputQ" id="spr-q3"> more time with their friends. (spend)</p>
                                 <p class="r" id="spr-r3"></p>
-                                <p class="q">4.  What I really like about Mellisa is that she <input type="text" class="inputQ" id="spr-q4"> amazing cakes. (make)</p>
+                                <p class="q">4. What I really like about Mellisa is that she <input type="text" class="inputQ" id="spr-q4"> amazing cakes. (make)</p>
                                 <p class="r" id="spr-r4"></p>
-                                <p class="q">5.  Mary <input type="text" class="inputQ" id="spr-q5"> going to parties and she herself often gives one as well. (enjoy)</p>
+                                <p class="q">5. <input type="text" class="inputQ" id="spr-q5"> to the radio every day? (you/listen)</p>
                                 <p class="r" id="spr-r5"></p>
                             </div>
                             <hr>
                             <div>
-                                <button class="submit" onclick="spr_Submit('works','do not disturb','spend','makes','enjoys')">Submit</button>
+                                <button class="submit" onclick="spr_Submit('works','do not disturb','spend','makes','Do you listen')">Submit</button>
                             </div>
 							<h4 class="caHead" id="spr-caHead" style="display: none;">Correct answers for the questions done wrong</h3>
 							<div class="clearfix">
@@ -263,24 +263,24 @@
                     <div class="modal-quiz" id="modalprc"> <!--Modal Box-->
                         <div class="content-quiz">
                             <span class="close" onclick="quizClose()">&times;</span>
-                            <h2>Quiz - Simple Present Tense</h2>
+                            <h2>Quiz - Present Continuous</h2>
                             <hr>
-                            <h3>Complete the sentences, put the verb into the correct form, positive or negative.</h3>
+                            <h3>Complete the sentences, put the verb into the correct form (positive/negative/question)</h3>
                             <div class="clearfix">
-                                <p class="q">1. He <input type="text" class="inputQ" id="prc-q1"> in a Software Company. (work)</p>
+                                <p class="q">1. Rick admires those girls who <input type="text" class="inputQ" id="prc-q1"> red dresses. (wear)</p>
                                 <p class="r" id="prc-r1"></p>
-                                <p class="q">2. I know sara is very busy, so I <input type="text" class="inputQ" id="prc-q2"> her. (disturb)</p>
+                                <p class="q">2. I don't know what or who she <input type="text" class="inputQ" id="prc-q2"> at. I don't think there is anything funny. (laugh)</p>
                                 <p class="r" id="prc-r2"></p>
-                                <p class="q">3. When children become teenagers, they <input type="text" class="inputQ" id="prc-q3"> more time with their friends. (spend)</p>
+                                <p class="q">3. The kids <input type="text" class="inputQ" id="prc-q3"> along well with each other now, but they may start to quarrel anytime. (get)</p>
                                 <p class="r" id="prc-r3"></p>
-                                <p class="q">4.  What I really like about Mellisa is that she <input type="text" class="inputQ" id="prc-q4"> amazing cakes. (make)</p>
+                                <p class="q">4.  Let's go out. It is not raining <input type="text" class="inputQ" id="prc-q4"> now. (not/rain)</p>
                                 <p class="r" id="prc-r4"></p>
-                                <p class="q">5.  Mary <input type="text" class="inputQ" id="prc-q5"> going to parties and she herself often gives one as well. (enjoy)</p>
+                                <p class="q">5. <input type="text" class="inputQ" id="prc-q5"> the television? - No, you can turn it off. (you/watching)</p>
                                 <p class="r" id="prc-r5"></p>
                             </div>
                             <hr>
                             <div>
-                                <button class="submit" onclick="prc_Submit('working','do not disturb','spend','makes','enjoys')">Submit</button>
+                                <button class="submit" onclick="prc_Submit('are wearing','is laughing','are getting','is not raining','Are you watching')">Submit</button>
                             </div>
 							<h4 class="caHead" id="prc-caHead" style="display: none;">Correct answers for the questions done wrong</h3>
 							<div class="clearfix">
@@ -368,7 +368,40 @@
                         </div>
                     </div> <!--Modal Box Elements-->
 
-                    
+                    <!--Quiz Modal Box Elements-->
+                    <button class="modal-btn" onclick="prpQuiz()">Quiz</button>
+                    <div class="modal-quiz" id="modalprp"> <!--Modal Box-->
+                        <div class="content-quiz">
+                            <span class="close" onclick="quizClose()">&times;</span>
+                            <h2>Quiz - Present Perfect</h2>
+                            <hr>
+                            <h3>Complete the sentences, put the verb into the correct form (positive/negative/question)</h3>
+                            <div class="clearfix">
+                                <p class="q">1.  <input type="text" class="inputQ" id="prp-q1">  (work)</p>
+                                <p class="r" id="prp-r1"></p>
+                                <p class="q">2.  <input type="text" class="inputQ" id="prp-q2">  (disturb)</p>
+                                <p class="r" id="prp-r2"></p>
+                                <p class="q">3.  <input type="text" class="inputQ" id="prp-q3">  (spend)</p>
+                                <p class="r" id="prp-r3"></p>
+                                <p class="q">4.   <input type="text" class="inputQ" id="prp-q4">  (make)</p>
+                                <p class="r" id="prp-r4"></p>
+                                <p class="q">5.   <input type="text" class="inputQ" id="prp-q5">  (enjoy)</p>
+                                <p class="r" id="prp-r5"></p>
+                            </div>
+                            <hr>
+                            <div>
+                                <button class="submit" onclick="prp_Submit('','','','','')">Submit</button>
+                            </div>
+							<h4 class="caHead" id="prp-caHead" style="display: none;">Correct answers for the questions done wrong</h3>
+							<div class="clearfix">
+                                <p class="correct-answer" id="prp-ca1"></p>
+						    	<p class="correct-answer" id="prp-ca2"></p>
+						    	<p class="correct-answer" id="prp-ca3"></p>
+						       	<p class="correct-answer" id="prp-ca4"></p>
+						    	<p class="correct-answer" id="prp-ca5"></p>
+                            </div>
+                        </div>
+                    </div> <!--Quiz Modal Box Elements-->
                 </div>
 
                 <div class="col4" id="presentPC"><!--perf-cont-->
