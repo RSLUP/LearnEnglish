@@ -1,3 +1,4 @@
+/*header*/
 header {
     background-color:rgba(80,83,89,0.91);
     height: 54px;
@@ -13,10 +14,6 @@ header>img {
     left: 17px;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 #headerh1{
     font-size: 24px;
     position: fixed;
@@ -26,6 +23,11 @@ html{
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/*three main divs*/
 #quiz_back{
     width: 75%;
     height: 450px;
@@ -53,6 +55,8 @@ html{
     top: 160px;
     margin: auto;
 }
+
+/*main background image*/
 
 #quiz_back>img{
     position: absolute;
@@ -84,18 +88,28 @@ html{
     font-family:cursive;
 }
 
+/*two forms*/
+#quiz1form{
+    background-color: rgba(148,178,203,0.54);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+#quiz2form{
+    background-color: rgba(235,186,176,0.91);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+/*questions & buttons*/
 .que{
     font-size: 20px;
 }
 
 #after_submit,#after_tenses_submit{
     visibility: hidden;
-}
-
-#quiz1form{
-    background-color: rgba(148,178,203,0.54);
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
 }
 
 #msg,#tenses_msg{
@@ -123,19 +137,17 @@ html{
     transition: background-color 1s;
 }
 
-
-#quiz2form{
-    background-color: rgba(235,186,176,0.91);
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-
-}
-
-
 .button:hover{
     background-color: green;
     cursor: pointer;
 }
+
+/*!*winning gif*!*/
+/*#win_gif1,#win_gif2{*/
+/*    width: 250px;*/
+/*}*/
+
+/*footer*/
 
 footer {
     width: 100%;
@@ -155,3 +167,4 @@ footer {
     color: white;
 
 }
+

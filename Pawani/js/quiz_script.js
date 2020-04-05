@@ -1,4 +1,3 @@
-//document.quiz1_div = undefined;
 
 function check() {
     var question1=document.quiz1form.que1.value;
@@ -45,8 +44,8 @@ function check() {
     }
 
 
-    var msg=["Well done!:)","That's just okay","You need more practice"];
-
+    var msg=["Well done!:)","That's just okay :|","You need more practice :("];
+    // var picture=["gif/dancing.gif"];
     var index;
     if( correct<6){
         index=2;
@@ -61,6 +60,7 @@ function check() {
     document.getElementById("msg").innerHTML=msg[index];
     document.getElementById("after_submit").style.visibility="visible";
     document.getElementById("result").innerHTML="You got "+ correct+" correct.";
+    // document.getElementById("win_gif1").src=picture[0];
 }
 
 
@@ -81,7 +81,7 @@ function tenses_check() {
     if(question1=="wants"){
         correct++;
     }
-    if(question2=="wastes"){
+    if(question2=="tastes"){
         correct++;
     }
     if(question3=="watches"){
@@ -99,18 +99,18 @@ function tenses_check() {
     if(question7=="saw"){
         correct++;
     }
-    if(question8=="Haven't_seen"){
+    if(question8=="haven't_seen"){
         correct++;
     }
-    if(question9=="Appears"){
+    if(question9=="appears"){
         correct++;
     }
-    if(question10=="Was_mending"){
+    if(question10=="was_mending"){
         correct++;
     }
 
-    var tensesmsg=["Well done!:)","That's just okay","You need more practice"];
-
+    var tensesmsg=["Well done!:)","That's just okay :|","You need more practice :("];
+    // var picture=["gif/dancing.gif"];
     var index;
     if( correct<6){
         index=2;
