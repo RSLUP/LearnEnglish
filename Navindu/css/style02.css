@@ -303,7 +303,7 @@ a {
     
 }
 
-.modal-content, .modal-content h2, .modal-content h3, .close, .table, .content-quiz{
+.modal-content, .modal-content h2, .modal-content h3, .close, .table, .content-quiz, .content-quiz h2, .content-quiz h3, .q, .r{
     animation-name: anim-modal;
     animation-duration: 0.7s;
 }
@@ -324,7 +324,7 @@ a {
     float: left;
     width: 150px;
     height: 40px;
-    margin: 10px 0 0 20px;
+    margin: 10px 45px 0 30px;
     border-radius: 8px;
     background:  rgb(82, 3, 3);
     color: white;
@@ -421,6 +421,13 @@ a {
 
 .inputQ{
     width: 100px;
+    height: 15px;
+    background: white;
+    border-radius: 4px;
+    color: rgb(11, 11, 128);
+    font-size: 16px;
+    border: 2px solid black;
+    font-weight: bold;
 }
 
 .submit{
