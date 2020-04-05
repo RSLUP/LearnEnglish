@@ -2,11 +2,13 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+
+
 #quiz {
 	margin-left: 10px;
 	background: #d2def2;
 	padding: 10px 20px 10px 20px;
-	width: 700px;
+	width: 400px;
 	border-radius: 20px;
 	float: left;
 
@@ -15,6 +17,14 @@ body {
 input {
 	margin-bottom: 20px;
 	display: block;
+}
+
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
 }
 
 
@@ -29,15 +39,17 @@ input {
 	margin-top: 15px;
 }
 
+
+
 #button:hover {
-	background: rgb(160, 240, 213);
+	background: white;
 	border: 1px solid green;
 	color: black;
 	cursor: pointer;
 
 }
 
-#submitted {
+#after_submit {
 	visibility: hidden;
 	background: #ff5459;
 	padding: 10px 20px 10px 20px;
@@ -47,13 +59,16 @@ input {
 	margin-left: 20px;
 	font-size: 30px;
 
+
 }
 
-#pic {
+#picture {
 	width: 375px;
 	height: 245px;
 }
 
-#rd {
+
+
+#mc {
 	display: inline;
 } 

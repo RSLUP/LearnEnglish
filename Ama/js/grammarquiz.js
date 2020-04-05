@@ -22,7 +22,6 @@ function check()
     if (question2 == "2")
      {
         correct++;
-        alert("hello");
     }	
     if (question3 == "simple present tense")
      {
@@ -58,19 +57,19 @@ function check()
     }
     
 
-	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
+	var pictures = ["img/giphy.gif", "img/meh.jpeg", "img/lose.gif"];
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
-	if (correct >0 && correct<3) {
+	if (correct >= 0 && correct <=4) {
 		score = 2;
 	}
 
-	if (correct >= 3 && correct < 6) {
+	if (correct>4 & correct<=6) {
 		score = 1;
 	}
 
-	if (correct >= 6 && correct<=10) {
+	if (correct>6) {
 		score = 0;
 	}
 
