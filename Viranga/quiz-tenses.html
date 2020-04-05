@@ -1,0 +1,83 @@
+<html> 
+    <head>
+        <meta charset="UTF - 8" name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--add title-->
+        <title>Quiz-Tenses</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Quiz/styles.css">
+        
+        
+
+    
+    
+    
+   
+    <!--Start web page-->
+    </head>
+    
+    <body>
+        <div id="page">
+            <div class = "content">
+                <header id="header">
+                    <div id="header-inner">	
+                        <div id="logo">
+                            <h1><a>Learn<span>English</span></a></h1>
+                        </div>
+                        <div class="clr"></div>
+                        </div>
+                </header>
+                <div class="dropdown">
+                    <button class="dropbtn">Learn More &#10097</button>
+                    <div class="dropdown-content">
+                        <a href="speech.html">&#10004 8 Parts of Speech</a>
+                        <a href="tenses.html">&#10004 12 Verbs Tenses</a>
+                     
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">Take a Quiz &#10097</button>
+                    <div class="dropdown-content">
+                        <a href="quiz-speech.html">&#10004 Quiz on 8 Parts of Speech</a>
+                        <a href="quiz-tenses.html">&#10004 Quiz on 12 Verbs Tenses</a>
+                     
+                    </div>
+                </div>        
+                <div class="clr"></div>
+            </div>
+        </div>
+
+        
+        <div class ="quiz-container">
+            <div class = "question-number">
+                <h3>Questions <span class ="question-num-value"></span> of <span class ="total-question"></span></h3>
+            </div>
+            <div class ="question"></div>
+            <div class ="options">
+                <div id ="0" class="option1" onclick="check(this)"></div>
+                <div id ="1" class="option2" onclick="check(this)"></div>
+                <div id ="2" class="option3" onclick="check(this)"></div>
+                <div id ="3" class="option4" onclick="check(this)"></div>
+            </div>
+            <div class ="button">
+                <button type ="button" class='btn' onclick="next()">Next</button>
+            </div>
+            <div class ="answers-tracker">
+               
+            </div>
+
+            
+            
+        </div>
+        <div class ="quiz-over">
+            <div class="box">
+                <h1>Good Try..! <br>
+                    You Got <span class ="correct-answers"></span> out of <span class ="total-question2"></span> answers Correct!<br>
+                    That's <span class ="percentage"></span>
+                </h1>
+                <button type ="button" onclick="tryAgain()">Try Again</button>
+            </div>
+        </div>
+        <script src="Quiz/script-tenses.js"></script>
+    </body>
+</html>
