@@ -25,56 +25,57 @@
         <h1>10 Questions-Eight Parts of Speech</h1>
         <p class="que">1.I bought a <b>beautiful</b> dress at the mall.</p>
         <input type="radio"  name="que1" value="preposition">preposition<br>
-        <input type="radio"  name="que1" value="adjective">adjective<br>
+        <input id="nadj" type="radio"  name="que1" value="adjective">adjective<br>
         <input type="radio"  name="que1" value="noun">noun<br>
 
         <p class="que">2.What did she ask you to do?</p>
         <input type="radio" name="que2" value="conjunction">conjunction<br>
         <input type="radio" name="que2" value="preposition">preposition<br>
-        <input type="radio" name="que2" value="pronoun">pronoun<br>
+        <input id="npro" type="radio" name="que2" value="pronoun">pronoun<br>
 
         <p class="que">3.I left my shoes under the kitchen table.</p>
         <input type="radio" name="que3" value="adjective">adjective<br>
-        <input type="radio" name="que3" value="preposition">preposition<br>
+        <input id="npre" type="radio" name="que3" value="preposition">preposition<br>
         <input type="radio" name="que3" value="pronoun">pronoun<br>
 
 
         <p class="que">4.If we finish our work quickly we can go to the movies.</p>
-        <input type="radio" name="que4" value="adverb">adverb<br>
+        <input id="nadv" type="radio" name="que4" value="adverb">adverb<br>
         <input type="radio" name="que4" value="conjunction">conjunction<br>
         <input type="radio" name="que4" value="verb">verb<br>
 
         <p class="que">5.On Saturdays I work from nine to five.</p>
-        <input type="radio" name="que5" value="verb">verb<br>
+        <input id="verbn" type="radio" name="que5" value="verb">verb<br>
         <input type="radio" name="que5" value="preposition">preposition<br>
         <input type="radio" name="que5" value="adverb">adverb<br>
 
         <p class="que">6.I want to go to a university in the United States.</p>
         <input type="radio" name="que6" value="adjective">adjective<br>
         <input type="radio" name="que6" value="preposition">preposition<br>
-        <input type="radio" name="que6" value="noun">noun<br>
+        <input id="nnoun" type="radio" name="que6" value="noun">noun<br>
 
         <p class="que">7.I'm sure I've met your girlfriend before.</p>
-        <input type="radio" name="que7" value="verb">verb<br>
+        <input id="nver" type="radio" name="que7" value="verb">verb<br>
         <input type="radio" name="que7" value="preposition">preposition<br>
         <input type="radio" name="que7" value="interjection">interjection<br>
 
-        <p class="que">8.Well, I don't think I'll be home before 6.</p>
-        <input type="radio" name="que8" value="interjection">interjection<br>
+        <p class="que">8.Well, I don't think I'll be home before.</p>
+        <input id="ninter" type="radio" name="que8" value="interjection">interjection<br>
         <input type="radio" name="que8" value="preposition">preposition<br>
         <input type="radio" name="que8" value="pronoun">pronoun<br>
 
         <p class="que">9.Andy knocked on the door but nobody answered.</p>
         <input type="radio" name="que9" value="adverb">adverb<br>
         <input type="radio" name="que9" value="adjective">adjective<br>
-        <input type="radio" name="que9" value="conjunction">conjunction<br>
+        <input id="nconj" type="radio" name="que9" value="conjunction">conjunction<br>
 
         <p class="que">10.After lunch let's go out for a coffee.</p>
         <input type="radio" name="que10" value="pronoun">pronoun<br>
-        <input type="radio" name="que10" value="preposition">preposition<br>
+        <input id="nprep" type="radio" name="que10" value="preposition">preposition<br>
         <input type="radio" name="que10" value="verb">verb<br><br><br>
 
         <input class="button" type="button" name="quiz1submit" value="Finished" onclick="check();">
+        <input class="button" type="button" name="quiz1answers" value="answers" onclick="highlight();">
 
 
         <div id="after_submit">
@@ -115,7 +116,7 @@
 
             <p class="que">6.The baby _______ all morning.</p>
             <input type="radio" name="que6" value="cries">cries<br>
-            <input type="radio" name="que6" value="has been crying">has been crying<br>
+            <input type="radio" name="que6" value="has_been_crying">has been crying<br>
 <!--            <input type="radio" name="que6" value="noun">noun<br>-->
 
             <p class="que">7.I _______ Rahim at the zoo.</p>
@@ -129,9 +130,10 @@
             <input type="radio" name="que8" value="am_not_seeing">am not seeing<br>
 
             <p class="que">9.This paper _____ twice weekly.</p>
-            <input type="radio" name="que9" value="is appearing">is appearing<br>
-            <input type="radio" name="que9" value="appearing ">adjective<br>
-            <input type="radio" name="que9" value="appears">conjunction<br>
+            <input type="radio" name="que9" value="is_appearing">is appearing<br>
+            <input type="radio" name="que9" value="appearing ">appearing<br>
+            <input type="radio" name="que9" value="appears">appears<br>
+
 
             <p class="que">10.Ashok fell off the ladder when he ________ the roof.</p>
             <input type="radio" name="que10" value="is_mending">is mending<br>
@@ -140,6 +142,11 @@
 
             <input class="button" type="button" name="quiz2submit" value="Finished" onclick="tenses_check();">
 
+
+            <div id="after_tenses_submit">
+                <p id="tenses_result"></p>
+            </div>
+            <p id="tenses_msg"></p>
 
         </form>
     </div>

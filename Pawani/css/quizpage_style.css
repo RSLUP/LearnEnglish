@@ -77,7 +77,7 @@ header {
     font-size: 20px;
 }
 
-#after_submit{
+#after_submit,#after_tenses_submit{
     visibility: hidden;
 }
 
@@ -87,14 +87,14 @@ header {
     padding: 10px 10px 10px 10px;
 }
 
-#msg{
+#msg,#tenses_msg{
     font-size: 20px;
     color: darkred;
     font-family: cursive;
 
 }
 
-#result{
+#result,#tenses_result{
     font-size: 18px;
     color: black;
     font-family: cursive;
@@ -109,6 +109,7 @@ header {
     border-radius: 5px;
     padding: 10px;
     font-family: cursive;
+    transition: background-color 1s;
 }
 
 
@@ -117,4 +118,14 @@ header {
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
 
+}
+
+
+.button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+#nadj{
+    color: red;
 }

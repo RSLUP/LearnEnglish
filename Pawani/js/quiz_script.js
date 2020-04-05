@@ -75,39 +75,74 @@ function tenses_check() {
     var question8=document.quiz2form.que8.value;
     var question9=document.quiz2form.que9.value;
     var question10=document.quiz2form.que10.value;
+
     var correct=0;
 
-    if(question1=="Wants"){
+    if(question1=="wants"){
         correct++;
     }
-    if(question2=="Tastes"){
+    if(question2=="wastes"){
         correct++;
     }
-    if(question3=="Watches"){
+    if(question3=="watches"){
         correct++;
     }
-    if(question4=="Went"){
+    if(question4=="went"){
         correct++;
     }
-    if(question5=="Went"){
+    if(question5=="went"){
         correct++;
     }
-    if(question6=="Has been crying"){
+    if(question6=="has_been_crying"){
         correct++;
     }
-    if(question7=="Saw"){
+    if(question7=="saw"){
         correct++;
     }
-    if(question8=="Haven't seen"){
+    if(question8=="Haven't_seen"){
         correct++;
     }
     if(question9=="Appears"){
         correct++;
     }
-    if(question10=="Was mending"){
+    if(question10=="Was_mending"){
         correct++;
     }
 
+    var tensesmsg=["Well done!:)","That's just okay","You need more practice"];
 
+    var index;
+    if( correct<6){
+        index=2;
+    }
+    if (correct>5 && correct<9){
+        index=1;
+    }
+    if (correct>9 && correct<11){
+        index=0;
+    }
+
+
+
+    document.getElementById("tenses_msg").innerHTML=tensesmsg[index];
+    document.getElementById("after_tenses_submit").style.visibility="visible";
+    document.getElementById("tenses_result").innerHTML="You got "+ correct+" correct.";
+
+
+}
+
+
+function highlight(){
+    document.getElementsByName("que1").style.color="yello";
+    document.getElementById("nadj").style.color='yellow';
+    document.getElementById("npro").style.color='yellow';
+    document.getElementById("npre").style.color='yellow';
+    document.getElementById("nadv").style.color='yellow';
+    document.getElementById("nverb").style.color='yellow';
+    document.getElementById("nnoun").style.color='yellow';
+    document.getElementById("ninter").style.color='yellow';
+    document.getElementById("nver").style.color='yellow';
+    document.getElementById("nconj").style.color='yellow';
+    document.getElementById("nprep").style.color='yellow';
 
 }
