@@ -291,7 +291,6 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    
 }
 
 .modal-content {
@@ -304,7 +303,7 @@ a {
     
 }
 
-.modal-content, .modal-content h2, .modal-content h3, .close, .table{
+.modal-content, .modal-content h2, .modal-content h3, .close, .table, .content-quiz{
     animation-name: anim-modal;
     animation-duration: 0.7s;
 }
@@ -322,6 +321,7 @@ a {
 }
 
 .modal-btn{
+    float: left;
     width: 150px;
     height: 40px;
     margin: 10px 0 0 20px;
@@ -382,6 +382,86 @@ a {
 
 .special-row{
     background-color: rgb(235, 203, 203);
+}
+
+.modal-quiz{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding: 100px 0;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content-quiz {
+    background-color: rgb(255, 255, 242);
+    margin: auto;
+    padding: 20px;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    width: 65%;
+}
+
+.content-quiz h2{
+    margin-top: 5px;
+    color: rgb(78, 7, 7);
+    font-family: arial;
+    font-size: 30px;
+}
+
+.content-quiz h3{
+    color: rgb(12, 6, 97);
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: arial;
+}
+
+.inputQ{
+    width: 100px;
+}
+
+.submit{
+    width: 120px;
+    height: 40px;
+    margin: 10px 0 10px 20px;
+    border-radius: 7px;
+    background:  rgb(85, 6, 6);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 17px;
+    box-shadow: 0 0 5px gray;
+}
+
+.q,.r{
+    padding-bottom: 12px;
+    float: left;
+}
+
+.r{
+    font-weight: bolder;
+    text-shadow: 0 0 10px gray;
+}
+
+
+.caHead{
+    font-family: arial;
+    color: rgb(92, 10, 10);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background: maroon;
+}
+
+.correct-answer{
+    float: left;
+    padding-left: 20px;
 }
 
 @keyframes anim-modal {
