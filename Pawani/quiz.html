@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/quizpage_style.css">
+</head>
+
+
+<body>
+<header>
+    <a href="index.html" style=""> <h1 id="headerh1">It's Time to Learn English</h1></a>
+</header>
+
+    <div id="quiz_back">
+        <img src="images/quiz_back.jpg" alt="">
+        <h1 id="quiz_maintopic"><u>Ready For A Quiz?</u></h1>
+        <ol id="quiz_list">
+            <li>Eight Parts of Speech</li>
+            <li>Tenses</li>
+        </ol>
+    </div>
+    <div id="quiz1_div">
+        <form id="quiz1form" name="quiz1form">
+        <h1>10 Questions-Eight Parts of Speech</h1>
+        <p class="que">1.I bought a <b>beautiful</b> dress at the mall.</p>
+        <input type="radio"  name="que1" value="preposition">preposition<br>
+        <input type="radio"  name="que1" value="adjective">adjective<br>
+        <input type="radio"  name="que1" value="noun">noun<br>
+
+        <p class="que">2.What did she ask you to do?</p>
+        <input type="radio" name="que2" value="conjunction">conjunction<br>
+        <input type="radio" name="que2" value="preposition">preposition<br>
+        <input type="radio" name="que2" value="pronoun">pronoun<br>
+
+        <p class="que">3.I left my shoes under the kitchen table.</p>
+        <input type="radio" name="que3" value="adjective">adjective<br>
+        <input type="radio" name="que3" value="preposition">preposition<br>
+        <input type="radio" name="que3" value="pronoun">pronoun<br>
+
+
+        <p class="que">4.If we finish our work quickly we can go to the movies.</p>
+        <input type="radio" name="que4" value="adverb">adverb<br>
+        <input type="radio" name="que4" value="conjunction">conjunction<br>
+        <input type="radio" name="que4" value="verb">verb<br>
+
+        <p class="que">5.On Saturdays I work from nine to five.</p>
+        <input type="radio" name="que5" value="verb">verb<br>
+        <input type="radio" name="que5" value="preposition">preposition<br>
+        <input type="radio" name="que5" value="adverb">adverb<br>
+
+        <p class="que">6.I want to go to a university in the United States.</p>
+        <input type="radio" name="que6" value="adjective">adjective<br>
+        <input type="radio" name="que6" value="preposition">preposition<br>
+        <input type="radio" name="que6" value="noun">noun<br>
+
+        <p class="que">7.I'm sure I've met your girlfriend before.</p>
+        <input type="radio" name="que7" value="verb">verb<br>
+        <input type="radio" name="que7" value="preposition">preposition<br>
+        <input type="radio" name="que7" value="interjection">interjection<br>
+
+        <p class="que">8.Well, I don't think I'll be home before 6.</p>
+        <input type="radio" name="que8" value="interjection">interjection<br>
+        <input type="radio" name="que8" value="preposition">preposition<br>
+        <input type="radio" name="que8" value="pronoun">pronoun<br>
+
+        <p class="que">9.Andy knocked on the door but nobody answered.</p>
+        <input type="radio" name="que9" value="adverb">adverb<br>
+        <input type="radio" name="que9" value="adjective">adjective<br>
+        <input type="radio" name="que9" value="conjunction">conjunction<br>
+
+        <p class="que">10.After lunch let's go out for a coffee.</p>
+        <input type="radio" name="que10" value="pronoun">pronoun<br>
+        <input type="radio" name="que10" value="preposition">preposition<br>
+        <input type="radio" name="que10" value="verb">verb<br><br><br>
+
+        <input type="button" name="quiz1submit" value="Finished" onclick="check();">
+
+        <div id="after_submit">
+            <p id="result"></p></div>
+        </form>
+        </div>
+    <div id="quiz2_div"></div>
+
+<script src="js/quiz_script.js"></script>
+
+</body>
+</html>
