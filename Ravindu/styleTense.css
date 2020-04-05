@@ -1,21 +1,18 @@
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* SlideShow container */
 .slideshow-container {
-
   max-width: 1000px;
   position: relative;
   margin: auto;
-
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
-
-
 
 /* Next & previous buttons */
 .prev, .next {
@@ -41,7 +38,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -89,11 +86,47 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* styling for the content */
+
+
+.text {
+  color: 	#FFFFFF;
+  font-family: 'Droid serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+#topic {
+  color: #d54d7b;
+  font-family: "Great Vibes", cursive;
+  font-size: 85px;
+  line-height: 160px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
 }
