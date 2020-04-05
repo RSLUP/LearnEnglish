@@ -8,40 +8,68 @@ body
 html{
 	scroll-behavior: smooth;
 }
-.nav
-	{
-		background: rgb(14, 1, 49);
-		border-top:5px solid rgb(181, 202, 245);
-		box-shadow: 3px 0px 5px rgb(5, 132, 163);
-		/*background: rgb(2,0,36);
-    	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-		text-align: center;
-		
-	}
-	.nav ul li
-	{	list-style-type: none;
-		padding: 20px 20px;
-		font-size: 14px;
-		color: white;
-		display: inline-block; 
-		font-family: sans-serif;
-		transition: 1s;
-	}
-	.nav ul li:hover
-	{
-		background: rgb(174, 203, 230);
-		 font-weight: bold;
-	}
-	.nav li a
-	{
-		text-decoration: none;
-			color: white;
-	}
+.logo{
+	padding: 5px 0 0 60px;
+	width: 140px;
+	height: 60px;
+	margin-top: -5px;
+	margin-right:-200px;
+	display: inline-block; 
+	
+}
+.dropdown{
+	margin: 0 auto;
+}
+nav ul{
+	transition:1s;
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 20px;
+	
+}
+nav ul li{
+	background: rgb(2, 19, 65);
+	position: relative;
+	list-style: none;
+	display: inline-block;;
+}
+nav ul li a{
+	
+	font-family: fantasy;
+	display: block;
+	padding: 0 15px;
+	color: rgb(137, 153, 240);
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 19px;
+	transition: .5s;
+}
+nav ul li a:hover{
+	background: rgb(127, 168, 243);
+}
+nav ul ul{
+	position: absolute;
+	top: 60px;
+	line-height: 20px ;
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	width: 150px;
+	float: none;
+	display: list-item;
+	position: relative;
+	line-height: 20px ;
+}
+
 .image{
 	
-	background-position: center;
-	height: 700px;
-	width:1500px;
+	background-position: relative;
+	height: 400px;
+	width:800px;
 	background-size: cover;
 }
 .intro
@@ -189,10 +217,7 @@ footer {
 	background: teal;
 	box-shadow: 0px 0px 1px #777;
 }
- /*G&V styles
- .GVbody
- {
-	background-image: url("");
- }
- 
- /*something to*/
+.border-outline
+{
+    border-collapse: collapse;
+}

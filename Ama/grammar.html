@@ -9,16 +9,24 @@
    <script type="text/javascript" src="js/grammarjavascript.js"> </script>
 </head>
 <body>
-    <nav class="nav">
+    <div class="dropdown">
+        <nav class="nav" >
+          <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
+         <ul>
+         <li><a href="EnglishHub.html"> Home </a></li>
+         <li><a href="grammar.html">Grammar</a></li>
+         <li><a href="#">Vocabulary</a></li>
+         <li><a href="speaking.html">Speaking</a></li>
+         <li><a href="#">Writing </a></li>
+         <li><a href="#">Quizes </a>
         <ul>
-        <li><a href="EnglishHub.html"> Home </a></li>
-        <li><a href="grammar.html">Grammar</a></li>
-        <li><a href="#">Vocabulary</a></li>
-        <li><a href="speaking.html">Speaking</a></li>
-        <li><a href="#">Writing </a></li>
-         
-       </ul>
-       </nav>
+          <li><a href="grammarquiz.html">Grammar</a></li>
+          <li><a href="#">Speaking</a></li>
+        </ul></li>
+          
+        </ul>
+        </nav>
+      </div>
   
         <div align="center"><img src="img/grammar.jpg" width="1100" height="500"></div>
         <br><br>
@@ -119,7 +127,7 @@
         <div id="scroll-sim-Pre-tense"><center><h2><font style="color: rgb(79, 9, 126);font-size:larger;"><u>Simple Present Tense</u></font></h2></center></div> 
         <table height="400" width="1200">
             <tr >
-                <td  id="SPrT-color-change" width="700" height="200">
+                <td  id="SPrT-color-change" width="700" height="200" >
                     <ul  class="description" class="list">
                         <li>To talk of things that happen repeatedly</li>
                         <li>Things you do as habits</li>
@@ -136,9 +144,11 @@
                         </tr>          
                         <tr>
                             <td>The student goes to school</td>
-                            <td>The students go to school</td>              
+                            <td>The students go to school</td>  
+                                       
                         </tr>
                     </table>
+                    
                     <br><button onclick="displaySPrTFullex()"class="btn-example" >Show me more examples</button>
                              <p id="SPrT"></p> <br><br>
                 </td>
@@ -147,9 +157,9 @@
                 </td>
             </tr> 
         </table>    
-          
+        <hr>
         <div id="scroll-sim-Pst-tense"><center><h2><font style="color: rgb(79, 9, 126);font-size:larger;"><u>Simple Past Tense</u></font></h2></center></div>
-        <table>
+        <table class="outline">
             <tr>
                 <td>
                     <img src="img/SPT.jpg">
@@ -182,7 +192,7 @@
                 
             </tr>
         </table>
-          
+        <hr>
         <div id="scroll-sim-fu-tense"><center><h2><font style="color: rgb(79, 9, 126);font-size:larger;"><u>Simple Future Tense</u></font></h2></center></div>
          <table >
              <tr>
@@ -213,7 +223,6 @@
                  </td>
              </tr>
          </table>
-       
          
           <br><br>
          
@@ -266,7 +275,7 @@
                   </td>
               </tr>
           </table>
-         
+          <hr>
          
     
           <br><br><div id="scroll-past-con-tense"><center><h2><font style="color: rgb(5, 12, 54);"><u>Past Continuous Tense</u></font></h2></center></div>
@@ -301,7 +310,7 @@
                   </td>
               </tr>
           </table>
-         
+          <hr>
           <div id="scroll-fu-con-tense"><center><h2><font style="color: rgb(5, 12, 54);"><u>Future Continuous Tense</u></font></h2></center></div>
           <table align="center">
               <tr>
@@ -310,7 +319,7 @@
                     <table>
                         <tr>
                            <h3><td class="formula"> will + be + V + ing</td><br>
-                            <t class="example"> I will be finished my degree next year by this time</td></h3> 
+                            <t class="example"> I will be doing my degree next year by this time</td></h3> 
                         </tr>
                         <tr>
                             <td align="center">
@@ -327,7 +336,7 @@
                   </td>
               </tr>
           </table>       
-   
+          <hr>
           <center><h2><font style="color: rgb(5, 12, 54);"><u>Summary of Continuous Tenses</u></font></h2></center>
           <table>
             <tr id="Continuous-summary-TR1">
@@ -346,7 +355,7 @@
                   <td>The teacher will be praising the children</td>
               </tr>
           </table><br><br>
-    
+          <hr>
           <!--Perfect tenses-->
           <div id="banner3"><h1><font style="color: rgba(3, 54, 33, 0.767);">PERFECT TENSES</font> </h1></div> <br>
           <div id="scroll-pre-per-tense"><center><h2><font style="color: rgb(6, 126, 70);"><u>Present Perfect Tense</u></font></h2></center></div>
@@ -394,6 +403,8 @@
                   </td>
               </tr>
           </table>
+
+          <hr>
           <br><br>   
           <div id="scroll-past-per-tense"><center><h2><font style="color: rgb(6, 126, 70);"><u>Past Perfect Tense</u></font></h2></center></div>
           <table align="center">
@@ -436,7 +447,7 @@
                   </td>
               </tr>
           </table>  <br><br>
-         
+          <hr>
           <div id="scroll-fu-per-tense"><center><h2><font style="color: rgb(6, 126, 70);"><u>Future Perfect Tense</u></font></h2></center></div>
           <table align="center">
               <tr>
@@ -463,7 +474,7 @@
                   </td>
               </tr>
           </table>
-          
+          <hr>
 
           <center><h2><font style="color: rgb(6, 126, 70);"><u>Summary of Continuous Tenses</u></font></h2></center>
           <table align="center">
@@ -482,7 +493,7 @@
                   <td>The teacher has  praised the children</td>
                   <td>The teacher will have praised the children</td>
               </tr>
-          </table><br><br>
+          </table><hr><br><br>
           <!--Perfect continuous tenses-->
           <div id="banner4"><h1><font style="color: rgb(167, 8, 82);">PERFECT  CONTINUOUS TENSES </font> </h1></div> <br>
           <div id="scroll-pre-per-con-tense"><center><h2><font style="color: rgb(167, 8, 82);"><u>Present Perfect  Continuous Tense</u></font></h2></center></div>
@@ -523,7 +534,7 @@
                   </td>
               </tr>
           </table>
-         
+          <hr>
     
           <div id="scroll-past-per-con-tense"><center><h2><font style="color: rgb(167, 8, 82);"><u>Past Perfect  Continuous Tense</u></font></h2></center></div>
           <table align="center">
@@ -537,13 +548,12 @@
                     <div class="formula">subject + had + been + verb + ing</div><br>
                         <div class="example">she had been practicing for weeks before the concert</div><br>
                     <center><button onclick="displayPPCT()" class="btn-example">Click me</button></center>
-                    <p id="PPCT"></p> <br><br>
-              
-                    
+                    <p id="PPCT"></p> <br><br> 
                   </td>
               </tr>
           </table>
-         
+          <hr>
+
           <div id="scroll-fu-per-con-tense"><center><h2><font style="color: rgb(167, 8, 82);"><u>Future Perfect  Continuous Tense</u></font></h2></center></div>
           <table align="center">
               <tr>
@@ -562,7 +572,7 @@
                   </td>
               </tr>
           </table>
-                    
+               <hr>     
           <center><h2><font style="color: rgb(167, 8, 82);"><u>Summary of Perfect Continuous Tenses</u></font></h2></center>
           <table align="center">
               <tr id="perfectConti-summary-TR1">
