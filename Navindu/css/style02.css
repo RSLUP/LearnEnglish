@@ -436,14 +436,18 @@ a {
     box-shadow: 0 0 5px gray;
 }
 
-.q,.r{
+.q{
+    overflow: auto;
     padding-bottom: 12px;
     float: left;
+    clear: both;
 }
 
 .r{
     font-weight: bolder;
     text-shadow: 0 0 10px gray;
+    padding-bottom: 12px;
+    float: left;
 }
 
 
