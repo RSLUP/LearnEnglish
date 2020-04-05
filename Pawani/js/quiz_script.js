@@ -133,16 +133,34 @@ function tenses_check() {
 
 
 function highlight(){
-    document.getElementsByName("que1").style.color="yello";
-    document.getElementById("nadj").style.color='yellow';
-    document.getElementById("npro").style.color='yellow';
-    document.getElementById("npre").style.color='yellow';
-    document.getElementById("nadv").style.color='yellow';
-    document.getElementById("nverb").style.color='yellow';
-    document.getElementById("nnoun").style.color='yellow';
-    document.getElementById("ninter").style.color='yellow';
-    document.getElementById("nver").style.color='yellow';
-    document.getElementById("nconj").style.color='yellow';
-    document.getElementById("nprep").style.color='yellow';
+    // document.getElementsByClassName("verbn").style.color="red";
+    // document.getElementsByName("que1").style.color="yello";
+    document.getElementById("nadj").style.color='darkred';
+    document.getElementById("npro").style.color='darkred';
+    document.getElementById("npre").style.color='darkred';
+    document.getElementById("nadv").style.color='darkred';
+    document.getElementById("nverb").style.color='darkred';
+    document.getElementById("nnoun").style.color='darkred';
+    document.getElementById("ninter").style.color='darkred';
+    document.getElementById("nver").style.color='darkred';
+    document.getElementById("nconj").style.color='darkred';
+    document.getElementById("nprep").style.color='darkred';
+
+}
+
+
+function tenses_highlight(){
+
+    // document.getElementsByClassName("tense").style.color='darkred';
+    document.getElementById("t1").style.color='green';
+    document.getElementById("t2").style.color='green';
+    document.getElementById("t3").style.color='green';
+    document.getElementById("t4").style.color='green';
+    document.getElementById("t5").style.color='green';
+    document.getElementById("t6").style.color='green';
+    document.getElementById("t7").style.color='green';
+    document.getElementById("t8").style.color='green';
+    document.getElementById("t9").style.color='green';
+    document.getElementById("t10").style.color='green';
 
 }
