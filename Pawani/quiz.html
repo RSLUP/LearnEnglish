@@ -74,13 +74,75 @@
         <input type="radio" name="que10" value="preposition">preposition<br>
         <input type="radio" name="que10" value="verb">verb<br><br><br>
 
-        <input type="button" name="quiz1submit" value="Finished" onclick="check();">
+        <input class="button" type="button" name="quiz1submit" value="Finished" onclick="check();">
+
 
         <div id="after_submit">
-            <p id="result"></p></div>
-        </form>
+            <p id="result"></p>
         </div>
-    <div id="quiz2_div"></div>
+            <p id="msg"></p>
+        </form>
+    </div>
+
+    <div id="quiz2_div">
+        <form id="quiz2form" name="quiz2form">
+            <h1>10 Questions-Tenses</h1>
+            <p class="que">1.Abdul ___________ to be a doctor</p>
+            <input type="radio"  name="que1" value="wants">wants<br>
+            <input type="radio"  name="que1" value="wanting">wanting<br>
+            <input type="radio"  name="que1" value="is_wanting">is wanting<br>
+
+            <p class="que">2.The Soup ________ good.</p>
+            <input type="radio" name="que2" value="taste">taste<br>
+            <input type="radio" name="que2" value="tastes">tastes<br>
+            <input type="radio" name="que2" value="is_tasting">is tasting<br>
+
+            <p class="que">3.He ______ TV most evening.</p>
+            <input type="radio" name="que3" value="watches">watches <br>
+            <input type="radio" name="que3" value="is_watch">is watch<br>
+            <input type="radio" name="que3" value="is_watching">is watching<br>
+
+
+            <p class="que">4.He _______ out five minutes ago.</p>
+            <input type="radio" name="que4" value="has gone">has gone<br>
+            <input type="radio" name="que4" value="had gone">had gone<br>
+            <input type="radio" name="que4" value="went">went<br>
+
+            <p class="que">5.When he lived in Hyderabad, he _______ to the cinema once a week.</p>
+            <input type="radio" name="que5" value="goes ">goes <br>
+            <input type="radio" name="que5" value="preposition">went<br>
+            <input type="radio" name="que5" value="was_going">was going<br>
+
+            <p class="que">6.The baby _______ all morning.</p>
+            <input type="radio" name="que6" value="cries">cries<br>
+            <input type="radio" name="que6" value="has been crying">has been crying<br>
+<!--            <input type="radio" name="que6" value="noun">noun<br>-->
+
+            <p class="que">7.I _______ Rahim at the zoo.</p>
+            <input type="radio" name="que7" value="saw">saw<br>
+            <input type="radio" name="que7" value="have_seen">have seen<br>
+            <input type="radio" name="que7" value="had_seen">had seen<br>
+
+            <p class="que">8.I ______ Kumar this week.</p>
+            <input type="radio" name="que8" value="haven't_seen">haven't seen<br>
+            <input type="radio" name="que8" value="didn't_see">did't see<br>
+            <input type="radio" name="que8" value="am_not_seeing">am not seeing<br>
+
+            <p class="que">9.This paper _____ twice weekly.</p>
+            <input type="radio" name="que9" value="is appearing">is appearing<br>
+            <input type="radio" name="que9" value="appearing ">adjective<br>
+            <input type="radio" name="que9" value="appears">conjunction<br>
+
+            <p class="que">10.Ashok fell off the ladder when he ________ the roof.</p>
+            <input type="radio" name="que10" value="is_mending">is mending<br>
+            <input type="radio" name="que10" value="was_mending">was mending<br>
+            <input type="radio" name="que10" value="mended">mended<br><br><br>
+
+            <input class="button" type="button" name="quiz2submit" value="Finished" onclick="tenses_check();">
+
+
+        </form>
+    </div>
 
 <script src="js/quiz_script.js"></script>
 

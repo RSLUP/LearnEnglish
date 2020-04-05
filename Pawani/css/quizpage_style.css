@@ -28,20 +28,19 @@ header {
 
 #quiz1_div {
     position: relative;
-    height: 115vw;
     width: 44%;
     left: 0;
     right: 0;
-    top: 6vw;
+    top: 100px;
     margin: auto;
 }
 
 #quiz2_div{
     position: relative;
-    height: 200px;
-    width: 100%;
+    width: 44%;
     left: 0;
     right: 0;
+    top: 160px;
     margin: auto;
 }
 
@@ -58,9 +57,9 @@ header {
 }
 
 #quiz_maintopic{
-
     position: absolute;
-    left: 30%;
+    left: 29%;
+    top: 4vw;
     font-family: cursive;
     font-size: 40px;
 }
@@ -80,4 +79,42 @@ header {
 
 #after_submit{
     visibility: hidden;
+}
+
+#quiz1form{
+    background-color: rgba(148,178,203,0.54);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+#msg{
+    font-size: 20px;
+    color: darkred;
+    font-family: cursive;
+
+}
+
+#result{
+    font-size: 18px;
+    color: black;
+    font-family: cursive;
+
+}
+
+.button{
+    background-color: rgba(234,171,62,0.91);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+}
+
+
+#quiz2form{
+    background-color: rgba(235,186,176,0.91);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+
 }
