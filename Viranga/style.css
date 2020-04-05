@@ -77,15 +77,17 @@ html
     width:auto; 
     float:left;
 }
-#logo h1 a, h1 a:hover 
+#logo h1 a
 { 
-    color:#9b0606; 
+    color:#fdfdfd; 
     text-decoration:none;
 }
 #logo h1 span 
 {
-    color:#ffc300;
+    color:#005f85;
 }
+
+
 /*-------------------------------------------*/
 /* main content */
 .content 
@@ -110,7 +112,7 @@ html
 /*-------------------------------------------*/
 #page 
 { 
-    background-color: rgb(3, 182, 182);
+    background-color: rgb(12, 141, 141);
     background-repeat: repeat;
     background-attachment: scroll;
     background-size: 100%;
@@ -169,12 +171,12 @@ html
 }
 .feature-inner h1 
 {
-    color:#9b0606;
+    color:#ffffff;
     font-size:40px;
 }
 .feature-inner h1 span 
 {
-    color: #ffc300;
+    color: #005f85;
 }
 /*----------------------------------------------------- */
 

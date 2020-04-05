@@ -1,0 +1,232 @@
+html 
+{
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+ body
+ {
+     margin :0;
+     background-color: rgb(12, 141, 141);
+     font-family: sans-serif;
+ }
+*{
+    box-sizing: border-box;
+}
+.quiz-container
+{
+    max-width: 700px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.quiz-container::after, .quiz-container::before
+{
+    content:'';
+    clear:both;
+    display: table;
+}
+.question-number,
+.question,
+.options,
+.button,
+.answers-tracker{
+    float: top;
+    width: auto;
+
+}
+.question-number h3
+{
+    color: rgb(3, 182, 182);
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.question
+{
+    font-size: 18px;
+    color: #000000;
+    padding: 20px 0;
+
+}
+
+.options div
+{   
+    background-color: #cccccc;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.options div:hover
+{
+    background-color: rgb(0, 94, 148);
+    color: #ffffff;
+}
+.options div.disabled
+{
+    pointer-events: none;
+}
+/*correct answer*/
+.options div.correct
+{
+    z-index :1;
+    color: #fff;
+}
+.options div.correct::before 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    z-index: -1;
+    
+    animation: animateBackground 1s ease;
+    animation-fill-mode: backwards;
+}
+@keyframes animateBackground{
+    0%{
+   transform: translateX(-100%); 
+    }
+    100%{
+    transform : translateX(0%); 
+    }
+}
+
+/*wrong answer*/
+.options div.wrong
+{
+    z-index :1;
+    color: #fff;
+}
+.options div.wrong::before 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    
+    animation: animateBackground 1s ease;
+    animation-fill-mode: backwards;
+}
+@keyframes animateBackground{
+    0%{
+   transform: translateX(-100%); 
+    }
+    100%{
+    transform : translateX(0%); 
+    }
+}
+/*wrong answer*/
+.button .btn
+{
+    padding: 15px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(8, 129, 55);
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.button .btn:hover
+{
+    background-color: rgb(0, 94, 148);
+}
+
+.answers-tracker
+{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    
+}
+.answers-tracker div
+{
+    height:40px;
+    width:40px;
+    background-color: #cccccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.answers-tracker div.correct
+{
+    background-color: green;
+    background-image: url('img/correct.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.answers-tracker div.wrong
+{
+    background-color: red;
+    background-image: url('img/wrong.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+/*last message*/
+.quiz-over
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.quiz-over .show
+{
+    display: flex;
+}
+.quiz-over .box
+{
+    background-color: rgb(3, 182, 182);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex-basis: 700px;
+    max-width: 700px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.quiz-over .box h1
+{
+    font-size: 36px;
+    margin: 0 0 20px;
+
+}
+.quiz-over .box button
+{
+    padding: 15px 50px;
+    border: none;
+    background-color: #ff9800;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 15px 0 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
