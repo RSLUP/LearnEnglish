@@ -312,19 +312,11 @@ body
     background-color: rgb(174, 175, 175);
     transition: transform .2s;
     max-width: 400px;
-    animation: animateBackground 3s ease;
-    animation-fill-mode: backwards;
+    
 }
     
 
-@keyframes animateBackground{
-    0%{
-   transform: translateX(-10%); 
-    }
-    100%{
-    transform : translateX(0%); 
-    }
-}
+
 .tense:hover
 {
     background-color: rgb(0, 94, 148);
@@ -338,7 +330,7 @@ body
     margin-bottom: 5px;
     border-radius: 15px;
     padding: 5px;
-    padding-left: 25px;
+    
     cursor: pointer;
     background-color: rgb(174, 175, 175);
     transition: transform .2s;
@@ -352,6 +344,32 @@ body
 }
   
 .speech:hover
+{
+    background-color: rgb(2, 175, 31);
+    transform: scale(1.1);
+    
+}
+.toquiz
+{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    
+    cursor: pointer;
+    background-color: rgba(87, 87, 79, 0.418);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.toquiz:hover
 {
     background-color: rgb(2, 175, 31);
     transform: scale(1.1);
