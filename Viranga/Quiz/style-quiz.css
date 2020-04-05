@@ -15,7 +15,7 @@ html
 }
 .quiz-container
 {
-    max-width: 700px;
+    max-width: 900px;
     height: auto;
     background-color: #ffffff;
     margin: 30px auto;
@@ -76,7 +76,7 @@ html
 {
     pointer-events: none;
 }
-/*correct answer*/
+/*correct answer */
 .options div.correct
 {
     z-index :1;

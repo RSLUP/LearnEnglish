@@ -68,8 +68,8 @@ body
 #header-inner
 { 
     margin:0 auto;
-    padding:10px; 
-    width:1180px; 
+    padding-bottom:10px; 
+    width:1200px; 
     background-image: url('Sources/img/header.jpg');
     
     background-size:cover;
@@ -110,6 +110,7 @@ body
     max-width: 1200;
     margin: auto;
     box-shadow: 0 4px 8px 0  rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
 }
 /*-------------------------------------------*/
 
@@ -297,3 +298,62 @@ body
   
   
 .dropdown:hover .dropbtn {background-color: rgb(1, 128, 167);}
+
+.tense
+{   
+    
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 25px;
+    cursor: pointer;
+    background-color: rgb(174, 175, 175);
+    transition: transform .2s;
+    max-width: 400px;
+    animation: animateBackground 3s ease;
+    animation-fill-mode: backwards;
+}
+    
+
+@keyframes animateBackground{
+    0%{
+   transform: translateX(-10%); 
+    }
+    100%{
+    transform : translateX(0%); 
+    }
+}
+.tense:hover
+{
+    background-color: rgb(0, 94, 148);
+    color: #ffffff;
+    transform: scale(1.1);
+}  
+.speech
+{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 25px;
+    cursor: pointer;
+    background-color: rgb(174, 175, 175);
+    transition: transform .2s;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-align: center;
+    
+}
+  
+.speech:hover
+{
+    background-color: rgb(2, 175, 31);
+    transform: scale(1.1);
+    
+}

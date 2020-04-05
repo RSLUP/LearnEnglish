@@ -21,52 +21,52 @@ let score =0;
 const questions=
 [
     {
-        q:' "I bought a beautiful dress at the mall." - The word beautiful is a/an ........',
+        q:' "I bought a beautiful dress at the mall." - The word beautiful is a/an ______________',
         options:['Preposition','Adjective','Noun','Conjunction'],
         answer:1
     },
     {
-        q:'"What did she ask you to do\?" - She is meant to be a ......',
+        q:'"What did she ask you to do\?" - She is meant to be a _____________',
         options:['Conjunction','Preposition','Noun','Pronoun'],
         answer:3
     },
     {
-        q:'"I left my shoes under the kitchen table" The word "under" is an/a .........',
+        q:'"I left my shoes under the kitchen table" The word "under" is an/a ______________',
         options:['Adjective','Preposition','Pronoun','Conjunction'],
         answer:1
     },
     {
-        q:'"If we finish our work quickly we can go to the movies." - The word "quickly" is an/a ......',
+        q:'"If we finish our work quickly we can go to the movies." - The word "quickly" is an/a _____________',
         options:['Adverb','Preposition','Verb','Pronoun'],
         answer:0
     },
     {
-        q:'"On Saturdays I work from nine to five." - The word "work" is an/a ......',
+        q:'"On Saturdays I work from nine to five." - The word "work" is an/a ____________',
         options:['Adverb','Preposition','Verb','Pronoun'],
         answer:2
     },
     {
-        q:'"I want to go to a university in the United States." - The word "university" is an/a ......',
+        q:'"I want to go to a university in the United States." - The word "university" is an/a _____________',
         options:['Noun','Preposition','Verb','Pronoun'],
         answer:0
     },
     {
-        q:'" I\'m sure I\'ve met your girlfriend before." - The word "met" is an/a ......',
+        q:'" I\'m sure I\'ve met your girlfriend before." - The word "met" is an/a ____________',
         options:['Noun','Interjection','Verb','Pronoun'],
         answer:2
     },
     {
-        q:'"Well, I don\'t think I\'ll be home before 6." - The word "Well" is an/a ......',
+        q:'"Well, I don\'t think I\'ll be home before 6." - The word "Well" is an/a _____________',
         options:['Preposition','Interjection','Adjective','Pronoun'],
         answer:1
     },
     {
-        q:'"Andy knocked on the door but nobody answered." - The word "but" is an/a ......',
+        q:'"Andy knocked on the door but nobody answered." - The word "but" is an/a ____________',
         options:['Preposition','Interjection','Adjective','Conjunction'],
         answer:3
     },
     {
-        q:'"After lunch let\'s go out for a coffee." - The word "After" is an/a ......',
+        q:'"After lunch let\'s go out for a coffee." - The word "After" is an/a _____________',
         options:['Preposition','Verb','Adjective','Conjunction'],
         answer:0
     }
@@ -189,7 +189,7 @@ function answerTracker()
     for(let i=0; i<questions.length; i++)
     {
         const div =document.createElement("div");
-            answerTrackerContainer.appendChild(div);
+        answerTrackerContainer.appendChild(div);
     }
 }
 //updateAnswerTracker
@@ -198,6 +198,7 @@ function updateAnswerTracker(className)
     answerTrackerContainer.children[index-1].classList.add(className);
 }
 
+//display result
 function quizOver()
 {
     document.querySelector(".quiz-over").classList.add("show");
