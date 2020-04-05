@@ -9,6 +9,7 @@
 
 <body>
 <header>
+    <img src="images/logo.png" alt="">
     <a href="index.html" style=""> <h1 id="headerh1">It's Time to Learn English</h1></a>
 </header>
 
@@ -16,8 +17,8 @@
         <img src="images/quiz_back.jpg" alt="">
         <h1 id="quiz_maintopic"><u>Ready For A Quiz?</u></h1>
         <ol id="quiz_list">
-            <li>Eight Parts of Speech</li>
-            <li>Tenses</li>
+            <a href="#quiz1_div" style="text-decoration: none; color: white"><li>Eight Parts of Speech</li></a>
+            <a href="#quiz2_div" style="text-decoration: none; color: white"><li>Tenses</li></a>
         </ol>
     </div>
     <div id="quiz1_div">
@@ -80,7 +81,7 @@
         </div>
             <p id="msg"></p>
             <input class="button" type="button" name="quiz1submit" value="Finished" onclick="check();">
-<!--            <input class="button" type="button" name="quiz1answers" value="View Answers" onclick="highlight();">-->
+            <input class="button" type="button" name="quiz1answers" value="View Answers" onclick="highlight();">
 
         </form>
     </div>
@@ -155,6 +156,11 @@
 
         </form>
     </div>
+
+<footer>
+    <a href="mailto:pubudikalwp@gmail.com"><h3 id="footercontent" style="font-family: cursive">contact me :pubudikalwp@gmail.com</h3></a>
+</footer>
+
 
 <script src="js/quiz_script.js"></script>
 

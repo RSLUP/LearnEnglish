@@ -6,6 +6,16 @@ header {
     position: fixed;
     z-index: 3;
 }
+header>img {
+    height: 106px;
+    position: absolute;
+    top: -8px;
+    left: 17px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 #headerh1{
     font-size: 24px;
@@ -70,6 +80,7 @@ header {
     top: 28%;
     left: 18%;
     color: white;
+    cursor: pointer;
     font-family:cursive;
 }
 
@@ -126,3 +137,21 @@ header {
     cursor: pointer;
 }
 
+footer {
+    width: 100%;
+    height: 44px;
+    background-color: #6e3e45;
+    color: black;
+    position: relative;
+    z-index: 4;
+    bottom: -17vw;
+}
+
+#footercontent{
+    position: absolute;
+    bottom: 0px;
+    font-size: 15px;
+    right: 10px;
+    color: white;
+
+}
