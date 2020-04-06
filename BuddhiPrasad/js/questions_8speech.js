@@ -34,12 +34,38 @@ var allQuestions = [{
     option4: "A word that gives more details about verbs",
     answer: 1
   },{
-    question: "Used as a lubricant",
-    option1: "Graphite",
-    option2: "Silica",
-    option3: "Iron Oxide",
-    option4: "Diamond",
-    answer: 0
-  
-
+    question: "Define:  Noun",
+    option1: "An action",
+    option2: "A word that gives more detail about nouns",
+    option3: "A person, place, thing, or idea",
+    option4: "A word that gives more details about verbs",
+    answer: 3
+  },{
+    question: "Define:  Adverb",
+    option1: "An action",
+    option2: "A word that gives more detail about nouns",
+    option3: "A person, place, thing, or idea",
+    option4: "A word that modifies another adverb, adjective, or verb ",
+    answer: 4
+  },{
+    question: "Tylar's hair is silky brown. Which word is the Adjective? ",
+    option1: "Tylar's",
+    option2: "Hair",
+    option3: "Silky",
+    option4: "All of the Above",
+    answer: 3
+  },{
+    question: "Elizabeth climbed the tree really fast. Which word is the verb?",
+    option1: "Elizabeth",
+    option2: "Climbed",
+    option3: "Really",
+    option4: "Fast",
+    answer: 2
+  },{
+    question: "  Jill jumped on top of her bed with joy!  How many prepositions are in this sentence?",
+    option1: "1",
+    option2: "3",
+    option3: "5",
+    option4: "2",
+    answer: 2
 }];

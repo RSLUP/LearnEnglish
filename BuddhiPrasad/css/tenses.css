@@ -162,7 +162,7 @@ p{
 #sectwo{
     padding: 10px;
     margin-top: 20px;
-    background-color: violet;
+    background-color: rgb(90, 219, 208);
 }
 #sectwo table,th,td{
     font-family: monospace;
