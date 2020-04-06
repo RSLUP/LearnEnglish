@@ -32,3 +32,9 @@ ul li:hover ul li{
 
     display: block;
 }
+a{
+
+    text-align: center;
+    color: blueviolet;
+
+}
