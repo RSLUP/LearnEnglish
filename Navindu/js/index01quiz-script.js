@@ -1,10 +1,9 @@
-var modalspr = document.getElementById("modalspr");
+var modal = document.getElementById("modalquiz");
 
-function sprQuiz(){
-    modalspr.style.display = "block";
+function openQuiz(){
+    modal.style.display = "block";
 }
 
 function quizClose() {
-    modalspr.style.display = "none";
+    modal.style.display = "none";
 }
-

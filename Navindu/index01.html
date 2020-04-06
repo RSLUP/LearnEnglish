@@ -49,7 +49,67 @@
             </div>
 
             <hr class="hr2" width="1050px">
-            
+
+                <!--Quiz Modal Box Elements-->
+                <button class="modal-btn" onclick="openQuiz()">Quiz</button>
+                <div class="modal-quiz" id="modalquiz"> <!--Modal Box-->
+                    <div class="content-quiz">
+                        <span class="close" onclick="quizClose()">&times;</span>
+                        <h2>Quiz - 8 Parts of Speech</h2>
+                        <hr>
+                        <h3>Choose the correct answer.</h3>
+                        <hr width="400px">
+                        <div class="questions">
+
+                            <p class="q">1. </p>
+                            <div>
+                                <p><input name="q1" type="radio" class="inputR1" id="q1-a"></p>
+                                <p><input name="q1" type="radio" class="inputR2" id="q1-b"></p>
+                                <p><input name="q1" type="radio" class="inputR1" id="q1-c"></p>
+                                <p><input name="q1" type="radio" class="inputR2" id="q1-d"></p>
+                            </div>
+
+                            <p class="q">2. </p>
+                            <div>
+                                <p><input name="q2" type="radio" class="inputR1" id="q2-a"></p>
+                                <p><input name="q2" type="radio" class="inputR2" id="q2-b"></p>
+                                <p><input name="q2" type="radio" class="inputR1" id="q2-c"></p>
+                                <p><input name="q2" type="radio" class="inputR2" id="q2-d"></p>
+                            </div>
+
+                            <p class="q">3. </p>
+                            <div>
+                                <p><input name="q3" type="radio" class="inputR1" id="q3-a"></p>
+                                <p><input name="q3" type="radio" class="inputR2" id="q3-b"></p>
+                                <p><input name="q3" type="radio" class="inputR1" id="q3-c"></p>
+                                <p><input name="q3" type="radio" class="inputR2" id="q3-d"></p>
+                            </div>
+
+                            <p class="q">3. </p>
+                            <div>
+                                <p><input name="q3" type="radio" class="inputR1" id="q3-a"></p>
+                                <p><input name="q3" type="radio" class="inputR2" id="q3-b"></p>
+                                <p><input name="q3" type="radio" class="inputR1" id="q3-c"></p>
+                                <p><input name="q3" type="radio" class="inputR2" id="q3-d"></p>
+                            </div>
+                            
+                            <p class="q">3. </p>
+                            <div>
+                                <p><input name="q3" type="radio" class="inputR1" id="q3-a"></p>
+                                <p><input name="q3" type="radio" class="inputR2" id="q3-b"></p>
+                                <p><input name="q3" type="radio" class="inputR1" id="q3-c"></p>
+                                <p><input name="q3" type="radio" class="inputR2" id="q3-d"></p>
+                            </div>
+                        </div>
+                        <hr width="400px">
+                        <div>
+                            <button class="submit" onclick="quizSubmit('','','','','')">Submit</button>
+                        </div>
+                        <h4 class="marks"></h4>
+                        <h4 class="marks" id="Marks" style="display: none;"></h3>
+                    </div>
+                </div> <!--Quiz Modal Box Elements-->
+
             <hr class="hr2" width="1050px">
 
             <div class="home-content clearfix" id="noun">
@@ -365,7 +425,7 @@
 
         </div> <!--wrapper-->
 
-        <script type="text/javascript" src="js/index02quiz-script.js"></script>
+        <script type="text/javascript" src="js/index01quiz-script.js"></script>
 
     </body>
 </html>
