@@ -482,3 +482,45 @@ body {
   text-align: center;
   color: white;
 }
+
+
+/* quize */
+
+.btnQ
+{
+  width: 150px;
+  height:50px;
+  font-size:medium;
+  background-color: #CD5C5C;
+  color:white;
+  border-radius: 10px;
+  
+}
+.btnQ:hover
+{
+  width: 150px;
+  height:50px;
+  font-size:medium;
+  background-color: rgb(207, 112, 80);
+  color:white;
+  border-radius: 10px;
+ 
+  
+}
+
+.rad
+{
+  width:20px;
+  height:20px ;
+}
+
+.tryA
+{
+  width: 150px;
+  height:50px;
+  font-size:medium;
+  background-color:green;
+  color:white;
+  border-radius: 10px;
+  visibility: hidden;
+}
