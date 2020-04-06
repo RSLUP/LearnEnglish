@@ -263,7 +263,7 @@ sup {
     display: none;
     position: fixed;
     overflow-y: initial;
-    padding: 80px 310px;
+    padding: 80px 250px;
     left: 0;
     top: -40px;
     width: 100%;
@@ -276,7 +276,7 @@ sup {
     padding: 20px;
     border: 5px solid maroon;
     border-radius: 10px;
-    width:50%;
+    width:60%;
 }
 
 .questions{
@@ -387,6 +387,45 @@ sup {
 .close, .content-quiz, .content-quiz h2, .content-quiz h3, .content-quiz p{
     animation-name: anim-modal;
     animation-duration: 0.7s;
+}
+
+.quizhead{
+    font-family: arial;
+    color: rgb(78, 7, 7);
+    font-weight: bold;
+    float: left;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.quiz-btn{
+    float: left;
+    width: 250px;
+    height: 60px;
+    margin: 10px 45px 0 30px;
+    border-radius: 8px;
+    background:  rgb(82, 3, 3);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+    box-shadow: 0 0 5px gray;
+    animation-name: quizbtn;
+    animation-duration: 0.08s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes quizbtn {
+    from {transform: scale(1);}
+    to {transform: scale(0.9);}
+  }
+
+
+.quiz-btn:hover{
+    background: maroon;
+    cursor: pointer;
 }
 
 @keyframes anim-modal {
