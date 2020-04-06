@@ -108,6 +108,10 @@ p{
     transition: all 1s;
 }
 
+/* Quiz button */
+
+
+/* scroll button */
 #back-to-top-btn{
     display: none;
     position: fixed;
@@ -131,6 +135,7 @@ p{
     background-color: #333;
     color: #fff;
 }
+/* scroll button */
 
 
 /* section one */
