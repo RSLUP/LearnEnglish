@@ -1,0 +1,170 @@
+/*header*/
+header {
+    background-color:rgba(80,83,89,0.91);
+    height: 54px;
+    width: 100%;
+    /* margin-top: 29px; */
+    position: fixed;
+    z-index: 3;
+}
+header>img {
+    height: 106px;
+    position: absolute;
+    top: -8px;
+    left: 17px;
+}
+
+#headerh1{
+    font-size: 24px;
+    position: fixed;
+    left: 131px;
+    font-family: cursive;
+    color: white;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*three main divs*/
+#quiz_back{
+    width: 75%;
+    height: 450px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 5vw;
+    margin: auto;
+}
+
+#quiz1_div {
+    position: relative;
+    width: 44%;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+}
+
+#quiz2_div{
+    position: relative;
+    width: 44%;
+    left: 0;
+    right: 0;
+    top: 160px;
+    margin: auto;
+}
+
+/*main background image*/
+
+#quiz_back>img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 75%;
+    height: 430px;
+    opacity: 95%;
+}
+
+#quiz_maintopic{
+    position: absolute;
+    left: 29%;
+    top: 4vw;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#quiz_list{
+    font-size: 45px;
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    color: white;
+    cursor: pointer;
+    font-family:cursive;
+}
+
+/*two forms*/
+#quiz1form{
+    background-color: rgba(148,178,203,0.54);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+#quiz2form{
+    background-color: rgba(235,186,176,0.91);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+/*questions & buttons*/
+.que{
+    font-size: 20px;
+}
+
+#after_submit,#after_tenses_submit{
+    visibility: hidden;
+}
+
+#msg,#tenses_msg{
+    font-size: 20px;
+    color: darkred;
+    font-family: cursive;
+
+}
+
+#result,#tenses_result{
+    font-size: 18px;
+    color: black;
+    font-family: cursive;
+
+}
+
+.button{
+    background-color: rgba(234,171,62,0.91);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    transition: background-color 1s;
+}
+
+.button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+/*!*winning gif*!*/
+/*#win_gif1,#win_gif2{*/
+/*    width: 250px;*/
+/*}*/
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 44px;
+    background-color: #6e3e45;
+    color: black;
+    position: relative;
+    z-index: 4;
+    bottom: -17vw;
+}
+
+#footercontent{
+    position: absolute;
+    bottom: 0px;
+    font-size: 15px;
+    right: 10px;
+    color: white;
+
+}
+
