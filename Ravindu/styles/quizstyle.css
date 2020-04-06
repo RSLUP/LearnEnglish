@@ -28,6 +28,17 @@
   color: white;
 }
 
+/* styles for the top Image */
+
+.introimage{
+    margin-top: 35px;
+    margin-left: 25px;
+    float: left;
+    animation-name: animatedstudent;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 
 /* styling for the body */
