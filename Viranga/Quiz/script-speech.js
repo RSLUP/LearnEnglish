@@ -5,7 +5,9 @@ const totalQuestionSpan = document.querySelector(".total-question");
 const correctAnswerSpan = document.querySelector(".correct-answers");
 const totalQuestionSpan2 = document.querySelector(".total-question2");
 const percentage = document.querySelector(".percentage");
+const result = document.querySelector(".result");
 const question = document.querySelector(".question");
+const quiz = document.querySelector(".quiz-over");
 const op1 = document.querySelector(".option1");
 const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
@@ -115,6 +117,25 @@ function disabledOptions()
         }
     }
 }
+function resultShow()
+{
+    if((score/questions.length)*100>=80)
+    {
+        return "Fantastic Job...!";
+    }
+    if((score/questions.length)*100>=60)
+    {
+        return "Good Try...!";
+    }
+    if((score/questions.length)*100>=40)
+    {
+        return "Not bad - Try Again";
+    }
+    else
+    {
+        return "Learn More..!";
+    }
+}
 function enableOptions()
 {
     for(let i=0; i<options.length; i++)
@@ -201,10 +222,13 @@ function updateAnswerTracker(className)
 //display result
 function quizOver()
 {
-    document.querySelector(".quiz-over").classList.add("show");
+    
+    quiz.classList.add("show");
+    result.innerHTML = resultShow();
     correctAnswerSpan.innerHTML = score;
     totalQuestionSpan2.innerHTML = questions.length;
-    percentage.innerHTML = (score/questions.length)*100 +"%";
+    let percen = (score/questions.length)*100;
+    percentage.innerHTML = (percen.toFixed(2) +"%");
 }
 //try again 
 function tryAgain()
