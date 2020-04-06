@@ -6,6 +6,7 @@ const correctAnswerSpan = document.querySelector(".correct-answers");
 const totalQuestionSpan2 = document.querySelector(".total-question2");
 const percentage = document.querySelector(".percentage");
 const question = document.querySelector(".question");
+const quiz = document.querySelector(".quiz-over");
 const op1 = document.querySelector(".option1");
 const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
@@ -201,7 +202,8 @@ function updateAnswerTracker(className)
 //display result
 function quizOver()
 {
-    document.querySelector(".quiz-over").classList.add("show");
+    
+    quiz.classList.add("show");
     correctAnswerSpan.innerHTML = score;
     totalQuestionSpan2.innerHTML = questions.length;
     percentage.innerHTML = (score/questions.length)*100 +"%";

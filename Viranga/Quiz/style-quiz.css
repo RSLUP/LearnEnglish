@@ -199,7 +199,7 @@ html
     justify-content: center;
 
 }
-.quiz-over .show
+.quiz-over.show
 {
     display: flex;
 }
