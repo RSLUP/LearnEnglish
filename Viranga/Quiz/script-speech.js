@@ -227,7 +227,8 @@ function quizOver()
     result.innerHTML = resultShow();
     correctAnswerSpan.innerHTML = score;
     totalQuestionSpan2.innerHTML = questions.length;
-    percentage.innerHTML = (score/questions.length)*100 +"%";
+    let percen = (score/questions.length)*100;
+    percentage.innerHTML = (percen.toFixed(2) +"%");
 }
 //try again 
 function tryAgain()
