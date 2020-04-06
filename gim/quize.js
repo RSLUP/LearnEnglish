@@ -66,7 +66,7 @@ function quize()
            // alert(count);
 
            // document.getElementById("quize").innerHTML=quesion[count];
-        
+         
 
 
           
@@ -205,13 +205,12 @@ function quize()
             //alert(document.getElementById("r3").value);
         }
 
-        document.getElementById("btnBack").disabled=false;
+        //document.getElementById("btnBack").disabled=false;
         
+        rad1.checked=false;
+           rad2.checked=false;
+           rad3.checked=false;
       
-       
-    document.getElementById("r1").checked=false;
-    document.getElementById("r2").checked=false;
-    document.getElementById("r3").checked=false;
 }
 
 

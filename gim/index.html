@@ -510,40 +510,40 @@
         <br>
         <br>
         <h2 align="center">Quize</h2>
-       <table align="center">
-           <tr>
-               <td> <p id="quize">1.This time tomorrow, I ............................... on the beach.</p>  </td>
+
+        <div class="divQ">
+          <p id="quize">1.This time tomorrow, I ............................... on the beach.</p> 
+        </div>
+    
+       <div class="divAns">
+        <table>
+        <tr>
+          <td> <input type="radio" id="r1" class="rad" value="1" name="ans"></td> <td><p id="ans1">am lying</p></td> 
+      </tr>
+      
+      <tr>
+          <td> <input type="radio" class="rad" id="r2" value="2" name="ans"></td> <td>  <p id="ans2"> will lie</p></td>
+      </tr>
+
+      <tr>
+          <td > <input type="radio" class="rad" id="r3" value="3" name="ans"></td> <td> <p id="ans3">will be lying</p></td>
+      </tr>
+  </table>
+
+       </div>
+     
+       <div class="divBtn"> 
+        <table align="right" style="padding-right: 80px;">
+          <tr>
              
-           </tr>
-       </table>
-       
-     
-        <table align="center">
-            <tr>
-                <td > <input type="radio" id="r1" class="rad" value="1" name="ans"></td>
-                <td  ><p id="ans1">am lying</p></td>
-            </tr>
-            
-            <tr>
-                <td align="right"> <input type="radio" class="rad" id="r2" value="2" name="ans"></td>
-                <td> <p id="ans2"> will lie</p></td>
-            </tr>
-
-            <tr>
-                <td align="right"> <input type="radio" class="rad" id="r3" value="3" name="ans"></td>
-                <td> <p id="ans3">will be lying</p></td>
-            </tr>
-        </table>
-     
-        <table align="center">
-            <tr>
-               
-                <td width="120px"><input class="btnQ"  type="button" id="btnNext" value="Next" onclick="quize()"></td>
-                <td width="120px"> <input class="btnQ"  type="button" id="btnSub" value="Submit" onclick="answer()"></td>
-            </tr>
-        </table>
-
-        <table align="center">
+              <td width="120px"><input class="btnQ"  type="button" id="btnNext" value="Next" onclick="quize()"></td>
+              <td width="120px"> <input class="btnQ"  type="button" id="btnSub" value="Submit" onclick="answer()"></td>
+          </tr>
+      </table>
+       </div>
+        
+         <div class="divTry">
+          <table align="center">
             <tr>
                 <td> <p id="ans"></p></td>
                 <td><p id="tot"></p></td>
@@ -551,6 +551,11 @@
             </tr>
         </table>
         <center> <input class="tryA"  type="submit" id="btnTry" value="Try again" onclick="tryAgain()"></center>
+         </div>
+    
+        
+
+        
 
  
        </form>
