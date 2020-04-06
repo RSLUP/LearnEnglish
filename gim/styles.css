@@ -82,7 +82,7 @@ html {
               font-size:15px;
               text-align:center;
               color:white;
-            
+            padding-bottom:0px;
               
       }
   
@@ -523,4 +523,11 @@ body {
   color:white;
   border-radius: 10px;
   visibility: hidden;
+}
+
+.qz
+{
+  width:90%;
+  background-color: antiquewhite;
+  
 }
