@@ -44,6 +44,11 @@ a {
     border-radius: 5px;
 }
 
+.navigate a:hover{
+    color: yellow;
+    border: 1.4px solid yellow;
+}
+
 .top-bar-title h1{
     float: left;
     margin: 10px;
