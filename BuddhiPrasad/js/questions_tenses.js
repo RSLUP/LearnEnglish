@@ -22,7 +22,7 @@ var allQuestions = [{
   },{
     question: "When _____ English?",
     option1: "has he begun to study",
-    option2: " did he begin to study",
+    option2: "did he begin to study",
     option3: "did he begin study",
     option4: "has he begin study",
     answer: 2

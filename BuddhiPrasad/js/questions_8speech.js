@@ -13,7 +13,7 @@ var allQuestions = [{
     option4: "preposition",
     answer: 3
   }, {
-    question: " Which part of speech describes a noun or a pronoun?",
+    question: "Which part of speech describes a noun or a pronoun?",
     option1: "adjective",
     option2: "adverb",
     option3: "conjunction",
@@ -22,7 +22,7 @@ var allQuestions = [{
   },{
     question: "Which part of speech modifies a verb, adjective, or adverb?",
     option1: "preposition",
-    option2: " verb",
+    option2: "verb",
     option3: "noun",
     option4: "adverb",
     answer: 4
@@ -62,7 +62,7 @@ var allQuestions = [{
     option4: "Fast",
     answer: 2
   },{
-    question: "  Jill jumped on top of her bed with joy!  How many prepositions are in this sentence?",
+    question: "Jill jumped on top of her bed with joy!  How many prepositions are in this sentence?",
     option1: "1",
     option2: "3",
     option3: "5",
