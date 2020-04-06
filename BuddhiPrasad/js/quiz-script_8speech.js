@@ -41,7 +41,7 @@ function loadNextQuestion(){
     if(currentQuestion == totQuestions){
         container.style.display = 'none';
         resultcontainer.style.display = '';
-        resultcontainer.textContent = 'Your scroe: ' +scroe;
+        resultcontainer.textContent = 'Correct Answers: ' +scroe;
         return;
     }
     loadQuestion(currentQuestion);
