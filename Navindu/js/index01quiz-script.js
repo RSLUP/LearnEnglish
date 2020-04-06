@@ -46,6 +46,7 @@ function qq1(a1){
 	else{
 		document.getElementById("r1").style.color="red";
 		document.getElementById("r1").innerHTML = "&#10006 Wrong";
+        document.getElementById(a1).style.transform="scale(1.6)";
     }
 }
 
@@ -57,7 +58,8 @@ function qq2(a2){
 	}
 	else{
 		document.getElementById("r2").style.color="red";
-		document.getElementById("r2").innerHTML = "&#10006 Wrong";
+        document.getElementById("r2").innerHTML = "&#10006 Wrong";
+        document.getElementById(a2).style.transform="scale(1.6)";
     }
 }
 
@@ -69,7 +71,8 @@ function qq3(a3){
 	}
 	else{
 		document.getElementById("r3").style.color="red";
-		document.getElementById("r3").innerHTML = "&#10006 Wrong";
+        document.getElementById("r3").innerHTML = "&#10006 Wrong";
+        document.getElementById(a3).style.transform="scale(1.6)";
     }
 }
 
@@ -81,7 +84,8 @@ function qq4(a4){
 	}
 	else{
 		document.getElementById("r4").style.color="red";
-		document.getElementById("r4").innerHTML = "&#10006 Wrong";
+        document.getElementById("r4").innerHTML = "&#10006 Wrong";
+        document.getElementById(a4).style.transform="scale(1.6)";
     }
 }
 
@@ -93,7 +97,8 @@ function qq5(a5){
 	}
 	else{
 		document.getElementById("r5").style.color="red";
-		document.getElementById("r5").innerHTML = "&#10006 Wrong";
+        document.getElementById("r5").innerHTML = "&#10006 Wrong";
+        document.getElementById(a5).style.transform="scale(1.6)";
     }
 }
 
@@ -105,7 +110,8 @@ function qq6(a6){
 	}
 	else{
 		document.getElementById("r6").style.color="red";
-		document.getElementById("r6").innerHTML = "&#10006 Wrong";
+        document.getElementById("r6").innerHTML = "&#10006 Wrong";
+        document.getElementById(a6).style.transform="scale(1.6)";
     }
 }
 
@@ -117,7 +123,8 @@ function qq7(a7){
 	}
 	else{
 		document.getElementById("r7").style.color="red";
-		document.getElementById("r7").innerHTML = "&#10006 Wrong";
+        document.getElementById("r7").innerHTML = "&#10006 Wrong";
+        document.getElementById(a7).style.transform="scale(1.6)";
     }
 }
 
@@ -129,7 +136,8 @@ function qq8(a8){
 	}
 	else{
 		document.getElementById("r8").style.color="red";
-		document.getElementById("r8").innerHTML = "&#10006 Wrong";
+        document.getElementById("r8").innerHTML = "&#10006 Wrong";
+        document.getElementById(a8).style.transform="scale(1.6)";
     }
 }
 
@@ -141,7 +149,8 @@ function qq9(a9){
 	}
 	else{
 		document.getElementById("r9").style.color="red";
-		document.getElementById("r9").innerHTML = "&#10006 Wrong";
+        document.getElementById("r9").innerHTML = "&#10006 Wrong";
+        document.getElementById(a9).style.transform="scale(1.6)";
     }
 }
 
@@ -153,6 +162,7 @@ function qq10(a10){
 	}
 	else{
 		document.getElementById("r10").style.color="red";
-		document.getElementById("r10").innerHTML = "&#10006 Wrong";
+        document.getElementById("r10").innerHTML = "&#10006 Wrong";
+        document.getElementById(a10).style.transform="scale(1.6)";
     }
 }
