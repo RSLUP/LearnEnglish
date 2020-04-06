@@ -73,10 +73,11 @@ function check()
 		score = 0;
 	}
 
-	document.getElementById("submitted").style.visibility = "visible";
+  document.getElementById("after_submit").style.visibility = "visible";
 
-	document.getElementById("msg").innerHTML = messages[score];
-	document.getElementById("number-correct").innerHTML = "You got " + correct + " correct.";
-  document.getElementById("pic").src = pictures[score];
+	document.getElementById("message").innerHTML = messages[score];
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 10";
+	document.getElementById("picture").src = pictures[score];
+	
 }
 	

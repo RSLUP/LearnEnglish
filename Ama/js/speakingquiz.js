@@ -58,6 +58,7 @@ function check(){
 	}
 
 	document.getElementById("after_submit").style.visibility = "visible";
+	document.getElementById("after_submit_answer").style.visibility = "visible";
 
 	document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 10";
