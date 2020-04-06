@@ -444,7 +444,6 @@ a {
 }
 
 .q{
-    overflow: auto;
     padding-bottom: 12px;
     float: left;
     clear: both;
