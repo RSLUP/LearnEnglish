@@ -11,6 +11,9 @@ var modal10 = document.getElementById("Modal10");
 var modal11 = document.getElementById("Modal11");
 var modal12 = document.getElementById("Modal12");
 
+
+//FF
+
 function clickfunc1(){
     modal1.style.display = "block";
 }
