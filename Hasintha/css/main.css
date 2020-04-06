@@ -1,10 +1,15 @@
 .clearFix {overflow: auto;}
 
+body .webBackground {
+    background: rgb(217,217,217);
+    background: linear-gradient(rgba(217,217,217,1) 0%, rgba(255,255,255,1) 100%);
+}
+
 header .logo h1 {
     font-variant: small-caps;
     font-size: 60px;
     letter-spacing: -1px;
-    color: white;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -108,4 +113,29 @@ ul .unorderList li {
 
 table .imgPlace img {
     image-orientation: unset;
+}
+
+
+table .tableContent tr,td,th{
+    border-radius: 10px;
+    border: 3px solid #383637;
+}
+
+.qNoun {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nounContent {
+    height: 300px;
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
 }
