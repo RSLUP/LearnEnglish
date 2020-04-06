@@ -38,22 +38,25 @@ header>img {
 #buttonul {
     position: absolute;
     top: 26vw;
+    left: 2vw;
+    background-color: black;
+    /* padding: 10px 10px 10px 10px; */
+    border-radius: 37px;
 }
 #buttonul>li {
     padding: 63px;
     display: table-row;
     /* list-style: none; */
 }
-#button1,#button2,#button3{
+.lessons{
     font-family: cursive;
     font-size: 31px;
-    color: white;
     background-color: black;
     cursor: pointer;
 }
 
-#topic{
-    color: black;
+#topic {
+    color: wheat;
     font-family: cursive;
     font-size: 38px;
 }
@@ -363,6 +366,17 @@ footer {
     color: white;
 
 }
+
+#footermain {
+    position: absolute;
+    bottom: -6px;
+    font-size: 19px;
+    /* right: 31vw; */
+    left: 1vw;
+    color: black;
+    font-family: cursive;
+}
+
 
 
 /*transition*/

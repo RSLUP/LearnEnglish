@@ -53,7 +53,7 @@ function check() {
     if (correct>5 && correct<9){
         index=1;
     }
-    if (correct>9 && correct<11){
+    if (correct>8 && correct<11){
         index=0;
     }
 
@@ -118,7 +118,7 @@ function tenses_check() {
     if (correct>5 && correct<9){
         index=1;
     }
-    if (correct>9 && correct<11){
+    if (correct>8 && correct<11){
         index=0;
     }
 
