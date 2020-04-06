@@ -5,7 +5,13 @@ html {
   
   body {
       margin: 0;
-      
+      background-color:silver;
+  }
+
+  .page
+  {
+    padding-left:70px;
+    padding-right:70px;
   }
   
   
@@ -18,11 +24,11 @@ html {
               
     font-size:30px;
     text-align:center;
-    color:#E9967A;
-    padding: 80px 0px 10px 0px;
+    color:white;
+    padding: 60px 0px 20px 0px;
     font-family: Cambria;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    margin-bottom:10px;     
   }
   
   .menu
@@ -76,7 +82,7 @@ html {
               font-size:15px;
               text-align:center;
               color:white;
-            
+            padding-bottom:0px;
               
       }
   
@@ -94,9 +100,8 @@ html {
    
     text-decoration: none; 
     width:100%;
-    height:53px;
+    height:45px;
     background-color:#CD5C5C;
-    position: fixed;
     padding-top:10px;
     top:0;
     
@@ -105,23 +110,23 @@ html {
   
   .menuTD
   {
-    text-align: center;
+    
     width:180px;
     height:40px;
     color: #E9967A;
     font-family: Franklin Gothic Medium;
-  
+    background-color:#CD5C5C;
     
   }
   .menuTD:hover
   {
-    text-align: center;
+    
     width:180px;
     height:40px;
     color:white;
     transition: 0.1s;
-    
-    
+    color: #E9967A;
+    background-color:#E9967A;
   }
   .cc
   {
@@ -131,6 +136,11 @@ html {
   
   #section0 {
     height:700px;
+    background-color:white;
+  }
+
+  #section {
+    height:1000px;
     background-color:white;
   }
   
@@ -189,14 +199,19 @@ html {
     background-color: white;
   }
   
+  #sectionQ {
+    height: 700px;
+    background-color: white;
+  }
+  
   
   
   h2
   {
-    padding:40px 0px 0px 65px ;
+    padding:20px 0px 0px 40px ;
     color:#CD5C5C;
     font-family: 'Courier New', Courier, monospace;
-    
+    text-shadow: 0 2px 4px ;
   }
   
   h3
@@ -213,6 +228,7 @@ html {
     font-size: medium;
     font-weight: bold;
     font-family: 'Trebuchet MS';
+    padding-right: 40px;
   }
   
   ul
@@ -238,6 +254,7 @@ html {
     color: #CD5C5C;
     font-size:30px;
     text-align:center;
+    padding-right:100px;
   }
 
 
@@ -327,7 +344,7 @@ html {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 90%;
-
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
   }
   
   .d {
@@ -335,11 +352,11 @@ html {
     text-align: left;
     padding: 8px;
     font-weight: bold;
-   
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   }
   
-  r:nth-child(even) {
-    background-color: #dddddd;
+  .r:nth-child(even) {
+    background-color: #E9967A;
   }
 
 h4
@@ -348,3 +365,169 @@ h4
   padding-right:30px ;
 }
 
+
+
+/* flip tile */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background-color:#CD5C5C;
+  width: 230px;
+  height: 280px;
+  perspective: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+  padding-right:30px ;
+  text-justify: auto;
+  color:white;
+  border-radius: 5px;
+}
+.card:hover{
+  background-color:#CD5C5C;
+  width: 230px;
+  height: 280px;
+  perspective: 1000px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  transition: 0.5s;
+  text-shadow : 2px 2px black;
+  
+}
+
+.mre
+{
+  padding-left:40px ;
+  text-align: right;
+  color: gold;
+  font-weight: bold;
+  font-family:Lucida Sans;
+ 
+}
+
+.mre:hover
+{
+  padding-left:40px ;
+  text-align: right;
+  color:yellow;
+  font-weight: bold;
+  font-family:Lucida Sans;
+ 
+}
+
+.tileDes
+{
+  padding-left:30px; 
+  padding-right:20px;
+  text-justify: auto;
+}
+
+.tileHead
+{
+  text-align: left;
+  font-size: large;
+  font-family: Lucida Sans;
+}
+
+
+/* menu bar */
+
+
+.ull {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CD5C5C;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.lii {
+  float: left;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.lii a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Franklin Gothic Medium;
+}
+
+.lii a:hover:not(.active) {
+  background-color: #E9967A;
+}
+
+.active {
+  background-color: #E9967A;
+}
+
+.upBtn
+{
+  top:90%;
+  left:95%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  position: fixed;
+  background-color: #CD5C5C;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: center;
+  color: white;
+}
+
+
+/* quize */
+
+.btnQ
+{
+  width: 150px;
+  height:50px;
+  font-size:medium;
+  background-color: #CD5C5C;
+  color:white;
+  border-radius: 10px;
+  
+}
+.btnQ:hover
+{
+  width: 150px;
+  height:50px;
+  font-size:medium;
+  background-color: rgb(207, 112, 80);
+  color:white;
+  border-radius: 10px;
+ 
+  
+}
+
+.rad
+{
+  width:20px;
+  height:20px ;
+}
+
+.tryA
+{
+  width: 150px;
+  height:50px;
+  font-size:medium;
+  background-color:green;
+  color:white;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.qz
+{
+  width:90%;
+  background-color: antiquewhite;
+  
+}
