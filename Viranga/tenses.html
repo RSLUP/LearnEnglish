@@ -5,15 +5,15 @@
     
         <!--add title-->
         <title>LearnEnglish-Tenses</title>
-        <link rel="stylesheet" href="Sources/style.css">
-        <script src="Sources/script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Quiz/style-quiz.css">
+        <script src="script.js"></script>
     </head>
     <body>
         
         <div id="page">
             <div class = "content">
                 <header id="header">
-                    
                     <div id="header-inner">	
                         <div id="logo">
                             <h1><a>Learn<span>English</span></a></h1>
@@ -24,11 +24,19 @@
                 <div class="dropdown">
                     <button class="dropbtn">Learn More &#10097</button>
                     <div class="dropdown-content">
-                        <a href="Speech.html">&#10004 8 Parts of Speech</a>
-                        <a href="Tenses.html">&#10004 12 Verbs Tenses</a>
+                        <a href="speech.html">&#10004 8 Parts of Speech</a>
+                        <a href="tenses.html">&#10004 12 Verbs Tenses</a>
                      
                     </div>
-                </div>     
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">Take a Quiz &#10097</button>
+                    <div class="dropdown-content">
+                        <a href="quiz-speech.html">&#10004 Quiz on 8 Parts of Speech</a>
+                        <a href="quiz-tenses.html">&#10004 Quiz on 12 Verbs Tenses</a>
+                     
+                    </div>
+                </div>        
                 
                 <div class="feature">
                     <div class="feature-inner">
@@ -49,22 +57,18 @@
                         </div>
                         <div class="column2">
                             <p>Before we begin, here’s a list of the 12 verb tenses in English:</p>
-                            <div id = "list">
-                                <ol>
-                                    <li>Present Simple</li>
-                                    <li>Present Continuous/Progressive</li>
-                                    <li>Present Perfect</li>
-                                    <li>Present Perfect Continuous/Progressive</li>
-                                    <li>Past Simple</li>
-                                    <li>Past Continuous/Progressive</li>
-                                    <li>Past Perfect</li>
-                                    <li>Past Perfect Continuous/Progressive</li>
-                                    <li>Future Simple</li>
-                                    <li>Future Perfect</li>
-                                    <li>Future Continuous/Progressive</li>
-                                    <li>Future Perfect Continuous/Progressive</li>
-                                </ol>
-                            </div>
+                            <div class ="tense">Present Simple Tense</div>
+                            <div class ="tense">Present Continuous/Progressive Tense</div>
+                            <div class ="tense">Present Perfect Tense</div>
+                            <div class ="tense">Present Perfect Continuous/Progressive Tense</div>
+                            <div class ="tense">Past Simple Tense</div>
+                            <div class ="tense">Past Continuous/Progressive Tense</div>
+                            <div class ="tense">Past Perfect Tense</div>
+                            <div class ="tense">Past Perfect Continuous/Progressive Tense</div>
+                            <div class ="tense">Future Simple Tense</div>
+                            <div class ="tense">Future Perfect Tense</div>
+                            <div class ="tense">Future Continuous/Progressive</div>
+                            <div class ="tense">Future Perfect Continuous/Progressive Tense</div>
                         </div>
                     </div>
                     
@@ -645,7 +649,20 @@
                 </div>
                 
                 <img src="Sources/img/summary.jpg" alt="summary of tenses" class="zoom">
-
+                <br>
+                <hr style ="border-top: 5px solid rgba(2, 0, 0, 0.425); border-radius: 5px; max-width: 1000px;">
+                
+                <div class="row">
+                    <div class="column2">
+                        <br>
+                        <div id="h3"> <h3>Would you like to take a Quiz</h3></div>
+                        <div class ="toquiz"><a href="quiz-tenses.html">Let's Go</a> </div>
+                    </div>
+                    
+                    <div class="column2">
+                        <img src="Sources/img/quiz.gif" alt="summary of tenses" class="zoom">
+                    </div>
+                </div>
                 <footer>
                     <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
                 </footer>    
