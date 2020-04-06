@@ -23,7 +23,7 @@ ul li{
 
 ul li a:hover{
     background-color: green;
-
+    
 }
 ul li ul li{
 display: none;
@@ -31,4 +31,10 @@ display: none;
 ul li:hover ul li{
 
     display: block;
+}
+a{
+
+    text-align: center;
+    color: blueviolet;
+
 }
