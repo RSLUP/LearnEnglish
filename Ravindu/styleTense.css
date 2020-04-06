@@ -141,11 +141,7 @@ body{
   background: #FFFFFF;
 }
 
-@media screen and (max-width: 580px){
-   font-size: 16px;
-   line-height: 22px;
 
-}
 
 
 .wrapper{
@@ -184,17 +180,11 @@ body{
     background: #2980b9;
 }
 
-@media screen and (max-width: 580px){
-    padding: 14px 0 7px;
-    display: block;
-  }
 
-    &.header{
+
+    .header{
       padding: 0;
       height: 6px;
-    }
-      .cell{
-        display: none;
     }
     .cell{
       margin-bottom: 10px;
@@ -221,4 +211,6 @@ body{
     padding: 2px 16px;
     display: block;
   }
-  }
+  } */
+
+  /*table*/
