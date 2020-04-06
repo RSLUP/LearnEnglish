@@ -69,6 +69,17 @@ input {
 	font-size: 20px;
 	line-height: 13px;
 }
+#after_submit_answerG {
+	visibility: hidden;
+	background: #eff1f3;
+	padding: 10px 20px 10px 20px;
+	width: 500px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+	line-height: 13px;
+}
 
 #picture {
 	width: 400px;
