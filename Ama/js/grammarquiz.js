@@ -74,11 +74,22 @@ function check()
 	}
 
   document.getElementById("after_submit").style.visibility = "visible";
-  document.getElementById("after_submit_answerG").style.visibility = "visible";
+  /*document.getElementById("after_submit_answerG").style.visibility = "visible";*/
 
 	document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 10";
-	document.getElementById("picture").src = pictures[score];
+  document.getElementById("picture").src = pictures[score];
+  
+    document.getElementById("ans1").style.color='green';
+		document.getElementById("ans2").style.color='green';
+		document.getElementById("ans3").style.color='green';
+		document.getElementById("ans4").style.color='green';
+		document.getElementById("ans5").style.color='green';
+		document.getElementById("ans6").style.color='green';
+		document.getElementById("ans7").style.color='green';
+		document.getElementById("ans8").style.color='green';
+		document.getElementById("ans9").style.color='green';
+		document.getElementById("ans10").style.color='green';
 	
 }
 	

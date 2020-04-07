@@ -20,16 +20,18 @@ html{
 .dropdown{
 	margin: 0 auto;
 }
+
 nav ul{
 	transition:1s;
 	padding: 0;
 	margin: 0;
 	float: right;
 	margin-right: 20px;
-	
+	background: rgb(94,137,233);
+	background: linear-gradient(96deg, rgba(94,137,233,1) 16%, rgba(160,182,242,1) 36%, rgba(234,241,249,1) 55%, rgba(216,221,249,1) 86%); 
 }
 nav ul li{
-	background: rgb(2, 19, 65);
+/*	background: rgb(2, 19, 65);*/
 	position: relative;
 	list-style: none;
 	display: inline-block;;
@@ -39,7 +41,7 @@ nav ul li a{
 	font-family: fantasy;
 	display: block;
 	padding: 0 15px;
-	color: rgb(137, 153, 240);
+	color: rgb(6, 15, 66);
 	text-decoration: none;
 	line-height: 60px;
 	font-size: 19px;

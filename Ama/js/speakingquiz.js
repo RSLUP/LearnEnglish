@@ -10,15 +10,16 @@ function check(){
 	var question7 = document.quiz.question7.value;
 	var question8 = document.quiz.question8.value;
 	var question9 = document.quiz.question9.value;
+	var question10 = document.quiz.question10.value;
 	var correct = 0;
 
 
 	if (question1 == "8") {
 		correct++;
-}
+	}
 	if (question2 == "Articles") {
 		correct++;
-}	
+	}	
 	if (question3 == "Noun") {
 		correct++;
 	}
@@ -40,8 +41,11 @@ function check(){
 	if (question9 == "describe a noun") {
 		correct++;
 	}
+	if (question10 == "place for noun") {
+		correct++;
+	}
 	
-	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
+	var pictures = ["img/giphy.gif", "img/meh.jpeg", "img/lose.gif"];
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
@@ -53,15 +57,26 @@ function check(){
 		score = 1;
 	}
 
-	if (correct>6) {
+	if (correct>6 && correct<=10) {
 		score = 0;
 	}
 
 	document.getElementById("after_submit").style.visibility = "visible";
-	document.getElementById("after_submit_answer").style.visibility = "visible";
+/*	document.getElementById("after_submit_answer").style.visibility = "visible";*/
 
 	document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 10";
 	document.getElementById("picture").src = pictures[score];
-	}
+
+		document.getElementById("ans1").style.color='green';
+		document.getElementById("ans2").style.color='green';
+		document.getElementById("ans3").style.color='green';
+		document.getElementById("ans4").style.color='green';
+		document.getElementById("ans5").style.color='green';
+		document.getElementById("ans6").style.color='green';
+		document.getElementById("ans7").style.color='green';
+		document.getElementById("ans8").style.color='green';
+		document.getElementById("ans9").style.color='green';
+		document.getElementById("ans10").style.color='green';
+}
 	

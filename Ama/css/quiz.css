@@ -23,9 +23,7 @@ body {
 input {
 	margin-bottom: 20px;
 	display:block;
-
 }
-
 
 #button {
 	background: green;
@@ -37,8 +35,6 @@ input {
 	transition-duration: .5s;
 	margin-top: 15px;
 }
-
-
 
 #button:hover {
 	background: white;
@@ -87,7 +83,6 @@ input {
 }
 
 
-
-#rd {
+#rd{
  display:inline;
 } 
