@@ -49,9 +49,26 @@ var r1,r2,r3,r4,r5,r6,r7,r8,r9,r10;
 
 function quize()
 {
+    if(document.getElementById("r1").checked==true)
+    {
+        uArr.push(1);
+     
+    }
+    if(document.getElementById("r2").checked==true)
+    {
+        uArr.push(2);
+        //alert(document.getElementById("r2").value);
+    }
+    if(document.getElementById("r3").checked==true)
+    {
+        uArr.push(3);
+        //alert(document.getElementById("r3").value);
+    }
     
    
-   
+    document.getElementById("r1").checked=false;
+    document.getElementById("r2").checked=false;
+    document.getElementById("r3").checked=false;
    
    if(count>-1 && count<9)
    {
@@ -186,32 +203,9 @@ function quize()
        
 
        
-        if(document.getElementById("r1").checked==true)
-        {
-            uArr.push(1);
-           
-            
-        }
-        if(document.getElementById("r2").checked==true)
-        {
-            uArr.push(2);
-           // chkArr
-            //alert(document.getElementById("r2").value);
-        }
-        if(document.getElementById("r3").checked==true)
-        {
-            uArr.push(3);
-            //chkArr
-            //alert(document.getElementById("r3").value);
-        }
-
-        document.getElementById("btnBack").disabled=false;
         
-      
        
-    document.getElementById("r1").checked=false;
-    document.getElementById("r2").checked=false;
-    document.getElementById("r3").checked=false;
+   
 }
 
 
@@ -241,7 +235,7 @@ function answer()
             //alert(document.getElementById("r3").value);
         }
 
-
+        
 
   //  alert(uArr[0]);
     var rArr=[2,3,2,1,1,3,1,1,3,2];
@@ -267,15 +261,6 @@ function answer()
     //document.getElementById("btnNext").style.visibility='hidden';
     //document.getElementById("btnSub").style.visibility='hidden';
 
-    //document.getElementById("r1").style.visibility='hidden';
-    //document.getElementById("r2").style.visibility='hidden';
-    //document.getElementById("r3").style.visibility='hidden';
-
-  //  document.getElementById("quize").style.visibility='hidden';
-  //  document.getElementById("ans1").style.visibility='hidden';
-  //  document.getElementById("ans2").style.visibility='hidden';
-   // document.getElementById("ans3").style.visibility='hidden';
-  
 
 }
 

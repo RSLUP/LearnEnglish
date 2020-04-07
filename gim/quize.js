@@ -35,14 +35,12 @@ var a10=["were making","made","had made"];
 var quesion=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10];
 var uArr=[];
 
-var rad1=document.getElementById("r1");
-var rad2=document.getElementById("r2");
-var rad3=document.getElementById("r3");
 
 
 
 
-var r1,r2,r3,r4,r5,r6,r7,r8,r9,r10;
+
+
 
 
 
@@ -50,7 +48,33 @@ var r1,r2,r3,r4,r5,r6,r7,r8,r9,r10;
 function quize()
 {
     
-   
+    
+    if(document.getElementById("r1").checked==true)
+    {
+        uArr.push(1);
+       
+        
+    }
+    if(document.getElementById("r2").checked==true)
+    {
+        uArr.push(2);
+       // chkArr
+        //alert(document.getElementById("r2").value);
+    }
+    if(document.getElementById("r3").checked==true)
+    {
+        uArr.push(3);
+        //chkArr
+        //alert(document.getElementById("r3").value);
+    }
+
+    //document.getElementById("btnBack").disabled=false;
+    
+    document.getElementById("r1").checked = false;
+    document.getElementById("r2").checked = false;
+    document.getElementById("r3").checked = false;
+  // /    rad2.checked =false;
+  //     rad3.checked =false;
    
    
    if(count>-1 && count<9)
@@ -66,7 +90,6 @@ function quize()
            // alert(count);
 
            // document.getElementById("quize").innerHTML=quesion[count];
-         
 
 
           
@@ -185,31 +208,7 @@ function quize()
        
        
 
-       
-        if(document.getElementById("r1").checked==true)
-        {
-            uArr.push(1);
-           
-            
-        }
-        if(document.getElementById("r2").checked==true)
-        {
-            uArr.push(2);
-           // chkArr
-            //alert(document.getElementById("r2").value);
-        }
-        if(document.getElementById("r3").checked==true)
-        {
-            uArr.push(3);
-            //chkArr
-            //alert(document.getElementById("r3").value);
-        }
-
-        //document.getElementById("btnBack").disabled=false;
-        
-           rad1.checked=false;
-           rad2.checked=false;
-           rad3.checked=false;
+      
       
 }
 
