@@ -44,6 +44,11 @@ a {
     border-radius: 5px;
 }
 
+.navigate a:hover{
+    color: yellow;
+    border: 1.4px solid yellow;
+}
+
 .top-bar-title h1{
     float: left;
     margin: 10px;
@@ -191,7 +196,8 @@ a {
 }
 
 .hr2{
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .bar-type2{
