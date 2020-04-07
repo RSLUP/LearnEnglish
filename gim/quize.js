@@ -207,7 +207,7 @@ function quize()
 
         //document.getElementById("btnBack").disabled=false;
         
-        rad1.checked=false;
+           rad1.checked=false;
            rad2.checked=false;
            rad3.checked=false;
       

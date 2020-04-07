@@ -544,3 +544,22 @@ body {
   padding-left: 200px;
 
 }
+
+
+.ableQ {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:60%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+
+.rQ {
+  background-color: #E9967A;
+}
+
+.rQ:hover {
+  background-color: #CD5C5C;
+  color:white;
+}
