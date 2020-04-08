@@ -570,3 +570,20 @@ body {
 
 /*  Login page */
 
+.loginForm{
+
+  top:50%;
+  left:50%;
+  align:center;
+}
+
+.loginTxt{
+
+  width:190px;
+  height: 500px;
+}
+
+.loginBtn{
+
+  width:100px;
+}
