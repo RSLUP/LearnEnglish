@@ -1,0 +1,136 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.container{
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: white;
+}
+
+.login{
+  width: 700px;
+  background:  rgb(252, 250, 224);
+  border: 3px solid #2460da;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 30px 20px;
+}
+
+.loginpic{
+  margin-top: 20px;
+  width: 316px;
+}
+
+.loginform {
+  width: 290px;
+}
+
+.logintitle{
+  color: #2460da;
+  font-family: arial;
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 35px;
+}
+
+.inputbox{
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input{
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #2354b6;
+  border: 2px solid #2460da;
+  display: block;
+  width: 100%;
+  background: none;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+}
+
+input[type=text] {
+  -webkit-text-fill-color: #2354b6;
+  font-weight: bold;
+  font-family: arial;
+}
+
+::placeholder { 
+  font-family: arial;
+  font-weight: bold;
+  color: #2354b6;
+  opacity: 0.7;
+}
+
+
+
+.input:focus {
+  animation: anim-shadow;
+  animation-duration: 0.5s;
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 20px 5px;
+    }
+}
+
+.btnarea {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.loginbtn{
+  font-family: arial;
+  font-size: 17px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #2354b6;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.loginbtn:hover {
+  background: #4270cc;
+}
