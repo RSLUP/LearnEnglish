@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Login-EnglishHub</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+      <!--  <script type="text/javascript" src="js/login.js"> </script>-->
+    <script type="text/javascript" src="js/login.js"></script>
+
+    </head>
+    <body>
+        <br><br><br><br><br><br>
+        <table align="center">
+            <tr>
+                <td width="800">
+                    <img src="img/login.png" width="700" height="500">
+
+                </td>
+                <td width="800">
+                    <div class = "wrap">
+                        <form class = "loginForm" name="loginForm">
+                          <div class = "header">
+                            <h2>Login Form</h2>
+                            <p>Login to access EnglishHUb</p>
+                          </div>
+                          <div class = "grp">
+                            <input type = "text"  class = "input" placeholder="username" name="username">
+                          </div >
+                          <div class = "grp">
+                            <input type = "text" class = "input" placeholder="password" name="password">
+                          </div>
+                           <div class = "grp">
+                           <input type = "submit"  class = "button" value = "LOGIN" onclick= "return (validate());">                          
+                          </div>
+                          <div>
+                            <br><center>Don't have an account? <a href="#">Sign Up</a></center>
+                          </div>
+                        </form>
+                      </div>
+                </td>
+            </tr>
+        </table>
+        <div id="logininfo"></div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+     *{
+       
+        box-sizing: border-box;
+    }
+    body{
+        margin: 20px;
+    }
+   /* html
+	{
+	 height:100%;
+	}*/
+	body{
+        font-family: 'Segoe UI', sans-serif;;
+        font-size: 1rem;
+        line-height: 1.6;
+        height: 100%;
+    }
+	.wrap
+	{
+		width: 100%;
+        height: 100%;
+        ay: flex;
+		 
+		background: #fafafa;
+	}
+	.loginForm
+	{
+		width: 350px;
+        margin: auto;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        background: #ffffff;
+	}
+	.header
+	{
+		text-align: left;
+        margin-bottom : 2rem;
+	}
+	.input
+	{
+		background: #fafafa;
+        border: 1px solid #eeeeee;
+        padding: 12px;
+		width: 100%;
+	}
+	.grp
+	{
+	 width: 100%;
+	 
+	}
+	.button
+	{
+		background: rgb(94,137,233);
+	    background: linear-gradient(96deg, rgba(94,137,233,1) 16%, rgba(160,182,242,1) 36%, rgba(234,241,249,1) 55%, rgba(216,221,249,1) 86%);
+        border: 1px solid #ddd;
+        color: #01061d;
+        padding: 10px;
+        width: 100%;
+        text-transform: uppercase;
+	}
+	.button:hover
+	{
+		background: #a3b1f0;
+	}
