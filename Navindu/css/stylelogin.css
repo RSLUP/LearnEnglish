@@ -29,33 +29,34 @@ button:hover{
 }
 
 .login{
-  width: 700px;
+  width: 600px;
   background:  rgb(252, 250, 224);
-  border: 3px solid #2460da;
-
+  border: 3px solid #333333;
+  box-shadow: 0px 0px 10px grey;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 40px 40px 30px 20px;
+  padding: 10px 30px 0 30px;
 }
 
 .loginpic{
   margin-top: 20px;
-  width: 316px;
+  width: 50px;
+  transform: scale(0.8);
 }
 
 .loginform {
-  width: 290px;
+  width: 240px;
 }
 
 .logintitle{
-  color: #2460da;
+  color: #383838;
   font-family: arial;
   font-size: 26px;
   text-align: center;
   width: 100%;
   display: block;
-  padding-top: 18px;
+  padding-top: 35px;
   padding-bottom: 35px;
 }
 
@@ -63,24 +64,33 @@ button:hover{
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
+  display: flex;
+}
+
+.iconmail,.iconpassword{
+  height: 100%;
+  position: relative;
+  left: 13px;
+  top: 10px;
+  opacity: 0.3;
 }
 
 .input{
-  font-family: Poppins-Medium;
+  font-family: arial;
   font-size: 15px;
-  line-height: 1.5;
-  color: #2354b6;
-  border: 2px solid #2460da;
-  display: block;
-  width: 100%;
+  color: #494949;
+  border: 2px solid #313131;
+  position: relative;
+  left: -20px;
+  width: 240px;
   background: none;
-  height: 50px;
+  height: 40px;
   border-radius: 25px;
-  padding: 0 30px 0 68px;
+  padding: 0 20px 0 40px;
 }
 
 input[type=text] {
-  -webkit-text-fill-color: #2354b6;
+  -webkit-text-fill-color: #3b3b3b;
   font-weight: bold;
   font-family: arial;
 }
@@ -88,11 +98,9 @@ input[type=text] {
 ::placeholder { 
   font-family: arial;
   font-weight: bold;
-  color: #2354b6;
+  color: #4b4b4b;
   opacity: 0.7;
 }
-
-
 
 .input:focus {
   animation: anim-shadow;
@@ -107,12 +115,7 @@ input[type=text] {
 
 .btnarea {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   padding-top: 20px;
 }
@@ -122,9 +125,9 @@ input[type=text] {
   font-size: 17px;
   color: white;
   width: 100%;
-  height: 50px;
+  height: 40px;
   border-radius: 25px;
-  background: #2354b6;;
+  background: linear-gradient(#313131, rgb(63, 63, 63), #313131);;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,5 +135,5 @@ input[type=text] {
 }
 
 .loginbtn:hover {
-  background: #4270cc;
+  background: #5a5a5a;
 }
