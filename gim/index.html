@@ -7,9 +7,38 @@
     
     <link rel="stylesheet" href="css/styles.css">
 <script src="javascript/quize2.js"></script>
+
+<script>
+
+              
+            
+            function credentials()
+            {
+
+                var today=new Date().toISOString().split('T');
+
+               
+
+                if(sessionStorage.getItem("userName")=="" ||  sessionStorage.getItem("loginDate")!=today[0])
+                {
+                    window.location.href = "login.html";
+                   
+                }
+              document.getElementById("crdt").innerHTML=" Logged Name : " + sessionStorage.getItem("userName") +" | " + " TimeStamp : " + sessionStorage.getItem("loginDate") ;
+             // console.log(local_timeStamp);
+
+            }
+
+
+           
+            
+
+</script>
+
   </head>
 
-<body>
+<body onload="credentials()">
+
   <a href="#section0"><div class="upBtn">
     up
 </div></a>
@@ -27,10 +56,13 @@
     <ul class="ull">
       <li class="lii"><a class="active" href="#section0">Home</a></li>
       <li class="lii" style="float:right"><a href="tenses.html">Tenses in English</a></li>
+      <li class="lii" style="float:right"><a href="logout.html">Log out</a> </li>
+
     </ul>
 
     <div  id="section0">
-    <br>
+      <br>
+      <p id="crdt" style="text-align:right;">test</p>
     <br>
       <table align="right">
         <tr>
@@ -506,7 +538,7 @@
 
    
    <div  id="sectionQ">
-     
+    <form> 
     <br>
     <br>
     <br>
@@ -557,7 +589,7 @@
  </table>
 
     </form>
-
+    <p id="rank"></p>
 
  </div>
   

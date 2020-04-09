@@ -261,6 +261,8 @@ function answer()
     //document.getElementById("btnNext").style.visibility='hidden';
     //document.getElementById("btnSub").style.visibility='hidden';
 
+   
+   
 
 }
 
