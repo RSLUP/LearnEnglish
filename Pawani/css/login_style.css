@@ -1,0 +1,38 @@
+#login_img{
+    height: 205px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#login_form {
+    width: 486px;
+    height: 510px;
+    position: relative;
+    background-color: teal;
+    margin: auto;
+    top: 5vw;
+}
+
+#un,#pw,#login_button{
+    position: relative;
+}
+
+#label_div{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    left: 0;
+    top: 280px;
+    margin: auto;
+}
+
+#login_topic{
+    color: white;
+    position: absolute;
+    top: 7vw;
+    left: 170px;
+    font-size: 42px;
+    font-family: sans-serif;
+}
