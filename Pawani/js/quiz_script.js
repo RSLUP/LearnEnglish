@@ -172,3 +172,20 @@ function tenses_highlight(){
     }
 
 }
+
+function retrive_func() {
+    // window.open("tenses.html");
+    var d = new Date();
+    var n = d.toISOString();
+    //alert(n);
+    //
+    var stored_name = localStorage.getItem('username');
+    // alert("loading");
+    var stored_date = localStorage.getItem("date");
+
+    if ((stored_date !== n) && (stored_name == null)) {
+        window.open("login.html");
+    } else {
+        alert("loading");
+    }
+}

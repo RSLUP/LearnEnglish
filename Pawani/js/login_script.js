@@ -6,16 +6,17 @@ if(window.localStorage){
 
 
 function login_func() {
-    var username=document.getElementById("un").value;
-    var password=document.getElementById("pw").value;
+    var username=document.login_form.username.value;
+    var password=document.login_form.password.value;;
 
     if ( username == "RSLUP" && password == "r5Lup@Ac9"){
         alert ("Login successfully");
-        localStorage.setItem('username', username.value);
+        localStorage.setItem('username', username);
         var d = new Date();
         var n = d.toISOString();
         localStorage.setItem('date', n);
-        // alert("date"+n);
+        alert("date"+n);
+        alert(username+"haaa");
         window.open("index.html");
     }
 
@@ -29,19 +30,18 @@ function login_func() {
 
 
 function retrive_func() {
-    var user=document.getElementById("un").value;
-    // var d = new Date();
-    // var n = d.toISOString();
-    // //
-    // var stored_name=localStorage.getItem('username');
-    // var stored_date=localStorage.getItem("date");
+    // window.open("tenses.html");
+    var d = new Date();
+    var n = d.toISOString();
+    //alert(n);
+    //
+    var stored_name = localStorage.getItem('username');
+    // alert("loading");
+    var stored_date = localStorage.getItem("date");
 
-    alert(user+"ha ha");
-    // if((username==stored_name) && (n==stored_date)){
-    //     alert("ha ha");
-    // }else{
-    //     alert("don't match log again");
-    //     window.open("login.html");
-    // }
-
+    if ((stored_date !== n) && (stored_name == null)) {
+        window.open("login.html");
+    } else {
+        alert("loading");
+    }
 }
