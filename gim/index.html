@@ -26,7 +26,12 @@
                 }
               document.getElementById("crdt").innerHTML=" Logged Name : " + sessionStorage.getItem("userName") +" | " + " TimeStamp : " + sessionStorage.getItem("loginDate") ;
              // console.log(local_timeStamp);
+             document.getElementById("rank").innerHTML= localStorage.getItem("present");
 
+               localStorage.setItem("lst",document.getElementById("rank").innerHTML);
+
+               //localStorage.removeItem("lst");
+              // localStorage.removeItem("present");
             }
 
 
@@ -213,7 +218,7 @@
    <div  id="section1">
     <br>
     <h2>1.Nouns</h2>
-    <h3>What is Noun?</h3>
+    <h3>What is a Noun?</h3>
 
     <p>
     A noun is a word for a person, place, or thing.
@@ -261,7 +266,7 @@
     <br>
     <h2>2.Pronouns</h2>
 
-    <h3>What is Pronoun?</h3>
+    <h3>What is a Pronoun?</h3>
 
     <p>
       Pronouns replace nouns. A different pronoun is required
@@ -288,7 +293,7 @@
           </ul>
         <br>
          
-    <h3>Examples Sentences</h3>
+    <h3>Examples of Sentences</h3>
     <ul >
 
       <li>The dog buried <u>its</u> bone under a tree.</li>
@@ -304,7 +309,7 @@
    <div  id="section3">
     <br>
     <h2>3.Verbs</h2>
-    <h3>What is Verb?</h3>
+    <h3>What is a Verb?</h3>
 
     <p>
       A verb is a doing word that shows an action, an event or a state.
@@ -571,7 +576,7 @@
      <td colspan="2">
          <table align="right">
              <tr>
-                <td> <input class="tryA"  type="submit" id="btnTry" value="Try again" onclick="tryAgain()"></td>
+                <td><input class="tryA"  type="submit" id="btnTry" value="Try again" onclick="tryAgain()"></td>
                  <td width="120px"><input class="btnQ"  type="button" id="btnNext" value="Next" onclick="quize()"></td>
                  <td width="120px"> <input class="btnQ"  type="button" id="btnSub" value="Submit" onclick="answer()"></td>
              </tr>

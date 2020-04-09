@@ -254,16 +254,27 @@ function answer()
     document.getElementById("ans").innerHTML="Total : " +10;
     document.getElementById("tot").innerHTML="Correct : "+tot;
     document.getElementById("pre").innerHTML="Presentage : " +(tot/10)*100+"%";
-    
+   
+
     document.getElementById("btnTry").style.visibility='visible';
 
     //document.getElementById("btnBack").style.visibility='hidden';
     //document.getElementById("btnNext").style.visibility='hidden';
     //document.getElementById("btnSub").style.visibility='hidden';
-
    
+    var rnk= (tot/10)*100+"%";
    
+    //localStorage.setItem("present",rnk);
 
+    var totx ="";
+    var no=0;
+
+    totx = totx + rnk  + "\n";
+    localStorage.setItem("present",  localStorage.getItem("lst")+ "\n"+ rnk );
+  //  document.getElementById("rank").innerHTML=localStorage.getItem("present");
+    console.log(localStorage.getItem("lst")+ rnk +"\n");
+    no=no+1;
+   // console.log(totx);
 }
 
 
