@@ -10,7 +10,7 @@ body{
 .pagetitle{
     margin: 0 auto;
     display: block;
-	
+    
 }
 .pagetitle nav h1{
   transition:1s;
@@ -27,6 +27,7 @@ body{
   border-bottom:5px #a6ddf7;
 	line-height: 75px;
   margin-top: -15px;
+  
   
 }
 .pagetitle nav ul{
