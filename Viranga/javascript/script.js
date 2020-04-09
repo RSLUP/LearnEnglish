@@ -56,12 +56,13 @@ const txtpass = document.querySelector(".txtpass");
 const submit = document.querySelector(".submit");
 const message = document.querySelector(".message");
 const form = document.querySelector(".form");
+const day = document.querySelector(".day");
 
 
 const user = "RSLUP";
 const pass = "r5Lup@Ac9";
 
-submit.addEventListener("click",(e)=>
+function login()
 {
 
     if(user===txtuser.value && pass===txtpass.value)
@@ -69,8 +70,8 @@ submit.addEventListener("click",(e)=>
         
         var date = new Date().toISOString().split('T');
 
-        sessionStorage.setItem("userName", txtuser);
-        sessionStorage.setItem("loginDate", date[0]);
+        localStorage.setItem("userName", txtuser);
+        localStorage.setItem("logDate", date[0]);
 
         window.location.href = "speech.html";
         return;
@@ -86,19 +87,20 @@ submit.addEventListener("click",(e)=>
         message.innerHTML = "Invalid username and password!";
     
     }
-});
+}
 
-
+//redirect to login page
 
 function runFirst()
 {
 
     var today = new Date().toISOString().split('T');
 
-    if(sessionStorage.getItem("userName")==="" ||  sessionStorage.getItem("loginDate")!==today[0])
+    if(localStorage.getItem("userName")==="" ||  localStorage.getItem("logDate")!==today[0])
     {
         window.location.href = "login.html";
                    
     }
-              
+
+    day.innerHTML =  localStorage.getItem("userName") +" on " + localStorage.getItem("logDate") ;          
 }

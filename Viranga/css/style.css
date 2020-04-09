@@ -63,7 +63,10 @@ body
   /*adding style for header*/
 #header
 { 
-    background:#fff; 
+    background:#fff;
+    display: grid;
+    grid-template-rows: none; 
+   
 }
 #header-inner
 { 
@@ -74,6 +77,15 @@ body
     
     background-size:cover;
     font-size:45px;
+}
+.dayShow
+{
+    font-family: sans-serif;
+    color: #858181;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    
 }
 /*-------------------------------------------*/
 /* style For Logo */
@@ -100,6 +112,7 @@ body
 {
     cursor:pointer;
 }
+
 
 
 /*-------------------------------------------*/
@@ -330,7 +343,7 @@ body
     margin-bottom: 5px;
     border-radius: 15px;
     padding: 5px;
-    
+    text-decoration: none;
     cursor: pointer;
     background-color: rgb(174, 175, 175);
     transition: transform .2s;
@@ -375,3 +388,4 @@ body
     transform: scale(1.1);
     
 }
+
