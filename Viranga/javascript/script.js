@@ -70,8 +70,9 @@ function login()
         
         var date = new Date().toISOString().split('T');
 
+        //if data are correct store them in local
         localStorage.setItem("userName", txtuser);
-        localStorage.setItem("logDate", date[0]);
+        localStorage.setItem("logDate", date);   
 
         window.location.href = "speech.html";
         return;
@@ -94,11 +95,13 @@ function login()
 function runFirst()
 {
 
-    var today = new Date().toISOString().split('T');
+    var today=new Date().toISOString().split('T');
 
-    if(localStorage.getItem("userName")==="" ||  localStorage.getItem("logDate")!==today[0])
+               
+
+    if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
     {
-        window.location.href = "login.html";
+        indow.location.href = "login.html";
                    
     }
 

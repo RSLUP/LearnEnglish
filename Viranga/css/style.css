@@ -80,13 +80,14 @@ body
 }
 .dayShow
 {
-    font-family: sans-serif;
+    
     color: #858181;
     display: flex;
-    font-weight: bold;
+    padding-bottom: 3px;
     font-size: 16px;
     padding-left: 25px;
-    padding-bottom: 5px;
+    
+    
     
 }
 /*-------------------------------------------*/
