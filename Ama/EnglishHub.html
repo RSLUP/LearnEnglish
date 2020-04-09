@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title> Welcome to EnglishHub</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
-   <script type="text/javascript" src="js/javascript.js"> </script>
+   <link rel="stylesheet" type="text/css" href="css/login.css">
    <script type="text/javascript" src="js/login.js"></script>
+   <script type="text/javascript" src="js/javascript.js"></script>
+
 
 </head>
 <body>
@@ -24,12 +26,13 @@
       <li><a href="grammarquiz.html">Grammar</a></li>
       <li><a href="speakingquiz.html">Speaking</a></li>
     </ul></li>
-      
+      <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>
+      <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
     </ul>
     </nav>
   </div>
+  
  
-
   <!-- <center><img src="img/homeimage.png" class="image"></center>-->
    <div align="center"><img src="img/grammar.jpg" width="1100" height="500"></div>
 
@@ -47,7 +50,13 @@
             Also we're here to demonstrate the ability to analyze and interpret information in Listening, Speaking, Reading and Writing in different 
             context with an adequate level of accuracy and fluency.
       </font><hr></p>
-    <div id="logininfo"></div>
+      helllo
+     <div id="sign">
+     <form action="login.html">
+        <input type = "submit"  class = "button" value = "user details" onclick= "getuserdetails();">    
+       <!--</form>-->
+     </div>
+     <div id="log"></div>
     </div> <br><br><br><br> <br><br><br>
     <footer class="footer" class="container">
       <p><font color="black">Copyright &copy 2020 LearnEnglish | EnglishHub. All rights reserved.</font></p>

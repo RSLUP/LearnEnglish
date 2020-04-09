@@ -74,6 +74,40 @@ function nounHighlight()
         alert(" Hey! How are you? \n\n aha !I knew it. \n\n What a beautiful shot! \n\n Thank god! you survived.");
     }
 
-    /*grammar*/
+    function getuserdetails()
+    {
+        var today = new Date();  
+        var dd = today.getDate();
+        var mm = today.getMonth(); 
+        var yyyy = today.getFullYear();
+        today = mm+'-'+dd+'-'+yyyy;
 
-    
+        //current system time
+
+        var check1 = localStorage.getItem("key");
+        var check2 = localStorage.getItem("logdate")      //logdate - the time that udser logged into the website
+        if(check1 != "" && check2 == today)
+        {
+            document.getElementById("log").innerHTML = localStorage.getItem("key"); 
+            document.getElementById("log").innerHTML = localStorage.getItem("logdate");        
+        }
+      
+
+    }
+
+
+    function logout()
+    {
+        localStorage.removeItem("key");
+        window.location ="login.html"
+    }
+    function showuserdetails()
+    {
+        var check = localStorage.getItem("key");
+        if(check != "")
+        {
+            var user =  localStorage.getItem("key");
+            alert("Hello, "+user+ "\n Welcome to the EnglishHub. \n This is your "+ localStorage.clickcount+ " logging session to oue website.");
+           
+        }
+    }
