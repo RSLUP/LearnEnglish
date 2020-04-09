@@ -342,7 +342,7 @@ sup {
 }
 
 .submit, .retry{
-    width: 120px;
+    width: 80px;
     height: 40px;
     margin: 10px 0 10px 20px;
     border-radius: 7px;
@@ -355,20 +355,20 @@ sup {
     float: left;
 }
 
+.submit:hover, .retry:hover{
+    cursor: pointer;
+}
+
 .marks-area{
-    border: 3px solid rgb(85, 6, 6);
     padding: 0px;
     border-radius: 10px;
-    width: 180px;
-    height: 30px;
-    clear: right;
-    margin: 20px 0 0 300px;
+    margin: 24px 0 50px 220px;
 }
 
 .marks{
-    margin: 5px 0 0 20px;
+    font-family: arial;
+    margin: 6px 0 0 10px;
     float: left;
-    color: red;
 }
 
 .q{
