@@ -23,3 +23,25 @@ function login_func() {
         alert ("Username or password is incorrect");
     }
 }
+
+
+
+
+
+function retrive_func() {
+    var user=document.getElementById("un").value;
+    // var d = new Date();
+    // var n = d.toISOString();
+    // //
+    // var stored_name=localStorage.getItem('username');
+    // var stored_date=localStorage.getItem("date");
+
+    alert(user+"ha ha");
+    // if((username==stored_name) && (n==stored_date)){
+    //     alert("ha ha");
+    // }else{
+    //     alert("don't match log again");
+    //     window.open("login.html");
+    // }
+
+}

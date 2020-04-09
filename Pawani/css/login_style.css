@@ -18,6 +18,10 @@
 #un,#pw,#login_button{
     position: relative;
 }
+#un,#pw{
+    font-size: 16px;
+    padding: 6px;
+}
 
 #label_div{
     position: absolute;
@@ -35,4 +39,16 @@
     left: 170px;
     font-size: 42px;
     font-family: sans-serif;
+}
+
+
+#login_button {
+    background-color: rgba(234,171,62,0.91);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+    cursor: pointer;
 }
