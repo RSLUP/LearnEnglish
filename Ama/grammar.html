@@ -9,7 +9,7 @@
    <script type="text/javascript" src="js/grammarjavascript.js"> </script>
    <script type="text/javascript" src="js/javascript.js"></script>
 </head>
-<body>
+<body onload="getuserdetails()">
     <div class="dropdown">
         <nav class="nav" >
           <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
@@ -24,6 +24,7 @@
           <li><a href="grammarquiz.html">Grammar</a></li>
           <li><a href="speakingquiz.html">Speaking</a></li>
         </ul></li>
+        <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
         <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>
         </ul>
         </nav>
@@ -33,8 +34,8 @@
        <center><img src="img/homeimage.png" class="image"></center>
         <br><br>
         <div><h1><font style = "color:rgb(13, 21, 82); font-family:Georgia;"><marquee scrollamount = "10">
-           Welcome | LearnEnglish | EnglishHub | Grammar
-        </marquee></font></h1></div><br><br><br>
+           ~~~~~~~~~ Welcome, <span id="sign"> </span>| LearnEnglish | EnglishHub | Speaking ~~~~~~~~~
+         </marquee></font></h1></div><br><br>
 
         <br><br><br><br>
     

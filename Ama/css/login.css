@@ -48,17 +48,3 @@
 	 width: 100%;
 	 
 	}
-	.button
-	{
-		background: rgb(94,137,233);
-	    background: linear-gradient(96deg, rgba(94,137,233,1) 16%, rgba(160,182,242,1) 36%, rgba(234,241,249,1) 55%, rgba(216,221,249,1) 86%);
-        border: 1px solid #ddd;
-        color: #01061d;
-        padding: 10px;
-        width: 100%;
-        text-transform: uppercase;
-	}
-	.button:hover
-	{
-		background: #a3b1f0;
-	}

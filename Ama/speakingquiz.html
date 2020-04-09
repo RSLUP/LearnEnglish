@@ -12,7 +12,7 @@
 </head>
 
 
-<body>
+<body onload="getuserdetails()">
     <div class="dropdown">
         <nav class="nav" >
           <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
@@ -34,10 +34,10 @@
       
    <center><img src="img/quizbackground.jpg" width="600" height="500"></center>
       <div><h1><font style = "color:rgb(13, 21, 82); font-family:Georgia;"><marquee scrollamount = "10">
-        Welcome | LearnEnglish | EnglishHub | Quizes | Speaking Quiz
+      ~~~~~~~  Welcome, <span id="sign"> </span> | LearnEnglish | EnglishHub | Quizes | Speaking Quiz ~~~~~~~
      </marquee></font></h1></div><br><br>
 
-
+<h1>Please consider you have only 3 attempts for a one logging session</h1>
 <form id = "quiz" name = "quiz">
 
 <p class = "questions">1. There are ___ parts for a speech</p>
@@ -103,7 +103,8 @@
 <input type = "radio" id = "rd" name = "question10" value = "idea">idea<br>
 
 <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-<!--<input id = "button2" type = "button" value = "Show answers" onclick = "answers();">-->
+<input id = "button" type = "button" value = "reset" onclick = "reset();" >
+
 
 <div id = "after_submit">
   <p id = "number_correct"></p>
@@ -114,12 +115,25 @@
   <br>
 </form>
 <br>
-  <form>
-    <div> 
-      <input type = "submit"  class = "button" value = "user details" onclick= "getuserdetails();">  
-      <div id="log2"></div>
-   </div>
-  </form>
+<table border="1">
+  <tr>
+    <td>Attempt</td>
+    <td>Score</td>
+  </tr>
+  <tr>
+    <td><div id="atm1"> </div></td>
+    <td><div id="scr1"> </div></td>
+  </tr>
+  <tr>
+    <td><div id="atm2"> </div></td>
+    <td><div id="scr2"> </div></td>
+  </tr>
+  <tr>
+    <td><div id="atm3"> </div></td>
+    <td><div id="scr3"> </div></td>
+  </tr>
+</table>
+
 
 
   <!--<footer class="footer" class="container">

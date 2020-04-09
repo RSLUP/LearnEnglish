@@ -83,18 +83,20 @@ function nounHighlight()
         today = mm+'-'+dd+'-'+yyyy;
 
         //current system time
-
+        var username = localStorage.getItem("key");
         var check1 = localStorage.getItem("key");
         var check2 = localStorage.getItem("logdate")      //logdate - the time that udser logged into the website
         if(check1 != "" && check2 == today)
         {
-            document.getElementById("log").innerHTML = localStorage.getItem("key"); 
-            document.getElementById("log").innerHTML = localStorage.getItem("logdate");        
+            //alert("Hello, "+username+"\n Welcome to the EnglishHub. \n Your login date is: "+check2);  
+            document.getElementById("sign").innerHTML =check1;                 
         }
-      
-
+        else
+        {
+            window.location.href ="login.html";
+            alert("hello");          
+        }  
     }
-
 
     function logout()
     {
@@ -107,7 +109,7 @@ function nounHighlight()
         if(check != "")
         {
             var user =  localStorage.getItem("key");
-            alert("Hello, "+user+ "\n Welcome to the EnglishHub. \n This is your "+ localStorage.clickcount+ " logging session to oue website.");
+            alert("Hello, "+user+ "\n Welcome to the EnglishHub. \n This is your "+ localStorage.clickcount+ " logging session to our website.");
            
         }
     }
