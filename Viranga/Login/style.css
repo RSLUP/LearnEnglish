@@ -140,6 +140,13 @@ form h2
     transition: 0.3s;
     
 }
+.para
+{
+    color: red;
+    font-size: 0.9rem;
+    
+    font-family: sans-serif;
+}
 
 .input
 {
@@ -169,7 +176,7 @@ a
 }
 a:hover
 {
-    color: #38d39f;
+    color: #3895d3;
 }
 
 .btn
@@ -194,6 +201,7 @@ a:hover
 .btn:hover
 {
     background-position: right;
+    transform: scale(1.05);
 }
 @media screen and (max-width:1050px)
 {

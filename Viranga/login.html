@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnEnglish</title>
+    <title>LearnEnglish-Login</title>
     <link rel="stylesheet" type="text/css" href="Login/style.css">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
@@ -15,7 +15,8 @@
         </div>
         <div class="login-container">
             <div class="form2">
-                <form action="login.html">
+                <!-- action="speech.html" -->
+                <form class="form">
                 <br>
                 <br>
                 <img src="Login/avatar.png" class="avatar">
@@ -27,7 +28,7 @@
                         </div>
                         <div>
                             <h5>Username</h5>
-                            <input class="input" type="text">
+                            <input class="input txtuser" type="text" required>
                         </div>
                     </div>
 
@@ -37,12 +38,13 @@
                         </div>
                         <div>
                             <h5>Password</h5>
-                            <input class="input" type="password">
+                            <input class="input txtpass" type="password" required>
                         </div>
                     </div>
                     <a href="#">Forgot Password?</a>
-                    <input type="submit" class="btn" value="login">
-                    <br>
+                    
+                    <button type="button" class="btn submit" onclick="login()">login</button>
+                    <p class="para message"></p>
                     <br>
                 
                 </form>
