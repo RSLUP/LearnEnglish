@@ -1,0 +1,139 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.container{
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: white;
+}
+
+.login{
+  width: 600px;
+  background:  rgb(252, 250, 224);
+  border: 3px solid #333333;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 0 30px;
+}
+
+.loginpic{
+  margin-top: 20px;
+  width: 50px;
+  transform: scale(0.8);
+}
+
+.loginform {
+  width: 240px;
+}
+
+.logintitle{
+  color: #383838;
+  font-family: arial;
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.inputbox{
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.iconmail,.iconpassword{
+  height: 100%;
+  position: relative;
+  left: 13px;
+  top: 10px;
+  opacity: 0.3;
+}
+
+.input{
+  font-family: arial;
+  font-size: 15px;
+  color: #494949;
+  border: 2px solid #313131;
+  position: relative;
+  left: -20px;
+  width: 240px;
+  background: none;
+  height: 40px;
+  border-radius: 25px;
+  padding: 0 20px 0 40px;
+}
+
+input[type=text] {
+  -webkit-text-fill-color: #3b3b3b;
+  font-weight: bold;
+  font-family: arial;
+}
+
+::placeholder { 
+  font-family: arial;
+  font-weight: bold;
+  color: #4b4b4b;
+  opacity: 0.7;
+}
+
+.input:focus {
+  animation: anim-shadow;
+  animation-duration: 0.5s;
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 20px 5px;
+    }
+}
+
+.btnarea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.loginbtn{
+  font-family: arial;
+  font-size: 17px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 25px;
+  background: linear-gradient(#313131, rgb(63, 63, 63), #313131);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.loginbtn:hover {
+  background: #5a5a5a;
+}
