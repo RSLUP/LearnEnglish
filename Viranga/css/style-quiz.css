@@ -171,7 +171,7 @@ html
 .answers-tracker div.correct
 {
     background-color: green;
-    background-image: url('img/correct.png');
+    background-image: url('css-img/correct.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -179,7 +179,7 @@ html
 .answers-tracker div.wrong
 {
     background-color: red;
-    background-image: url('img/wrong.png');
+    background-image: url('css-img/wrong.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;

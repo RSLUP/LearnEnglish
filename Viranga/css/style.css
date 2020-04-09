@@ -70,7 +70,7 @@ body
     margin:0 auto;
     padding-bottom:10px; 
     width:1200px; 
-    background-image: url('Sources/img/header.jpg');
+    background-image: url('css-img/header.jpg');
     
     background-size:cover;
     font-size:45px;
