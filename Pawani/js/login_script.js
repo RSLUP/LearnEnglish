@@ -7,8 +7,7 @@ if(window.localStorage){
 
 function login_func() {
     var username=document.login_form.username.value;
-    var password=document.login_form.password.value;;
-
+    var password = document.login_form.password.value;
     if ( username == "RSLUP" && password == "r5Lup@Ac9"){
         alert ("Login successfully");
         localStorage.setItem('username', username);
@@ -16,7 +15,7 @@ function login_func() {
         var n = d.toISOString();
         localStorage.setItem('date', n);
         alert("date"+n);
-        alert(username+"haaa");
+        // alert(username+"haaa");
         window.open("index.html");
     }
 
@@ -39,7 +38,7 @@ function retrive_func() {
     // alert("loading");
     var stored_date = localStorage.getItem("date");
 
-    if ((stored_date !== n) && (stored_name == null)) {
+    if ((stored_date !== n) || (stored_name == null)) {
         window.open("login.html");
     } else {
         alert("loading");

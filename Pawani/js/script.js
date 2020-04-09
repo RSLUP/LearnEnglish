@@ -10,7 +10,7 @@ function slideds2() {
         a[i].style.display = "none";
     }
 
-    if (mov2 == a.length) mov2 = 0
+    if (mov2 == a.length) mov2 = 0;
     a[mov2].style.display = "block";
     mov2++;
 
@@ -30,9 +30,11 @@ function retrive_func() {
     // alert("loading");
     var stored_date = localStorage.getItem("date");
 
-    if ((stored_date !== n) && (stored_name == null)) {
+    if ((stored_date !== n) || (stored_name == null)) {
         window.open("login.html");
     } else {
+        alert(stored_date);
+        alert(n);
         alert("loading");
     }
 }

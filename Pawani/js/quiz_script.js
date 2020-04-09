@@ -183,7 +183,7 @@ function retrive_func() {
     // alert("loading");
     var stored_date = localStorage.getItem("date");
 
-    if ((stored_date !== n) && (stored_name == null)) {
+    if ((stored_date !== n) || (stored_name == null)) {
         window.open("login.html");
     } else {
         alert("loading");
