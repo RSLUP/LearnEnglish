@@ -122,6 +122,10 @@
         function check(form)
         {
             if(form.userid.value == "RSLUP" && form.psw.value == "r5Lup@Ac9"){
+                localStorage.setItem("UserName","RSLUP");
+                localStorage.setItem("Passwrd","r5Lup@Ac9");
+                localStorage.setItem("Date",new Date().toISOString().split('T'));
+                
                 window.open('index.html');
             }
             else{
