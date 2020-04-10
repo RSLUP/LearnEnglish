@@ -9,7 +9,6 @@
 	</head>
 
     <body>
-		<h1>Not Completed Yet, open index01.html</h1>
 
 		<div class="container">
 			<div class="login">
@@ -18,10 +17,10 @@
 					<img src="img/login.png" alt="login">
 				</div>
 
-				<form class="loginform">
+				<form action="index01.html" class="loginform">
 
 					<h2 class="logintitle">Member Login</h2>
-					<div class="inputbox validate-input" >
+					<div class="inputbox" >
 						<img class="iconmail" width="20px" src="img/email.png" alt="email">
 						<input class="input" type="text" name="email" placeholder="Email">
 					</div>
@@ -29,8 +28,11 @@
 						<img class="iconpassword" width="20px" src="img/password.png" alt="password">
 						<input class="input" type="password" name="pass" placeholder="Password">
 					</div>
+					<div class="errormsg">
+						<p id="Error"></p>
+					</div>
 					<div class="btnarea">
-						<button class="loginbtn" onclick="redirect()" id="loginBtn">Login</button>
+						<button type="button" class="loginbtn" onclick="redirect(this.form)" id="loginBtn">Login</button>
 					</div>
 
 				</form> <!--Login form-->

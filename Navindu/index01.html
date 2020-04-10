@@ -8,7 +8,7 @@
 
     </head>
 
-    <body>
+    <body onload="sessionCheck()">
         <div class="wrapper">
 
             <div class="top-bar clearfix">
@@ -18,13 +18,19 @@
                 <div class="top-bar-title">
                     <h1>English Grammar</h1>
                 </div>
+                
                 <div class="navigate">
                     <a href="index01.html">Parts of speech</a>
                     <a href="index02.html">English Tenses</a>
                 </div>
             </div>
 
+            <div class="userlog">
+                <p id="loggeduser"></p>
+            </div>
+            
             <div class="intro">
+                
                 <div class="introimage">
                     <img src="img/intro01.png" width="355px" alt="Female Teacher">
                 </div>
@@ -466,8 +472,8 @@
                         <button class="retry" id="Button2" style="display: none;" onclick="quizRetry()">Retry</button>
                     </div>
                     <div class="marks-area">
-                        <h4 class="marks">Your Marks : </h4>
-                        <h4 class="marks" id="Marks" style="display: none;"></h3>
+                        <h4 class="marks" style="color: blue;">Your Marks : </h4>
+                        <h4 class="marks" style="color: red;" id="Marks" style="display: none;"></h3>
                     </div>
                 </div>
             </div> <!--Quiz Modal Box Elements-->
@@ -481,6 +487,8 @@
         </div> <!--wrapper-->
 
         <script type="text/javascript" src="js/index01quiz-script.js"></script>
+        <script type="text/javascript" src="js/sessionCheck.js"></script>
+        <script type="text/javascript" src="js/index00login-script.js"></script>
 
     </body>
 </html>

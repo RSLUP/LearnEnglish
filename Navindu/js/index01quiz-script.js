@@ -10,6 +10,7 @@ function quizClose(){
 
 var a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
 var marks=0;
+var attempt=0;
 
 function quizSubmit(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10){
     qq1(a1);
@@ -22,19 +23,33 @@ function quizSubmit(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10){
     qq8(a8);
     qq9(a9);
     qq10(a10);
+
     document.getElementById("Button1").style.background="gray";
     document.getElementById("Button1").style.pointerEvents= "none";
     document.getElementById("Marks").style.display="block";
-    document.getElementById("Marks").innerHTML = marks +" /10";
     document.getElementById("Button2").style.display="block";
+
+    attempt++;
+
+    if(attempt==1){
+        sessionStorage.setItem("try1",marks);
+        document.getElementById("Marks").innerHTML =" Attempt 1 : <b>"+ sessionStorage.getItem("try1") +"/10</b>";
+    }
+    else if(attempt==2){
+        sessionStorage.setItem("try2",marks);
+        document.getElementById("Marks").innerHTML =" Attempt 1 : <b>"+ sessionStorage.getItem("try1") +"/10</b>"+" | Attempt 2 : <b>"+ sessionStorage.getItem("try2") +"/10</b>";
+    }
+    else if(attempt==3){
+        sessionStorage.setItem("try3",marks);
+        document.getElementById("Marks").innerHTML ="Attempt 1 : <b>"+ sessionStorage.getItem("try1") +"/10</b>"+" | Attempt 2 : <b>"+ sessionStorage.getItem("try2") +"/10</b>"+" | Attempt 3 : <b>"+ sessionStorage.getItem("try3") +"/10</b>";
+    }
 }
 
 function quizRetry(){
+    marks = 0;
     document.getElementById("Button1").style.background="rgb(85, 6, 6)";
     document.getElementById("Button1").style.pointerEvents= "visible";
     document.getElementById("Button2").style.display="none";
-    document.getElementById("Marks").style.display="none";
-    marks = 0;
 }
 
 function qq1(a1){
@@ -46,7 +61,6 @@ function qq1(a1){
 	else{
 		document.getElementById("r1").style.color="red";
 		document.getElementById("r1").innerHTML = "&#10006 Wrong";
-        document.getElementById(a1).style.transform="scale(1.6)";
     }
 }
 
@@ -59,7 +73,6 @@ function qq2(a2){
 	else{
 		document.getElementById("r2").style.color="red";
         document.getElementById("r2").innerHTML = "&#10006 Wrong";
-        document.getElementById(a2).style.transform="scale(1.6)";
     }
 }
 
@@ -72,7 +85,6 @@ function qq3(a3){
 	else{
 		document.getElementById("r3").style.color="red";
         document.getElementById("r3").innerHTML = "&#10006 Wrong";
-        document.getElementById(a3).style.transform="scale(1.6)";
     }
 }
 
@@ -85,7 +97,6 @@ function qq4(a4){
 	else{
 		document.getElementById("r4").style.color="red";
         document.getElementById("r4").innerHTML = "&#10006 Wrong";
-        document.getElementById(a4).style.transform="scale(1.6)";
     }
 }
 
@@ -98,7 +109,6 @@ function qq5(a5){
 	else{
 		document.getElementById("r5").style.color="red";
         document.getElementById("r5").innerHTML = "&#10006 Wrong";
-        document.getElementById(a5).style.transform="scale(1.6)";
     }
 }
 
@@ -111,7 +121,6 @@ function qq6(a6){
 	else{
 		document.getElementById("r6").style.color="red";
         document.getElementById("r6").innerHTML = "&#10006 Wrong";
-        document.getElementById(a6).style.transform="scale(1.6)";
     }
 }
 
@@ -124,7 +133,6 @@ function qq7(a7){
 	else{
 		document.getElementById("r7").style.color="red";
         document.getElementById("r7").innerHTML = "&#10006 Wrong";
-        document.getElementById(a7).style.transform="scale(1.6)";
     }
 }
 
@@ -137,7 +145,6 @@ function qq8(a8){
 	else{
 		document.getElementById("r8").style.color="red";
         document.getElementById("r8").innerHTML = "&#10006 Wrong";
-        document.getElementById(a8).style.transform="scale(1.6)";
     }
 }
 
@@ -150,7 +157,6 @@ function qq9(a9){
 	else{
 		document.getElementById("r9").style.color="red";
         document.getElementById("r9").innerHTML = "&#10006 Wrong";
-        document.getElementById(a9).style.transform="scale(1.6)";
     }
 }
 
@@ -163,6 +169,5 @@ function qq10(a10){
 	else{
 		document.getElementById("r10").style.color="red";
         document.getElementById("r10").innerHTML = "&#10006 Wrong";
-        document.getElementById(a10).style.transform="scale(1.6)";
     }
 }
