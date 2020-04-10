@@ -84,11 +84,26 @@ body
     color: #858181;
     display: flex;
     padding-bottom: 3px;
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 25px;
     
     
     
+}
+.logout
+{
+   
+    cursor: pointer;
+    width: 35px;
+    height: auto;
+    position: absolute;
+    right: 6%;
+    padding-top: 4px;
+    
+}
+.logout:hover
+{
+    transform: scale(1.02); 
 }
 /*-------------------------------------------*/
 /* style For Logo */
@@ -391,4 +406,5 @@ body
     transform: scale(1.1);
     
 }
+
 

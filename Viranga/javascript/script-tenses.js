@@ -254,6 +254,21 @@ function quizOver()
     
     percentage.innerHTML = (percen.toFixed(2) +"%");
 }
+function getResult()
+{
+
+    let percen = (score/questions.length)*100;
+   
+    localStorage.setItem("marks",percen.toFixed(2));
+       
+    
+    //localStorage.setItem("marks",percen.toFixed(2));
+    alert("Attempt " + " : "+ localStorage.getItem("marks")+"%");
+    
+    //get result to consol
+    console.log(localStorage.getItem("marks"));
+    
+}
 //try again 
 function tryAgain()
 {
