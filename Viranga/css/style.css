@@ -98,6 +98,7 @@ body
     height: auto;
     position: absolute;
     right: 6%;
+    padding-top: 4px;
     
 }
 .logout:hover
