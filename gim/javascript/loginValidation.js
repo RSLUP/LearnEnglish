@@ -8,7 +8,7 @@ function valid()
 
     if(user!="" || pass!="")
     {
-        if(user=="nibm" && pass=="123")
+        if(user=="RSLUP" && pass=="r5Lup@Ac9")
         {
             
             var date=new Date().toISOString().split('T');
