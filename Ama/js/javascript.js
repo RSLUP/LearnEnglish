@@ -95,8 +95,9 @@ function nounHighlight()
         else
         {
             window.location.href ="login.html";
-            alert("hello");          
+           // alert("hello");          
         }  
+
     }
 
     function logout()
