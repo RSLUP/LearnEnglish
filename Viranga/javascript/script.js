@@ -51,12 +51,12 @@ inputs.forEach(input => {
 
 //js for login code
 
-const txtuser = document.querySelector(".txtuser");
-const txtpass = document.querySelector(".txtpass");
+// const txtuser = document.querySelector(".txtuser");
+// const txtpass = document.querySelector(".txtpass");
 const submit = document.querySelector(".submit");
 const message = document.querySelector(".message");
 const form = document.querySelector(".form");
-const day = document.querySelector(".day");
+
 
 
 const user = "RSLUP";
@@ -64,28 +64,31 @@ const pass = "r5Lup@Ac9";
 
 function login()
 {
-
-    if(user===txtuser.value && pass===txtpass.value)
+    var txtuser = document.querySelector(".txtuser").value;
+    var txtpass = document.querySelector(".txtpass").value;
+    if(user===txtuser && pass===txtpass)
     {
         
         var date = new Date().toISOString().split('T');
-
+        
         //if data are correct store them in local
         localStorage.setItem("userName", txtuser);
-        localStorage.setItem("logDate", date);   
+        localStorage.setItem("logDate", date[0]);   
 
         window.location.href = "speech.html";
-        return;
+        return;     
     }
     if(user===txtuser.value && pass!==txtpass.value)
     {
         message.innerHTML = "Invalid password!";
+        alert("Invalid password!");
         return;
     }
     else
     
     {
         message.innerHTML = "Invalid username and password!";
+        alert("Invalid username and password!");
     
     }
 }
@@ -93,17 +96,22 @@ function login()
 //redirect to login page
 
 function runFirst()
-{
-
-    var today=new Date().toISOString().split('T');
-
+{   
+    var now = new Date();
+    var today=now.toISOString().split('T');
+    console.log(localStorage.getItem("userName"));
+    console.log(localStorage.getItem("logDate"));
+    console.log(today[0]);
                
 
     if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
     {
-        indow.location.href = "login.html";
-                   
+        alert('Session Expired..!');
+        window.location.href = "login.html";
+                    
     }
-
-    day.innerHTML =  localStorage.getItem("userName") +" on " + localStorage.getItem("logDate") ;          
+    else{
+        document.querySelector(".day").innerHTML= localStorage.getItem("userName") +" on " + now.toLocaleString();
+    }
+    
 }
