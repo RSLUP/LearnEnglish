@@ -2,73 +2,80 @@
 var count =0;
 
 
-var q1= ["1. I bought a beautiful dress at the mall."];
-var a1=["preposition","adjective","noun"];
+var q1= ["1.This time tomorrow, I ............................... on the beach."];
+var a1=["am lying","will lie","will be lying"];
 
-var q2="2. What did she ask you to do?";
-var a2=["conjunction","preposition","pronoun"];
+var q2="2.She said that she ....................... help me.";
+var a2=["will","shall","would"];
 
-var q3="3. I left my shoes under the kitchen table.";
-var a3=["adjective","preposition","pronoun"];
+var q3="3.Phone me when you ............................ time.";
+var a3=["have","would have","will have"];
 
-var q4="4. If we finish our work quickly we can go to the movies.";
-var a4=["adverb","conjunction","verb"];
+var q4="4.I will follow you wherever you ...........................";
+var a4=["go","goes","will go"];
 
-var q5="5. On Saturdays I work from nine to five.";
-var a5=["verb","preposition","adverb"];
+var q5="5.You ........................... an accident if you go on driving like that.";
+var a5=["are having","will have","would have"];
 
-var q6="6. I want to go to a university in the United States.";
-var a6=["adjective","preposition","noun"];
+var q6="6.When you phoned, I ................................. in the garage.";
+var a6=["worked","am working","was working"];
 
-var q7="7. I'm sure I've met your girlfriend before.";
-var a7=["verb","preposition","interjection"];
+var q7="7.I .............................. all my childhood in South India. ";
+var a7=["was spending","spend","spent"];
 
-var q8="8. Well, I don't think I'll be home before 6.";
-var a8=["interjection","preposition","pronoun"];
+var q8="8.The phone ......................... while I was having a bath.";
+var a8=["rings","rang","was ringing"];
 
-var q9="9. Andy knocked on the door but nobody answered.";
-var a9=["adverb","adjective","conjunction"];
+var q9="9.I tried a little of the soup to see how it ..........................";
+var a9=["tastes","is tasting","tasted"];
 
-var q10="10. After lunch let's go out for a coffee.";
-var a10=["pronoun","preposition","verb"];
+var q10="10.When we were children we ............................. our own toys.";
+var a10=["were making","made","had made"];
 
 var quesion=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10];
 var uArr=[];
 
-var rad1=document.getElementById("r1");
-var rad2=document.getElementById("r2");
-var rad3=document.getElementById("r3");
 
 
 
 
-var r1,r2,r3,r4,r5,r6,r7,r8,r9,r10;
+
+
 
 
 
 
 function quize()
 {
+    
+    
     if(document.getElementById("r1").checked==true)
     {
         uArr.push(1);
-     
+       
+        
     }
     if(document.getElementById("r2").checked==true)
     {
         uArr.push(2);
+       // chkArr
         //alert(document.getElementById("r2").value);
     }
     if(document.getElementById("r3").checked==true)
     {
         uArr.push(3);
+        //chkArr
         //alert(document.getElementById("r3").value);
     }
+
+    //document.getElementById("btnBack").disabled=false;
     
+    document.getElementById("r1").checked = false;
+    document.getElementById("r2").checked = false;
+    document.getElementById("r3").checked = false;
+  // /    rad2.checked =false;
+  //     rad3.checked =false;
    
-    document.getElementById("r1").checked=false;
-    document.getElementById("r2").checked=false;
-    document.getElementById("r3").checked=false;
    
    if(count>-1 && count<9)
    {
@@ -83,7 +90,6 @@ function quize()
            // alert(count);
 
            // document.getElementById("quize").innerHTML=quesion[count];
-        
 
 
           
@@ -202,10 +208,8 @@ function quize()
        
        
 
-       
-        
-       
-   
+      
+      
 }
 
 
@@ -235,10 +239,10 @@ function answer()
             //alert(document.getElementById("r3").value);
         }
 
-        
+
 
   //  alert(uArr[0]);
-    var rArr=[2,3,2,1,1,3,1,1,3,2];
+    var rArr=[3,3,1,1,2,3,3,2,3,2];
     
     var tot=0;
 
@@ -261,6 +265,20 @@ function answer()
     //document.getElementById("btnNext").style.visibility='hidden';
     //document.getElementById("btnSub").style.visibility='hidden';
 
+    var rnk2= (tot/10)*100+"%";
+    //var noCount=1;
+
+    var yy2=sessionStorage.getItem("lst2").split('.');
+    //alert(yy[0]);
+    if(yy2[0]=="")
+    {
+        sessionStorage.setItem("present2", 1 + ". " + rnk2 + "<br>" +sessionStorage.getItem("lst2"));
+    }
+    else
+    {
+        sessionStorage.setItem("present2", (parseInt(yy2[0]) +1) + ". " + rnk2 + "<br>" +sessionStorage.getItem("lst2") );
+    }
+  
 
 }
 
