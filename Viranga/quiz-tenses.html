@@ -4,8 +4,8 @@
     
         <!--add title-->
         <title>Quiz-Tenses</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="Quiz/style-quiz.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-quiz.css">
         
         
 
@@ -13,10 +13,12 @@
     
     
    
-    <!--Start web page-->
-    </head>
+        <script type="text/javascript" src="javascript/script.js"></script>
     
-    <body>
+   
+        <!--Start web page-->
+    </head>
+    <body onload="runFirst()">
         <div id="page">
             <div class = "content">
                 <header id="header">
@@ -44,6 +46,7 @@
                     </div>
                 </div>        
                 <div class="clr"></div>
+                <p class="dayShow">Login details - <span class ="day"></span></p>
             </div>
         </div>
 
@@ -78,7 +81,7 @@
                 <button type ="button" onclick="tryAgain()">Try Again</button>
             </div>
         </div>
-        <script src="Quiz/script-tenses.js"></script>
+        <script src="javascript/script-tenses.js"></script>
         <footer class = "content">
         
             <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   

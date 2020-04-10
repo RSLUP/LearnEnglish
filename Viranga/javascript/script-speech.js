@@ -13,6 +13,8 @@ const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
 const op4 = document.querySelector(".option4");
 
+const showSession = document.querySelector(".showSession");
+
 let questionIndex =0;
 let index =0;
 let myArray=[];
@@ -229,6 +231,7 @@ function quizOver()
     totalQuestionSpan2.innerHTML = questions.length;
     let percen = (score/questions.length)*100;
     percentage.innerHTML = (percen.toFixed(2) +"%");
+    
 }
 //try again 
 function tryAgain()
@@ -241,3 +244,4 @@ window.onload = function()
     answerTracker();
     
 }
+

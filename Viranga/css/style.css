@@ -63,17 +63,32 @@ body
   /*adding style for header*/
 #header
 { 
-    background:#fff; 
+    background:#fff;
+    display: grid;
+    grid-template-rows: none; 
+   
 }
 #header-inner
 { 
     margin:0 auto;
     padding-bottom:10px; 
     width:1200px; 
-    background-image: url('Sources/img/header.jpg');
+    background-image: url('css-img/header.jpg');
     
     background-size:cover;
     font-size:45px;
+}
+.dayShow
+{
+    
+    color: #858181;
+    display: flex;
+    padding-bottom: 3px;
+    font-size: 16px;
+    padding-left: 25px;
+    
+    
+    
 }
 /*-------------------------------------------*/
 /* style For Logo */
@@ -100,6 +115,7 @@ body
 {
     cursor:pointer;
 }
+
 
 
 /*-------------------------------------------*/
@@ -330,7 +346,7 @@ body
     margin-bottom: 5px;
     border-radius: 15px;
     padding: 5px;
-    
+    text-decoration: none;
     cursor: pointer;
     background-color: rgb(174, 175, 175);
     transition: transform .2s;
@@ -375,3 +391,4 @@ body
     transform: scale(1.1);
     
 }
+

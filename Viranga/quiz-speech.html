@@ -4,8 +4,8 @@
     
         <!--add title-->
         <title>Quiz-Speech</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="Quiz/style-quiz.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-quiz.css">
         
         
 
@@ -13,10 +13,12 @@
     
     
    
-    <!--Start web page-->
-    </head>
+        
     
-    <body>
+   
+        <!--Start web page-->
+    </head>
+    <body onload="runFirst()">
         <div id="page">
             <div class = "content">
                 <header id="header">
@@ -43,6 +45,7 @@
                      
                     </div>
                 </div> 
+                <p class="dayShow">Login details - <span class ="day"></span></p>
             </div>
         </div>    
             
@@ -75,10 +78,12 @@
                     You Got <span class ="correct-answers"></span> out of <span class ="total-question2"></span> answers Correct!<br>
                     That's <span class ="percentage"></span>
                 </h1>
+                <div class="showsession"></div>
                 <button type ="button" onclick="tryAgain()">Try Again</button>
             </div>
         </div>
-        <script src="Quiz/script-speech.js"></script>
+        <script src="javascript/script-speech.js"></script>
+        <script type="text/javascript" src="javascript/script.js"></script>
         <footer class = "content">
         
             <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
