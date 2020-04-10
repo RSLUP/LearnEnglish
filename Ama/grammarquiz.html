@@ -28,6 +28,7 @@
       <li><a href="grammarquiz.html">Grammar</a></li>
       <li><a href="speakingquiz.html">Speaking</a></li>
     </ul></li>
+    <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
     <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>
     </ul>
     </nav>
@@ -37,7 +38,7 @@
    ~~~~~~~ Welcome, <span id="sign"> </span>| LearnEnglish | EnglishHub | Speaking ~~~~~~
  </marquee></font></h1></div><br><br>
 
-
+ <h1>Please consider you have only 3 attempts for a one logging session</h1>
 <form id="quiz" name="quiz">
     <p class = "questions"> 1. How many tenses are there in English?</p>
     <input type="radio" id="rd" name="q1" value="6"> 6 <br>
@@ -100,31 +101,36 @@
    
 
     <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+    <input id = "button" type = "button" value = "reset" onclick = "reset();" >
 
     <div id = "after_submit">
       <p id = "number_correct"></p>
       <p id = "message"></p>
       <img id = "picture">
     </div>
-    
+    <table border="1" align="center">
+      <tr align="center">
+        <td width="500">Attempt</td>
+        <td width="500">Score</td>
+      </tr>
+      <tr align="center">
+        <td height="50"><div id="atm1"> </div></td>
+        <td><div id="scr1"> </div></td>
+      </tr>
+      <tr align="center">
+        <td height="50" ><div id="atm2"> </div></td>
+        <td><div id="scr2"> </div></td>
+      </tr>
+      <tr align="center">
+        <td height="50"><div id="atm3"> </div></td>
+        <td><div id="scr3"> </div></td>
+      </tr>
+    </table>
 </form>
-<!--<div id="after_submit_answerG" class="answers">
-  <p>
-    <ol>
-      <li>12</li>
-      <li>2</li>
-      <li>Simple Present Tense</li>
-      <li>Students </li>
-      <li>Present Continuous Tense</li>
-      <li>working</li>
-      <li>have + past participle</li>
-      <li>Future perfect </li>
-      <li>Present Perfect tense</li>
-      <li>Mother had tasted the food before she served it </li>
 
-    </ol>
-  </p>
-</div>-->
+
+
+
 <!--<footer class="footer" class="container">
   <p><font color="black">Copyright &copy 2020 LearnEnglish | EnglishHub. All rights reserved.</font></p>
   <p><font color="black">For site suggestions and errors, please send us a Inquiry   |  Powered by A&B softwares 

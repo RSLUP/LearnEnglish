@@ -89,7 +89,8 @@ function nounHighlight()
         if(check1 != "" && check2 == today)
         {
             //alert("Hello, "+username+"\n Welcome to the EnglishHub. \n Your login date is: "+check2);  
-            document.getElementById("sign").innerHTML =check1;                 
+            document.getElementById("sign").innerHTML =check1;    
+           // alert(check1);             
         }
         else
         {
@@ -105,11 +106,12 @@ function nounHighlight()
     }
     function showuserdetails()
     {
+        var logtime = localStorage.getItem("LogTime");
         var check = localStorage.getItem("key");
         if(check != "")
         {
             var user =  localStorage.getItem("key");
-            alert("Hello, "+user+ "\n Welcome to the EnglishHub. \n This is your "+ localStorage.clickcount+ " logging session to our website.");
+            alert("Hello, "+user+ "\nWelcome to the EnglishHub. \nThis is your "+ localStorage.clickcount+ " logging session to our website.\n Your logging time to the session is: "+logtime);
            
         }
     }

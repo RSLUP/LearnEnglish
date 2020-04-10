@@ -87,16 +87,19 @@ function check(){
 			{
 				document.getElementById("atm1").innerHTML = sessionStorage.getItem("attempt");
 				document.getElementById("scr1").innerHTML = sessionStorage.getItem("score");
+				alert("You have "+(3-attempt)+" more attempts");
 			}
 			else if(attempt==2)
 			{
 				document.getElementById("atm2").innerHTML = sessionStorage.getItem("attempt");
 				document.getElementById("scr2").innerHTML = sessionStorage.getItem("score");
+				alert("You have "+(3-attempt)+" more attempts");
 			}
 			else if(attempt==3)
 			{
 				document.getElementById("atm3").innerHTML = sessionStorage.getItem("attempt");
 				document.getElementById("scr3").innerHTML = sessionStorage.getItem("score");
+				alert("You have "+(3-attempt)+" more attempts");
 			}
 			else{
 				alert("Sorry, Your attempts are over. Please try again in another loggin session.")
