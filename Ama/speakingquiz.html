@@ -7,11 +7,12 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/speakingquiz.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
 
 </head>
 
 
-<body>
+<body onload="getuserdetails()">
     <div class="dropdown">
         <nav class="nav" >
           <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
@@ -26,17 +27,18 @@
           <li><a href="grammarquiz.html">Grammar</a></li>
           <li><a href="speakingquiz.html">Speaking</a></li>
         </ul></li>
-
+        <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
+        <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>
         </ul>
         </nav>
       </div>
       
    <center><img src="img/quizbackground.jpg" width="600" height="500"></center>
       <div><h1><font style = "color:rgb(13, 21, 82); font-family:Georgia;"><marquee scrollamount = "10">
-        Welcome | LearnEnglish | EnglishHub | Quizes | Speaking Quiz
+      ~~~~~~~  Welcome, <span id="sign"> </span> | LearnEnglish | EnglishHub | Quizes | Speaking Quiz ~~~~~~~
      </marquee></font></h1></div><br><br>
 
-
+<h1>Please consider you have only 3 attempts for a one logging session</h1>
 <form id = "quiz" name = "quiz">
 
 <p class = "questions">1. There are ___ parts for a speech</p>
@@ -102,7 +104,8 @@
 <input type = "radio" id = "rd" name = "question10" value = "idea">idea<br>
 
 <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-<!--<input id = "button2" type = "button" value = "Show answers" onclick = "answers();">-->
+<input id = "button" type = "button" value = "reset" onclick = "reset();" >
+
 
 <div id = "after_submit">
   <p id = "number_correct"></p>
@@ -111,35 +114,31 @@
 </div>
 
   <br>
+  <table border="1" align="center">
+    <tr align="center">
+      <td width="500">Attempt</td>
+      <td width="500">Score</td>
+    </tr>
+    <tr align="center">
+      <td height="50"><div id="atm1"> </div></td>
+      <td><div id="scr1"> </div></td>
+    </tr>
+    <tr align="center">
+      <td height="50" ><div id="atm2"> </div></td>
+      <td><div id="scr2"> </div></td>
+    </tr>
+    <tr align="center">
+      <td height="50"><div id="atm3"> </div></td>
+      <td><div id="scr3"> </div></td>
+    </tr>
+  </table>
 </form>
 <br>
-  
-
-<!--<div id="after_submit_answer" class="answers">
-  <p>
-    <ol>
-      <li>8</li>
-      <li> Articles</li>
-      <li>Noun</li>
-      <li>Adverb </li>
-      <li>comfortable</li>
-      <li>Prepositions</li>
-      <li>to joins words, phrases, or clauses</li>
-      <li>Interjection</li>
-      <li>describe a noun</li>
-      <li>place for noun</li>
-
-    </ol>
-  </p>
-</div>-->
 
   <!--<footer class="footer" class="container">
     <p><font color="black">Copyright &copy 2020 LearnEnglish | EnglishHub. All rights reserved.</font></p>
     <p><font color="black">For site suggestions and errors, please send us a Inquiry   |  Powered by A&B softwares 
     </font></p>-->
-
-
-
 </body>
 </html>
 

@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title> Welcome to EnglishHub</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
-   <script type="text/javascript" src="js/javascript.js"> </script>
+   <link rel="stylesheet" type="text/css" href="css/login.css">
+   <script type="text/javascript" src="js/login.js"></script>
+   <script type="text/javascript" src="js/javascript.js"></script>
 
 </head>
-<body>
+<body onload="getuserdetails()">
   <div class="dropdown">
     <nav class="nav" >
       <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
@@ -23,18 +25,19 @@
       <li><a href="grammarquiz.html">Grammar</a></li>
       <li><a href="speakingquiz.html">Speaking</a></li>
     </ul></li>
-      
+      <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
+      <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>     
     </ul>
     </nav>
   </div>
+  
  
-
   <!-- <center><img src="img/homeimage.png" class="image"></center>-->
    <div align="center"><img src="img/grammar.jpg" width="1100" height="500"></div>
 
   <div><h2><font style = "color:rgb(4, 33, 61); font-family:Georgia;"><marquee scrollamount = "10">
-            Speaking | Grammar | Vocabulary | Listening | Writing | Reading | Leadership
-        </marquee></font></h2></div><br><br><br><br><br>
+          ~~~~~~~~~~~ Hello, <span id="sign"> </span> |Welcome to EnglishHub ~~~~~~~~~~
+        </marquee></font></h2></div><br><br><br><br><br><br><br><br><br>
 
     <div class = "intro">
       <p><font style = "color:dodgerblue; font-family:cursive;"><hr>
@@ -46,8 +49,8 @@
             Also we're here to demonstrate the ability to analyze and interpret information in Listening, Speaking, Reading and Writing in different 
             context with an adequate level of accuracy and fluency.
       </font><hr></p>
-    
-    </div> <br><br><br><br> <br><br><br>
+  
+     <br><br><br><br> <br><br><br>
     <footer class="footer" class="container">
       <p><font color="black">Copyright &copy 2020 LearnEnglish | EnglishHub. All rights reserved.</font></p>
       <p><font color="black">For site suggestions and errors, please send us an Inquiry   |  Powered by A&B softwares 

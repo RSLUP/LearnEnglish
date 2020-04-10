@@ -1,4 +1,4 @@
-
+var attempt=0;
 function check(){
 
 	var question1 = document.quiz.question1.value;
@@ -78,5 +78,46 @@ function check(){
 		document.getElementById("ans8").style.color='green';
 		document.getElementById("ans9").style.color='green';
 		document.getElementById("ans10").style.color='green';
+
+
+			attempt += 1;
+			sessionStorage.setItem("attempt",attempt);
+			sessionStorage.setItem("score",correct);
+			if(attempt ==1)
+			{
+				document.getElementById("atm1").innerHTML = sessionStorage.getItem("attempt");
+				document.getElementById("scr1").innerHTML = sessionStorage.getItem("score");
+				alert("You have "+(3-attempt)+" more attempts");
+			}
+			else if(attempt==2)
+			{
+				document.getElementById("atm2").innerHTML = sessionStorage.getItem("attempt");
+				document.getElementById("scr2").innerHTML = sessionStorage.getItem("score");
+				alert("You have "+(3-attempt)+" more attempts");
+			}
+			else if(attempt==3)
+			{
+				document.getElementById("atm3").innerHTML = sessionStorage.getItem("attempt");
+				document.getElementById("scr3").innerHTML = sessionStorage.getItem("score");
+				alert("You have "+(3-attempt)+" more attempts");
+			}
+			else{
+				alert("Sorry, Your attempts are over. Please try again in another loggin session.")
+			}
+
 }
 	
+function reset()
+{
+		document.getElementById("rd").value = clear();
+		document.getElementById("ans1").style.color='';
+		document.getElementById("ans2").style.color='';
+		document.getElementById("ans3").style.color='green';
+		document.getElementById("ans4").style.color='green';
+		document.getElementById("ans5").style.color='green';
+		document.getElementById("ans6").style.color='green';
+		document.getElementById("ans7").style.color='green';
+		document.getElementById("ans8").style.color='green';
+		document.getElementById("ans9").style.color='green';
+		document.getElementById("ans10").style.color='';
+}
