@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
+    <script src="js/login.js"></script>
 
     <style>
 
@@ -112,8 +113,8 @@
     <br>
     <form name="login">
         <div class="login">
-            <input type="text" placeholder="username" name="userid"><br>
-            <input type="password" placeholder="password" name="psw"><br>
+            <input type="text" placeholder="username" name="userid" id="userIn"><br>
+            <input type="password" placeholder="password" name="psw" id="pswIn"><br>
             <input type="button" onclick="check(this.form)" value="Login"/> 
         </div>
     </form>
@@ -124,7 +125,7 @@
             if(form.userid.value == "RSLUP" && form.psw.value == "r5Lup@Ac9"){
                 localStorage.setItem("UserName","RSLUP");
                 localStorage.setItem("Passwrd","r5Lup@Ac9");
-                localStorage.setItem("Date",new Date().toISOString().split('T'));
+                localStorage.setItem("LogDate",new Date().toISOString().split('T'));
                 
                 window.open('index.html');
             }
