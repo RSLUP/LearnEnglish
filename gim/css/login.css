@@ -1,26 +1,29 @@
 
 body{
 
-    margin: 0;
-    background-color:#CD5C5C;
+    margin: 0px;
+   
+   
 }
 
 h2{
-    color: rgb(158, 62, 62);
+    color:white;
     font-size: x-large;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 3px 3px 0px rgba(150, 150, 150, 1);
+    text-align: center;
 }
 
 .loginForm{
 
     padding-top:150px;
-    background-color: #E9967A;
+    background: rgb(173,51,46);
+    background: linear-gradient(90deg, rgba(173,51,46,1) 0%, rgba(71,74,153,1) 100%, rgba(20,28,240,1) 100%, rgba(217,60,60,1) 100%);
     color: aliceblue;
-    width: 500px;
+    width: 420px;
     height:400px ;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    opacity: 90%;
     
   }
   
@@ -29,7 +32,7 @@ h2{
     width:250px;
     height:30px;
     border-radius:5px ;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     font-size: larger;
   }
   
@@ -37,7 +40,8 @@ h2{
   
     width:250px;
     height:50px ;
-    background-color: #CD5C5C;
+    background: rgb(236,157,154);
+    background: linear-gradient(90deg, rgba(236,157,154,1) 0%, rgba(236,157,154,1) 0%, rgba(71,74,153,1) 100%, rgba(20,28,240,1) 100%, rgba(217,60,60,1) 100%);
     border-radius: 5px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -52,8 +56,13 @@ h2{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
-    color:rgb(158, 62, 62);;
-    text-shadow: 5px 0px 6px rgba(150, 150, 150, 1);
+    color:white;
     font-weight: bold;
     
   }
+
+
+
+
+  /*dsdsd*/
+  
