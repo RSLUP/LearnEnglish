@@ -90,6 +90,20 @@ body
     
     
 }
+.logout
+{
+   
+    cursor: pointer;
+    width: 35px;
+    height: auto;
+    position: absolute;
+    right: 6%;
+    
+}
+.logout:hover
+{
+    transform: scale(1.02); 
+}
 /*-------------------------------------------*/
 /* style For Logo */
 #logo 
@@ -391,4 +405,5 @@ body
     transform: scale(1.1);
     
 }
+
 

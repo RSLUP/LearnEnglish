@@ -115,3 +115,10 @@ function runFirst()
     }
     
 }
+function logout()
+{
+    localStorage.clear();
+    alert('Logging Out..!');
+    window.location.href = "login.html";
+   
+}
