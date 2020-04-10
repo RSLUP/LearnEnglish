@@ -13,8 +13,22 @@
     <title>Learn English</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     
+
+    <script>    
+      function checkValidation()
+      {
+
+          var loginDate=new Date().toISOString().split('T');
+           if(sessionStorage.getItem("UserName")=="")
+          {
+              window.location.href = "login.html";
+             
+          }
+      }
+  </script>
 </head>
-<body style="background-color:white;" class="clearfix">
+
+<body style="background-color:white;" class="clearfix" onload="checkValidation()">
   
 
   <header class="clearfix">
