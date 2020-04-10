@@ -25,16 +25,23 @@
                    
                 }
               document.getElementById("crdt").innerHTML=" Logged Name : " + sessionStorage.getItem("userName") +" | " + " TimeStamp : " + sessionStorage.getItem("loginDate") ;
-             // console.log(local_timeStamp);
-             document.getElementById("rank").innerHTML= localStorage.getItem("present");
+            
+              //------marks ---//
+             document.getElementById("rank").innerHTML= sessionStorage.getItem("present");
+            
+             sessionStorage.setItem("lst",document.getElementById("rank").innerHTML);
 
-               localStorage.setItem("lst",document.getElementById("rank").innerHTML);
+              
+          
+             
+              
+              //sessionStorage.removeItem("lst");
+              //sessionStorage.removeItem("present");
 
-               //localStorage.removeItem("lst");
-              // localStorage.removeItem("present");
+              
             }
 
-
+            
            
             
 
@@ -594,10 +601,19 @@
  </table>
 
     </form>
-    <p id="rank"></p>
+
+
+<br>
+<br>
+<br>
+    <p><center>Result History :</center></p>
+    <div id="rank" style="margin-left:auto; margin-right:auto; width:300px; height: 180px; overflow-y: scroll; padding-bottom: 10px;">
+     
+    </div>
+   
 
  </div>
-  
+
    
    <center><div class="botBanner">
     <br>

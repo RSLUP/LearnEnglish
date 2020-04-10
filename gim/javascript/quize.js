@@ -265,14 +265,19 @@ function answer()
     //document.getElementById("btnNext").style.visibility='hidden';
     //document.getElementById("btnSub").style.visibility='hidden';
 
-    //document.getElementById("r1").style.visibility='hidden';
-    //document.getElementById("r2").style.visibility='hidden';
-    //document.getElementById("r3").style.visibility='hidden';
+    var rnk2= (tot/10)*100+"%";
+    //var noCount=1;
 
-  //  document.getElementById("quize").style.visibility='hidden';
-  //  document.getElementById("ans1").style.visibility='hidden';
-  //  document.getElementById("ans2").style.visibility='hidden';
-   // document.getElementById("ans3").style.visibility='hidden';
+    var yy2=sessionStorage.getItem("lst2").split('.');
+    //alert(yy[0]);
+    if(yy2[0]=="")
+    {
+        sessionStorage.setItem("present2", 1 + ". " + rnk2 + "<br>" +sessionStorage.getItem("lst2"));
+    }
+    else
+    {
+        sessionStorage.setItem("present2", (parseInt(yy2[0]) +1) + ". " + rnk2 + "<br>" +sessionStorage.getItem("lst2") );
+    }
   
 
 }

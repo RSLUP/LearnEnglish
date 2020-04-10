@@ -24,6 +24,17 @@
               document.getElementById("crdt").innerHTML=" Logged Name : " + sessionStorage.getItem("userName") +" | " + " TimeStamp : " + sessionStorage.getItem("loginDate") ;
              // console.log(local_timeStamp);
 
+                      //------marks ---//
+             document.getElementById("rank2").innerHTML= sessionStorage.getItem("present2");
+            
+            sessionStorage.setItem("lst2",document.getElementById("rank2").innerHTML);
+
+             
+         
+             
+             //sessionStorage.removeItem("lst");
+             //sessionStorage.removeItem("present");
+
             }
 
         </script>
@@ -1049,6 +1060,16 @@
     </table>
  
        </form>
+
+<br>
+<br>
+<br>
+    <p><center>Result History :</center></p>
+    <div id="rank2" style="margin-left:auto; margin-right:auto; width:300px; height: 180px; overflow-y: scroll; padding-bottom: 10px;">
+     
+    </div>
+
+
 
 
     </div>

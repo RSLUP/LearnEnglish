@@ -257,24 +257,28 @@ function answer()
    
 
     document.getElementById("btnTry").style.visibility='visible';
-
+   // alert(localStorage.getItem("lst").charAt(1));
     //document.getElementById("btnBack").style.visibility='hidden';
     //document.getElementById("btnNext").style.visibility='hidden';
     //document.getElementById("btnSub").style.visibility='hidden';
    
     var rnk= (tot/10)*100+"%";
-   
-    //localStorage.setItem("present",rnk);
+    var noCount=1;
 
-    var totx ="";
-    var no=0;
-
-    totx = totx + rnk  + "\n";
-    localStorage.setItem("present",  localStorage.getItem("lst")+ "\n"+ rnk );
-  //  document.getElementById("rank").innerHTML=localStorage.getItem("present");
-    console.log(localStorage.getItem("lst")+ rnk +"\n");
-    no=no+1;
-   // console.log(totx);
+    var yy=sessionStorage.getItem("lst").split('.');
+    //alert(yy[0]);
+    if(yy[0]=="")
+    {
+        sessionStorage.setItem("present", 1 + ". " + rnk + "<br>" +sessionStorage.getItem("lst"));
+    }
+    else
+    {
+        sessionStorage.setItem("present", (parseInt(yy[0]) +1) + ". " + rnk + "<br>" +sessionStorage.getItem("lst") );
+    }
+    
+    
+  
+  
 }
 
 
