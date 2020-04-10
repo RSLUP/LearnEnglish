@@ -7,18 +7,20 @@
 <!--    <meta name="viewport" content="width=device-width,user-scalable=no">-->
 
 </head>
-<body>
+<body onload="retrive_func()">
 
 <header>
     <img src="images/logo.png" alt="">
-    <h1>It's Time to Learn English</h1>
+    <h1 id="header_topic">It's Time to Learn English</h1>
+    <h1 id="logout" onclick="logout_func()">Log out</h1>
+<!--    <h1 id="userdetails" onclick="userdetails()">user details</h1>-->
 
 </header>
 
 <img id="back1" src="images/bavkground.png" alt="">
 <ul id="buttonul">
     <h1 id="topic">Follow our lessons.....</h1>
-    <li class="lessons"><a href="#seperatediv" style="text-decoration: none;color: white">
+    <li class="lessons"><a href="#seperatediv" style="text-decoration: none;color: white" >
         Eight Parts of Speech</a></li>
     <li class="lessons"><a href="tenses.html" style="text-decoration: none;color: white">
         Tenses</a></li>
@@ -194,8 +196,7 @@
     <a href="mailto:pubudikalwp@gmail.com"><h3 id="footercontent" style="font-family: cursive">contact me :pubudikalwp@gmail.com</h3></a>
 </footer>
 
-
-
+<script src="js/login_script.js"></script>
 </body>
 
 

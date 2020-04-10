@@ -247,3 +247,22 @@ footer {
     position: relative;
     height: 350px;
 }
+
+
+#logout{
+    position: absolute;
+    color: white;
+    font-family: cursive;
+    left: 89vw;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/*#userdetails{*/
+/*    position: absolute;*/
+/*    color: black;*/
+/*    font-family: cursive;*/
+/*    left: 76vw;*/
+/*    font-size: 23px;*/
+/*    cursor: pointer;*/
+/*}*/

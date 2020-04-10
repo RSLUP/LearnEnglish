@@ -172,3 +172,36 @@ function tenses_highlight(){
     }
 
 }
+
+function retrive_func() {
+    // window.open("tenses.html");
+    var d = new Date();
+    var n = d.toISOString().split('T');
+    //alert(n);
+    //
+    var stored_name = localStorage.getItem('username');
+    // alert("loading");
+    var stored_date = localStorage.getItem("date");
+
+    if ((stored_date !== n[0]) || (stored_name == null)) {
+        window.open("login.html");
+    } else {
+        alert("Page Loaded:).");
+    }
+}
+
+function logout_func(){
+    localStorage.removeItem("username");
+    window.location ="login.html"
+
+}
+
+function userdetails() {
+    var loggedtime = localStorage.getItem("date");
+    var name = localStorage.getItem("username");
+    if (name !== "") {
+        var user = localStorage.getItem("username");
+        alert("Hi, " + name + "\nYou logged in " + localStorage.clickcount + " times.\nYour login time: " + loggedtime);
+
+    }
+}
