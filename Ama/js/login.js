@@ -49,3 +49,9 @@ function validate()
 return (true);
 }
 
+function preventGoBack()
+{
+    window.history.forward();
+}
+setTimeout("preventGoBack()",0);
+window.onunload = function() {null};
