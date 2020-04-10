@@ -33,6 +33,23 @@ function retrive_func() {
     if ((stored_date !== n[0]) || (stored_name == null)) {
         window.open("login.html");
     } else {
-        alert("loading");
+        alert("Page Loaded:).");
     }
 }
+
+
+function logout_func(){
+    localStorage.removeItem("username");
+    window.location ="login.html"
+
+}
+
+// function userdetails() {
+//     var loggedtime = localStorage.getItem("date");
+//     var name = localStorage.getItem("username");
+//     if (name !== "") {
+//         var user = localStorage.getItem("username");
+//         alert("Hi, " + name + "\nYou logged in " + localStorage.clickcount + " times.\nYour last logging time: " + loggedtime);
+//
+//     }
+// }
