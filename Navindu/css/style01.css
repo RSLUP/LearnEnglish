@@ -5,12 +5,22 @@
     width: 1100px;
     margin-top: 70px;
     border-radius: 8px;
-    background-color: rgb(252, 250, 224);
+    background: linear-gradient(90deg, #e7e7e7, rgb(255, 255, 255), #e7e7e7);
     box-shadow: 0px 0px 10px grey;
 }
 
 a {
     text-decoration: none;
+}
+
+.mainbody{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.top-bar{
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 .top-bar{
@@ -25,7 +35,7 @@ a {
 
 .top-bar-logo{
     float: left;
-    margin: 8px 8px 8px 30px;
+    margin: 10px 8px 8px 30px;
 }
 
 .userlog{
@@ -39,10 +49,9 @@ a {
     font-family: arial;
     font-size: 14px;
 }
-
 .navigate{
-    float: right;
-    margin-right: 20px;
+    float: left;
+    margin-left: 220px;
     padding: 20px;
 }
 
@@ -61,13 +70,31 @@ a {
     border: 1.4px solid yellow;
 }
 
+@keyframes logout{
+    from{transform: translateX(0px);}
+    50%{transform: translateX(6px);}
+    to{transform: translateX(0px);}
+}
+
+.logout{
+    float: right;
+    margin: 10px 40px 8px 0;
+}
+
+.logout:hover{
+    animation-name: logout;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
 .top-bar-title h1{
     float: left;
     margin: 10px;
     text-align: center;
     font-size: 35px;
-    font-family: Arial;
-    color: rgb(255, 255, 242);
+    font-family:Rockwell;
+    color: white;
 }
 
 .intro{
@@ -157,7 +184,7 @@ b{
     width: 435px;
     height: 280px;
     border-style: solid;
-    background: rgb(252, 250, 224);
+    background: white;
     box-shadow: 2.5px 2.5px 6px grey;
     border-radius: 8px ;
     float: left;
@@ -169,7 +196,7 @@ b{
     width: 300px;
     height: 280px;
     border-style: solid;
-    background: rgb(252, 250, 224);
+    background: white;
     box-shadow: 2.5px 2.5px 6px grey;
     border-radius: 8px ;
     float: left;
@@ -234,7 +261,7 @@ sup {
     text-align: center;
     font-size: 15px;
     font-family: Arial;
-    color: rgb(255, 255, 242);
+    color: white;
 }
 
 .modal-btn{
@@ -289,7 +316,7 @@ sup {
 }
 
 .content-quiz {
-    background-color: rgb(255, 255, 242);
+    background: white;
     padding: 20px;
     border: 5px solid maroon;
     border-radius: 10px;
@@ -455,3 +482,14 @@ sup {
       opacity: 1;
     }
   }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

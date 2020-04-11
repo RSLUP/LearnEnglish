@@ -9,7 +9,8 @@ function redirect(form){
 		var logintime = new Date();
 
 		localStorage.setItem("logUser", user);
-		localStorage.setItem("logtime", logintime.toDateString());
+		localStorage.setItem("logDateCheck", logintime.toDateString());
+		localStorage.setItem("logTimeDisplay", logintime.toLocaleString());
 		//alert(logtime.toDateString());
 
 		window.location.href = "index01.html";
