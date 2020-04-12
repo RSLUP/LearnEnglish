@@ -1,10 +1,15 @@
 var myGamePiece;
 var myObstacles = [];
+var myScore;
 
 
 
 function startGame() {
-    myGamePiece = new component(30, 30, "gold", 10, 120);
+
+    //document.getElementById("crd").style.visibility=false;
+
+    myGamePiece = new component(30, 30, "img/aa.png", 10, 120, "image");
+    myScore = new component("25px", "Consolas", "red", 300, 240, "text");
     myGameArea.start();
   
 }
@@ -31,7 +36,15 @@ var myGameArea = {
     }
 }
 
-function component(width, height, color, x, y) {
+function component(width, height, color, x, y, type) {
+   
+    this.type = type;
+
+    if(this.type=="image")
+    {
+        this.image=new Image();
+        this.image.src=color;
+    }
     this.width = width;
     this.height = height;
     this.speedX = 0;
@@ -40,9 +53,31 @@ function component(width, height, color, x, y) {
     this.y = y;    
     this.update = function() {
         ctx = myGameArea.context;
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+       
+        if(this.type=="image")
+        {
+            ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+
+            if(this.type=="text")
+            {
+                ctx.font = this.width + " " + this.height;
+                ctx.fillStyle = color;
+              
+                ctx.fillText(this.text, this.x, this.y);
+            }
+          
+        }
+        else
+        {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+
+     
+       
     }
+
+
     this.newPos = function() {
         this.x += this.speedX;
         this.y += this.speedY;        
@@ -78,18 +113,20 @@ function updateGameArea() {
         x = myGameArea.canvas.width;
         minHeight = 20;
         maxHeight =20;
-      //  height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+       // height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
       height =20;
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(30, height+10, "white", x, 10));
-        myObstacles.push(new component(30, height+10, "white", x, height + gap));
+        myObstacles.push(new component(40, height+20, "white", x, 10));
+        myObstacles.push(new component(40, height+20, "white", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
+    myScore.text="SCORE:"+ myGameArea.frameNo;
+    myScore.update();
     myGamePiece.newPos();    
     myGamePiece.update();
 }
@@ -140,4 +177,7 @@ window.addEventListener('keyup', (e) => {
             break;
     }
 });
+
+
+//document.getElementById("score").innerHTML= myScore.update();
 
