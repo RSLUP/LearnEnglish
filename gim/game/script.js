@@ -1,4 +1,6 @@
-var myGamePiece;
+
+
+    var myGamePiece;
 var myObstacles = [];
 var myScore;
 
@@ -8,7 +10,7 @@ function startGame() {
 
     //document.getElementById("crd").style.visibility=false;
 
-    myGamePiece = new component(30, 30, "img/aa.png", 10, 120, "image");
+    myGamePiece = new component(35, 35, "img/aa.png", 10, 120, "image");
     myScore = new component("25px", "Consolas", "red", 300, 240, "text");
     myGameArea.start();
   
@@ -57,14 +59,13 @@ function component(width, height, color, x, y, type) {
         if(this.type=="image")
         {
             ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
-
-            if(this.type=="text")
-            {
-                ctx.font = this.width + " " + this.height;
-                ctx.fillStyle = color;
+            //ctx.fillStyle = color;
+           
+               
+            
               
-                ctx.fillText(this.text, this.x, this.y);
-            }
+                
+           
           
         }
         else
@@ -72,10 +73,19 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
         }
-
+        if(this.type=="text")
+        {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillText(this.text, this.x, this.y);
+            ctx.fillStyle = color;
+        }   
      
        
     }
+
+
+
+   
 
 
     this.newPos = function() {
@@ -177,6 +187,11 @@ window.addEventListener('keyup', (e) => {
             break;
     }
 });
+
+
+
+
+
 
 
 //document.getElementById("score").innerHTML= myScore.update();
