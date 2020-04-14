@@ -2,23 +2,20 @@ function login_func(){
 
 if(window.localStorage){
     console.log("supported");
-    // if (localStorage.clickcount) {
-    //     localStorage.clickcount = Number(localStorage.clickcount) + 1;
-    // }else {
-    //     localStorage.clickcount = 1;
-    // }
     var username=document.login_form.username.value;
     var password = document.login_form.password.value;
     if ( username == "RSLUP" && password == "r5Lup@Ac9"){
-        // alert ("Login successfully");
+        alert ("Login successfully");
         localStorage.setItem('username', username);
         var d = new Date();
         var n = d.toISOString().split('T');
         localStorage.setItem('date', n[0]);
-        // alert("date"+n[0]);
-        // alert(username+"haaa");
-        window.open("index.html");
-
+        // window.open("index.html");
+        //window.location.replace("index.html");
+         window.location.href= "index.html";
+        // location.href= "index.html";
+        // window.location="index.html";
+        // window.open("index.html","_self");
 
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount) + 1;

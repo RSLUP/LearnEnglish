@@ -6,19 +6,15 @@
     <link rel="stylesheet" href="css/login_style.css">
 </head>
 <body>
-
-
-    <form id="login_form" name="login_form">
+<form id="login_form" name="login_form">
         <img id="login_img" src="images/login_back.jpg" alt="">
         <h1 id="login_topic">LOG IN</h1>
         <div id="label_div">
             <input id="un" type="text" name="username" placeholder="username"> <br><br>
-            <input id="pw" type="text" name="password" placeholder="password"> <br><br>
-            <button id="login_button" onclick="login_func();">Login</button>
+            <input id="pw" type="password" name="password" placeholder="password"> <br><br>
+            <button id="login_button" type="button" onclick="login_func();">Login</button>
         </div>
-
-
-    </form>
+</form>
 
     <script src="js/login_script.js"></script>
 </body>
