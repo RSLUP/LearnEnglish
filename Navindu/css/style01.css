@@ -1,0 +1,445 @@
+.clearfix{ overflow: auto }
+
+.wrapper{
+    margin: 0 auto;
+    width: 1100px;
+    margin-top: 70px;
+    border-radius: 8px;
+    background-color: rgb(252, 250, 224);
+    box-shadow: 0px 0px 10px grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-bar{
+    width: 1100px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    background-image: linear-gradient(black, rgb(32, 32, 32),black);
+}
+
+.top-bar-logo{
+    float: left;
+    margin: 8px 8px 8px 30px;
+}
+
+.navigate{
+    float: right;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.navigate a{
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1.4px solid white;
+    border-radius: 5px;
+}
+
+.navigate a:hover{
+    color: yellow;
+    border: 1.4px solid yellow;
+}
+
+.top-bar-title h1{
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
+
+.intro{
+    width: 1000px;
+    margin: 50px;
+    clear: both;
+}
+
+@keyframes imgteacher {
+    from {transform: rotate(1deg);}
+    to {transform: rotate(-1deg);}
+  }
+
+.introimage{
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+    animation-name: imgteacher;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.introtext{
+    width: 550px;
+    float: right;
+    
+}
+
+.introtext h1{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 90px;
+}
+
+.introtext a:hover{
+    background: rgb(190, 184, 241);
+    font-size: 23px;
+    color: maroon;
+}
+
+.introtext p{
+    font-size: 20px;
+}
+
+.hr2{
+    margin-top: 30px;
+}
+
+.main-menu{
+    clear: both;
+}
+
+.main-menu a{
+    float:left;
+    position: relative;
+    width: 115px;
+    height: 40px;
+    margin: 35px 0 40px 16px;
+    border-radius: 7px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+    box-shadow: 0 0 10px gray;
+    border: 2px solid white;
+    padding: 18px 0 2px 0;
+}
+
+.main-menu a:hover{
+    background: maroon;
+    box-shadow: 0 0 15px red;
+}
+
+.home-content{
+    width: 1100px;
+}
+
+b{
+    color: rgb(9, 8, 77);
+}
+
+.home-col1{
+    margin-left: 12px;
+    margin-top: 50px;
+    width: 435px;
+    height: 280px;
+    border-style: solid;
+    background: rgb(252, 250, 224);
+    box-shadow: 2.5px 2.5px 6px grey;
+    border-radius: 8px ;
+    float: left;
+}
+
+.home-col{
+    margin-left: 12px;
+    margin-top: 50px;
+    width: 300px;
+    height: 280px;
+    border-style: solid;
+    background: rgb(252, 250, 224);
+    box-shadow: 2.5px 2.5px 6px grey;
+    border-radius: 8px ;
+    float: left;
+}
+
+sup { 
+    vertical-align: super; 
+    font-size: 23px; 
+} 
+
+.home-col1 h1{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 49px;
+    font-family: Arial;
+    color: maroon;
+}
+
+.home-col1 p{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.home-col h1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 26px;
+    font-family: Arial;
+    color: rgb(9, 8, 77);
+}
+
+.home-col p{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.home-col ul{
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Arial;
+    float: left;
+}
+
+.bottom-bar{
+    width: 1100px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    background-image: linear-gradient(black, rgb(22, 22, 22),black);
+}
+
+.bottom-bar-title h1 {
+    margin: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    color: rgb(255, 255, 242);
+}
+
+.modal-btn{
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin: 10px 45px 0 30px;
+    border-radius: 8px;
+    background:  rgb(82, 3, 3);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    box-shadow: 0 0 5px gray;
+}
+
+
+
+.modal-btn:hover{
+    background: maroon;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    background: red;
+    cursor: pointer;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    background: rgb(97, 12, 12);
+    box-shadow: 3px -3px 5px gray;
+    padding: 0 12px;
+    border-radius: 50%;
+}
+
+
+.modal-quiz{
+    z-index: 2;
+    display: none;
+    position: fixed;
+    overflow-y: initial;
+    padding: 80px 250px;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.content-quiz {
+    background-color: rgb(255, 255, 242);
+    padding: 20px;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    width:60%;
+}
+
+.questions{
+    margin-left: 30px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+
+/* Questions-Scroll Bar settings */
+
+.questions::-webkit-scrollbar {
+    width: 18px;
+}
+
+.questions::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px gray;
+    border-radius: 9px;
+}
+
+.questions::-webkit-scrollbar-thumb {
+    background: rgb(126, 87, 87); 
+    border-radius: 9px;
+}
+ 
+.questions::-webkit-scrollbar-thumb:hover {
+    background: rgb(68, 28, 28); 
+    border-radius: 9px;
+}
+
+/* Questions-Scroll Bar settings */
+
+.content-quiz h2{
+    margin-top: 5px;
+    color: rgb(78, 7, 7);
+    font-family: arial;
+    font-size: 30px;
+}
+
+.content-quiz h3{
+    color: rgb(12, 6, 97);
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: arial;
+}
+
+.submit, .retry{
+    width: 120px;
+    height: 40px;
+    margin: 10px 0 10px 20px;
+    border-radius: 7px;
+    background:  rgb(85, 6, 6);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 17px;
+    box-shadow: 0 0 5px gray;
+    float: left;
+}
+
+.marks-area{
+    border: 3px solid rgb(85, 6, 6);
+    padding: 0px;
+    border-radius: 10px;
+    width: 180px;
+    height: 30px;
+    clear: right;
+    margin: 20px 0 0 300px;
+}
+
+.marks{
+    margin: 5px 0 0 20px;
+    float: left;
+    color: red;
+}
+
+.q{
+    float: left;
+    clear: both;
+    font-size: 20px;
+}
+
+.r{
+    font-weight: bolder;
+    text-shadow: 0 0 10px gray;
+    padding-left: 20px;
+    margin-top: 16px ;
+    font-size: 20px;
+    float: left;
+}
+
+.answers{
+    clear: both;
+}
+
+.answers p{
+    float: left;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-right: 30px;
+    font-size: 17px;
+    font-family: arial;
+    font-weight: bold;
+    color: rgb(16, 16, 104);
+}
+
+.close, .content-quiz, .content-quiz h2, .content-quiz h3, .content-quiz p{
+    animation-name: anim-modal;
+    animation-duration: 0.7s;
+}
+
+.quizhead{
+    font-family: arial;
+    color: rgb(78, 7, 7);
+    font-weight: bold;
+    float: left;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.quiz-btn{
+    float: left;
+    width: 250px;
+    height: 60px;
+    margin: 10px 45px 0 30px;
+    border-radius: 8px;
+    background:  rgb(82, 3, 3);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+    box-shadow: 0 0 5px gray;
+    animation-name: quizbtn;
+    animation-duration: 0.08s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes quizbtn {
+    from {transform: scale(1);}
+    to {transform: scale(0.9);}
+  }
+
+
+.quiz-btn:hover{
+    background: maroon;
+    cursor: pointer;
+}
+
+@keyframes anim-modal {
+    from{
+      transform: scale(0.1) translateY(1000px);
+      opacity: 0;
+    }
+    to{
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }

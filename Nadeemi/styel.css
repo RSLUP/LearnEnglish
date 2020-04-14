@@ -1,0 +1,55 @@
+
+
+h1 {
+		text-align: center;
+		border-style: solid;
+		box-shadow: 2.5px 2.5px 6px grey;
+		border-radius: 8px ;
+		background: grey;
+	}
+
+
+.tenses	{
+		  color: red;
+		}
+
+
+a:hover {
+		  background-color: grey;
+		}
+
+
+p 	{
+		color: blue;
+		text-align: center;
+		font-size: 25px;
+}
+
+
+.ex  {
+		color: red;
+		text-align: left;
+			
+	 }
+
+
+.box{
+		margin-left: 12px;
+	    margin-top: 50px;
+	    width: 550px;
+	    height: 380px;
+	    border-style: solid;
+	    box-shadow: 2.5px 2.5px 6px grey;
+	    border-radius: 8px ;
+	    float: left;
+	}
+
+
+.a 	{
+		text-decoration: none;
+	}
+
+
+.b {
+    color: rgb(9, 8, 77);
+	}

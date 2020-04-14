@@ -1,0 +1,225 @@
+body
+{
+	/*	height:5350px;*/
+		margin-left: 75;
+		margin-right: 70;
+		background-color: white;
+}
+html{
+	scroll-behavior: smooth;
+}
+.logo{
+	padding: 5px 0 0 60px;
+	width: 140px;
+	height: 60px;
+	margin-top: -5px;
+	margin-right:-200px;
+	display: inline-block; 
+	
+}
+.dropdown{
+	margin: 0 auto;
+}
+
+nav ul{
+	transition:1s;
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 20px;
+	background: rgb(94,137,233);
+	background: linear-gradient(96deg, rgba(94,137,233,1) 16%, rgba(160,182,242,1) 36%, rgba(234,241,249,1) 55%, rgba(216,221,249,1) 86%); 
+}
+nav ul li{
+/*	background: rgb(2, 19, 65);*/
+	position: relative;
+	list-style: none;
+	display: inline-block;;
+}
+nav ul li a{
+	
+	font-family: fantasy;
+	display: block;
+	padding: 0 15px;
+	color: rgb(6, 15, 66);
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 19px;
+	transition: .5s;
+}
+nav ul li a:hover{
+	background: rgb(127, 168, 243);
+}
+nav ul ul{
+	position: absolute;
+	top: 60px;
+	line-height: 20px ;
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	width: 150px;
+	float: none;
+	display: list-item;
+	position: relative;
+	line-height: 20px ;
+}
+
+.image{
+	
+	background-position: relative;
+	height: 400px;
+	width:800px;
+	background-size: cover;
+}
+.intro
+{
+	text-align: center;
+	position: relative;
+	color:dodgerblue;
+	line-height: 28px;	
+	/*top: 100%;*/
+	left: 50%;
+	width:85%;
+	height: -70%;
+	transform: translate(-50%, -50%); /*apply for 2d or 3d tranformation*/
+}
+.speechImage{
+	top:500%;
+	left:50%;
+	background-image: url("speech1.jpg");
+	background-position: center;
+	height: 50px;
+	width:500px;
+	background-size: cover;
+}
+.parts
+{
+	margin: 30px 50px;
+}
+.parts img
+{
+	transition: 1.5s;
+	padding: 15px;
+	width: 250;
+	-webkit-filter: grayscale(100%) ;
+	filter: grayscale(100%) ;
+}
+.parts img:hover
+{
+	filter: grayscale(100%);
+	transform: scale(2.2);
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0) ;
+}
+.list
+{
+	line-height: 30px;
+}
+.each
+{
+	font-size: 18px;
+	line-height: 30px;
+}
+.eachTD1
+{
+	width:900px;
+}
+.eachTD2
+{
+	width:500px;
+	
+}
+footer {	
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    height:-200px;
+	background-color: LightGray;
+	color: white;
+	text-align: center;
+ }
+ #transNoun
+ {
+	background-color: rgb(255, 214, 214);
+	/* opacity: 0.7;*/
+ }
+ #transPro
+ {
+	 background-color: rgb(219, 195, 163);
+	 opacity: 0.75;
+ }
+ #transVerbs
+ {
+	background-color: rgb(235, 204, 204);
+	 opacity: 0.75;
+ }
+ #transAdjectives
+ {
+	background-color: rgb(250, 221, 226);
+	 
+ }
+ #transAdverbs
+ {
+	background-color: antiquewhite;
+
+ }
+ #transPreoposition
+ {
+	background-color: rgb(195, 248, 195) ;
+	 opacity: 0.75;
+ }
+ #transConjunctions
+ {
+	  background-color: rgb(213, 253, 253);
+	 opacity: 0.75;
+ }
+ #transInterjection
+ {
+	background-color: rgb(226, 243, 193);
+	 opacity: 0.8;
+ }
+ .btnPop
+ {
+	background-color: black;
+	padding: .5em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+	color:white;
+	font-family: 'Oswald';
+	font-size: 17px;
+	text-decoration: none;
+	border: none;
+ }
+ .btnPop:hover
+ {
+	border: none;
+	background: crimson;
+	box-shadow: 0px 0px 1px #777;
+ }
+.btnHighlight
+{
+	background-color: black; 
+	padding: .5em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+	color: white;
+	font-family: 'Oswald';
+	font-size: 17px;
+	text-decoration: none;
+	border: none;
+} 
+.btnHighlight:hover
+{
+	border: none;
+	background: teal;
+	box-shadow: 0px 0px 1px #777;
+}
+.border-outline
+{
+    border-collapse: collapse;
+}
