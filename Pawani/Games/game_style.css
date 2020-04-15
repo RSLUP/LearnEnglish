@@ -1,0 +1,44 @@
+#tic_topic{
+    font-size: 50px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.container{
+    width: 320px;
+    height: 320px;
+    /*margin: auto;*/
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.row{
+    height: 100px;
+
+}
+.border-b{
+    border-bottom: solid 10px black;
+
+}
+
+.col{
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    cursor: pointer;
+}
+
+
+.border-r{
+    border-right: 10px solid black;
+}
+
+.col:hover{
+    background-color: #e49292;
+}
