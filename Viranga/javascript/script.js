@@ -115,6 +115,16 @@ function runFirst()
     }
     
 }
+
+function details()
+{
+    alert('Hi, '+localStorage.getItem("userName") +"\n" +"Name : "+localStorage.getItem("userName") +"\n" + "Last Logging : "+ localStorage.getItem("logDate"));
+
+}
+function exitUd()
+{
+    userd.classList.remove("show");
+}
 function logout()
 {
     localStorage.clear();

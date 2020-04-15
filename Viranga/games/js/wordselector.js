@@ -16,6 +16,7 @@ function gameTimer()
         gameStop();
         timeOut.classList.add("show");
     }
+    
     document.querySelector(".time").innerHTML = "00:" + zeroPad(seconds,2)
     seconds= seconds -1;
 }
@@ -53,7 +54,7 @@ function flipCard()
         secondCard = this;
         checkForMatch();
 
-  
+    
 }
 
 //check for cards match
@@ -102,6 +103,7 @@ function getStart()
 {
     start.classList.remove("hide");
     shuffle();
+    
     
 }
 //shuffle the cards
