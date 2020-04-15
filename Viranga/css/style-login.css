@@ -196,12 +196,17 @@ a:hover
     font-family: sans-serif;
     background-size: 200%;
     transition: 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.btn:active
+{
+    transform: scale(.97);
+    transition: 0.2s;
 }
 .btn:hover
 {
     background-position: right;
-    transform: scale(1.05);
+    
 }
 @media screen and (max-width:1050px)
 {
