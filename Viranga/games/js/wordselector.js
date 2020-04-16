@@ -63,6 +63,7 @@ function checkForMatch()
     if(firstCard.dataset.card===secondCard.dataset.card)
     {
         disableCards();
+       
     }
     else
     {
@@ -117,6 +118,7 @@ function shuffle()
         card.style.order = randomPos;
     });
 }
+
 
 //button try again
 function tryAgain()

@@ -7,11 +7,11 @@
 }
 body
 {
-    height: 100vh;
+    height:calc(100vh);
     display: block;
     background: rgb(255,255,255);
     background: linear-gradient(13deg, rgba(255,255,255,1) 51%, rgba(0,140,218,1) 51%, rgba(82,169,213,0.9192051820728291) 83%);
-
+    
 }
 .game-title
 {
