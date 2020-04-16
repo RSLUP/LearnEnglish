@@ -57,6 +57,9 @@ const submit = document.querySelector(".submit");
 const message = document.querySelector(".message");
 const form = document.querySelector(".form");
 
+//const profile = document.querySelector(".profile");
+
+
 
 
 const user = "RSLUP";
@@ -102,6 +105,7 @@ function runFirst()
     console.log(localStorage.getItem("userName"));
     console.log(localStorage.getItem("logDate"));
     console.log(today[0]);
+    //profile.innerHTML = localStorage.getItem("userName");
                
 
     if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
@@ -114,6 +118,16 @@ function runFirst()
         document.querySelector(".day").innerHTML= localStorage.getItem("userName") +" on " + now.toLocaleString();
     }
     
+}
+
+function details()
+{
+    alert('Hi, '+localStorage.getItem("userName") +"\n" +"Name : "+localStorage.getItem("userName") +"\n" + "Last Logging : "+ localStorage.getItem("logDate"));
+
+}
+function exitUd()
+{
+    userd.classList.remove("show");
 }
 function logout()
 {

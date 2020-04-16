@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hide & Seek</title>
+    
+    <!--import CSS file-->
+    <link rel="stylesheet" href="games/css/hide&seek.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Learn More &#10097</button>
+        <div class="dropdown-content">
+            <a href="speech.html">&#10097 8 Parts of Speech</a>
+            <a href="tenses.html">&#10097 12 Verbs Tenses</a>
+         
+        </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Take a Quiz &#10097</button>
+        <div class="dropdown-content">
+            <a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a>
+            <a href="quiz-tenses.html">&#10097 Quiz on 12 Verbs Tenses</a>
+        
+        </div>    
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Games &#10097</button>
+        <div class="dropdown-content">
+            <a href="hide&seek.html">&#10097 Hide & Seek</a>
+           
+         
+        </div>
+    </div> 
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Profile &#10097</button>
+        <div class="dropdown-content">
+            <a  onclick="details()">&#10097 User Details</a>
+            <a  onclick="logout()">&#10097 Log out</a>
+        </div>
+    </div> 
+
+
+
+    <div class="start hide">
+        <div class="frame">Try to match <span>part of speech</span> with it's example
+            <br>
+            <br>
+            <button class="btn" onclick="getStart()">Start</button>
+        </div>
+        
+        
+    </div>
+    <div class="game-title">Hide & <span>Seek</span> v1.0</div>
+    <div id="gameInfoBlock" class="game-info-block">
+        <div class="game-info">
+            Timer :  <span class="time"></span>                  
+        </div>
+    </div>
+            <!--add section-->
+        <section class="memory-game">
+            <div class="memory-card" data-card="verb">
+                <img class="front-face word" src="games/img/verb.png" alt="verb">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            <div class="memory-card" data-card="verb">
+                <img class="front-face select" src="games/img/catch.png" alt="catch">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+
+            <div class="memory-card" data-card="pronoun">
+                <img class="front-face word" src="games/img/pronoun.png" alt="pronoun">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            <div class="memory-card" data-card="pronoun">
+                <img class="front-face select" src="games/img/them.png" alt="them">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+
+            <div class="memory-card" data-card="conjunction">
+                <img class="front-face word" src="games/img/conjun.png" alt="conjun">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            <div class="memory-card" data-card="conjunction">
+                <img class="front-face select" src="games/img/for.png" alt="for">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+
+            <div class="memory-card" data-card="preposition">
+                <img class="front-face word" src="games/img/prepo.png" alt="prepo">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            <div class="memory-card" data-card="preposition">
+                <img class="front-face select" src="games/img/after.png" alt="after">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+
+            <div class="memory-card" data-card="adjectives">
+                <img class="front-face word" src="games/img/adjec.png" alt="adjec">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            <div class="memory-card" data-card="adjectives">
+                <img class="front-face select" src="games/img/funny.png" alt="funny">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+
+            <div class="memory-card" data-card="adverbs">
+                <img class="front-face word" src="games/img/adveb.png" alt="adveb">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            <div class="memory-card" data-card="adverbs">
+                <img class="front-face select" src="games/img/fast.png" alt="fast">
+                <img class="back-face" src="games/img/le-logo.png" alt="front face">
+            </div>
+            
+        </section>
+        <div class="timeOut">
+            <div class="box">
+                <h1>Time Out...!<br>
+                    Let's try Again
+                </h1>
+                <br>
+                <button class="btn" onclick="tryAgain()">Try Again</button>
+            </div>
+        </div>
+
+        <div class="winText">
+            <div class="box">
+                <h1>Well Done <span class="profile"></span>..!<br>
+                    <br>
+                    YOU WON
+                </h1>
+                <br>
+                <button class="btn" onclick="tryAgain()">Play Again</button>
+                
+            </div>
+        </div>
+
+
+
+
+
+        <br>
+        <br>
+        <br>
+
+    <button class="btn" onclick="tryAgain()">RESET</button>
+    <footer>
+            
+        <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
+    </footer>  
+    <!--import js file-->
+    <script src="games/js/hide&seek.js"></script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>
