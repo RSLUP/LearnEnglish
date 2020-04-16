@@ -4,6 +4,7 @@ let lockBoard=false;
 let firstCard, secondCard;
 const timeOut = document.querySelector(".timeOut");
 const start = document.querySelector(".start");
+const winText = document.querySelector(".winText");
 
 //set timer
 var timer = setInterval(function(){gameTimer()}, 1000);
@@ -120,6 +121,14 @@ function shuffle()
 }
 
 
+const profile = document.querySelector(".profile");
+
+//win text display
+function win()
+{
+    winText.classList.add("show");
+    profile.innerHTML = localStorage.getItem("userName");
+}
 //button try again
 function tryAgain()
 {

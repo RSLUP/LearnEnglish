@@ -57,7 +57,7 @@ const submit = document.querySelector(".submit");
 const message = document.querySelector(".message");
 const form = document.querySelector(".form");
 
-const profile = document.querySelector(".profile");
+//const profile = document.querySelector(".profile");
 
 
 
@@ -105,7 +105,7 @@ function runFirst()
     console.log(localStorage.getItem("userName"));
     console.log(localStorage.getItem("logDate"));
     console.log(today[0]);
-    profile.innerHTML = localStorage.getItem("userName");
+    //profile.innerHTML = localStorage.getItem("userName");
                
 
     if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
