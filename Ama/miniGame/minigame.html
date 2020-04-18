@@ -5,133 +5,229 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tic-Tac-Toe </title>
   <link rel="stylesheet" type="text/css" href="minigames.css">
+  <script type="text/javascript" src="minigames.js"> </script>
+
+    <!--css of jquey ui-->
+    <link   
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <!--jquery library-->
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"
+    ></script>
+    <!--jquery ui library-->
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function (){
+          var availabletags11 = ['1 7 9'];
+          $("#cell15").autocomplete({source: availabletags11});
+           });
+
+           $(function (){
+          var availabletags21 = ['4 8'];
+          $("#cell21").autocomplete({source: availabletags21});
+           });
+
+           $(function (){
+          var availabletags28 = ['3 7'];
+          $("#cell28").autocomplete({source: availabletags28});
+           });
+
+           $(function (){
+          var availabletags33 = ['6 8'];
+          $("#cell33").autocomplete({source: availabletags33});
+           });
+
+           $(function (){
+          var availabletags35 = ['1 3 7'];
+          $("#cell35").autocomplete({source: availabletags35});
+           });
+
+           $(function (){
+          var availabletags36 = ['3 5 6 8'];
+          $("#cell36").autocomplete({source: availabletags36});
+           });
+
+           $(function (){
+          var availabletags46 = ['4 7 9'];
+          $("#cell46").autocomplete({source: availabletags46});
+           });
+
+           $(function (){
+          var availabletags47 = ['1 3 7 9'];
+          $("#cell47").autocomplete({source: availabletags47});
+           });
+
+           $(function (){
+          var availabletags53 = ['4 7 8 9'];
+          $("#cell53").autocomplete({source: availabletags53});
+           });
+
+           $(function (){
+          var availabletags64 = ['2 3 7'];
+          $("#cell64").autocomplete({source: availabletags64});
+           });
+
+           $(function (){
+          var availabletags68 = ['3 4 7'];
+          $("#cell68").autocomplete({source: availabletags68});
+           });
+
+           $(function (){
+          var availabletags74 = ['1 3 9'];
+          $("#cell74").autocomplete({source: availabletags74});
+           });
+
+           $(function (){
+          var availabletags78 = ['3 4 7'];
+          $("#cell78").autocomplete({source: availabletags78});
+           });
+
+           $(function (){
+          var availabletags82 = ['7 9'];
+          $("#cell82").autocomplete({source: availabletags82});
+           });
+
+           $(function (){
+          var availabletags89 = ['4 7 8'];
+          $("#cell89").autocomplete({source: availabletags89});
+           });
+      </script>
 
 </head>  
 <body>
-  <table border="1" align="center">
-    <tr>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1">1</div>
-          <div class="box" id="box2"><input id="tags"></div>
-          <div class="box" id="box3"><input id="tags"></div>
-          <div class="box" id="box4"><input id="tags"></div>
-          <div class="box" id="box5">5</div>
-          <div class="box" id="box6"><input id="tags"></div>
-          <div class="box" id="box7"><input id="tags"></div>
-          <div class="box" id="box8"><input id="tags"></div>
-          <div class="box" id="box9"><input id="tags"></div>
-      </div>
-      </td>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1"><input id="tags"></div>
-          <div class="box" id="box2">8</div>
-          <div class="box" id="box3"><input id="tags"></div>
-          <div class="box" id="box4">6</div>
-          <div class="box" id="box5"><input id="tags"></div>
-          <div class="box" id="box6">1</div>
-          <div class="box" id="box7">5</div>
-          <div class="box" id="box8"><input id="tags"></div>
-          <div class="box" id="box9">3</div>
-      </div>
-      </td>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1"><input id="tags"></div>
-          <div class="box" id="box2"><input id="tags"></div>
-          <div class="box" id="box3">9</div>
-          <div class="box" id="box4"><input id="tags"></div>
-          <div class="box" id="box5">2</div>
-          <div class="box" id="box6"><input id="tags"></div>
-          <div class="box" id="box7"><input id="tags"></div>
-          <div class="box" id="box8"><input id="tags"></div>
-          <div class="box" id="box9"><input id="tags"></div>
-      </div>
-      </td>
-    </tr>
 
+  <table align="center">
     <tr>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1"><input id="tags"></div>
-          <div class="box" id="box2">9</div>
-          <div class="box" id="box3">6</div>
-          <div class="box" id="box4">3</div>
-          <div class="box" id="box5"><input id="tags"></div>
-          <div class="box" id="box6"><input id="tags"></div>
-          <div class="box" id="box7"><input id="tags"></div>
-          <div class="box" id="box8">1</div>
-          <div class="box" id="box9">5</div>
+      <td class="bend">
+        <div class="container" id="main" class="ui-widget">
+          <div class="box" id="box1" ><input id="cell11"></div>
+          <div class="box" id="box2">2</div>
+          <div class="box" id="box3">3</div>
+          <div class="box" id="box4">4</div>
+          <div class="box" id="box5"><input id="cell15"></div>
+          <div class="box" id="box6"><input id="cell16"></div>
+          <div class="box" id="box7">6</div>
+          <div class="box" id="box8">8</div>
+          <div class="box" id="box9"><input id="cell19"></div>
       </div>
       </td>
-      <td>
+      <td class="bend">
         <div class="container" id="main">
-          <div class="box" id="box1">1</div>
-          <div class="box" id="box2"><input id="tags"></div>
-          <div class="box" id="box3">4</div>
-          <div class="box" id="box4"><input id="tags"></div>
-          <div class="box" id="box5">6</div>
-          <div class="box" id="box6"><input id="tags"></div>
-          <div class="box" id="box7">9</div>
-          <div class="box" id="box8"><input id="tags"></div>
-          <div class="box" id="box9">8</div>
-      </div>
-      </td>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1">8</div>
-          <div class="box" id="box2">3</div>
-          <div class="box" id="box3"><input id="tags"></div>
-          <div class="box" id="box4"><input id="tags"></div>
-          <div class="box" id="box5"><input id="tags"></div>
-          <div class="box" id="box6">5</div>
-          <div class="box" id="box7">4</div>
-          <div class="box" id="box8">6</div>
-          <div class="box" id="box9"><input id="tags"></div>
-      </div>
-      </td>
-    </tr>
-
-
-    <tr>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1"><input id="tags"></div>
-          <div class="box" id="box2"><input id="tags"></div>
-          <div class="box" id="box3"><input id="tags"></div>
-          <div class="box" id="box4"><input id="tags"></div>
-          <div class="box" id="box5">8</div>
-          <div class="box" id="box6"><input id="tags"></div>
-          <div class="box" id="box7">5</div>
-          <div class="box" id="box8"><input id="tags"></div>
-          <div class="box" id="box9"><input id="tags"></div>
-      </div>
-      </td>
-      <td>
-        <div class="container" id="main">
-          <div class="box" id="box1">7</div>
-          <div class="box" id="box2"><input id="tags"></div>
+          <div class="box" id="box1"><input id="cell21"></div>
+          <div class="box" id="box2"><input id="cell22"></div>
           <div class="box" id="box3">5</div>
-          <div class="box" id="box4">3</div>
-          <div class="box" id="box5"><input id="tags"></div>
-          <div class="box" id="box6">9</div>
-          <div class="box" id="box7"><input id="tags"></div>
-          <div class="box" id="box8">1</div>
-          <div class="box" id="box9"><input id="tags"></div>
+          <div class="box" id="box4"><input id="cell24"></div>
+          <div class="box" id="box5"><input id="cell25"></div>
+          <div class="box" id="box6">2</div>
+          <div class="box" id="box7">9</div>
+          <div class="box" id="box8"><input id="cell28"></div>
+          <div class="box" id="box9">1</div>
       </div>
       </td>
-      <td>
+      <td class="bend">
         <div class="container" id="main">
-          <div class="box" id="box1"><input id="tags"></div>
-          <div class="box" id="box2"><input id="tags"></div>
-          <div class="box" id="box3"><input id="tags"></div>
-          <div class="box" id="box4"><input id="tags"></div>
-          <div class="box" id="box5">7</div>
-          <div class="box" id="box6"><input id="tags"></div>
-          <div class="box" id="box7"><input id="tags"></div>
-          <div class="box" id="box8"><input id="tags"></div>
-          <div class="box" id="box9">3</div>
+          <div class="box" id="box1">9</div>
+          <div class="box" id="box2"><input id="cell32"></div>
+          <div class="box" id="box3"><input id="cell33"></div>
+          <div class="box" id="box4"><input id="cell34"></div>
+          <div class="box" id="box5"><input id="cell35"></div>
+          <div class="box" id="box6"><input id="cell36"></div>
+          <div class="box" id="box7"><input id="cell37"></div>
+          <div class="box" id="box8"><input id="cell38"></div>
+          <div class="box" id="box9">4</div>
+      </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="bend">
+        <div class="container" id="main">
+          <div class="box" id="box1">2</div>
+          <div class="box" id="box2"><input id="cell42"></div>
+          <div class="box" id="box3">6</div>
+          <div class="box" id="box4">8</div>
+          <div class="box" id="box5"><input id="cell45"></div>
+          <div class="box" id="box6"><input id="cell46"></div>
+          <div class="box" id="box7"><input id="cell47"></div>
+          <div class="box" id="box8">5</div>
+          <div class="box" id="box9"><input id="cell19"></div>
+      </div>
+      </td>
+      <td class="bend">
+        <div class="container" id="main">
+          <div class="box" id="box1"><input id="cell51"></div>
+          <div class="box" id="box2">1</div>
+          <div class="box" id="box3"><input id="cell53"></div>
+          <div class="box" id="box4">5</div>
+          <div class="box" id="box5"><input id="cell55"></div>
+          <div class="box" id="box6">6</div>
+          <div class="box" id="box7"><input id="cell57"></div>
+          <div class="box" id="box8">2</div>
+          <div class="box" id="box9"><input id="cell59"></div>
+      </div>
+      </td>
+      <td class="bend">
+        <div class="container" id="main">
+          <div class="box" id="box1"><input id="cell61"></div>
+          <div class="box"  id="box2">5</div>
+          <div class="box" id="box3"><input id="cell63"></div>
+          <div class="box" id="box4"><input id="cell64"></div>
+          <div class="box" id="box5"><input id="cell65"></div>
+          <div class="box" id="box6">1</div>
+          <div class="box" id="box7">6</div>
+          <div class="box" id="box8"><input id="cell68"></div>
+          <div class="box" id="box9"><input id="cell69"></div>
+      </div>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="bend">
+        <div class="container" id="main">
+          <div class="box" id="box1">5</div>
+          <div class="box" id="box2">6</div>
+          <div class="box" id="box3"><input id="cell73"></div>
+          <div class="box" id="box4"><input id="cell74"></div>
+          <div class="box" id="box5"><input id="cell75"></div>
+          <div class="box" id="box6">8</div>
+          <div class="box" id="box7"><input id="cell77"></div>
+          <div class="box" id="box8"><input id="cell78"></div>
+          <div class="box" id="box9">2</div>
+      </div>
+      </td>
+      <td class="bend">
+        <div class="container" id="main">
+          <div class="box" id="box1">1</div>
+          <div class="box" id="box2"><input id="cell82"></div>
+          <div class="box" id="box3">3</div>
+          <div class="box" id="box4">2</div>
+          <div class="box" id="box5"><input id="cell85"></div>
+          <div class="box" id="box6"><input id="cell86"></div>
+          <div class="box" id="box7">6</div>
+          <div class="box" id="box8"><input id="cell88"></div>
+          <div class="box" id="box9"><input id="cell89"></div>
+      </div>
+      </td>
+      <td class="bend">
+        <div class="container" id="main">
+          <div class="box" id="box1">4</div>
+          <div class="box" id="box2">8</div>
+          <div class="box" id="box3">2</div>
+          <div class="box" id="box4"><input id="cell94"></div>
+          <div class="box" id="box5">6</div>
+          <div class="box" id="box6">7</div>
+          <div class="box" id="box7">1</div>
+          <div class="box" id="box8">9</div>
+          <div class="box" id="box9"><input id="cell99"></div>
       </div>
       </td>
     </tr>
@@ -140,5 +236,7 @@
 
     <button> Play Again </button>
 
+
+    <div id="count">Start</div>
 </body>
 </html>

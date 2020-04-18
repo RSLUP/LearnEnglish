@@ -4,7 +4,8 @@
 {
     width:150px;
     overflow: hidden;
-    margin: 50px auto 0 auto;
+    margin: 0px auto 0 auto;
+    height:150px ;
 }
 .container .box
 {
@@ -17,6 +18,9 @@
     font-size: 45px;
     text-align: center;
     line-height: 45px;
+    
+    background-color: rgb(180, 199, 240);
+    color: rgb(6, 3, 31);
 }
 
 .container .box:hover
@@ -44,10 +48,15 @@ input
     float: left;
     width: 50px;
     height: 50px;
-    border: 1px solid #000;
+   
     transition: all .25s ease-in-out;
     font-family: sans-serif;
     font-size: 45px;
     text-align: center;
     line-height: 100px;
+}
+.bend
+{
+    border: 2px solid rgb(9, 2, 29);
+
 }
