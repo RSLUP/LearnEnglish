@@ -63,14 +63,15 @@ function dead(head,body){
 
 function mainProcess(){
 
-    
+    ctx.drawImage(grid,0,0);
     
     for( let i = 0; i < snake.length ; i++){
         ctx.fillStyle = ( i == 0 )? "green" : "white";
-        ctx.fillRect(snake[i].x,snake[i].y,tile,tile);
-        
+        ctx.beginPath();
+        ctx.arc(snake[i].x+tile/2,snake[i].y+tile/2,tile/2, 0, 2 * Math.PI);
+        ctx.fill();
         ctx.strokeStyle = "red";
-        ctx.strokeRect(snake[i].x,snake[i].y,tile,tile);
+        ctx.stroke();
     }
 
     ctx.drawImage(correctFoodImg, correctFood.x, correctFood.y);
