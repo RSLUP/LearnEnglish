@@ -18,8 +18,16 @@ function checkEmpty(qelement){
     }
 }
 
+
+
 const clickFn = function($event){
-    return console.log($event.target);
+    // return console.log($event.target);
+    takeTurn(qNumId($event.target),'X'); //calling takeTurn function by passing index and letter(parameters)
+};
+
+//takeTurn function for return applicable element of array to space
+const takeTurn = function(index, letter){
+    return grid()[index].innerText = letter;
 };
 
 
