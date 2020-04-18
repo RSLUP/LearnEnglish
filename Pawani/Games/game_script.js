@@ -1,28 +1,57 @@
-    const winningCombs =[
-        [0,1,2],
-        [3,4,5],
-        [6,7,8],
-        [0,4,8],
-        [2,4,6],
-        [0,3,6],
-        [1,4,7],
-        [2,5,8]
-    ];
+
+
+    const clickFn = function($event){
+    //return console.log($event.target);
+    takeTurn(qNumId($event.target),'X');
+    opponentTurn();
+    };
+
 
     const grid=function () {
         return Array.from(document.getElementsByClassName("q"));
     };
 
-    const clickFn = function($event){
-        //return console.log($event.target);
+    const qNumId = function (qEl) {
+        return Number.parseInt(qEl.id.replace('q', ''));
     };
 
+    const emptyQs=function() {
+        return grid().filter(checkEmpty);
+    };
+    function checkEmpty(qelement){
+        if(qelement.innerText==='') {
+            return qelement;
+        }
+    }
+
+
+    const takeTurn = function(index, letter){
+        return grid()[index].innerText = letter
+    };
+
+    const opponentTurn = function(){
+        disableListeners();
+        setTimeout(function () {
+            takeTurn(opponentChoice(), 'O');
+            enableListeners();
+        }, 1000);
+    };
+
+    const opponentChoice =function () {
+        return qNumId(emptyQs()[Math.floor(Math.random() * emptyQs().length)]);
+    };
+
+
+
+    // adding eventlisteners........
 
     const enableListeners=function () {
-        return grid().forEach(_qEl => _qEl.addEventListener('click', clickFn));
+        return grid().forEach(qelement => qelement.addEventListener('click', clickFn));
     };
     const disableListeners = function() {
-        return grid().forEach(_qEl => _qEl.removeEventListener('click', clickFn));
+        return grid().forEach(qelement => qelement.removeEventListener('click', clickFn));
     };
 
     enableListeners();
+
+
