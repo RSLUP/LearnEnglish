@@ -8,6 +8,15 @@ const qNumId = function (qEl) {
 };
 
 
+//function for create array with empty spaces
+const emptyQs=function() {
+    return grid().filter(checkEmpty);
+};
+function checkEmpty(qelement){
+    if(qelement.innerText==='') {
+        return qelement;
+    }
+}
 
 const clickFn = function($event){
     return console.log($event.target);
