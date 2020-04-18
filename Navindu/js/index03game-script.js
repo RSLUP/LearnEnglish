@@ -4,14 +4,14 @@ const ctx = canvs.getContext("2d");
 const tile = 30;
 let score = 0;
 
-const ground = new Image();
-ground.src = "img/game-grid.png";
+const grid = new Image();
+grid.src = "img/game-grid.png";
 
 const FoodRat = new Image();
-foodImg.src = "img/game-rat.png";
+FoodRat.src = "img/game-rat.png";
 
 const FoodFrog = new Image();
-foodImg.src = "img/game-frog.png";
+FoodFrog.src = "img/game-frog.png";
 
 var correctFoodImg = FoodRat;
 var wrongFoodImg = FoodFrog;
@@ -25,12 +25,12 @@ snake[0] = {
 let correctFood = {
     x : Math.floor(Math.random()*20) * tile,
     y : Math.floor(Math.random()*20) * tile
-}
+};
 
 let wrongFood = {
     x : Math.floor(Math.random()*20) * tile,
     y : Math.floor(Math.random()*20) * tile
-}
+};
 
 let drctnKey;
 function direction(event){
@@ -60,3 +60,58 @@ function dead(head,body){
     }
     return false;
 }
+
+function mainProcess(){
+
+    
+    
+    for( let i = 0; i < snake.length ; i++){
+        ctx.fillStyle = ( i == 0 )? "green" : "white";
+        ctx.fillRect(snake[i].x,snake[i].y,tile,tile);
+        
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(snake[i].x,snake[i].y,tile,tile);
+    }
+
+    ctx.drawImage(correctFoodImg, correctFood.x, correctFood.y);
+    ctx.drawImage(wrongFoodImg, wrongFood.x, wrongFood.y);
+
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+    
+    if( drctnKey == "l") snakeX -= tile;
+    if( drctnKey == "r") snakeX += tile;
+    if( drctnKey == "u") snakeY -= tile;
+    if( drctnKey == "d") snakeY += tile;
+    
+    if(snakeX == correctFood.x && snakeY == correctFood.y){
+        score++;
+        correctFood = {
+            x : Math.floor(Math.random()*20) * tile,
+            y : Math.floor(Math.random()*20) * tile
+        };
+        
+        wrongFood = {
+            x : Math.floor(Math.random()*20) * tile,
+            y : Math.floor(Math.random()*20) * tile
+        };
+    }
+    else{
+        snake.pop();
+    }
+    
+    let newHead = {
+        x : snakeX,
+        y : snakeY
+    };
+
+    if(snakeX < 0 || snakeX > 19*tile || snakeY < 0 || snakeY > 19*tile || dead(newHead,snake)){
+        clearInterval(game);
+    }
+
+    snake.unshift(newHead);
+    
+    document.getElementById("score").innerHTML=score;
+}
+
+let game = setInterval(mainProcess,100);
