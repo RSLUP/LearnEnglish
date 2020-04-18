@@ -1,3 +1,4 @@
+
 const grid=function () {
     return Array.from(document.getElementsByClassName("q"));
 };
@@ -23,6 +24,7 @@ function checkEmpty(qelement){
 const clickFn = function($event){
     // return console.log($event.target);
     takeTurn(qNumId($event.target),'X'); //calling takeTurn function by passing index and letter(parameters)
+    opponentTurn(); //calling opponentTurn function
 };
 
 //takeTurn function for return applicable element of array to space
@@ -30,6 +32,28 @@ const takeTurn = function(index, letter){
     return grid()[index].innerText = letter;
 };
 
+//opponentTurn function for computer player activities
+const opponentTurn = function(){
+    disableListeners(); //other player actions not applying
+    setTimeout(function () {   //giving some time for computer player
+        takeTurn(opponentChoice(), 'O'); //calling takeTurn function to display opponent choice
+        enableListeners(); // again enable for other player
+    }, 1000);       // waiting 1s=1000ms
+};
+
+//function for return opponentChoice
+const opponentChoice =function () {
+    return qNumId(emptyQs()[get_index()]); //get relevant index for emptyQs array, calling get_index() method inside it
+};
+
+function get_index(){
+    var x=Math.floor(Math.random() * emptyQs().length); // calculating random and relevant no for index
+    return x;
+}
+
+
+
+//functions for addEventListener & removeEventListener
 
 const enableListeners=function () {
     return grid().forEach(adding);
