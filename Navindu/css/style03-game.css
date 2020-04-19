@@ -23,6 +23,8 @@ canvas{
     display: flex;
     color: white;
     align-items: center;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 .ans1 img, .ans2 img{
@@ -36,6 +38,7 @@ canvas{
 .ans1 p,.ans2 p{
     margin-right: 25px;
     font-size: 22px;
+    font-family: arial;
 }
 
 .score{
@@ -45,12 +48,17 @@ canvas{
     justify-content: center;
 }
 
+.question{
+    color: yellow;
+    font-family: arial;
+}
+
 .qbox{
-    width: 350px;
+    width: 380px;
     color: white;
     text-align: center;
     justify-content: center;
-    display: grid;
+    display: block;
 }
 
 .score{

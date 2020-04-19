@@ -118,17 +118,67 @@ function mainProcess(){
             foodGen(FoodFrog,FoodRat);
         }
         else if(score==3){
-            questionGen("The word \"Between\" is a ..........","Preposition","Verb");
+            questionGen("The word \"Chair\" is a ..........","Noun","Adjective");
             foodGen(FoodRat,FoodFrog);
         }
         else if(score==4){
-            questionGen("Example for a Verb is ........","France","Run");
+            questionGen("The word \"will\" is used in ........ tenses","Past","Future");
             foodGen(FoodFrog,FoodRat);
         }
         else if(score==5){
-            questionGen("The word \"Between\" is a ..........","Preposition","Verb");
+            questionGen("Example for a Pronoun is ........","Catch","Them");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==6){
+            questionGen("The word \"And\" is a ..........","Conjunction","Noun");
             foodGen(FoodRat,FoodFrog);
         }
+        else if(score==7){
+            questionGen("The word \"Between\" is a ..........","Verb","Preposition");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==8){
+            questionGen("\"He draws.\" is an example for ........ tense","Past perfect","Simple present");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==9){
+            questionGen("\"I said.\" is an example for ........ tense","Simple Past","Simple Future");
+            foodGen(FoodRat,FoodFrog);
+        }
+        else if(score==10){
+            questionGen("Example for Simple Past tense is ........","We won.","He write.");
+            foodGen(FoodRat,FoodFrog);
+        }
+        else if(score==11){
+            questionGen("Example for a Pronoun is ........","Car","You");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==12){
+            questionGen("\"He ran quickly.\"<br>What is the Adverb? ","quickly","ran");
+            foodGen(FoodRat,FoodFrog);
+        }
+        else if(score==13){
+            questionGen("\".......\" is an Adjective but \".......\" is an Adverb.","softly,soft","soft,softly");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==14){
+            questionGen("\"Ben is an adorable baby.\"<br>What is the Adjective?","baby","adorable");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==15){
+            questionGen("\"I\'m doing exercises.\"<br>What is the tense?","Present Continuous","Present Perfect");
+            foodGen(FoodRat,FoodFrog);
+        }
+        else if(score==16){
+            questionGen("\"He had written the essay.\"<br>What is the tense?","Simple Past","Past Perfect");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==17){
+            questionGen("\"I will be running the race tomorrow.\"<br>What is the tense?","Future Continuous","Future Perfect");
+            foodGen(FoodFrog,FoodRat);
+        }
+        
+        
     }
     else{
         snake.pop();
