@@ -1,0 +1,25 @@
+#frame1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 280px;
+    height: 180px;
+    background-color: #e9c9c2;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+    padding: 10px;
+}
+
+#frame2{
+    position: absolute;
+    top: 10px;
+    left: 290px;
+    width: 280px;
+    height: 180px;
+    background-color: gray;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+    padding: 10px;
+}
