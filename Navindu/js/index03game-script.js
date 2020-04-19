@@ -32,6 +32,28 @@ let wrongFood = {
     y : Math.floor(Math.random()*20) * tile
 };
 
+function foodGen(correctImg,wrongImg){
+
+    correctFoodImg = correctImg;
+    wrongFoodImg = wrongImg;
+
+    correctFood = {
+        x : Math.floor(Math.random()*20) * tile,
+        y : Math.floor(Math.random()*20) * tile
+    };
+    
+    wrongFood = {
+        x : Math.floor(Math.random()*20) * tile,
+        y : Math.floor(Math.random()*20) * tile
+    };
+}
+
+function questionGen(Q,A1,A2){
+    document.getElementById("question").innerHTML=Q;
+    document.getElementById("ans1").innerHTML=A1;
+    document.getElementById("ans2").innerHTML=A2;
+}
+
 let drctnKey;
 function direction(event){
 
@@ -87,15 +109,26 @@ function mainProcess(){
     
     if(snakeX == correctFood.x && snakeY == correctFood.y){
         score++;
-        correctFood = {
-            x : Math.floor(Math.random()*20) * tile,
-            y : Math.floor(Math.random()*20) * tile
-        };
-        
-        wrongFood = {
-            x : Math.floor(Math.random()*20) * tile,
-            y : Math.floor(Math.random()*20) * tile
-        };
+        if(score==1){
+            questionGen("The word \"Dog\" is a ..........","Verb","Noun");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==2){
+            questionGen("Example for a Verb is ........","France","Run");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==3){
+            questionGen("The word \"Between\" is a ..........","Preposition","Verb");
+            foodGen(FoodRat,FoodFrog);
+        }
+        else if(score==4){
+            questionGen("Example for a Verb is ........","France","Run");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==5){
+            questionGen("The word \"Between\" is a ..........","Preposition","Verb");
+            foodGen(FoodRat,FoodFrog);
+        }
     }
     else{
         snake.pop();
@@ -115,4 +148,4 @@ function mainProcess(){
     document.getElementById("score").innerHTML=score;
 }
 
-let game = setInterval(mainProcess,100);
+let game = setInterval(mainProcess,150);
