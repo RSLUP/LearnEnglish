@@ -24,10 +24,10 @@
     color: rgb(6, 3, 31);
 }
 
-button
+#play-again
 {
-    background: rgb(88, 9, 9);
-    color: #fff;
+    background: rgb(1, 21, 65);
+    color:rgb(59, 153, 230);
     font-weight: bold;
     border: 1px solid yellow;
     cursor: pointer;
@@ -38,12 +38,37 @@ button
     margin: 10px auto;
 
 }
+ #rules, #start
+{
+    background: rgb(1, 21, 65);
+    color: rgb(59, 153, 230);
+    font-weight: bold;
+    border: 1px solid rgb(10, 1, 22);
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    display: block;
+    margin: 10px auto;
+}
+#show-ans
+{
+    background: rgb(1, 21, 65);
+    color: rgb(59, 153, 230);
+    font-weight: bold;
+    border: 1px solid rgb(10, 1, 22);
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    display: block;
+    margin: 10px auto;
+}
 input
 {
     float: left;
     width: 50px;
     height: 50px;
-   
     transition: all .25s ease-in-out;
     font-family: sans-serif;
     font-size: 45px;
@@ -54,4 +79,29 @@ input
 {
     border: 2px solid rgb(9, 2, 29);
 
+}
+.btn
+{
+    float: left;
+    width: 50px;
+    height: 50px;
+    transition: all .25s ease-in-out;
+    font-family: sans-serif;
+    font-size: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: rgb(84, 150, 119);
+    color: rgb(5, 3, 32);
+}
+#rule-and-reg
+{
+    line-height: 22px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.timer
+{
+    font-size: 45px;
+    color: rgb(5, 3, 32);
+    font-family: sans-serif;
 }

@@ -378,15 +378,27 @@ var   cell61 = document.getElementById("cell61").value,
 
 
 }
+function timeStart()
+{
+  var mins = 1;
+  var interval1 = setInterval(function(){
+    document.getElementById('mins').innerHTML=mins;
+    mins++;
+    if (mins === 15){
+      clearInterval(interval1);
+     // document.getElementById('mins').innerHTML='Done';
+      // or...
+      alert("You're out of time!");
+    }
+  }, 60000);
 
-/*var count = 0;
-var interval = setInterval(function(){
-  document.getElementById('count').innerHTML=count;
-  count++;
-  if (count === 10){
-    clearInterval(interval);
-    document.getElementById('count').innerHTML='Done';
-    // or...
-    alert("You're out of time!");
-  }
-}, 1000);*/
+}
+
+
+
+
+
+function cal()
+{
+  //alert("hello");
+}
