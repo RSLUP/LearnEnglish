@@ -24,12 +24,6 @@
     color: rgb(6, 3, 31);
 }
 
-.container .box:hover
-{
-    background: rgba(204, 248, 242, 0.76);
-    color: rgb(4, 12, 39);
-}
-
 button
 {
     background: rgb(88, 9, 9);
