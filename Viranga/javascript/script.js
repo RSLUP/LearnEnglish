@@ -1,4 +1,6 @@
 
+
+
 //js for tenses
 function openPage(pageName, elmnt, color) 
 {
@@ -68,7 +70,8 @@ const pass = "r5Lup@Ac9";
 function login()
 {
     var txtuser = document.querySelector(".txtuser").value;
-    var txtpass = document.querySelector(".txtpass").value;
+var txtpass = document.querySelector(".txtpass").value;
+   
     if(user===txtuser && pass===txtpass)
     {
         
@@ -78,7 +81,7 @@ function login()
         localStorage.setItem("userName", txtuser);
         localStorage.setItem("logDate", date[0]);   
 
-        window.location.href = "speech.html";
+        window.location.href = "index.html";
         return;     
     }
     if(user===txtuser.value && pass!==txtpass.value)
@@ -106,6 +109,10 @@ function runFirst()
     console.log(localStorage.getItem("logDate"));
     console.log(today[0]);
     //profile.innerHTML = localStorage.getItem("userName");
+    document.querySelector(".uname").innerHTML = localStorage.getItem("userName");
+    document.querySelector(".uname2").innerHTML = localStorage.getItem("userName");
+    document.querySelector(".utime").innerHTML = localStorage.getItem("logDate");
+
                
 
     if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
@@ -114,21 +121,35 @@ function runFirst()
         window.location.href = "login.html";
                     
     }
-    else{
-        document.querySelector(".day").innerHTML= localStorage.getItem("userName") +" on " + now.toLocaleString();
-    }
+    
     
 }
+//show user details
+
+const userd = document.querySelector(".profile-details");
+
+
 
 function details()
 {
     alert('Hi, '+localStorage.getItem("userName") +"\n" +"Name : "+localStorage.getItem("userName") +"\n" + "Last Logging : "+ localStorage.getItem("logDate"));
 
 }
+function profile()
+{
+    userd.classList.add("show");
+    document.querySelector(".uname").innerHTML = localStorage.getItem("userName");
+    document.querySelector(".uname2").innerHTML = localStorage.getItem("userName");
+    document.querySelector(".utime").innerHTML = localStorage.getItem("logDate");
+}
+
+
 function exitUd()
 {
     userd.classList.remove("show");
 }
+
+
 function logout()
 {
     localStorage.clear();
@@ -136,3 +157,62 @@ function logout()
     window.location.href = "login.html";
    
 }
+//stick header
+$(document).ready(function(){
+    $('.myHeader').sticky();
+  });
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//-------------------------------------------------------------------
+
+
+//go home
+function mainPage()
+{
+  window.location.href = "index.html";
+}
+
+//tabs
+function openTab(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+
+//scroll
