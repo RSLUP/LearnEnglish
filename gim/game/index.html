@@ -20,31 +20,51 @@
   </head>
   <body>
 
-
-     <div id="frame1">
+<table align="center" style="padding-top:80px;">
+  <tr>
+    <td>
+      <div id="frame1">
         
-<button id="btn1"  type="button">Button1</button>
-<button id="btn2"  type="button">Button2</button>
-  <button id="btn3"  type="button">Button3</button>
+        <button id="btn1" onclick="moveButton(this)" type="button">C</button>
+        <button id="btn2" onclick="moveButton(this)" type="button">T</button>
+          <button id="btn3" onclick="moveButton(this)" type="button">A</button>
+        </div>
+        
+      </td><td>      
+        
+           
+            <div id="frame2">
+            </div>
+
+    </td>
+  </tr>
+</table>
+   
+
+
     
-    </div>
-
-
-    <div id="frame2">
-    </div>
 
 
 
 
 
     <script>
-      $("#btn1").click(function(){
-        $("#btn1").appendTo("#frame2");
 
 
-       
+function moveButton(frm){
+    if( $(frm).parent().attr("id") == "frame1" ){
+        $(frm).detach().appendTo('#frame2');
 
-      });
+    }
+    else{
+        $(frm).detach().appendTo('#frame1'); 
+    }
+}
+
+
+  
+
+
 
       </script>
   </body>
