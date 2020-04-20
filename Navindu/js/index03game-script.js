@@ -180,7 +180,7 @@ function mainProcess(){
             foodGen(FoodFrog,FoodRat);
         }
         else if(score==19){
-            questionGen("\"I will be running the race tomorrow.\"<br>What is the tense?","Future Continuous","Future Perfect");
+            questionGen("\"I will be running the race tomorrow.\"<br>What is the tense?","Future Perfect","Future Continuous");
             foodGen(FoodFrog,FoodRat);
         }
         else if(score==20){
