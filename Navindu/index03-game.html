@@ -8,13 +8,24 @@
 
     </head>
 
-    <body>
+    <body onload="instructions()">
 
         <div class="score">
             <h1>Score</h1>
             <h1 id="score">0</h1>
         </div>
-        
+
+        <!--Modal Box Elements-->
+        <div id="Modal" class="modal"> <!--Modal Box-->
+            <div class="modal-content">
+                <h2 id="modalTitle">Welcome To<br>Gram Snake</h2>
+                <hr>
+                <h3 id="modalBody">You must find the correct answer to the question displayed on right side of the game window and move the snake to eat the correct food<br><img src="img/game-rat.png"> <img src="img/game-frog.png"></h3>
+                <hr>
+                <button class="button" id="button">Start</button>
+            </div>
+        </div> <!--Modal Box Elements-->
+
         <canvas id="snake" width="600" height="600"></canvas>
         
         <div class="qbox" id="qbox">

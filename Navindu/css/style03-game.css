@@ -6,22 +6,20 @@ html{
 body{
     height: 100%;
     margin: 0;
-    background: black;
+    background: linear-gradient(#8b8b8b, rgb(255, 255, 255), #8b8b8b);
     display: flex;
     align-items: center;
     justify-content: center;
 }
   
 canvas{
-    border: 5px solid white;
-    background: gray;
+    border: 5px solid red;
     display: block;
     margin: 0 auto;
 }
 
 .answers,.ans1,.ans2{
     display: flex;
-    color: white;
     align-items: center;
     justify-content: center;
     margin-top: -10px;
@@ -38,29 +36,72 @@ canvas{
 .ans1 p,.ans2 p{
     margin-right: 25px;
     font-size: 22px;
-    font-family: arial;
 }
 
 .score{
-    width: 350px;
-    color: white;
+    color: blue;
+    width: 380px;
     text-align: center;
     justify-content: center;
-}
-
-.question{
-    color: yellow;
-    font-family: arial;
 }
 
 .qbox{
     width: 380px;
-    color: white;
+    color: blue;
     text-align: center;
     justify-content: center;
     display: block;
+    font-family: arial;
 }
 
 .score{
     font-size: 35px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: 150px auto;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    width: 380px;
+    text-align: center;
+}
+
+.modal-content h2{
+    margin: 20px;
+    color: rgb(78, 7, 7);
+    font-family: arial;
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal-content h3{
+    color: rgb(12, 6, 97);
+    font-size: 20px;
+    margin: 10px;
+    font-family: arial;
+    text-align: center;
+}
+
+.button{
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 7px;
+    background:  rgb(85, 6, 6);
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 17px;
+    box-shadow: 0 0 5px gray;
 }

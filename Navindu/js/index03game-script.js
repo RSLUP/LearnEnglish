@@ -88,12 +88,10 @@ function mainProcess(){
     ctx.drawImage(grid,0,0);
     
     for( let i = 0; i < snake.length ; i++){
-        ctx.fillStyle = ( i == 0 )? "green" : "white";
+        ctx.fillStyle = ( i == 0 )? "red" : "yellow";
         ctx.beginPath();
         ctx.arc(snake[i].x+tile/2,snake[i].y+tile/2,tile/2, 0, 2 * Math.PI);
         ctx.fill();
-        ctx.strokeStyle = "red";
-        ctx.stroke();
     }
 
     ctx.drawImage(correctFoodImg, correctFood.x, correctFood.y);
@@ -146,38 +144,49 @@ function mainProcess(){
             foodGen(FoodRat,FoodFrog);
         }
         else if(score==10){
-            questionGen("Example for Simple Past tense is ........","We won.","He write.");
+            questionGen("\"We'll win.\" is an example for ........ tense","Simple Future","Future Perfect");
             foodGen(FoodRat,FoodFrog);
         }
         else if(score==11){
+            questionGen("Example for Simple Past tense is ........","We won.","He write.");
+            foodGen(FoodRat,FoodFrog);
+        }
+        else if(score==12){
+            questionGen("\"Sara work at home.\"<br>Is this grammatically correct?","Yes","No");
+            foodGen(FoodFrog,FoodRat);
+        }
+        else if(score==13){
             questionGen("Example for a Pronoun is ........","Car","You");
             foodGen(FoodFrog,FoodRat);
         }
-        else if(score==12){
+        else if(score==14){
             questionGen("\"He ran quickly.\"<br>What is the Adverb? ","quickly","ran");
             foodGen(FoodRat,FoodFrog);
         }
-        else if(score==13){
+        else if(score==15){
             questionGen("\".......\" is an Adjective but \".......\" is an Adverb.","softly,soft","soft,softly");
             foodGen(FoodFrog,FoodRat);
         }
-        else if(score==14){
+        else if(score==16){
             questionGen("\"Ben is an adorable baby.\"<br>What is the Adjective?","baby","adorable");
             foodGen(FoodFrog,FoodRat);
         }
-        else if(score==15){
+        else if(score==17){
             questionGen("\"I\'m doing exercises.\"<br>What is the tense?","Present Continuous","Present Perfect");
             foodGen(FoodRat,FoodFrog);
         }
-        else if(score==16){
+        else if(score==18){
             questionGen("\"He had written the essay.\"<br>What is the tense?","Simple Past","Past Perfect");
             foodGen(FoodFrog,FoodRat);
         }
-        else if(score==17){
+        else if(score==19){
             questionGen("\"I will be running the race tomorrow.\"<br>What is the tense?","Future Continuous","Future Perfect");
             foodGen(FoodFrog,FoodRat);
         }
-        
+        else if(score==20){
+            clearInterval(game);
+            //modal
+        }
         
     }
     else{
@@ -191,11 +200,36 @@ function mainProcess(){
 
     if(snakeX < 0 || snakeX > 19*tile || snakeY < 0 || snakeY > 19*tile || dead(newHead,snake)){
         clearInterval(game);
+        modal.style.display="block";
+        button.addEventListener("click",restartfunction);
+    }
+
+    if(snakeX == wrongFood.x && snakeY == wrongFood.y){
+        clearInterval(game);
+        modal.style.display="block";
+        button.addEventListener("click",restartfunction);
     }
 
     snake.unshift(newHead);
     
-    document.getElementById("score").innerHTML=score;
+    document.getElementById("score").innerHTML=score*5;
 }
 
-let game = setInterval(mainProcess,150);
+let game;
+
+var modal = document.getElementById("Modal");
+var button = document.getElementById("button");
+
+function instructions(){
+    modal.style.display="block";
+    button.addEventListener("click",startfunction);
+}
+
+function startfunction(){
+    modal.style.display="none";
+    game = setInterval(mainProcess,200);
+}
+
+function restartfunction(){
+    location.reload();
+}
