@@ -93,7 +93,7 @@ const endGame = function(winningSequence){
     console.log(winningSequence);
     winningSequence.forEach(qElement => qElement.classList.add('winner'));
     disableListeners();
-    document.getElementById('div').style.display='block';
+    document.getElementById('div').style.display='block'; //wining note
 
     // modal.style.display = "block";
 };
@@ -103,6 +103,10 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     document.getElementById('div').style.display='none';
 };
+
+function reset() {
+    location.reload()
+}
 
 
 //functions for addEventListener & removeEventListener

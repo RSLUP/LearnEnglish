@@ -81,3 +81,24 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+#reset_button{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    transition: background-color 1s;
+    position: relative;
+    top: 130px;
+    right: 190px;
+}
+
+#reset_button:hover{
+    background-color: green;
+    cursor: pointer;
+}
