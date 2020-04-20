@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Hide & Seek</title>
+
+   
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+        rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/717367e0a7.js" crossorigin="anonymous"></script>
-    <!--import CSS file-->
-    <link rel="stylesheet" href="games/css/hide&seek.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="games/css/hide&seek.css">
+   
     
 </head>
 <body onload="runFirst()">
@@ -42,6 +48,7 @@
                 <li><a href="#">Games <i class="fa fa-caret-down"></i></a>
                     <ul>
                         <li><a href="hide&seek.html">&#10097 Hide & Seek</a></li>
+                        <li><a href="catch-eggs.html">&#10097 Catch Eggs</a></li>
                     </ul>
                 </li>
             </ul>
@@ -100,7 +107,8 @@
             </div>
             
         </section>
-    
+        <img class="big-circle" src="./img/big-eclipse.svg" alt="" />
+        <img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
 
     <div class="start hide">
         <div class="frame">Try to match <span>part of speech</span> with it's example
@@ -205,14 +213,17 @@
         <br>
 
     <button class="btn" onclick="tryAgain()">RESET</button>
-    <script src="games/js/hide&seek.js"></script>
-    <script src="javascript/script.js"></script>
+    
     <footer class="footer">
         <p><i class="far fa-copyright"></i> Copyrights Reserved | LearnEnglish </p>   
     </footer> 
     <!--import js file-->
     
-  
+    <script src="games/js/hide&seek.js"></script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js'></script>
+	
     
 </body>
 </html>
