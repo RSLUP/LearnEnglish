@@ -74,15 +74,27 @@ const checkForVictory = function(){
         const grid_n = grid();
         const sequence = [grid_n[c[0]], grid_n[c[1]], grid_n[c[2]]];
         if(allSame(sequence)) {
-
+            console.log(sequence);
+            victory = true;
+            endGame(sequence);
         }
     });
     return victory;
 };
 
+
 const allSame = function(arr) {
     return arr.every(qElement => qElement.innerText === arr[0].innerText && qElement.innerText !== '');
 };
+
+
+//function for endgame
+const endGame = function(winningSequence){
+    console.log(winningSequence);
+    winningSequence.forEach(qElement => qElement.classList.add('winner'));
+    disableListeners();
+};
+
 
 
 //functions for addEventListener & removeEventListener

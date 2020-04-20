@@ -21,6 +21,7 @@
     height: 100px;
     width: 100px;
     font-size: 100px;
+    font-family: cursive;
     text-align: center;
     line-height: 100px;
     float: left;
@@ -42,6 +43,12 @@
 
 #q2,#q5,#q8,#q1,#q4,#q7{
     border-left: solid 10px black;
+}
+
+
+.winner{
+    color: red;
+
 }
 
 /*.row{*/
