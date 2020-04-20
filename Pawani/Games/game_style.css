@@ -1,3 +1,8 @@
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+
 #tic_topic{
     font-size: 50px;
     text-align: center;
@@ -47,7 +52,7 @@
 
 
 .winner{
-    color: red;
+    color: darkred;
 
 }
 
@@ -61,7 +66,7 @@
     margin: auto;
     width: 300px;
     height: 52px;
-    background-color: darkred;
+    background-color: yellow;
     font-size: 30px;
     display: none;
     font-family: cursive;
