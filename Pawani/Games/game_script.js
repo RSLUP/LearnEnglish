@@ -66,6 +66,24 @@ const winningCombos = [
 ];
 
 
+//function for check victory, this function is called after every player's turn
+
+const checkForVictory = function(){
+    let victory = false;
+    winningCombos.forEach(c => {
+        const grid_n = grid();
+        const sequence = [grid_n[c[0]], grid_n[c[1]], grid_n[c[2]]];
+        if(allSame(sequence)) {
+
+        }
+    });
+    return victory;
+};
+
+const allSame = function(arr) {
+    return arr.every(qElement => qElement.innerText === arr[0].innerText && qElement.innerText !== '');
+};
+
 
 //functions for addEventListener & removeEventListener
 
