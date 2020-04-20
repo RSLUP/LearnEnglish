@@ -24,6 +24,7 @@ function checkEmpty(qelement){
 const clickFn = function($event){
     // return console.log($event.target);
     takeTurn(qNumId($event.target),'X'); //calling takeTurn function by passing index and letter(parameters)
+    if(!checkForVictory())
     opponentTurn(); //calling opponentTurn function
 };
 
@@ -37,7 +38,8 @@ const opponentTurn = function(){
     disableListeners(); //other player actions not applying
     setTimeout(function () {   //giving some time for computer player
         takeTurn(opponentChoice(), 'O'); //calling takeTurn function to display opponent choice
-        enableListeners(); // again enable for other player
+        if(!checkForVictory())
+            enableListeners(); // again enable for other player
     }, 1000);       // waiting 1s=1000ms
 };
 
@@ -50,6 +52,18 @@ function get_index(){
     var x=Math.floor(Math.random() * emptyQs().length); // calculating random and relevant no for index
     return x;
 }
+
+//winning Combs
+const winningCombos = [
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    [0,4,8],
+    [2,4,6],
+    [0,3,6],
+    [1,4,7],
+    [2,5,8]
+];
 
 
 
