@@ -555,9 +555,10 @@ $("#btn40").click(function(){
 
        var lvlCount=1;
       $("#btnNext").click(function(){
-          console.log(count);
+      
         
-       
+        if((lvlCount==1 || lvlCount==2 || lvlCount==3 || lvlCount==4 || lvlCount==5 || lvlCount==6 || lvlCount==7 || lvlCount==8 || lvlCount==9 || lvlCount==10) && (count ==4))
+        {
           if(lvlCount==1 && count>3)
           {
             if(count==4)
@@ -577,11 +578,11 @@ $("#btn40").click(function(){
               {
                 alert("Level 1 Completed.!");
                 $("#frame2").empty();
-
+                count=0;
               }
               else
               {
-            
+                alert("oops.!");
               }
 
 
@@ -616,6 +617,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 2 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -654,6 +656,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 3 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -692,6 +695,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 4 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -728,6 +732,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 5 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -765,6 +770,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 6 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -802,6 +808,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 7 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -838,6 +845,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 8 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -852,7 +860,7 @@ $("#btn40").click(function(){
             
 
           }else{
-
+            
           }
 
           if(lvlCount==9 && count>3)
@@ -874,6 +882,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 9 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -910,6 +919,7 @@ $("#btn40").click(function(){
               {
                 alert("Level 10 Completed.!");
                 $("#frame2").empty();
+                count=0;
               }
               else
               {
@@ -929,6 +939,14 @@ $("#btn40").click(function(){
 
           }
 
+        }
+        else
+        {
+            alert("Error");
+        }
+         
+
+         
          
         
          
