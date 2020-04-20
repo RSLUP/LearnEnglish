@@ -109,9 +109,7 @@ function runFirst()
     console.log(localStorage.getItem("logDate"));
     console.log(today[0]);
     //profile.innerHTML = localStorage.getItem("userName");
-    document.querySelector(".uname").innerHTML = localStorage.getItem("userName");
-    document.querySelector(".uname2").innerHTML = localStorage.getItem("userName");
-    document.querySelector(".utime").innerHTML = localStorage.getItem("logDate");
+    
 
                
 

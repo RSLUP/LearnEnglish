@@ -61,7 +61,7 @@ function check_egg_hits_basket(egg) {
     }
     return false;
 }
-
+var scoreN;
 function update_score() {
     score++;
     if (score % 10 === 0 && speed <= max_speed) {
@@ -70,7 +70,7 @@ function update_score() {
     score_span.text(score);
     final_score.text(score);
     score_1.text(score);
-    localStorage.setItem("hg_score", score); 
+    scoreN = score;
 }
 
 function stop_the_game() {
@@ -84,11 +84,20 @@ function stop_the_game() {
 
 function highScore() {
     
+
     alert('Score : ' + localStorage.getItem("hg_score")); 
     console.log('Score : ' + localStorage.getItem("hg_score")); 
 }
 
-
+function check_High_Score(){
+    
+    localStorage.setItem("default_score", scoreN)
+    
+    if(localStorage.getItem("default_score") > localStorage.getItem("hg_score")){
+        
+        localStorage.setItem("hg_score", scoreN); 
+    }
+}
 high_score.click(function (){
     highScore();
 })

@@ -103,17 +103,17 @@ nav ul li ul{
 	position: absolute;
 	background-color: #e4e3f1;
 	border-radius: 0 0 5px 5px;
-	transform: translateY(-10px);
-	transition: all 0.4s ease;
+	transform: translateY(-20px);
+	transition: all 0.5s ease;
 	pointer-events: none;
-	z-index: 100;
+	z-index: 98;
 	
 	
 }
 nav ul li:hover ul{
 	display: block;
 	width: 250px;
-	transform: translateY(0);
+	transform: translateY(-10px);
 	opacity: 1;
 	pointer-events: all;
 }
@@ -121,7 +121,7 @@ nav ul li ul li{
 	position: relative;
 	width: 100%;
 	border-radius: 5px;
-	z-index: 100;
+	z-index: 99;
 	
 	
 }
@@ -336,14 +336,6 @@ nav ul li ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
 .cover {
 	flex: 1;
 	display: flex;
@@ -355,6 +347,10 @@ nav ul li ul li a:hover{
 	border-radius: 10px;
 	animation: drop 1.5s ease;
 }
+
+
+
+
 .img-zoom:hover{
 	transform: scale(1.1);
 }
