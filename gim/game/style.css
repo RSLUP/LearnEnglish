@@ -2,22 +2,32 @@
    
    
     width: 380px;
-    height: 280px;
-    background-color: #e9c9c2;
+    height: 230px;
+    background-color: green;
     border-width: 1px;
-    border-style: dotted;
+    border-style: groove;
     border-color: black;
     padding: 10px;
+    padding-bottom:20px ;
+
 }
 
 #frame2{
    
   
     width: 380px;
-    height: 280px;
+    height: 230px;
     background-color: gray;
     border-width: 1px;
     border-style: dotted;
     border-color: black;
     padding: 10px;
+}
+
+.btn{
+
+    width:40px;
+    height:30px ;
+    font-weight: bold;
+    
 }

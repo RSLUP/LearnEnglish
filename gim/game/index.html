@@ -14,20 +14,80 @@
     
     <link rel="stylesheet" href="style.css">
 
-
+    
+    
+                
 
 
   </head>
   <body>
 
-<table align="center" style="padding-top:80px;">
+<table align="center" border="1" style="padding-top:80px;">
+  <tr>
+    <td colspan="2" height="50px">fgfg</td>
+  </tr>
   <tr>
     <td>
       <div id="frame1">
         
-        <button id="btn1" onclick="moveButton(this)" type="button">C</button>
-        <button id="btn2" onclick="moveButton(this)" type="button">T</button>
-          <button id="btn3" onclick="moveButton(this)" type="button">A</button>
+        
+
+        <button class="btn" id="btn1"  type="button">O </button>
+        <button class="btn" id="btn2"  type="button">L</button>
+        <button class="btn" id="btn3"  type="button">N</button>
+        <button class="btn" id="btn4"  type="button">I</button>
+
+        <button class="btn" id="btn5"  type="button">M</button>
+        <button class="btn" id="btn6"  type="button">P</button>
+        <button class="btn" id="btn7"  type="button">A</button>
+        <button class="btn" id="btn8"  type="button">U</button>
+
+        <button class="btn" id="btn9"  type="button">C</button>
+        <button class="btn" id="btn10"  type="button">W</button>
+        <button class="btn" id="btn11"  type="button">O</button>
+        <button class="btn" id="btn12"  type="button">R</button>
+
+        <button class="btn" id="btn13"  type="button">R </button>
+        <button class="btn" id="btn14"  type="button">E</button>
+        <button class="btn" id="btn15"  type="button">A</button>
+        <button class="btn" id="btn16"  type="button">B</button>
+
+        <button class="btn" id="btn17"  type="button">T </button>
+        <button class="btn" id="btn18"  type="button">O</button>
+        <button class="btn" id="btn19"  type="button">A</button>
+        <button class="btn" id="btn20"  type="button">G</button>
+
+        <button class="btn" id="btn21"  type="button">D </button>
+        <button class="btn" id="btn22"  type="button">R</button>
+        <button class="btn" id="btn23"  type="button">E</button>
+        <button class="btn" id="btn24"  type="button">E</button>
+
+        <button class="btn" id="btn25"  type="button">I </button>
+        <button class="btn" id="btn26"  type="button">F</button>
+        <button class="btn" id="btn27"  type="button">H</button>
+        <button class="btn" id="btn28"  type="button">S</button>
+
+        <button class="btn" id="btn29"  type="button">S </button>
+        <button class="btn" id="btn30"  type="button">A</button>
+        <button class="btn" id="btn31"  type="button">W</button>
+        <button class="btn" id="btn32"  type="button">N</button>
+
+        <button class="btn" id="btn33"  type="button">C </button>
+        <button class="btn" id="btn34"  type="button">K</button>
+        <button class="btn" id="btn35"  type="button">O</button>
+        <button class="btn" id="btn36"  type="button">U</button>
+
+        <button class="btn" id="btn37"  type="button">R</button>
+        <button class="btn" id="btn38"  type="button">A</button>
+        <button class="btn" id="btn39"  type="button">C</button>
+        <button class="btn" id="btn40"  type="button">B</button>
+        
+
+
+
+        
+                                
+            
         </div>
         
       </td><td>      
@@ -35,34 +95,351 @@
            
             <div id="frame2">
             </div>
-
+    </td>
+    
+  </tr>
+  <tr>
+    <td colspan="2" height="200px">
+      <input  id="btnNext"  value="next"  type="button">
     </td>
   </tr>
 </table>
    
 
 
-    
-
-
-
-
-
     <script>
 
+    
 
-function moveButton(frm){
-    if( $(frm).parent().attr("id") == "frame1" ){
-        $(frm).detach().appendTo('#frame2');
-
-    }
-    else{
-        $(frm).detach().appendTo('#frame1'); 
-    }
-}
+var arr=[];
+var count=0;
 
 
-  
+var word=["DUCK","GOAT","LION","BEAR","CRAB","CROW","DEER","SWAN","FISH","PUMA"];
+
+    var letter1=["D","U","C","K"]; 
+   
+    var letter2=["G","O","A","T"];
+
+    var letter3=["L","I","O","N"];
+
+    var letter4=["B","E","A","R"];
+
+    var letter5=["C","R","A","B"];
+
+    var letter6=["C","R","O","W"];
+
+    var letter7=["D","E","E","R"];
+
+    var letter8=["S","W","A","N"];
+
+    var letter9=["F","I","S","H"];
+
+    var letter10=["P","U","M","A"];
+
+
+
+$("#btn1").click(function(){
+
+$("#btn1").appendTo("#frame2");
+  arr[count]="O";
+
+});
+
+$("#btn2").click(function(){
+
+$("#btn2").appendTo("#frame2");
+arr[count]="L";
+
+});
+
+
+$("#btn3").click(function(){
+
+$("#btn3").appendTo("#frame2");
+arr[count]="N";
+
+});
+
+$("#btn4").click(function(){
+
+$("#btn4").appendTo("#frame2");
+arr[count]="I";
+
+});
+
+$("#btn5").click(function(){
+
+$("#btn5").appendTo("#frame2");
+arr[count]="M";
+
+});
+
+$("#btn6").click(function(){
+
+$("#btn6").appendTo("#frame2");
+arr[count]="P";
+
+});
+
+$("#btn7").click(function(){
+
+$("#btn7").appendTo("#frame2");
+arr[count]="A";
+
+});
+
+$("#btn8").click(function(){
+
+$("#btn8").appendTo("#frame2");
+arr[count]="U";
+
+});
+
+$("#btn9").click(function(){
+
+$("#btn9").appendTo("#frame2");
+arr[count]="C";
+
+});
+
+$("#btn10").click(function(){
+
+$("#btn10").appendTo("#frame2");
+arr[count]="W";
+
+});
+
+$("#btn11").click(function(){
+
+$("#btn11").appendTo("#frame2");
+arr[count]="O";
+
+});
+
+$("#btn12").click(function(){
+
+$("#btn12").appendTo("#frame2");
+arr[count]="R";
+
+});
+
+$("#btn13").click(function(){
+
+$("#btn13").appendTo("#frame2");
+arr[count]="R";
+
+});
+
+$("#btn14").click(function(){
+
+$("#btn14").appendTo("#frame2");
+arr[count]="E";
+
+});
+
+$("#btn15").click(function(){
+
+$("#btn15").appendTo("#frame2");
+arr[count]="A";
+
+});
+
+$("#btn16").click(function(){
+
+$("#btn16").appendTo("#frame2");
+arr[count]="B";
+
+});
+
+$("#btn17").click(function(){
+
+$("#btn17").appendTo("#frame2");
+arr[count]="T";
+
+});
+
+$("#btn18").click(function(){
+
+$("#btn18").appendTo("#frame2");
+arr[count]="O";
+
+});
+
+$("#btn19").click(function(){
+
+$("#btn19").appendTo("#frame2");
+arr[count]="A";
+
+});
+
+$("#btn20").click(function(){
+
+$("#btn20").appendTo("#frame2");
+arr[count]="G";
+
+});
+
+$("#btn21").click(function(){
+
+$("#btn21").appendTo("#frame2");
+arr[count]="D";
+
+});
+
+$("#btn22").click(function(){
+
+$("#btn22").appendTo("#frame2");
+arr[count]="R";
+
+});
+
+$("#btn23").click(function(){
+
+$("#btn23").appendTo("#frame2");
+arr[count]="E";
+
+});
+
+$("#btn24").click(function(){
+
+$("#btn24").appendTo("#frame2");
+arr[count]="E";
+
+});
+
+$("#btn24").click(function(){
+
+$("#btn25").appendTo("#frame2");
+arr[count]="I";
+
+});
+
+$("#btn26").click(function(){
+
+$("#btn26").appendTo("#frame2");
+arr[count]="F";
+
+});
+
+$("#btn27").click(function(){
+
+$("#btn27").appendTo("#frame2");
+arr[count]="H";
+
+});
+
+$("#btn28").click(function(){
+
+$("#btn28").appendTo("#frame2");
+arr[count]="S";
+
+});
+
+$("#btn29").click(function(){
+
+$("#btn29").appendTo("#frame2");
+arr[count]="S";
+
+});
+
+$("#btn30").click(function(){
+
+$("#btn30").appendTo("#frame2");
+arr[count]="A";
+
+});
+
+$("#btn31").click(function(){
+
+$("#btn31").appendTo("#frame2");
+arr[count]="W";
+
+});
+
+$("#btn32").click(function(){
+
+$("#btn32").appendTo("#frame2");
+arr[count]="N";
+
+});
+
+$("#btn33").click(function(){
+
+$("#btn33").appendTo("#frame2");
+arr[count]="C";
+
+});
+
+$("#btn34").click(function(){
+
+$("#btn34").appendTo("#frame2");
+arr[count]="K";
+
+});
+
+$("#btn35").click(function(){
+
+$("#btn35").appendTo("#frame2");
+arr[count]="O";
+
+});
+
+$("#btn36").click(function(){
+
+$("#btn36").appendTo("#frame2");
+arr[count]="U";
+
+});
+
+$("#btn37").click(function(){
+
+$("#btn37").appendTo("#frame2");
+arr[count]="R";
+
+});
+
+$("#btn38").click(function(){
+
+$("#btn38").appendTo("#frame2");
+arr[count]="A";
+
+});
+
+$("#btn39").click(function(){
+
+$("#btn39").appendTo("#frame2");
+arr[count]="C";
+
+});
+
+$("#btn40").click(function(){
+
+$("#btn40").appendTo("#frame2");
+arr[count]="B";
+
+});
+
+
+
+
+var slideCount=0;
+      $("#btnNext").click(function(){
+
+        if(count==0)
+        {
+          
+
+        }
+
+
+
+          
+        
+         
+        
+         
+      });
 
 
 
