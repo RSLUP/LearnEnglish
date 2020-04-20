@@ -529,8 +529,6 @@ function timeStart()
     mins++;
     if (mins === 15){
       clearInterval(interval1);
-     // document.getElementById('mins').innerHTML='Done';
-      // or...
       alert("You're out of time!");
     }
   }, 60000);
