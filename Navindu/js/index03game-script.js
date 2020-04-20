@@ -185,7 +185,11 @@ function mainProcess(){
         }
         else if(score==20){
             clearInterval(game);
-            //modal
+            modal.style.display="block";
+            modalTitle.innerHTML="You Win!";
+            modalBody.innerHTML="Well done!<br><p style='font-size:100px;margin:-15px'>&#128548</p>";
+            button.innerHTML="Play Again";
+            button.addEventListener("click",restartfunction);
         }
         
     }
@@ -201,12 +205,18 @@ function mainProcess(){
     if(snakeX < 0 || snakeX > 19*tile || snakeY < 0 || snakeY > 19*tile || dead(newHead,snake)){
         clearInterval(game);
         modal.style.display="block";
+        modalTitle.innerHTML="You Lose!";
+        modalBody.innerHTML="You killed the snake.<br><p style='font-size:100px;margin:-15px'>&#128557</p>";
+        button.innerHTML="Restart";
         button.addEventListener("click",restartfunction);
     }
 
     if(snakeX == wrongFood.x && snakeY == wrongFood.y){
         clearInterval(game);
         modal.style.display="block";
+        modalTitle.innerHTML="You Lose!";
+        modalBody.innerHTML="You ate the wrong food.<br><p style='font-size:100px;margin:-15px'>&#128557</p>";
+        button.innerHTML="Restart";
         button.addEventListener("click",restartfunction);
     }
 
@@ -219,6 +229,9 @@ let game;
 
 var modal = document.getElementById("Modal");
 var button = document.getElementById("button");
+var modalTitle = document.getElementById("modalTitle");
+var modalBody = document.getElementById("modalBody");
+
 
 function instructions(){
     modal.style.display="block";

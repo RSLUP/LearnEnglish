@@ -13,7 +13,7 @@ body{
 }
   
 canvas{
-    border: 5px solid red;
+    border: 8px solid maroon;
     display: block;
     margin: 0 auto;
 }
