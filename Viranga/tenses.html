@@ -1,708 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		
+		<script src="https://kit.fontawesome.com/717367e0a7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>LearnEnglish - Tenses</title>
+	</head>
+	<body onload="runFirst()">
+		<header class="myHeader">
+			<div class="logo-container">
+				<img src="./img/le-logo.png" alt="logo" onclick="mainPage()"/>
+				<h4><a  class="logo" href="index.html">LearnEnglish</a> </h4>
+			</div>
 
-<html>
-    <head>
-        <meta charset="UTF - 8" name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!--add title-->
-        <title>LearnEnglish-Tenses</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-quiz.css">
-        
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					
+					<li><a href="#">Learn more <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="speech.html">&#10097 8 Parts of Speech</a></li>
+							<li><a href="tenses.html">&#10097 12 Verb Tenses</a></li>
+								
+						</ul>
+					</li>
 
-    
-    </head>
-    <body onload="runFirst()">
-        
-        <div id="page">
-            <div class = "content">
-                <header id="header">
-                    <div id="header-inner">	
-                        <div id="logo">
-                            <h1><a>Learn<span>English</span></a></h1>
-                        </div>
-                        
-                        <div class="clr"></div>
-                        
-                        </div>
-                </header>
-                <div class="dropdown">
-                    <button class="dropbtn">Learn More &#10097</button>
-                    <div class="dropdown-content">
-                        <a href="speech.html">&#10097 8 Parts of Speech</a>
-                        <a href="tenses.html">&#10097 12 Verbs Tenses</a>
-                     
-                    </div>
-                </div> 
-                <div class="dropdown">
-                    <button class="dropbtn">Take a Quiz &#10097</button>
-                    <div class="dropdown-content">
-                        <a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a>
-                        <a href="quiz-tenses.html">&#10097 Quiz on 12 Verbs Tenses</a>
-                    
-                    </div>    
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Games &#10097</button>
-                    <div class="dropdown-content">
-                        <a href="hide&seek.html">&#10097 Hide & Seek</a>
-                       
-                     
-                    </div>
-                </div> 
-
-  
-                <div class="dropdown">
-                    <button class="dropbtn">Profile &#10097</button>
-                    <div class="dropdown-content">
-                        <a  onclick="details()">&#10097 User Details</a>
-                        <a  onclick="logout()">&#10097 Log out</a>
-                    </div>
-                </div> 
-                <!--logging details screen-->
-                
-                <!---->
-                <!--<img src="img/logout.png" alt="logout" class="logout" onclick="logout()">
-                <p class="dayShow">Login details - <span class ="day"></span></p>-->   
-        
-            </div>
-        </div>
+					<li><a href="#">Take a Quiz <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a></li>
+							<li><a href="quiz-tenses.html">&#10097 Quiz on 12 Verb Tenses</a></li>
+								
+						</ul>
+					</li>
+		
+					<li><a href="#">Games <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="hide&seek.html">&#10097 Hide & Seek</a></li>
+							<li><a href="catch-eggs.html">&#10097 Catch Eggs</a></li>
+						</ul>
+					</li>
+				</ul>
+				
 
 
-        <div id="page">
-            <div class = "content">         
-                
-                <div class="feature">
-                    <div class="feature-inner">
-                        
-                            <h1 style="text-align:center"><a target name = "speech">THE 12 VERB TENSES IN <span>ENGLISH</span></a></h1>
-                    
-                    </div>
-                </div>
-                <div class="clr"></div>
-                <div id = "para">
-                    <p>Verb tenses identify the time period when an action occurs. The verb walks communicates not only how many people completed the action (it’s singular), but also when it occurred. In this case, the tense is present. The person walks right now.</p>
+
+
+			</nav>
+
+
+
+
+
+
+			<div class="avatar">
+				<i class="fas fa-user" onclick="profile()"><span class="display-label">Profile</span></i>
+				
+
+                <i class="fas fa-sign-out-alt" onclick="logout()"><span class="display-label">Log Out</span></i>
+
+			</div>
+		</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+		<main>
+            	<!--profile details-->
+			<section class="profile-details">
+				<div class="profile-outer">
+					<div class="close">
+						<i class="fas fa-times" onclick="exitUd()"></i>
+					</div>
+					<div class="profile-container">
+						
+						<img class="p-img" src="./img/profile.svg" alt="">
+						<div class="profile-cont">
+							<h1>Hi, <span class="uname"></span></h1>
+							<br>
+							<img class="profile-img" src="./img/avatar.png" alt="avatar" />
+							
+							<h4>Name : <span class="uname2"></span></h4>
+							<h4>Logging Time : <span class="utime"></span></h4>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</section>
+			
+	
+			<!--back circles-->
+			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
+			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
+			
+
+
+			<!--heading content-->
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>THE 12 VERB TENSES IN ENGLISH</h1>
+						
+						<p>Verb tenses identify the time period when an action occurs. The verb walks communicates not only how many people completed the action (it’s singular), but also when it occurred. In this case, the tense is present. The person walks right now.</p>
                     <p>Interestingly, not all languages treat verb tenses the same way. In English, the ending on a verb communicates what tense it’s in. (Walk becomes walks and walked.) In some cases, an auxiliary verb is required as well.</p>
-                    <p>To better understading use our previous lesson on <a href ="Speech.html" target = "blank">8 parts of speech</a>.</p>
-                    <div class="row">
-                        <div class="column2">
-                            <br>
-                            <img src="img/teacher.png" alt="teacher teaches"  class="center">
-                        </div>
-                        <div class="column2">
-                            <p>Before we begin, here’s a list of the 12 verb tenses in English:</p>
-                            <div class ="tense">Present Simple Tense</div>
-                            <div class ="tense">Present Continuous/Progressive Tense</div>
-                            <div class ="tense">Present Perfect Tense</div>
-                            <div class ="tense">Present Perfect Continuous/Progressive Tense</div>
-                            <div class ="tense">Past Simple Tense</div>
-                            <div class ="tense">Past Continuous/Progressive Tense</div>
-                            <div class ="tense">Past Perfect Tense</div>
-                            <div class ="tense">Past Perfect Continuous/Progressive Tense</div>
-                            <div class ="tense">Future Simple Tense</div>
-                            <div class ="tense">Future Perfect Tense</div>
-                            <div class ="tense">Future Continuous/Progressive</div>
-                            <div class ="tense">Future Perfect Continuous/Progressive Tense</div>
-                        </div>
-                    </div>
-                    
-                    <p>Click on following tabs to Learn tenses</p>
-                </div>
-                
-                <div class="clr"></div>
-                <!-- Tab links -->
-                <button class="tablink" onclick="openPage('Simple', this, 'rgb(97, 37, 37)')">Simple</button>
-                <button class="tablink" onclick="openPage('Continuous', this, 'rgb(49, 110, 49)')">Continuous</button>
-                <button class="tablink" onclick="openPage('Perfect', this, 'rgb(65, 65, 134)')">Perfect</button>
-                <button class="tablink" onclick="openPage('PerfectContinuous', this, 'rgb(122, 124, 6)')">Perfect Continuous</button>
-
-
-                
-                <!-- add Simple Tense -->
-
-
-                <div id="Simple" class="tabcontent">
-                    <div id="subheads">
-                        <h1>Simple Tense</h1>
-                    </div>
-                    <div id="para">
-                        <p><strong>Simple tense definition:</strong> <br>The simple tense is a tense in English with no aspect that expresses actions occurring in the past, present, and future.</p>
-                        
-                        <hr>
-                        <!-- add Simple Past Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Simple Past Tense &#12336</h3>
-                        </div>  
-                        <p>The simple past tense (also called the past tense) is used to express actions that are completed at any time (recent or distant past) or for any duration (length of event).</p>
-                        <p>For regular verbs, add “-ed” to the end of the verb to create the simple past tense.</p>
-                        
-                        <ul>
-                            <li>I: jumped</li>
-                            <li>you (singular) : jumped</li>
-                            <li>he/she/it: jumped</li>
-                            <li>we: jumped</li>
-                            <li>you (plural): jumped</li>
-                            <li>they: jumped</li>
-                        </ul>
-                        <!-- create two columns -->
-                        <div class="row">
-                            <div class="column2">
-                                <h4>Usage</h4>
-                                <p>&#10004 Describe an action already completed.</p>
-                                <ul>
-                                    <li>I  <em>went</em>  to Egypt in 2010</li>
-                                </ul>
-                                <p>&#10004 Can be used with or without adverbs of time.</p>
-                                <ul>
-                                    <li>He  <em>drank</em>  his wiskey almost bottoms up</li>
-                                </ul>
-                                <p>Simple past tense used in sentences:</p>
-                                <ul>
-                                    <li>My voice  <em>echoed</em>  in the cavern.</li>
-                                    <li>Garry  <em>walked</em>  to the park after he <em>finished</em> his meal.</li>
-                                    <li>We  <em>shared</em>  our meal with strangers.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                               
-                                        <img src="img/egypt.png" alt="egypt pyramids" class="center">
-                                       
-                                    
-                                
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <!-- add Simple Present Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Simple Present Tense &#12336</h3>
-                        </div>
-                        <p>The simple present tense (all called the present tense) is used to express action that is happening in the present, now, relative to the speaker or writer.</p>
-                        <p>The simple present is generally used for actions that are factual, normal, or regular in occurrence, sometimes called habitual actions. Habitual actions are actions that occur in the present but are not necessarily happening right now.</p>
-                        <ul>
-                            <li>I: jump</li>
-                            <li>you (singular) : jump</li>
-                            <li>he/she/it: jumps</li>
-                            <li>we: jump</li>
-                            <li>you (plural): jump</li>
-                            <li>they: jump</li>
-                        </ul>
-                        <div class="row">
-                            <div class="column2">
-                                <div class="row">
-                                    <br>
-                                    <br>
-                                    <img src="img/plane.gif" alt="plane arrives" class="center">
-                                    
-                                </div>
-                            </div>
-                            <div class="column2">
-                                <h4>Usage</h4>
-                                <p>&#10004 Express habit or general thruth.</p>
-                                <ul>
-                                    <li>I  <em>'m '</em>  twenty-nine years old.</li>
-                                </ul>
-                                <p>&#10004 Describe a future event as part of a plan or arrangment.</p>
-                                <ul>
-                                    <li>The plane  <em>arrives</em> at 9pm today.</li>
-                                </ul>
-                                <p>Simple present tense used in sentences:</p>
-                                <ul>
-                                    <li>She <em>bites</em> her nails. (habit)</li>
-                                    <li>Do not <em>bite</em> your nails. (direction/instruction)</li>
-                                    <li>Skunks <em>smell</em> (general truth)</li>
-                                    <li>I <em>live</em> in San Francisco. (unchanging situation)</li>
-                                    <li>We <em>love</em> chocolate cake. (unchanging situation)</li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-
-                        <hr>
-
-                        <!-- add Simple Future Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Simple Future Tense &#12336</h3>
-                        </div>
-                        <p>The simple future tense (also called the future tense) is used to express action that will certainly occur at any time later than now.<br>Add “will” or “shall” before the first person present conjugated verb to create the simple future tense.</p>
-                        <ul>
-                            <li>I: will jump</li>
-                            <li>you (singular): will jump</li>
-                            <li>he/she/it: will jump</li>
-                            <li>we: will jump</li>
-                            <li>you (plural): will jump</li>
-                            <li>they: will jump</li>
-                        </ul>
-                        <div class="row">
-                            <div class="column2">
-                                <h4>Usage</h4>
-                                <p>&#10004 Express an action or circumstance which hasn't taken place yet.</p>
-                                <ul>
-                                    <li>I  <em>will meet</em> him tomorrow.</li>
-                                </ul>
-                                <p>Simple future tense used in sentences:</p>
-                                <ul>
-                                    <li>They <em>will go</em> to New York tomorrow.</li>
-                                    <li>You <em>shall see</em> a play this fall.</li>
-                                    <li>I <em>will walk</em> to school tomorrow.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/meeting.gif" alt="meeting of two person" class="center">
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- embed youtube video -->
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/video-simple.png" alt="video" class="center">
-                            </div>
-                            <div class="column2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/M6_JlXYTEXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                            </div>
-                        </div>
-                            
-                        <hr>
-                        <div id="subheads">
-                            <h1>SUMMARY</h1>
-                        </div>
-                        
-                        <!-- create 3 column -->
-                        <div class="row">
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Simple Past Tense</h3>  
-                                <ul>
-                                    <li>I: jumped</li>
-                                    <li>you (singular) : jumped</li>
-                                    <li>he/she/it: jumped</li>
-                                    <li>we: jumped</li>
-                                    <li>you (plural): jumped</li>
-                                    <li>they: jumped</li>
-                                </ul>
+                    <p>To better understading use our previous lesson on 8 parts of speech.</p>
+					</div>
+					<div class="cta">
+						<button class="cta-style"  ><a href="speech.html" target ="_blank">8 Parts of Speech</a></button>
+						
+					</div>
+				</div>
+				<div class="cover">
+					<img src="./img/teaching.svg" alt="teaching" />
+				</div>
+            </section>
+           
         
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Simple Present Tense</h3>
-                                <ul>
-                                    <li>I: jump</li>
-                                    <li>you (singular) : jump</li>
-                                    <li>he/she/it: jumps</li>
-                                    <li>we: jump</li>
-                                    <li>you (plural): jump</li>
-                                    <li>they: jump</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                
-                                <h3 style = "text-align: center;">Simple Future Tense</h3>
-                                <ul>
-                                    <li>I: will jump</li>
-                                    <li>you (singular): will jump</li>
-                                    <li>he/she/it: will jump</li>
-                                    <li>we: will jump</li>
-                                    <li>you (plural): will jump</li>
-                                    <li>they: will jump</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr style ="border-top: 5px solid rgb(255, 255, 255); border-radius: 5px;">
+            <!--content-->
+			<section class="presentation scroll">
+                <div class="cover scroll">
+					<img src="./img/teacher.png" alt="teaching" />
+				</div>
+				<div class="introduction scroll">
+					<div class="intro-text">
+						<h1>Here the List of them</h1>
+						<p>Before we begin, here’s a list of the 12 verb tenses in English:</p>
+						
+						<h3>Simple Tense</h3>
+						<div class ="tense continuous">Simple Past Tense</div>
+                        <div class ="tense continuous">Simple Present Tense</div>
+						<div class ="tense continuous">Simple Future Tense</div>
+
+							<br>
+						<h3>Continuous Tense</h3>
+
+                        <div class ="tense continuous">Past Continuous Tense</div>
+                        <div class ="tense continuous">Present Continuous Tense</div>
+						<div class ="tense continuous">Future Continuous Tense</div>
+						<br>
+						<h3>Perfect Tense</h3>
+
+                        <div class ="tense perfect">Past Perfect Tense</div>
+                        <div class ="tense perfect">Present Perfect Tense</div>
+						<div class ="tense perfect">Future Perfect Tense</div>
+						<br>
+						<h3>Perfect Continuous Tense</h3>
+
+                        <div class ="tense perfeccont">Past Perfect Continuous Tense</div>
+                        <div class ="tense perfeccont">Present Perfect Continuous Tense</div>
+                        <div class ="tense perfeccont">Future Perfect Continuous Tense</div>
+						
+						<br>
+						<p>Click following tabs to learn more <i class="fas fa-angle-down"></i></p>
+						<br>
+						
+						
+					</div>
+				</div>
+		
+			</section>
+			
+			
+			
+			<!-- Tabs -->
+
+
+
+			<div class="tab">
+				<button class="tablinks" onclick="openTab(event, 'Simple')">Simple Tense</button>
+				<button class="tablinks" onclick="openTab(event, 'Continuous')">Continuous Tense</button>
+				<button class="tablinks" onclick="openTab(event, 'Perfect')">Perfect Tense</button>
+				<button class="tablinks" onclick="openTab(event, 'pc')">Perfect Continuous Tense</button>
+			</div>
+			  
+			  <!-- Tab content -->
+
+
+
+			<!-- Simple Tense -->
+
+
+			<div id="Simple" class="tabcontent">
+
+
+				<section class="presentation2 scroll">
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h1>Simple Tense</h1>
+							
+							<p>Simple tense definition:<br>
+								The simple tense is a tense in English with no aspect that expresses actions occurring in the past, present, and future.</p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#simplepasttense">Simple Past Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#simplepresenttense">Simple Present Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#simplefuturetense">Simple Future Tense <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="cover">
+						<img src="./img/simple-t.svg" alt="simple tense" />
+					</div>
+					
+				</section>
+
+				
+
+					<!-- simplepasttense -->
+
+				<p class="content-hidden"><a target name = "simplepasttense">simplepresenttense</a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Simple Past Tense</h2>
+							
+							<p>The simple past is a verb tense use to talk about things or situations which happened in the past, that is, before the present time of speaking.</p>
+							<br>
+							<br>
+							<p>Form : <strong>((I/he/she/it) + infinitive + -ed</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#simplepasttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Action finished in the past, 
+							mostly connected with an expression of time (no connection to the present)</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "simplepasttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I worked.</p>
+							<p>He worked.</p>
+							<p>I went.</p>
+							<p>He went.</p>		
+									
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I didn't work.</p>
+							<p>He didn't work.</p>
+							<p>I didn't go.</p>
+							<p>He didn't go.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Did I work?</p>
+							<p>Did he work?</p>
+							<p>Did I go?</p>
+							<p>Did he go?</p>
+						</div>
+					</div>
+				</section>
+
+				<hr class="content-hr">
+
+				<!-- simplepresenttense -->
+
+				<p class="content-hidden"><a target name = "simplepresenttense">simplepresenttense</a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Simple Present Tense</h2>
+							
+							<p>The simple present is a verb tense with two main uses. We use the simple present tense when an action is happening right now, or when it happens regularly.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(hI/e/she/it) + infinitive + -s</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#simplepresenttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> something happens repeatedly<br>
+								<i class="fas fa-angle-right"></i></a> How often something happens<br>
+								<i class="fas fa-angle-right"></i></a> Things in general<br>
+								<i class="fas fa-angle-right"></i></a> things in general<br>
+								<i class="fas fa-angle-right"></i></a> With the following verbs (to love, to hate, to think, etc.)<br>
+								<i class="fas fa-angle-right"></i></a> Future meaning: timetables, programmes</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "simplepresenttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I work.</p>
+							<p>He works.</p>
+							<p>I go.</p>
+							<p>He goes.</p>
+							
+							
+								
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I don't work..</p>
+							<p>He doesn't work.</p>
+							<p>I don't go.</p>
+							<p>He doesn't go.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Do I work?</p>
+							<p>Does he work?</p>
+							<p>Do I go?</p>
+							<p>Does he go?</p>
+						</div>
+					</div>
+				</section>
+				
+				<hr class="content-hr">
+
+				<!-- simplefuturetense -->
+
+				<p class="content-hidden"><a target name = "simplefuturetense"></a><simplefuturetense/p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Simple Future Tense</h2>
+							
+							<p>The simple present is a verb tense with two main uses. We use the simple present tense when an action is happening right now, or when it happens regularly.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + will + infinitive</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#simplefuturetenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Action in the future that cannot be influenced<br>
+								<i class="fas fa-angle-right"></i></a> Spontaneous decision<br>
+								<i class="fas fa-angle-right"></i></a> Assumption with regard to the future</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "simplefuturetenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I'll work.</p>
+							<p>He'll work.</p>
+							<p>I'll go.</p>
+							<p>He'll go.</p>
+									
+		
+		
+	
+							
+								
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I won't work.</p>
+							<p>He won't work.</p>
+							<p>I won't go.</p>
+							<p>He won't go.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Will I work?</p>
+							<p>Will he work?</p>
+							<p>Will I go?</p>
+							<p>Will he go?</p>
+						</div>
+					</div>
+				</section>
+
+				
+
+
+
+
+			</div>
+
+
+
+
+			<!------------------------------------------------------------------------------------------->
+			
+			<!-- Continuous Tense -->
+
+
+			<div id="Continuous" class="tabcontent">
+
+				<section class="presentation2 scroll">
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h1>Continuous Tense</h1>
+							
+							<p>The continuous tense shows an action that is, was, or will be in progress at a certain time.<br>
+								The continuous tense is formed with the verb ‘be’ + -ing form of the verb.</p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#pastcontinuoustense">Past Continuous Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#presentcontinuoustense">Present Continuous Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#futurecontinuoustense">Future Continuous Tense <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="cover">
+						<img src="./img/continuous-t.svg" alt="continuous tense" />
+					</div>
+					
+				</section>
+
+
+
+				<!-- Past Continuous Tense -->
+
+
+				<p class="content-hidden"><a target name = "pastcontinuoustense"></a>pastcontinuoustense</p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Past Continuous Tense</h2>
+							
+							<p>The past continuous tense, also known as the past progressive tense, refers to a continuing action or state that was happening at some point in the past.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + was/were + infinitive + -ing</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#pastcontinuoustenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> An action happened in the middle of another action<br>
+								<i class="fas fa-angle-right"></i></a> Someone was doing sth. at a certain time (in the past) - you do not know whether it was finished or not</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "pastcontinuoustenseexamples">pastcontinuoustense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I was working.</p>
+							<p>He was working.</p>
+							<p>I was going.</p>
+							<p>He was going.</p>
+							
+						
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I wasn't working.</p>
+							<p>He wasn't working.</p>
+							<p>I wasn't going.</p>
+							<p>He wasn't going.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Was I working?</p>
+							<p>Was he working?</p>
+							<p>Was I going?</P>
+							<P>Was he going?</p>
+						</div>
+					</div>
+				</section>
+
+
+
+				<!-- Present Continuous Tense  -->
+				<p class="content-hidden"><a target name = "presentcontinuoustense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Present Continuous Tense</h2>
+							
+							<p>The present continuous verb tense indicates that an action or condition is happening now, frequently, and may continue into the future.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + (am/are/is) + infinitive + -ing</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#presentcontinuoustenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Something is happening at the same time of speaking or around it<br>
+								<i class="fas fa-angle-right"></i></a> Future meaning: when you have already decided and arranged to do it (a fixed plan, date)</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "presentcontinuoustenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I'm working.</p>
+							<p>He's working.</p>
+							<p>I'm going.</p>
+							<p>He's going.</p>
+					
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I'm not working.</p>
+							<p>He isn't working.</p>
+							<p>I'm not going.</p>
+							<p>He isn't going.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Am I working?</p>
+							<p>Is he working?</p>
+							<p>Am I going?</p>
+							<p>Is he going?</p>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- future continuous tense -->
+				<p class="content-hidden"><a target name = "futurecontinuoustense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Future Continuous Tense</h2>
+							
+							<p>The future continuous tense, is a verb tense that indicates that something will occur in the future and continue for an expected length of time.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + will + be + infinitive + -ing</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#futurecontinuoustenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Action that is going on at a certain time in the future<br>
+								<i class="fas fa-angle-right"></i></a> Action that is sure to happen in the near future</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "futurecontinuoustenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I'll be working.</p>
+							<p>He'll be working.</p>
+							<p>I'll be going.</p>
+							<p>He'll be going.</p>
+								
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I won't be working.</p>
+							<p>He won't be working.</p>
+							<p>I won't be going.</p>
+							<p>He won't be going.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Will I be working?</p>
+							<p>Will he be working?</p>
+							<p>Will I be going?</p>
+							<p>Will he be going?</p>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+			
+
+			<!------------------------------------------------------------------------------------------->
+
+			<!-- Perfect Tense -->
+
+
+			<div id="Perfect" class="tabcontent">
+
+				<section class="presentation2 scroll">
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h1>Perfect Tense</h1>
+							
+							<p>The perfect form is the verb tense used to indicate a completed, or "perfected," action or condition. <br>
+								Verbs can appear in any one of three perfect tenses: present perfect, past perfect, and future perfect.<br>
+
+								Verbs in the perfect form use a form of "have" or "had" + the past participle. (It is the form of the helping verb that indicates the tense.)</p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#pastperfecttense">Past Perfect Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="presentperfecttense">Present Perfect Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#futureperfecttense">Future Perfect Tense <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="cover">
+						<img src="./img/perfect-t.svg" alt="perfect tense" />
+					</div>
+					
+				</section>
+				
+
+
+
+				<!--Past Perfect Tense  -->
+				<p class="content-hidden"><a target name = "pastperfecttense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Past Perfect Tense</h2>
+							
+							<p>The past perfect, is a verb tense used to talk about actions that were completed before some point in the past (something that happened before something else).</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + had + past participle</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#pastperfecttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Mostly when two actions in a story are related to each other: the action which had already happened is put into Past Perfect, the other action into Simple Past
+								<br>the past of Present Perfect</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "pastperfecttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I had worked.</p>
+							<p>He had worked.</p>
+							<p>I had gone.</p>
+							<p>He had gone.</p>
+									
+								
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I hadn't worked.</p>
+							<p>He hadn't worked.</p>
+							<p>I hadn't gone.</p>
+							<p>He hadn't gone.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Had I worked?</p>
+							<p>Had he worked?</p>
+							<p>Had I gone?</p>
+							<p>Had he gone?</p>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- presentperfecttense -->
+				<p class="content-hidden"><a target name = "presentperfecttense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Present Perfect Tense</h2>
+							
+							<p>The present perfect tense refers to an action or state that either occurred at an indefinite time in the past or began in the past and continued to the present time.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + have/has + past participle</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#presentperfecttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Express past action which is not definedby a time of occurance.<br>
+								<i class="fas fa-angle-right"></i></a> Express an action which started in the past and has continued up until now.</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "presentperfecttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I have worked.</p>
+							<p>He has worked.</p>
+							<p>I have gone.</p>
+							<p>He has gone.</p>
+									
+						
+						
+						
+							
+								
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I haven't worked.</p>
+							<p>He hasn't worked.</p>
+							<p>I haven't gone.</p>
+							<p>He hasn't gone.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Have I worked?</p>
+							<p>Has he worked?</p>
+							<p>Have I gone?</p>
+							<p>Has he gone?</p>
+						</div>
+					</div>
+				</section>
+
+
+
+				<!-- futureperfecttense -->
+				<p class="content-hidden"><a target name = "futureperfecttense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Future Perfect Tense</h2>
+							
+							<p>The future perfect tense is for talking about an action that will be completed between now and some point in the future.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + will + have + past participle</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#futureperfecttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a>Express an action that will be completed before another event takes place.</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "futureperfecttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I'll have worked.</p>
+							<p>He'll have worked.</p>
+							<p>I'll have gone.</p>
+							<p>He'll have gone.</p>
+							
+							
+									
+									
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I won't have worked.</p>
+							<p>He won't have worked.</p>
+							<p>I won't have gone.</p>
+							<p>He won't have gone.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Will I have worked?</p>
+							<p>Will he have worked?</p>
+							<p>Will I have gone?</p>
+							<p>Will he have gone?</p>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+			<!------------------------------------------------------------------------------------------->
+
+			<!-- Perfect Continuous Tense -->
+			<div id="pc" class="tabcontent">
+
+
+				<section class="presentation2 scroll">
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h1>Perfect Continuous Tense</h1>
+							
+							<p>Perfect progressive tenses often answer the question how long? There are three perfect progressive tenses: the present perfect progressive, the past perfect progressive, and the future perfect progressive.</p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#pastperfectconttense">Past Perfect Continuous Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#presentperfectconttense">Present Perfect Continuous Tense <i class="fas fa-angle-right"></i></a></button>								
+							
+								<button class="cta-style"><a href ="#efutureperfectconttense">Future Perfect Continuous Tense <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="cover">
+						<img src="./img/perfectcont-t.svg" alt="simple tense" />
+					</div>
+					
+				</section>
+
+
+								
+				<!-- Past Perfect Continuous Tense  -->
+				<p class="content-hidden"><a target name = "pastperfectconttense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Past Perfect Continuous Tense </h2>
+							
+							<p>For colloquial English, we don’t use past perfect continuous very often. But in text books, it’s a bit more common. This very tense has a complete action that happened before a second action. But in this case, you can describe how long.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + had + been + infinitive + ing</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#pastperfectconttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Describe an action in the past that began before a certain point in the past and continued up until that time.</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "pastperfectconttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I had been working.</p>
+							<p>He had been working.</p>
+							<p>I had been going.</p>
+							<p>He had been going.</p>
+							
+								
+								
+									
+								
+								
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I hadn't been working.</p>
+							<p>He hadn't been working.</p>
+							<p>I hadn't been going.</p>
+							<p>He hadn't been going.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Had I been working?</p>
+							<p>Had he been working?</p>
+							<p>Had I been going?</p>
+							<p>Had he been going?</p>
+						</div>
+					</div>
+				</section>
+
+
+
+
+
+
+				<!-- Present Perfect Continuous Tense -->
+				<p class="content-hidden"><a target name = "presentperfectconttense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Present Perfect Continuous Tense</h2>
+							
+							<p>In this verb tense, an action starts in the past but it’s still continuing now. You have been performing the action and still are performing the action in the present.</p>
+							<br>
+							<br>
+							<p>Form : <strong>Express an action which started at xome point in the past and may not be complete.</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#presentperfectconttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Express an action which started at xome point in the past and may not be complete.</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "presentperfectconttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I have been working.</p>
+							<p>He has been working.</p>
+							<p>I have been going.</p>
+							<p>He has been going.</p>
+
+							
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I haven't been working.</p>
+							<p>He hasn't been working.</p>
+							<p>I haven't been going.</p>
+							<p>He hasn't been going.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Have I been working?</p>
+							<p>Has he been working?</p>
+							<p>Have I been going?</p>
+							<p>Has he been going?</p>
+						</div>
+					</div>
+				</section>
+
+
+
+
+
+
+
+
+
+				<!--Future Perfect Continuous Tense  -->
+				<p class="content-hidden"><a target name = "efutureperfectconttense"></a></p>
+
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h2>Future Perfect Continuous Tense</h2>
+							
+							<p>An action will be continuing in the future when it is interrupted by another action. In this future verb tense, it often includes an indication of how long the action has been happening.</p>
+							<br>
+							<br>
+							<p>Form : <strong>(I/he/she/it) + will + have + been + infinitive + ing</strong></p>
+							<div class="cta">
+								<button class="cta-style"><a href ="#efutureperfectconttenseexamples">Examples <i class="fas fa-angle-right"></i></a></button>								
+							</div>
+						</div>
+						
+					</div>
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h4>Uses</h4>
+							
+							<p><i class="fas fa-angle-right"></i></a> Describe an action that will have not be complete yet at a certain point in the future.</p>
+						</div>
+						
+					</div>
+					
+				</section>
+
+				<p class="content-hidden"><a target name = "efutureperfectconttenseexamples">simplepresenttense</a></p>
+				<section class="presentation2 scroll">
+					
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Affirmative</h3>
+							<p>I'll have been working.</p>
+							<p>He'll have been working.</p>
+							<p>I'll have been going.</p>
+							<p>He'll have been going.</p>
+					
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Negative</h3>
+							<p>I won't have been working.</p>
+							<p>He won't have been working.</p>
+							<p>I won't have been going.</p>
+							<p>He won't have been going.</p>
+						</div>
+					</div>
+
+
+					<div class="introduction2 scroll">
+						<div class="intro-text">
+							<h3>Examples Interrogative</h3>
+							<p>Will I have been working?</p>
+							<p>Will he have been working?</p>
+							<p>Will I have been going?</p>
+							<p>Will he have been going?</p>
+						</div>
+					</div>
+				</section>
+
+
+
+			</div>
+
+
+			<!------------------------------------------------------------------------------------------->
+
+			<br>
+			<hr class="content-hr">
+
+
+
+
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>Summary of this lesson</h1>
+						
+					</div>
+				</div>
+				<div class="cover img-zoom">
+					<img src="./img/tense-summary.jpg" alt="summary of tenses" />
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- quiz -->
+
+			<hr class="content-hr">
+
+
+            <section class="presentation scroll">
+                
+                <div class="introduction scroll">
+					<div class="intro-text">
+						<h1>Would you like to take a Quiz </h1>
                     </div>
-                </div>
-
-
-                <!-- Continuous Tense -->
-
-
-                <div id="Continuous" class="tabcontent">
-                    <div id="subheads">
-                        <h1>Continuous Tense</h1>
-                    </div>
-                    <div id="para">
-                        <p>The continuous tense shows an action that is, was, or will be in progress at a certain time. The continuous tense is formed with the verb ‘be’ + -ing form of the verb.</p>
-                        
-                        <hr>
-                        <!-- add Past Continuous Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Past Continuous Tense &#12336</h3>
-                        </div>
-                        <p>The Present continuous can be used to show an action which is happening at the time of speaking.</p>
-                        <div class="row">
-                            <div class="column2">
-                                <h4>Usage</h4>
-                                <p>&#10004 Express uncompleted action of the past.</p>
-                                <ul>
-                                    <li>Everyone  <em>was shouting</em>.</li>
-                                </ul>
-                                <p>&#10004 Describe persistent habits of the past.</p>
-                                <ul>
-                                    <li>I  <em>was dojng</em> my homewrok all night</em>.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/homework.gif" alt="doing home work" class="center">
-                            </div>
-                        </div>
-
-                        <hr>
-
-                         <!-- add Present Continuous Tense -->
-                         <div id="h3">
-                            <h3>&#12336 Present Continuous Tense &#12336</h3>
-                        </div>  
-                        <p>The Past continuous can be used to show an action which was happening in the past. It is important to remember that the Past continuous is usually used to show an action which was happening when another action, which is usually shorter, happened at the same time, stopped the continuous action or started after the continuous action.</p>
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/car-driving.gif" alt="man driving a car" class="center">
-                            </div>
-                            <div class="column2">
-                            <h4>Usage</h4>
-                            <p>&#10004 Describe action going on at the time of speaking.</p>
-                            <ul>
-                                <li>They  <em>are swimming</em>in the pool.</li>
-                            </ul>
-                            <p>&#10004 Express temporary action which may not be happening at the time of speaking.</p>
-                            <ul>
-                                <li>John  <em>'s driving</em> his father's car while his own car is in the workshop.</li>
-                            </ul>
-                            </div>
-                        </div>
-                        <hr>
-                         <!-- add Future Continuous Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Future Continuous Tense &#12336</h3>
-                        </div>
-                        <p>The Future continuous is used to show that an action will be happening at a time in the future.</p>
-                        <div class="row">
-                            <div class="column2">
-                                <h4>Usage</h4>
-                                <p>&#10004 Express what will be going on at same time in the future.</p>
-                                <ul>
-                                    <li>I  <em>'ll be watching </em>TV once I am at home.</li>
-                                </ul>
-                                <p>&#10004 Express planned events.</p>
-                                <ul>
-                                    <li>This time next week I  <em>will be sun-bathing</em> in Boli.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/watchin-tv.gif" alt="watching tv" class="center">
-                            </div>
-                        </div>
-                        <hr>
-
-                        <!-- embed youtube video -->
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/video-continuous.png" alt="video" class="zoom">
-                            </div>
-                            <div class="column2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Q3gsHf0KBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <hr>
-                        <div id="subheads">
-                            <h1>SUMMARY</h1>
-                        </div>
-                        
-                        <!-- create 3 column -->
-                        <div class="row">
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Past Continuous Tense</h3>  
-                                <ul>
-                                    <li>He was having a shower when the phone rang.</li>
-                                    <li>He was running when I saw him yesterday.</li>
-                                    <li>I was watching a really good film when there was a power cut.</li>
-                                    <li>I was doing my homework all night.</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Present Continuous Tense</h3>  
-                                <ul>
-                                    <li>He is having a shower when the phone rang.</li>
-                                    <li>He is running when I saw him yesterday.</li>
-                                    <li>I am watching a really good film when there was a power cut.</li>
-                                    <li>I am doing my homework all night.</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Future Continuous Tense</h3>  
-                                <ul>
-                                    <li>He will be having a shower, so take the house keys when you go out.</li>
-                                    <li>He will be running when I saw him yesterday.</li>
-                                    <li>I will be watching a really good film when there was a power cut.</li>
-                                    <li>I will be doing my homework all night.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr style ="border-top: 5px solid rgb(255, 255, 255); border-radius: 5px;">
-                    </div>
-                </div>
-
-
-                <!-- Perfect Tense -->
-
-
-                <div id="Perfect" class="tabcontent">
-                    <div id="subheads">
-                        <h1>Perfect Tense</h1>
-                    </div>
-                    <div id="para">
-                        <p>The perfect form is the verb tense used to indicate a completed, or "perfected," action or condition. Verbs can appear in any one of three perfect tenses: present perfect, past perfect, and future perfect.</p>
-
-                        <p>Verbs in the perfect form use a form of "have" or "had" + the past participle. (It is the form of the helping verb that indicates the tense.)</p>
-                    
-                        <!-- add Past Perfect Tense -->
-                        <hr>
-                        <div id="h3">
-                            <h3>&#12336 Past Perfect Tense &#12336</h3>
-                        </div>
-                        <div class="row">
-                            <div class="column2">
-                                <P>This verb tense uses two actions at two different times. Before the second action occurs, the first action is complete.</P>
-                                <h4>Usage</h4>
-                                <p>&#10004 Describe a completed action of the past that happened before another event took place.</p>
-                                <ul>
-                                    <li>After he  <em>had finished</em> work, he went straight home.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/office.gif" alt="done office work" class="center">
-                            </div>
-                        </div>
-                        <hr>
-
-                        <!-- add Present Perfect Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Present Perfect Tense &#12336</h3>
-                        </div>
-                        <P>Although it’s easy to confuse this verb tense with present simple, the main difference is that the action is complete for present perfect. In other words, you are looking at the result right now without any words referring to time.</P>
-
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/shopping.png" alt="girl is going shopping" class="zoom">
-                            </div>
-                            <div class="column2">
-                        
-                                <h4>Usage</h4>
-                                <p>&#10004 Express past action which is not definedby a time of occurance.</p>
-                                <ul>
-                                    <li>Teresa isn't at home. I think she <em>has gone</em> shopping.</li>
-                                </ul>
-                                <p>&#10004 Express an action which started in the past and has continued up until now.</p>
-                                <ul>
-                                    <li>She <em>has worked</em> in the bank for five years.</li>
-                                </ul>
-                            </div>
-                        </div>
-                       
-                        <hr>
-                        <!-- add Future Perfect Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Future Perfect Tense &#12336</h3>
-                        </div>
-                        <div class="row">
-                            <div class="column2">
-                                <p>The FUTURE PERFECT TENSE indicates that an action will have been completed (finished or "perfected") at some point in the future. This tense is formed with "will" plus "have" plus the past participle of the verb (which can be either regular or irregular in form)</p>
-                                <h4>Usage</h4>
-                                <p>&#10004 Express an action that will be completed before another event takes place.</p>
-                                <ul>
-                                    <li>By the time I go home, I <em>will have </em> a cup of tea.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/tea.gif" alt="tea cup" class="zoom">
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- embed youtube video -->
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/video-perfect.png" alt="video" class="zoom">
-                            </div>
-                            <div class="column2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/33CtWOZdQdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <hr>
-                        <div id="subheads">
-                            <h1>SUMMARY</h1>
-                        </div>
-                        
-                        <!-- create 3 column -->
-                        <div class="row">
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Past Perfect Tense</h3>
-                                <ul>
-                                    <li>After Sofie had finished her work, she went to lunch.</li>
-                                    <li>I washed the floor when the painter had gone.</li>
-                                    <li>Harold had known about it for a while.</li>
-                                    <li>I didn't say anything until she had finished talking.</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Present Perfect Tense</h3>
-                                <ul>
-                                    <li>I have lost my purse.</li>
-                                    <li>We have seen this movie already.</li>
-                                    <li>He has broken his leg.</li>
-                                    <li>There has been an accident.</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Future Perfect Tense</h3>
-                                <ul>
-                                    <li>She will have cooked dinner.</li>
-                                    <li>He will have arrived.</li>
-                                    <li>We will have met Julie.</li>
-                                    <li>It will have stopped raining.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr style ="border-top: 5px solid rgb(255, 255, 255); border-radius: 5px;"> 
-                        
-                    </div>
-                </div>
-
-
-                <!-- Perfect Continuous Tense -->
-
-
-                <div id="PerfectContinuous" class="tabcontent">
-                    <div id="subheads">
-                        <h1>Perfect Continuous Tense</h1>
-                    </div>
-                    <div id="para">
-                        <p>Perfect progressive tenses often answer the question how long? There are three perfect progressive tenses: the present perfect progressive, the past perfect progressive, and the future perfect progressive.
-                        <hr>
-                        </p>
-                        <!-- add Past Perfect Continuous Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Past Perfect Continuous Tense &#12336</h3>
-                        </div>
-                        <div class="row">
-                            <div class="column2">
-                                <p>For colloquial English, we don’t use past perfect continuous very often. But in text books, it’s a bit more common. This very tense has a complete action that happened before a second action. But in this case, you can describe how long.</p>
-                                <h4>Usage</h4>
-                                <p>&#10004 Describe an action in the past that began before a certain point in the past and continued up until that time.</p>
-                                <ul>
-                                    <li>She <em> had been working</em> at that company for three years when it went out of business.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/office-girl.gif" alt="girl working in office" class="zoom">
-                            </div>
-                        </div>
-
-                        <hr>
-                        <!-- add Present Perfect Continuous Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Present Perfect Continuous Tense &#12336</h3>
-                        </div>
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/office.gif" alt="boy working in office" class="center">
-                            </div>
-                            <div class="column2">
-                                <p>In this verb tense, an action starts in the past but it’s still continuing now. You have been performing the action and still are performing the action in the present.</p>
-                                <h4>Usage</h4>
-                                <p>&#10004 Express an action which started at xome point in the past and may not be complete.</p>
-                                <ul>
-                                    <li>He <em> has been working</em> in office since he left school.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- add Future Perfect Continuous Tense -->
-                        <div id="h3">
-                            <h3>&#12336 Future Perfect Continuous Tense &#12336</h3>
-                        </div>
-                        <div class="row">
-                            
-                            <div class="column2">
-                                <p>An action will be continuing in the future when it is interrupted by another action. In this future verb tense, it often includes an indication of how long the action has been happening.</p>
-                                <h4>Usage</h4>
-                                <p>&#10004 Describe an action that will have not be complete yet at a certain point in the future.</p>
-                                <ul>
-                                    <li>I <em>will have been watching TV</em> for 3 hours when you arrives.</li>
-                                </ul>
-                            </div>
-                            <div class="column2">
-                                <img src="img/watchin-tv.gif" alt="bob watching tv" class="center">
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- embed youtube video -->
-                        <div class="row">
-                            <div class="column2">
-                                <img src="img/video-pc.png" alt="video" class="zoom">
-                            </div>
-                            <div class="column2">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lR_VTbBUT20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <hr>
-                        <div id="subheads">
-                            <h1>SUMMARY</h1>
-                        </div>
-                        <!-- create 3 column -->
-                        <div class="row">
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Past Perfect Continuous Tense</h3>
-                                <ul>
-                                    <li>I had been studying for 12 years by the time I graduated from high school.</li>
-                                    <li>She had been living there since she was a child.</li>
-                                    <li>He had been teaching for 12 years before he was certified.</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Present Perfect Continuous Tense</h3>
-                                <ul>
-                                    <li>I have been waiting for 20 minutes.</li>
-                                    <li>I have been studying since I was a child.</li>
-                                    <li>It has been snowing all day long.</li>
-                                </ul>
-                            </div>
-                            <div class="column3">
-                                <h3 style = "text-align: center;">Future Perfect Continuous Tense</h3>
-                                <ul>
-                                    <li>I will have been written articles on different topics before you come.</li>
-                                    <li>Robert will have been reading various kinds of books on this topic.</li>
-                                    <li>They will have been playing football in that field before you reach.</li>
-                                </ul>
-                            </div>
-                         
-                        </div>
-                        <hr style ="border-top: 5px solid rgb(255, 255, 255); border-radius: 5px;">
+                    <div class="cta">
+                        <button class="cta-style"><a href="quiz-tenses.html">Let's Go <i class="fas fa-angle-double-right"></i></a></button>
                     </div>
                 </div>
                 
-                <div id="h3">
-                    <h3>SUMMARY OF ALL TENSES</h3>
+                <div class="cover scroll">
+					<img src="./img/quiz.gif" alt="quiz" />
                 </div>
                 
-                <img src="img/summary.jpg" alt="summary of tenses" class="zoom">
-                <br>
-                <hr style ="border-top: 5px solid rgba(2, 0, 0, 0.425); border-radius: 5px; max-width: 1000px;">
+				
                 
-                <div class="row">
-                    <div class="column2">
-                        <br>
-                        <div id="h3"> <h3>Would you like to take a Quiz</h3></div>
-                        <div class ="toquiz"><a href="quiz-tenses.html">Let's Go</a> </div>
-                    </div>
-                    
-                    <div class="column2">
-                        <img src="img/quiz.gif" alt="summary of tenses" class="zoom">
-                    </div>
-                </div>
-                <footer>
-                    <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
-                </footer>    
-            </div>
-        </div>
-        
-        <script type="text/javascript" src="javascript/script.js"></script>
-    </body>
+          
+            </section>
 
+
+
+
+
+
+		</main>
+		
+
+
+		<footer class="footer">
+			<p><i class="far fa-copyright"></i> Copyrights Reserved | LearnEnglish </p>   
+		</footer> 
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js'></script>
+		<script type="text/javascript" src="javascript/script.js"></script>
+	</body>
 </html>

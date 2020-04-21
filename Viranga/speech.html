@@ -1,624 +1,637 @@
-<html> 
-    <head>
-        <meta charset="UTF - 8" name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!--add title-->
-        <title>LearnEnglish-Speech</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-quiz.css">
-        
-    
-   
-    <!--Start web page-->
-    </head>
-    <body onload="runFirst()">
-        
-    <div id="page">
-        <div class = "content">
-            <header id="header">
-                <div id="header-inner">	
-                    <div id="logo">
-                        <h1><a>Learn<span>English</span></a></h1>
-                    </div>
-                    <div class="clr"></div>
-                    </div>
-            </header>
-            <div class="dropdown">
-                <button class="dropbtn">Learn More &#10097</button>
-                <div class="dropdown-content">
-                    <a href="speech.html">&#10097 8 Parts of Speech</a>
-                    <a href="tenses.html">&#10097 12 Verbs Tenses</a>
-                 
-                </div>
-            </div> 
-            <div class="dropdown">
-                <button class="dropbtn">Take a Quiz &#10097</button>
-                <div class="dropdown-content">
-                    <a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a>
-                    <a href="quiz-tenses.html">&#10097 Quiz on 12 Verbs Tenses</a>
-                
-                </div>    
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Games &#10097</button>
-                <div class="dropdown-content">
-                    <a href="hide&seek.html">&#10097 Hide & Seek</a>
-                   
-                 
-                </div>
-            </div> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/717367e0a7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>LearnEnglish - Speech</title>
+	</head>
+	<body onload="runFirst()">
+		<header class="myHeader">
+			<div class="logo-container">
+				<img src="./img/le-logo.png" alt="logo" onclick="mainPage()"/>
+				<h4><a  class="logo" href="index.html">LearnEnglish</a> </h4>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					
+					<li><a href="#">Learn more <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="speech.html">&#10097 8 Parts of Speech</a></li>
+							<li><a href="tenses.html">&#10097 12 Verb Tenses</a></li>
+								
+						</ul>
+					</li>
+
+					<li><a href="#">Take a Quiz <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a></li>
+							<li><a href="quiz-tenses.html">&#10097 Quiz on 12 Verb Tenses</a></li>
+								
+						</ul>
+					</li>
+		
+					<li><a href="#">Games <i class="fa fa-caret-down"></i></a>
+						<ul>
+                            <li><a href="hide&seek.html">&#10097 Hide & Seek</a></li>
+                            <li><a href="catch-eggs.html">&#10097 Catch Eggs</a></li>
+						</ul>
+					</li>
+				</ul>
+				
 
 
-            <div class="dropdown">
-                <button class="dropbtn">Profile &#10097</button>
-                <div class="dropdown-content">
-                    <a  onclick="details()">&#10097 User Details</a>
-                    <a  onclick="logout()">&#10097 Log out</a>
-                </div>
-            </div> 
+
+
+			</nav>
+
+
+
+
+
+
+            <div class="avatar">
+				<i class="fas fa-user" onclick="profile()"><span class="display-label">Profile</span></i>
+				
+
+                <i class="fas fa-sign-out-alt" onclick="logout()"><span class="display-label">Log Out</span></i>
+
+			</div>
+		</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+		<main>
+            	<!--profile details-->
+			<section class="profile-details">
+				<div class="profile-outer">
+					<div class="close">
+						<i class="fas fa-times" onclick="exitUd()"></i>
+					</div>
+					<div class="profile-container">
+						
+						<img class="p-img" src="./img/profile.svg" alt="">
+						<div class="profile-cont">
+							<h1>Hi, <span class="uname"></span></h1>
+							<br>
+							<img class="profile-img" src="./img/avatar.png" alt="avatar" />
+							
+							<h4>Name : <span class="uname2"></span></h4>
+							<h4>Logging Time : <span class="utime"></span></h4>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</section>
+			
+	
+			<!--back circles-->
+			<img class="big-circle" src="./img/big-eclipse.svg" alt="" />
+			<img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
+			
+
+
+			<!--heading content-->
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>8 PARTS OF SPEECH</h1>
+						
+						<p>Being able to speak English is not just about being able to communicate with native English speakers, it is the most common second language in the world. Learning English is important as it enables you to communicate easily with your fellow global citizens.</p>
+                    </div>
+                    
+					<!-- <div class="cta">
+						<button class="cta-style"  ><a href="speech.html" target ="_blank">8 Parts of Speech</a></button>
+						
+					</div> -->
+				</div>
+				<div class="cover">
+					<img src="./img/speech.svg" alt="teaching" />
+				</div>
+            </section>
            
-          
-        </div>
-    </div>
-    
-    <div id="page">
-        <div class = "content"> 
-            <div class="feature">
-                <div class="feature-inner">
-                    
-                        <h1 style="text-align:center"><a target name = "speech">8 PARTS OF <span>SPEECH</span></a></h1>
-                
-                </div>
-            </div>
-            <div class="clr"></div>
-            <div id = "para">
-                <p>
-                    Being able to speak English is not just about being able to communicate with native English speakers, it is the most common second language in the world. Learning English is important as it enables you to communicate easily with your fellow global citizens.
-                </p> 
-                <h3 style="font-size: 25px ; color:rgb(112, 0, 0);text-align:center";>4 Reasons Why Learning English is so Important &#128552</h3>
-                
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <img src="img/think.png" alt="Man think about something" align="right"class="zoom">
-                    </div>
-                    <div class="column2">
-                    <ol>
-                        <li>English is the Language of International Communication.</li>
-                        <li>English is the Language of Business.</li>
-                        <li>Speaking English gives you Access to a World of Entertainment.</li>
-                        <li>Learning English gives you Access to more of the Internet.</li>
-                    </ol>
-                    </div>
+            <!--content-->
+			<section class="presentation scroll">
+                <div class="cover scroll">
+					<img src="./img/think.svg" alt="teaching" />
                 </div>
                 
-                <p>&#9997 So, here below some fundamentals you should know.</p> 
-        
-                <!--Create a list of 8 part-->
-                
-                <div class ="speech"><a href ="#nouns">Nouns</a></div>
-                <div class ="speech"><a href ="#pronoun">Pronoun</a></div>
-                <div class ="speech"><a href ="#verbs">Verbs</a></div>
-                <div class ="speech"><a href ="#adjectives">Adjectives</a></div>
-                <div class ="speech"><a href ="#adverbs">Adverbs</a></div>
-                <div class ="speech"><a href ="#articles">Articles</a></div>
-                <div class ="speech"><a href ="#prepositions">Prepositions</a></div>
-                <div class ="speech"><a href ="#conjunctions">Conjunctions</a></div>
-                <div class ="speech"><a href ="#interjections">Interjections</a></div>
-                 
-        
-                <p>Lets look at in details.</p>
-            </div>
-            
-
-                <!--add  NOUN-->
-
-            
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: #FFC300 ; text-align:center";><a target name = "nouns">NOUNS</a></h2> 
-            </div>    
-            <div id = "para">
-                <p>A <strong>Noun</strong> is a part of speech that names a person, place, thing, idea, action or quality</p> 
-                <h4 style="font-size: 22px ; color:#FFC300";>&#128073 Types of Nouns</h4> 
-                
-                <!--create list-->
-                <ul style="list-style-type: square">
-                    <li>Common Noun</li>
-                    <li>Proper Noun</li>
-                    <li>Abstract Noun</li>
-                    <li>Possessive Noun</li>
-                    <li>Collective Noun</li>   
-                </ul>
-            
-                <!--add  youtube link-->
-            <div id = "video">        
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tquecIG-Pws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-            </div>
-            
-                <h3 style="font-size: 25px ; color:#FFC300";>Examples &#128071</h3>
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <p>cat, sock, ship, hero, monkey, baby, match and boy etc</p>
-                        <ul>
-                            <li>The <strong><em>sun</em></strong> shines</li>
-                            <li><strong><em>Bunny</em></strong> goes to school</li>
-                        </ul>
-                    </div>
-                    <!--add gif-->
-                    <div class="column2">
-                        <p><strong><em>Bunny</em></strong> goes to school</p>
-                        <img src="img/bunny.gif" alt="bunny goes to school" align="left" class="zoom">
-                    
-                    </div>
-                    
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://www.merriam-webster.com/dictionary/noun" target = "blank">merriam-webster.com </a></li>
-                
-                </ul> 
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-
-                <!--add  PRONOUN-->
-
-
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(0, 89, 255); text-align:center";><a target name = "pronoun">PRONOUN</a></h2>
-            </div>    
-            <div id = "para">
-                <p>A <strong>Pronoun</strong> is a word that replaces a noun in a sentence. Pronouns are used so that our language is not cumbersome with the same nouns being repeated over and over in a paragraph.</p> 
-                <h4 style="font-size: 22px ; color:rgb(0, 89, 255)";>&#128073 Types of Pronouns</h4>
-                <ul>
-                    <li>Personal pronouns (e.g., he, they)</li>
-                    <li>Demonstrative pronouns (e.g., this, these)</li>
-                    <li>Interrogative pronouns (e.g., which, who)</li>
-                    <li>Indefinite pronouns (e.g., none, several)</li>
-                    <li>Possessive pronouns (e.g., his, your)</li>
-                    <li>Reciprocal pronouns (e.g., each other, one another)</li>
-                    <li>Relative pronouns (e.g., which, where)</li>
-                    <li>Reflexive pronouns (e.g., itself, himself)</li>
-                    <li>Intensive pronouns (e.g., itself, himself)</li>
-                </ul>
-
-                <!--add  youtube link-->
-                <div id = "video"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aSwTlQNLqPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            
-                <h3 style="font-size: 25px ; color:rgb(0, 89, 255)";>Examples &#128071</h3> 
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <p>I, me, mine, myself, she, her, hers, herself, we, us, ours and ourselves etc</p>
-
-                        <p><strong>John</strong> is hungry. <strong><em>He</em></strong> wants to eat.</p>
-                        <p><strong>John</strong> is the Noun and <strong><em>He</em></strong> used instead of John, So, thw word "HE" is a pronoun.</p>
-                        <ul>
-                            <li><strong>Hansika</strong> is talented student. <strong><em>She</em></strong> worked hard.</li>
-                            <li><strong>Bunny</strong> brushes <strong><em>her</em></strong> teeth everyday.</li>
+				<div class="introduction scroll">
+					<div class="intro-text">
+						<h1>4 Reasons Why Learning English is so Important </h1>
+                        <br>
+                            <p>1. English is the Language of International Communication.</p>
+                            <p>2. English is the Language of Business.</p>
+                            <p>3. Speaking English gives you Access to a World of Entertainment.</p>
+                            <p>4. Learning English gives you Access to more of the Internet.</p>
                         
-                        </ul>
-                    </div>
-                    <!--add gif-->
-                    <div class="column2">
-                        <p><strong>Bunny</strong> brushes <strong><em>her</em></strong> teeth everyday.</p>
-                        <img src="img/her.gif" alt="bunny brushes her teeth" align="left" class="zoom">
-                    
-                    </div>
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://www.merriam-webster.com/dictionary/pronoun" target = "blank">merriam-webster.com </a></li>
-                </ul> 
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-
-                <!--add  VERBS-->
-
-
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(9, 255, 0); text-align:center";><a target name = "verbs">VERBS</a></h2>
-            </div>    
-            <div id = "para">
-                <p>A <strong>Verb</strong> is a word or a combination of words that indicates action or a state of being or condition. A verb is the part of a sentence that tells us what the subject performs. Verbs are the hearts of English sentences.</p> 
-            
-                <h4 style="font-size: 22px ; color:rgb(9, 255, 0)";>&#128073 Types of Verbs</h4>
-
-                    <!--create list-->
-
-                <ul style="list-style-type: square">
-                    <li>Finite Verbs</li>
-                    <li>Non-Finite Verbs</li>
-                    <li>Action Verbs</li>
-                    <li>Linking Verb</li>
-                    <li>Auxiliary Verbs</li>   
-                    <li>Modal Verbs</li>   
-                </ul> 
-            
-
-                <!--add  youtube link-->
-                <div id = "video"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ea4TkpcVeNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            
-                <h3 style="font-size: 25px ; color:rgb(9, 255, 0)";>Examples &#128071</h3>
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <p>run, catch, sing ,swim, dance, eat, drive and walk etc.</p>
-                        <ul>
-                            
-                            <li>We <strong><em>went</em></strong> to the market.</li>
-                            <li>You <strong><em>write</em></strong> neatly in your notebook.</li>
-                            <li>Buuny <strong><em>eats</em></strong> her lunch.</li>
-                            <li>They <strong><em>thought</em></strong> about all the prizes in the competition.</li> 
-                        </ul> 
-                    </div>
-                    <!--add gif-->
-                    <div class="column2">
-                        <p>Buuny <strong><em>eats</em></strong> her lunch.</p>
-                        <img src="img/eat.gif" alt="bunny eats her lunch" align="left" class="zoom">
-                    
-                    </div>
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://www.gingersoftware.com/content/grammar-rules/verbs/" target = "blank">gingersoftware.com </a></li>
-                </ul> 
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-
-                <!--add  ADJECTIVES-->
-
-            
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(192, 25, 3); text-align:center";><a target name = "adjectives">ADJECTIVES</a></h2>
-            </div>
-            <div id = "para">
-                <p>An <strong>Adjective</strong> describes or modifies noun/s and pronoun/s in a sentence. It normally indicates quality, size, shape, duration, feelings, contents, and more about a noun or pronoun.</p> 
-            
-                <h4 style="font-size: 22px ; color:rgb(192, 25, 3)";>&#128073 Types of Adjectives</h4>
-                <!--create list-->
-
-                <ul>
-                <li>Descriptive Adjectives</li>
-                <li>Quantitative Adjectives</li>
-                <li>Proper Adjectives</li>
-                <li>Demonstrative Adjectives</li>
-                <li>Possessive Adjectives</li>
-                <li>Interrogative Adjectives</li>
-                <li>Indefinite Adjectives</li>
-                <li>Articles</li>
-                <li>Compound Adjectives</li> 
-                </ul>
-            
-
-                <!--add  youtube link-->
-                <div id = "video"> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4f3H12YNlxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-                <h3 style="font-size: 25px ; color:rgb(192, 25, 3)";>Examples &#128071</h3>
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <ul>
-                            <li>I have a <strong><em>fast</em></strong> car. (The word ‘fast’ is describing an attribute of the car)</li>
-                            <li>I am <strong><em>hungry</em></strong>. (The word ‘hungry’ is providing information about the subject)</li>
-                            <li>They are watching <strong><em>funny</em></strong> videos.</li>
-                            <li>I saw a <strong><em>flying</em></strong> Eagle. </li>
-                        </ul>
-                    </div>
-                    <!--add gif-->
-                    <div class="column2">
-                        <P>They are watching <strong><em>funny</em></strong> videos.</P>
-                        <img src="img/funny.gif" alt="they watch funny video" align="left" class="zoom">
-                    
-                    </div>
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://examples.yourdictionary.com/examples-of-adjectives.html" target = "blank">yourdictionary.com </a></li>
-                </ul>
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-
-                <!--add  ADVERBS-->
-
-
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(224, 228, 5); text-align:center";><a target name = "adverbs">ADVERBS</a></h2>
-            </div>    
-            <div id = "para">
-                <p>An <strong>Adverb</strong> is a part of speech that provides greater description to a verb, adjective, another adverb, a phrase, a clause, or a sentence.</p>
-                <p>A great way to pick out an adverb from a sentence is to look for the word ending in -ly. Although that's not universally true, it's a great place to start. Also, given their function, these fundamental elements of the English language are usually placed right before or after the verb in the sentence.</p>
-                <h4 style="font-size: 22px ; color:rgb(224, 228, 5)";>&#128073 Types of Adverbs</h4>
-
-                    <!--create list-->
-
-                <ul>
-                    <li>Adverbs of time</li>
-                    <li>Adverbs of manner</li>
-                    <li>Adverbs of degree</li>
-                    <li>Adverbs of place</li>
-                    <li>Adverbs of frequency</li>
-                </ul>
-            
-
-                    <!--add  youtube link-->
-
-                    <div id = "video"> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/94aFcx6oliY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-                <h3 style="font-size: 25px ; color:rgb(224, 228, 5)";>Examples &#128071</h3>
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <ul>
-                            <li>He swims <strong><em>well</em></strong>.</li>
-                            <li>Bunny runs <strong><em>quickly</em></strong>.</li>
-                            <li>She spoke <strong><em>softly</em></strong>.</li>
-                            <li>James coughed <strong><em>loudly</em></strong> to attract her attention.</li>
-                        </ul>
-                    </div>
-                    <!--add gif-->
-                    <div class="column2">
-                        <p>Bunny runs <strong><em>quickly</em></strong></p>
-                        <img src="img/fast.gif" alt="bunny runs quickly" align="left" class="zoom">
-                    
-                    </div>
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://www.gingersoftware.com/content/grammar-rules/adverb/" target = "blank">gingersoftware.com </a></li>
-                </ul>
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-
-                <!--add  ARTICLES-->
-
-
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(161, 2, 167); text-align:center";><a target name = "articles">ARTICLES</a></h2>
-            </div>
-            <div id = "para">
-                <p>An <strong>Article</strong> is a word used to modify a noun, which is a person, place, object, or idea. Technically, an article is an adjective, which is any word that modifies a noun. Usually adjectives modify nouns through description, but articles are used instead to point out or refer to nouns. There are two different types of articles that we use in writing and conversation to point out or refer to a noun or group of nouns: definite and indefinite articles.</p>
-                <h4 style="font-size: 22px ; color:rgb(161, 2, 167)";>&#128073 Types of Articles</h4>
-
-                    <!--create list-->
-
-                <ul>
-                    <li>Definite Articles</li>
-                    <li>Indefinite Articles</li>
-                </ul>
-            
-                <!--add  youtube link-->
-                <div id = "video"> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/drTyYqbz6Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            
-                <h3 style="font-size: 25px ; color:rgb(161, 2, 167)";>Examples &#128071</h3>
-                <!--Definite Article-->
-                <h4 style="font-size: 22px ; color:rgb(129, 0, 0)";>Definite Article</h4>
-                <p>Let's begin by looking at the definite article. This article is the word 'the,' and it refers directly to a specific noun or groups of nouns. </p>
-                <ul>
-                    <li><strong>The</strong> freckles on my face</li>
-                    <li><strong>The</strong> alligator in the pond</li>
-                    <li><strong>The</strong> breakfast burrito on my plate</li>
-                </ul>
-                    <!--Indefinite Articles-->
-                <h4 style="font-size: 22px ; color:rgb(129, 0, 0)";>Indefinite Article</h4>
-                <p>Indefinite articles are the words 'a' and 'an.' Each of these articles is used to refer to a noun, but the noun being referred to is not a specific person, place, object, or idea. It can be any noun from a group of nouns. </p>
-                <ul>
-                    <li><strong>A</strong> Mercedes from the car lot</li>
-                    <li><strong>An</strong> event in history</li>
-                </ul>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://www.grammarly.com/blog/articles/" target = "blank">grammarly.com </a></li>
-                </ul>
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-
-                <!--add  PREPOSITIONS-->
-
-            
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(13, 2, 167); text-align:center";><a target name = "Prepositions">PREPOSITIONS</a></h2>
-            </div>
-            <div id = "para">
-                <P>A <strong>Preposition</strong> is a word used to link nouns, pronouns, or phrases to other words within a sentence. They act to connect the people, objects, time and locations of a sentence.  Prepositions are usually short words, and they are normally placed directly in front of nouns.</P>
-                <h4 style="font-size: 22px ; color:rgb(13, 2, 167)";>&#128073 Types of Preposotion</h4>
-                <ul>
-                    <li>Preposition for Time.</li>
-                    <li>Preposition for Place.</li>
-                    <li>Preposition for Direction.</li>
-                    <li>Preposition for Agent.</li>
-                    <li>Preposition for Instruments.</li>
-                    <li>Preposition for Phrases.</li>
-                </ul>
-
-                <!--add  youtube link-->
-
-                <div id = "video"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/byszemY8Pl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-                <h3 style="font-size: 25px ; color:rgb(13, 2, 167)";>Examples &#128071</h3>
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <ul>
-                            <li>I prefer to read <strong><em>in</em></strong> the library.</li>
-                            <li>He climbed <strong><em>up</em></strong> the ladder to get <strong><em>onto</em></strong> the roof.</li>
-                            <li>Please sign your name <strong><em>on</em></strong> the dotted line <strong><em>after</em></strong> you read the contract.</li>
-                            <li>Go <strong><em>down</em></strong> the stairs and <strong><em>through</em></strong> the door.</li>
-                            <li>He swam <strong><em>across</em></strong> the pool.</li>
-                            <li>Bunny plays <strong><em>with</em></strong> her gift.</li>
-                        </ul>
-                    </div> 
-                    <div class="column2">
-                        <p>Bunny plays <strong><em>with</em></strong> her gift.</p>
-                        <img src="img/with.gif" alt="bunny plays with her gift" align="left" class="zoom">
-                    
-                    </div>  
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://www.gingersoftware.com/content/grammar-rules/preposition/" target = "blank">gingersoftware.com </a></li>
-                </ul>
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-
-            
-            <!--add  CONJUNCTIONS-->
-
-
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(2, 167, 24); text-align:center";><a target name = "conjunctions">CONJUNCTIONS</a></h2>
-            </div>
-            <div id = "para">
-                <p>A <strong>Conjunction</strong> is a part of speech that is used to connect words, phrases, clauses, or sentences. Conjunctions are considered to be invariable grammar particle, and they may or may not stand between items they conjoin.</p>
-                <h4 style="font-size: 22px ; color:rgb(2, 167, 24)";>&#128073 Types of Conjunctions</h4>
-                <ul>
-                    <li>Subordinating conjunctions</li>
-                    <li>Coordinating conjunction</li>
-                    <li>Correlative conjunction</li>
-                    <li>Conjunctive adverbs</li>
-                </ul>
+						
+					</div>
+				</div>
                 
-                <!--add  youtube link-->
-                <div id = "video"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nBm0Okl3AYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <h3 style="font-size: 25px ; color:rgb(2, 167, 24)";>Conjunction Rules &#128071</h3>
-                <p>There are a few important rules for using conjunctions. Remember them and you will find that your writing flows better:</p>
-                <ul>
-                    <li>Conjunctions are for connecting thoughts, actions, and ideas as well as nouns, clauses, and other parts of speech. For example: Mary went to the supermarket <strong>and</strong> bought oranges.</li>
-                    <li>Conjunctions are useful for making lists. For example: We made pancakes, eggs, <strong>and</strong> coffee for breakfast.</li>
-                    <li>When using conjunctions, make sure that all the parts of your sentences agree. For example: “I work busily <strong>yet</strong> am careful” does not agree. “I work busily <strong>yet</strong> carefully” shows agreement.</li>
-                </ul>
-                <h3 style="font-size: 25px ; color:rgb(2, 167, 24)";>Examples &#128071</h3>
+          
+            </section>
+
+              <!--content menu-->
+            <section class="presentation scroll">
+
                 
-                <!--create column-->
-                <div class="row">
-                    <div class="column2">
-                        <ul>
-                            
-                            <li>I have two goldfish <strong>and</strong> a cat.</li>
-                            <li>I’d like a bike <strong>for</strong> commuting to work.</li>
-                            <li>You can have peach ice cream <strong>or</strong> a brownie sundae.</li>
-                            <li>Neither the black dress <strong>nor</strong> the gray one looks right on me.</li>
-                            <li>My dad always worked hard <strong>so</strong> we could afford the things we wanted.</li>
-                            <li>Bunny wants to surprise Mat <strong>but</strong> Mat scared.</li>
-                            <li>I try very hard in school <strong>yet</strong> I am not receiving good grades.</li>
-                        </ul>
-                    </div>
-                    <!--add gif-->
-                    <div class="column2">
-                        <p>Bunny wants to surprise Mat <strong>but</strong> Mat scared.</p>
-                        <img src="img/conj.gif" alt="conjunction gif" align="left" class="zoom">
-                    
-                    </div>
-                </div>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://grammar.yourdictionary.com/parts-of-speech/conjunctions/what-is-a-conjunction.html" target = "blank">yourdictionary.com </a></li>
-                </ul>
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-                
-            </div>
 
-
-            <!--add  INTERJECTION-->
-
+                <div class="introduction scroll">
+					<div class="intro-text">
+						<h1>So, these are the fundamentals you should know. </h1>
+	
+					</div>
+				</div>
+				<div class="introduction scroll">
+					<div class="intro-text">
+					
+                        <button class="cta-style"><a href ="#Nouns">Nouns <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Pronoun">Pronoun <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Verbs">Verbs <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Adjectives">Adjectives <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Adverbs">Adverbs <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Articles">Articles <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Prepositions">Prepositions <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"> <a href ="#Conjunctions">Conjunctions <i class="fas fa-angle-right"></i></a></button>
+                        <button class="cta-style"><a href ="#Interjections">Interjections <i class="fas fa-angle-right"></i></a></button>
+					</div>
+				</div>
+            </section>
             
-            <div class="bars">
-                <h2 style="font-size: 28px ; color:#fff ; background-color: rgb(153, 0, 0); text-align:center";><a target name = "Interjections">INTERJECTION</a></h2>
-            </div>
-            <div id = "para">
-                <P>An <strong>Interjection</strong> is a word or phrase that is grammatically independent from the words around it, and mainly expresses feeling rather than meaning.</P>    
-                <h4 style="font-size: 22px ; color:rgb(153, 0, 0)";>&#128073 Types of Interjection</h4>
-                <ul>
-                    <li>Interjections for Greeting</li>
-                    <li>Interjections for Joy</li>
-                    <li>Interjections for Approval and Praise</li>
-                    <li>Interjections for Surprise</li>
-                    <li>Interjections for Grief/Pain</li>
-                    <li>Interjections for Bidding Farwell</li>
-                    <li>Interjections for Expressing Doubt or Hesitation</li>
-                </ul>
-                <!--add  youtube link-->
-                <div id = "video"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KQB-0wi4i34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-                <h3 style="font-size: 25px ; color:rgb(153, 0, 0)";>Examples &#128071</h3>
-                <p><strong>Interjections: Showing the Author's Emotion</strong></p>
-                <ul>
-                    <li><strong>Hmm</strong> - Can mean you're thinking or hesitating</li>
-                    <li><strong>Oops</strong> - An exclamation people use when they do something by accident</li>
-                    <li><strong>Yeah</strong> - Demonstrates a very strong affirmation or approval</li>
-                    <li><strong>Eww</strong> - Conveys dislike or disgust</li>
-                    <li><strong>Aah</strong> - Used as a call for help or when someone is scared</li>
-                    <li><strong>Boo</strong> - Used to scare someone or to voice disapproval</li>
+            <hr class="content-hr">
 
-                </ul>
-                <p><strong>Interjections in a Sentence</strong></p>
-                <ul>
-                    <li><strong>Ahh</strong>, that feels wonderful.</li>
-                    <li><strong>Alas</strong>! I'm lost in the wilderness.</li>
-                    <li><strong>Bah</strong>! That was a total waste of time.</li>
-                    <li><strong>Bless you</strong>! I couldn't have done it without you.</li>
-                    <li>It's time for me to go. <strong>Cheerio</strong>!</li>
-                    <li><strong>Congrates</strong>! You finally got your master's degree.</li>
-                </ul>
-                <!--add sources for details-->
-                <p><strong>Sources</strong></p>
-                <ul>
-                    <li><a href ="https://examples.yourdictionary.com/examples-of-interjections.html" target = "blank">yourdictionary.com </a></li>
-                </ul>
-                <p>Goto <a href ="#speech">Main Menu</a></p>
-            </div>
-            <br>
-            <hr style ="border-top: 5px solid rgba(2, 0, 0, 0.425); border-radius: 5px; max-width: 1000px;">
-            <br>
-            <br>
-            <div class="row">
-                <div class="column2">
+            <!--Noun-->
+            <p class="content-hidden"><a target name = "Nouns">agsgd</a></p>
+            <section class="presentation scroll">
+                <h2>NOUNS <i class="fas fa-angle-right"></i></h2>
+				
+                <div class="introduction scroll">
+					<div class="intro-text">
+						
+                        <p>A <strong>Noun</strong> is a part of speech that names a person, place, thing, idea, action or quality.</p> 
+                        
+                    </div>
+                    <div class="cover">
+                        <img src="./img/sun.svg" alt="sun shine" />
+                    </div>
+                </div>
+                <div class="introduction scroll">
+					<div class="intro-text">
+                        <h3>Types of Nouns</h3>
+                        <p><i class="fas fa-angle-right"></i> Common Noun</p>
+                        <p><i class="fas fa-angle-right"></i> Proper Noun</p>
+                        <p><i class="fas fa-angle-right"></i> Abstract Noun</p>
+                        <p><i class="fas fa-angle-right"></i> Possessive Noun</p>
+                        <p><i class="fas fa-angle-right"></i> Collective Noun</p>
+
+                    </div>
                     <br>
-                    <div id="h3"> <h3>Would you like to take a Quiz</h3></div>
-                    <div class ="toquiz"><a href="quiz-speech.html">Let's Go</a> </div>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <p>cat, sock, ship, hero, monkey, baby, match and boy etc</p>
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> The <strong>sun</strong> shines</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>Bunny</strong> goes to school</p>
+                        
+
+					</div>
+                </div>
+			</section>
+
+
+
+            <hr class="content-hr">
+
+            <!--Pronoun-->
+            <p class="content-hidden"><a target name = "Pronoun">agsgd</a></p>
+            <section class="presentation scroll">
+                <h2>PRONOUN <i class="fas fa-angle-right"></i></h2>
+				
+                <div class="introduction scroll">
+					<div class="intro-text">
+						
+                        <p>A <strong>Pronoun</strong> is a word that replaces a noun in a sentence. Pronouns are used so that our language is not cumbersome with the same nouns being repeated over and over in a paragraph.</p> 
+                    </div>
+                    <div class="cover">
+                        <img src="./img/her.gif" alt="brushing teeth" />
+                    </div>
+                </div>
+                <div class="introduction scroll">
+					<div class="intro-text">
+                        <h3>Types of Pronouns</h3>
+                        <p><i class="fas fa-angle-right"></i> Personal pronouns (e.g., he, they)</p>
+                        <p><i class="fas fa-angle-right"></i> Demonstrative pronouns (e.g., this, these)</p>
+                        <p><i class="fas fa-angle-right"></i> Interrogative pronouns (e.g., which, who)</p>
+                        <p><i class="fas fa-angle-right"></i> Indefinite pronouns (e.g., none, several)</p>
+                        <p><i class="fas fa-angle-right"></i> Possessive pronouns (e.g., his, your)</p>
+                        <p><i class="fas fa-angle-right"></i> Reciprocal pronouns (e.g., each other, one another)</p>
+                        <p><i class="fas fa-angle-right"></i> Relative pronouns (e.g., which, where)</p>
+                        <p><i class="fas fa-angle-right"></i> Reflexive pronouns (e.g., itself, himself)</p>
+                        <p><i class="fas fa-angle-right"></i> Intensive pronouns (e.g., itself, himself)</p>
+
+                    </div>
+                    <br>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <p>I, me, mine, myself, she, her, hers, herself, we, us, ours and ourselves etc</p>
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> <strong>Hansika</strong> is talented student. <strong><em>She</em></strong> worked hard.</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>Bunny</strong> brushes <strong><em>her</em></strong> teeth everyday</p>
+                        
+
+					</div>
+                </div>
+			</section>
+            
+            
+            <hr class="content-hr">
+
+            <!--Verbs-->
+            
+
+            <p class="content-hidden"><a target name = "Verbs">agsgd</a></p>
+            <section class="presentation scroll">
+                <h2>VERBS <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <p>A <strong>Verb</strong> is a word or a combination of words that indicates action or a state of being or condition. A verb is the part of a sentence that tells us what the subject performs. Verbs are the hearts of English sentences.</p> 
+                    </div>
+                    <div class="cover">
+                        <img src="./img/eat.gif" alt="eat" />
+                    </div>
+                </div>
+                <div class="introduction scroll">
+                    
+                    <br>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <p>run, catch, sing ,swim, dance, eat, drive and walk etc.</p>
+                        <p><i class="fas fa-angle-right"></i> We <strong>went</strong> to the market.</p>
+                        <p><i class="fas fa-angle-right"></i> You <strong>write</strong> neatly in your notebook.</p>
+                        <p><i class="fas fa-angle-right"></i> Bunny <strong>eats</strong> her lunch.</p>
+                        <p><i class="fas fa-angle-right"></i> They <strong>thought</strong> about all the prizes in the competition.</p>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <hr class="content-hr">
+
+            <!--Adjectives-->
+            <p class="content-hidden"><a target name = "Adjectives">agsgd</a></p>
+            <section class="presentation scroll">
+                <h2>ADJECTIVES <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <p>An <strong>Adjective</strong> describes or modifies noun/s and pronoun/s in a sentence. It normally indicates quality, size, shape, duration, feelings, contents, and more about a noun or pronoun.</p> 
+                    </div>
+                    <div class="cover">
+                        <img src="./img/funny.gif" alt="funny" />
+                    </div>
+                </div>
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        <h3>Types of Adjective</h3>
+                        <p><i class="fas fa-angle-right"></i> Descriptive Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Quantitative Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Proper Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Demonstrative Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Possessive Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Interrogative Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Indefinite Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Articles Adjectives</p>
+                        <p><i class="fas fa-angle-right"></i> Compound Adjectives</p>
+
+                    </div>
+                    <br>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <p>fast, hungry, funny ,beautiful, crazy, strong etc.</p>
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> I have a <strong><em>fast</em></strong> car. (The word ‘fast’ is describing an attribute of the car)</p>
+                        <p><i class="fas fa-angle-right"></i> I am <strong><em>hungry</em></strong>. (The word ‘hungry’ is providing information about the subject)</p>
+                        <p><i class="fas fa-angle-right"></i> They are watching <strong><em>funny</em></strong> videos.</p>
+                        <p><i class="fas fa-angle-right"></i> I saw a <strong><em>flying</em></strong> Eagle.</p>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <hr class="content-hr">
+
+            <!--Adverbs-->
+
+            <p class="content-hidden"><a target name = "Adverbs">agsgd</a></p>
+
+            <section class="presentation scroll">
+                <h2>ADVERBS <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <p>An <strong>Adverb</strong> is a part of speech that provides greater description to a verb, adjective, another adverb, a phrase, a clause, or a sentence.</p>
+                        <p>A great way to pick out an adverb from a sentence is to look for the word ending in -ly. Although that's not universally true, it's a great place to start. Also, given their function, these fundamental elements of the English language are usually placed right before or after the verb in the sentence.</p>                    </div>
+                    <div class="cover">
+                        <img src="./img/fast.gif" alt="run fast" />
+                    </div>
+                </div>
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        <h3>Types of Adverbs</h3>
+                        <p><i class="fas fa-angle-right"></i> Adverbs of time</p>
+                        <p><i class="fas fa-angle-right"></i> Adverbs of manner</p>
+                        <p><i class="fas fa-angle-right"></i> Adverbs of degree</p>
+                        <p><i class="fas fa-angle-right"></i> Adverbs of place</p>
+                        <p><i class="fas fa-angle-right"></i> Adverbs of frequency</p>
+
+                    </div>
+                    <br>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> He swims <strong><em>well</em></strong>.</p>
+                        <p><i class="fas fa-angle-right"></i> Bunny runs <strong><em>quickly</em></strong>.</p>
+                        <p><i class="fas fa-angle-right"></i> She spoke <strong><em>softly</em></strong>.</p>
+                        <p><i class="fas fa-angle-right"></i> James coughed <strong><em>loudly</em></strong> to attract her attention.</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <hr class="content-hr">
+
+
+                 <!--Articles-->
+            
+                 <p class="content-hidden"><a target name = "Articles">agsgd</a></p>
+
+            <section class="presentation scroll">
+                <h2>ARTICLES <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <p>An <strong>Article</strong> is a word used to modify a noun, which is a person, place, object, or idea. Technically, an article is an adjective, which is any word that modifies a noun. Usually adjectives modify nouns through description, but articles are used instead to point out or refer to nouns. There are two different types of articles that we use in writing and conversation to point out or refer to a noun or group of nouns: definite and indefinite articles.</p>
+                        <h3>Types of Articles</h3>
+                        <p><i class="fas fa-angle-right"></i> Indefinite Articles</p>
+                        <p><i class="fas fa-angle-right"></i> Definite Articles</p>
+                    </div>
+                </div>
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        <h3>Indefinite Article</h3>
+                        <p>Indefinite articles are the words 'a' and 'an.' Each of these articles is used to refer to a noun, but the noun being referred to is not a specific person, place, object, or idea. It can be any noun from a group of nouns. </p>
+                        
+                    </div>
+                   
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        
+                        <p><i class="fas fa-angle-right"></i> <strong>A</strong> Mercedes from the car lot.</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>An</strong> event in history.</p>
+                
+                    </div>
+                    <br>
+
+                    <div class="intro-text">
+                        <h3>Definite Article</h3>
+                        <p>Let's begin by looking at the definite article. This article is the word 'the,' and it refers directly to a specific noun or groups of nouns. </p>
+                        
+                    </div>
+                   
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        
+                        <p><i class="fas fa-angle-right"></i> <strong>The</strong> freckles on my face.</p>
+                        <p><i class="fas fa-angle-right"></i> The</strong> alligator in the pond.</p>
+                        <p><i class="fas fa-angle-right"></i> The</strong> breakfast burrito on my plate.</p>
+                
+                    </div>
+                </div>
+            </section>
+
+
+            <hr class="content-hr">
+
+            <!--Preposition-->
+            
+
+            <p class="content-hidden"><a target name = "Prepositions">agsgd</a></p>
+            <section class="presentation scroll">
+                <h2>PREPOSITIONS <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <P>A <strong>Preposition</strong> is a word used to link nouns, pronouns, or phrases to other words within a sentence. They act to connect the people, objects, time and locations of a sentence.  Prepositions are usually short words, and they are normally placed directly in front of nouns.</P>
+                        <div class="cover">
+                        <img src="./img/with.gif" alt="play football" />
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        <h3>Types of Preposition</h3>
+                        <p><i class="fas fa-angle-right"></i> Preposition for Time</p>
+                        <p><i class="fas fa-angle-right"></i> Preposition for Place</p>
+                        <p><i class="fas fa-angle-right"></i> Preposition for Direction</p>
+                        <p><i class="fas fa-angle-right"></i> Preposition for Agent</p>
+                        <p><i class="fas fa-angle-right"></i> Preposition for Instruments</p>
+                        <p><i class="fas fa-angle-right"></i> Preposition for Phrases</p>
+
+
+                    </div>
+                    <br>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> I prefer to read <strong><em>in</em></strong> the library.</p>
+                        <p><i class="fas fa-angle-right"></i> He climbed <strong><em>up</em></strong> the ladder to get <strong><em>onto</em></strong> the roof.</p>
+                        <p><i class="fas fa-angle-right"></i> Please sign your name <strong><em>on</em></strong> the dotted line <strong><em>after</em></strong> you read the contract.</p>
+                        <p><i class="fas fa-angle-right"></i> Go <strong><em>down</em></strong> the stairs and <strong><em>through</em></strong> the door.</p>
+                        <p><i class="fas fa-angle-right"></i> He swam <strong><em>across</em></strong> the pool.</p>
+                        <p><i class="fas fa-angle-right"></i> Bunny plays <strong><em>with</em></strong> her gift.</p>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <hr class="content-hr">
+
+            <!--Conjunction-->
+            
+
+            <p class="content-hidden"><a target name = "Conjunctions">agsgd</a></p>
+            <section class="presentation scroll">
+                <h2>CONJUNCTION <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <p>A <strong>Conjunction</strong> is a part of speech that is used to connect words, phrases, clauses, or sentences. Conjunctions are considered to be invariable grammar particle, and they may or may not stand between items they conjoin.</p>
+                        <div class="cover">
+                        <img src="./img/conj.gif" alt="scared" />
+                        </div>
+                        <div class="intro-text">
+                            <h3>Types of Conjunctions</h3>
+                            <p><i class="fas fa-angle-right"></i> Subordinating conjunctions</p>
+                            <p><i class="fas fa-angle-right"></i> Coordinating conjunction</p>
+                            <p><i class="fas fa-angle-right"></i> Preposition for Direction</p>
+                            <p><i class="fas fa-angle-right"></i> Correlative conjunction</p>
+                            <p><i class="fas fa-angle-right"></i> Conjunctive adverbs</p>
+    
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction scroll">
+                    
+                    <br>
+
+                    <div class="intro-text">
+                        <h4>Conjunction Rules</h4>
+                        <p>There are a few important rules for using conjunctions. Remember them and you will find that your writing flows better:</p>
+
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> Conjunctions are for connecting thoughts, actions, and ideas as well as nouns, clauses, and other parts of speech. For example: Mary went to the supermarket <strong>and</strong> bought oranges.</p>
+                        <p><i class="fas fa-angle-right"></i> Conjunctions are useful for making lists. For example: We made pancakes, eggs, <strong>and</strong> coffee for breakfast.</p>
+                        <p><i class="fas fa-angle-right"></i> When using conjunctions, make sure that all the parts of your sentences agree. For example: “I work busily <strong>yet</strong> am careful” does not agree. “I work busily <strong>yet</strong> carefully” shows agreement.</p>
+                       
+
+                    </div>
+                    <div class="intro-text">
+                        <h4>Examples</h4>
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> I have two goldfish <strong>and</strong> a cat.</p>
+                        <p><i class="fas fa-angle-right"></i> I’d like a bike <strong>for</strong> commuting to work.</p>
+                        <p><i class="fas fa-angle-right"></i> Bunny wants to surprise Mat <strong>but</strong> Mat is scared.</p>
+                        <p><i class="fas fa-angle-right"></i> My dad always worked hard <strong>so</strong> we could afford the things we wanted.</p>
+
+
+
+                    </div>
+                   
+                </div>
+            </section>
+
+
+
+            <hr class="content-hr">
+
+            <!--Interjections-->
+            <p class="content-hidden"><a target name = "Interjections">agsgd</a></p>
+            
+            <section class="presentation scroll">
+                <h2>INTERJECTIONS <i class="fas fa-angle-right"></i></h2>
+                
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        
+                        <P>An <strong>Interjection</strong> is a word or phrase that is grammatically independent from the words around it, and mainly expresses feeling rather than meaning.</P>    
+                        <h3>Types of Interjection</h3>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Greeting</p>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Joy</p>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Approval and Praise</p>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Surprise</p>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Grief/Pain</p>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Bidding Farwell</p>
+                        <p><i class="fas fa-angle-right"></i> Interjections for Expressing Doubt or Hesitation</p>
+
+                    </div>
                 </div>
                 
-                <div class="column2">
-                    <img src="img/quiz.gif" alt="summary of tenses" class="zoom">
+                <div class="introduction scroll">
+                    <div class="intro-text">
+                        <div class="intro-text">
+                            <h4>Examples</h4>
+                        </div>
+                        
+                        
+
+                        <br>
+                        <p><i class="fas fa-angle-right"></i> <strong>Hmm</strong> - Can mean you're thinking or hesitating</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>Oops</strong> - An exclamation people use when they do something by accident</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>Yeah</strong> - Demonstrates a very strong affirmation or approval</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>Eww</strong> - Conveys dislike or disgust</p>
+                        <p><i class="fas fa-angle-right"></i> <strong>Aah</strong> - Used as a call for help or when someone is scared</p>
+
+                
+                      
+
+
+                    </div>
+                   
                 </div>
-            </div>
-            <footer>
-            
-                <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
-            </footer>   
-    
-        </div>
-    </div>
-    <script type="text/javascript" src="javascript/script.js"></script>
-    </body>
-        
-</html>        
+            </section>
+
+
+
+
+            <hr class="content-hr">
+
+
+            <section class="presentation scroll">
+                
+                <div class="introduction scroll">
+					<div class="intro-text">
+						<h1>Would you like to take a Quiz </h1>
+                    </div>
+                    <div class="cta">
+                        <button class="cta-style"><a href="quiz-speech.html">Let's Go <i class="fas fa-angle-double-right"></i></a></button>
+                    </div>
+                </div>
+                
+                <div class="cover scroll">
+					<img src="./img/quiz.gif" alt="quiz" />
+                </div>
+                
+				
+                
+          
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+        <footer class="footer">
+			<p><i class="far fa-copyright"></i> Copyrights Reserved | LearnEnglish </p>   
+		</footer> 
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js'></script>
+		<script type="text/javascript" src="javascript/script.js"></script>
+	</body>
+</html>

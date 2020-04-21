@@ -5,50 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Hide & Seek</title>
-    
-    <!--import CSS file-->
+
+   
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+        rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/717367e0a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="games/css/hide&seek.css">
-    <link rel="stylesheet" href="css/style.css">
+   
     
 </head>
-<body>
-
-
-    <div class="dropdown">
-        <button class="dropbtn">Learn More &#10097</button>
-        <div class="dropdown-content">
-            <a href="speech.html">&#10097 8 Parts of Speech</a>
-            <a href="tenses.html">&#10097 12 Verbs Tenses</a>
-         
+<body onload="runFirst()">
+    <header class="myHeader">
+        <div class="logo-container">
+            <img src="./img/le-logo.png" alt="logo" onclick="mainPage()"/>
+            <h4><a  class="logo" href="index.html">LearnEnglish</a> </h4>
         </div>
-    </div> 
-    <div class="dropdown">
-        <button class="dropbtn">Take a Quiz &#10097</button>
-        <div class="dropdown-content">
-            <a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a>
-            <a href="quiz-tenses.html">&#10097 Quiz on 12 Verbs Tenses</a>
-        
-        </div>    
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="#">Learn more <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="speech.html">&#10097 8 Parts of Speech</a></li>
+                        <li><a href="tenses.html">&#10097 12 Verb Tenses</a></li>
+                            
+                    </ul>
+                </li>
+
+                <li><a href="#">Take a Quiz <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a></li>
+                        <li><a href="quiz-tenses.html">&#10097 Quiz on 12 Verb Tenses</a></li>
+                            
+                    </ul>
+                </li>
+    
+                <li><a href="#">Games <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="hide&seek.html">&#10097 Hide & Seek</a></li>
+                        <li><a href="catch-eggs.html">&#10097 Catch Eggs</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+
+
+
+
+        </nav>
+
+
+
+
+
+        <div class="avatar">
+            <i class="fas fa-user" onclick="profile()"><span class="display-label">Profile</span></i>
+            
+
+            <i class="fas fa-sign-out-alt" onclick="logout()"><span class="display-label">Log Out</span></i>
+
+        </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <div class="animation-area">
+        <ul class="box-area">
+            <li>A</li>
+            <li>L</li>
+            <li>T</li>
+            <li>O</li>
+            <li>W</li>
+            <li>Z</li>
+            <li>R</li>
+        </ul>
     </div>
-    <div class="dropdown">
-        <button class="dropbtn">Games &#10097</button>
-        <div class="dropdown-content">
-            <a href="hide&seek.html">&#10097 Hide & Seek</a>
-           
-         
-        </div>
-    </div> 
-
-
-    <div class="dropdown">
-        <button class="dropbtn">Profile &#10097</button>
-        <div class="dropdown-content">
-            <a  onclick="details()">&#10097 User Details</a>
-            <a  onclick="logout()">&#10097 Log out</a>
-        </div>
-    </div> 
-
-
+    
+            <!--profile details-->
+        <section class="profile-details">
+            <div class="profile-outer">
+                <div class="close">
+                    <i class="fas fa-times" onclick="exitUd()"></i>
+                </div>
+                <div class="profile-container">
+                    
+                    <img class="p-img" src="./img/profile.svg" alt="">
+                    <div class="profile-cont">
+                        <h1>Hi, <span class="uname"></span></h1>
+                        <br>
+                        <img class="profile-img" src="./img/avatar.png" alt="avatar" />
+                        
+                        <h4>Name : <span class="uname2"></span></h4>
+                        <h4>Logging Time : <span class="utime"></span></h4>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        <img class="big-circle" src="./img/big-eclipse.svg" alt="" />
+        <img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
 
     <div class="start hide">
         <div class="frame">Try to match <span>part of speech</span> with it's example
@@ -153,12 +213,17 @@
         <br>
 
     <button class="btn" onclick="tryAgain()">RESET</button>
-    <footer>
-            
-        <p style ="color:#fff ; background-color: rgb(153, 0, 0); text-align:center">&copy; Copyright | LearnEnglish @ RSLUP</p>   
-    </footer>  
+    
+    <footer class="footer">
+        <p><i class="far fa-copyright"></i> Copyrights Reserved | LearnEnglish </p>   
+    </footer> 
     <!--import js file-->
+    
     <script src="games/js/hide&seek.js"></script>
     <script type="text/javascript" src="javascript/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js'></script>
+	
+    
 </body>
 </html>

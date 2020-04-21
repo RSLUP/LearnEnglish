@@ -10,8 +10,8 @@ body
     height:calc(100vh);
     display: block;
     background: rgb(255,255,255);
-    background: linear-gradient(13deg, rgba(255,255,255,1) 51%, rgba(0,140,218,1) 51%, rgba(82,169,213,0.9192051820728291) 83%);
-    
+    background: linear-gradient(10deg, rgba(255,255,255,0.5382528011204482) 45%, rgb(61, 143, 219) 46%);
+    background-repeat: no-repeat;
 }
 .game-title
 {
@@ -21,7 +21,7 @@ body
     text-align: center;
     padding-top: 3vh;
     padding-bottom: 2vh;
-    color: #ffffff;
+    color: #f9fcff;
 }
 .game-title span
 {
