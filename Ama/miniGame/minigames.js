@@ -520,14 +520,15 @@ var   cell61 = document.getElementById("cell61").value,
   var final = score - ommit;
   document.getElementById("my-score").innerHTML = final;
 
-  if((cell11==9 && cell15==4 && cell16==6 && cell19==1)  && (cell21==6 && cell22==5 && cell24==1 && cell25==7 && cell28==2 )
+  if((cell11==9 && cell15==4 && cell16==6 && cell19==1)  && (cell21==6 && cell22==5 && cell24==1 && cell25==7 && cell28==2 ) &&
       (cell32==2 && cell33==1 && cell34==9 && cell35==8 && cell36==5 && cell37==7 && cell38==4) && (cell42==2 && cell45==3 && cell46==4 && cell47==7 && cell49==5)
       && (cell51==5 && cell53==7 && cell55==9 && cell57==4 && cell59==1) && (cell61==6 && cell63==4 && cell64==1 && cell65==5 && cell68==3 && cell69==2) && 
       (cell73==9 && cell74==4 && cell75==7 && cell77==8 && cell78==6) && (cell82==8 && cell85==1 && cell86==9 && cell88==4 && cell89==5)&& (cell94==5 && cell99==9 ))
   {
     alert("Congradulations! You won the game. ");
     console.log("won");
-}
+  
+  }
 
 }
 function timeStart()
