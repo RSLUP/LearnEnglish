@@ -1,0 +1,109 @@
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+
+#tic_topic{
+    font-size: 50px;
+    text-align: center;
+    font-family: cursive;
+    background-color: #6e3e45;
+}
+
+#container{
+    width: 320px;
+    height: 320px;
+    /*margin: auto;*/
+    /*position: relative;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.q{
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    font-family: cursive;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+
+}
+
+.q:hover{
+    background-color: #e49292;
+}
+
+
+
+#q0,#q1,#q2,#q3,#q4,#q5{
+    border-bottom: 10px solid black;
+}
+
+#q2,#q5,#q8,#q1,#q4,#q7{
+    border-left: solid 10px black;
+}
+
+
+.winner{
+    color: darkred;
+
+}
+
+
+
+
+#div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 52px;
+    background-color: yellow;
+    font-size: 30px;
+    display: none;
+    font-family: cursive;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#reset_button{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    transition: background-color 1s;
+    position: relative;
+    top: 130px;
+    right: 190px;
+}
+
+#reset_button:hover{
+    background-color: green;
+    cursor: pointer;
+}

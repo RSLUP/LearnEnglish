@@ -184,7 +184,7 @@ function retrive_func() {
     var stored_date = localStorage.getItem("date");
 
     if ((stored_date !== n[0]) || (stored_name == null)) {
-        window.open("login.html");
+        window.location.href= "login.html";
     } else {
         alert("Page Loaded:).");
     }
