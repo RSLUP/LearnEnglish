@@ -5,12 +5,22 @@
     width: 1100px;
     margin-top: 70px;
     border-radius: 8px;
-    background-color: rgb(252, 250, 224);
+    background: linear-gradient(90deg, #e7e7e7, rgb(255, 255, 255), #e7e7e7);
     box-shadow: 0px 0px 10px grey;
 }
 
 a {
     text-decoration: none;
+}
+
+.mainbody{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.top-bar{
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 .top-bar{
@@ -41,8 +51,8 @@ a {
 }
 
 .navigate{
-    float: right;
-    margin-right: 50px;
+    float: left;
+    margin-left: 135px;
     padding: 20px;
 }
 
@@ -61,13 +71,31 @@ a {
     border: 1.4px solid yellow;
 }
 
+@keyframes logout{
+    from{transform: translateX(0px);}
+    50%{transform: translateX(6px);}
+    to{transform: translateX(0px);}
+}
+
+.logout{
+    float: right;
+    margin: 10px 40px 8px 0;
+}
+
+.logout:hover{
+    animation-name: logout;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
 .top-bar-title h1{
     float: left;
     margin: 10px;
     text-align: center;
     font-size: 35px;
-    font-family: Arial;
-    color: rgb(255, 255, 242);
+    font-family: Rockwell;
+    color: white;
 }
 
 
@@ -240,7 +268,7 @@ a {
     width: 452.5px;
     height: 250px;
     border-style: solid;
-    background: rgb(252, 250, 224);
+    background: white;
     box-shadow: 2.5px 2.5px 6px grey;
     float: left;
     padding: 0 30px;
@@ -251,7 +279,7 @@ a {
     width: 452.5px;
     height: 250px;
     border-style: solid;
-    background: rgb(252, 250, 224);
+    background: white;
     box-shadow: 2.5px 2.5px 6px grey;
     float: left;
     padding: 0 30px;
@@ -296,7 +324,7 @@ a {
     text-align: center;
     font-size: 15px;
     font-family: Arial;
-    color: rgb(255, 255, 242);
+    color: white;
 }
 
 .modal{
@@ -312,7 +340,7 @@ a {
 }
 
 .modal-content {
-    background-color: rgb(255, 255, 242);
+    background-color: white;
     margin: auto;
     padding: 20px;
     border: 5px solid maroon;
@@ -399,7 +427,7 @@ a {
 }
 
 .special-row{
-    background-color: rgb(235, 203, 203);
+    background-color: rgb(236, 208, 208);
 }
 
 .modal-quiz{
@@ -415,7 +443,7 @@ a {
 }
 
 .content-quiz {
-    background-color: rgb(255, 255, 242);
+    background-color: white;
     margin: auto;
     padding: 20px;
     border: 5px solid maroon;
@@ -502,3 +530,15 @@ a {
       opacity: 1;
     }
   }
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+

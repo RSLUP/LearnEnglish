@@ -25,12 +25,12 @@ button:hover{
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: white;
+  background: linear-gradient(#8b8b8b, rgb(255, 255, 255), #8b8b8b);
 }
 
 .login{
   width: 600px;
-  background:  rgb(252, 250, 224);
+  background: linear-gradient(#cccccc, rgb(255, 255, 255), #cccccc);
   border: 3px solid #333333;
   box-shadow: 0px 0px 10px grey;
   border-radius: 10px;
@@ -127,7 +127,7 @@ input[type=text] {
   width: 100%;
   height: 40px;
   border-radius: 25px;
-  background: linear-gradient(#313131, rgb(63, 63, 63), #313131);;
+  background: linear-gradient(#313131, rgb(63, 63, 63), #313131);
   display: flex;
   justify-content: center;
   align-items: center;
