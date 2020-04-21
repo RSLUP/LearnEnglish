@@ -23,9 +23,11 @@
   <body>
 
     <form id="frm">
+     <center><div class="back">
 <table align="center" border="0" style="padding-top:30px;">
   <tr>
-    <td colspan="2" height="50px" align="center"><div id="some_div">Time : 00</div></td>
+    <td colspan="2" height="50px" align="center"><table align="center"><tr><td><div id="lvl"></div> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></td> <td><div id="some_div">Time : 00 Seconds</div></td></tr></table>   </td>
+    
   </tr>
   <tr>
     <td>
@@ -100,10 +102,10 @@
     
   </tr>
   <tr>
-    <td colspan="2" height="40px">
-      <input  type="button" id="btnStart"  value="Start" onclick="timer()">
-      <input  type="button" id="btnNext"  value="Match" >
-      <input  type="submit" id="btn"  value="Try Again" >
+    <td colspan="2" height="40px" align="center">
+      <input  type="button" class="con" id="btnStart"  value="Start" onclick="timer()">
+      <input  type="button" class="con" id="btnNext"  value="Match" >
+      <input  type="submit" class="con" id="btn"  value="Try Again" >
       
     
     </td>
@@ -127,7 +129,7 @@
     
 
   </tr>
-</table>
+</table></div></center> 
 </form>  
 
 
@@ -192,7 +194,7 @@
                 } 
                 else
                 {
-                    elem.innerHTML = "Time : " + timeLeft ;
+                    elem.innerHTML = "Time : " + timeLeft + " Seconds";
                     timeLeft--;
                 }
             }
@@ -347,7 +349,7 @@ $("#btnStart").click(function(){
 
   $("#pic").append(x);
   
- 
+  document.getElementById("lvl").innerHTML="Level 1";
 
 });
    
@@ -776,6 +778,7 @@ $("#btn40").click(function(){
         {
           if(lvlCount==1 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 2";
             $("#pic").hide();
             
               var i;
@@ -829,6 +832,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==2 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 3";
             $("#pic2").hide();
             
               var i;
@@ -876,6 +880,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==3 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 4";
             $("#pic3").hide();
             
               var i;
@@ -922,6 +927,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==4 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 5";
             $("#pic4").hide(y);
             
               var i;
@@ -967,6 +973,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==5 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 6";
             $("#pic5").hide(y);
             
               var i;
@@ -1013,6 +1020,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==6 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 7";
            
             $("#pic6").hide(y);
               var i;
@@ -1059,6 +1067,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==7 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 8";
             $("#pic7").hide(y);
             
               var i;
@@ -1104,6 +1113,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==8 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 9";
             $("#pic8").hide(y);
             
               var i;
@@ -1123,10 +1133,10 @@ $("#btn40").click(function(){
                 $("#frame2").empty();
                 count=0;
                 var y = document.createElement("IMG");
-  y.setAttribute("src", "img/p9.jpg");
+  y.setAttribute("src", "img/p9.jpeg");
   y.setAttribute("width", "304");
   y.setAttribute("height", "228");
-  y.setAttribute("alt", "The Pulpit Rock");
+  y.setAttribute("alt", "The Rock");
 
   $("#pic9").append(y);
               }
@@ -1148,6 +1158,7 @@ $("#btn40").click(function(){
 
           if(lvlCount==9 && count>3)
           {
+            document.getElementById("lvl").innerHTML="Level 10";
             $("#pic9").hide(y);
               var i;
               var subCount=0;
@@ -1206,7 +1217,8 @@ $("#btn40").click(function(){
               //   console.log(arr);
               if(subCount==4)
               {
-                alert("Level 10 Completed.!");
+                alert("Level 10 Completed.!  Game Win...!!!!!!!!!");
+
                 $("#frame2").empty();
                 count=0;
                 
@@ -1236,6 +1248,8 @@ $("#btn40").click(function(){
         else
         {
             alert("Words did not matched.!");
+            $("#btn").prop("disabled",false);
+            $("#btnNext").prop("disabled",true);
         }
          
 
