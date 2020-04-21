@@ -1,0 +1,48 @@
+#frame1{
+   
+   
+    width: 365px;
+    height: 180px;
+    background-color: goldenrod;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+  
+
+}
+
+#frame2{
+   
+  
+    width: 365px;
+    height: 180px;
+    background-color: gold;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+}
+
+.btn{
+
+    width:40px;
+    height:30px ;
+    font-weight: bold;
+    
+}
+
+.con{
+    width:80px;
+    height:30px ;
+    font-weight: bold;
+   
+}
+
+.back{
+
+    background-color:gray;
+    width:90% ;
+    height:600px ;
+    color:white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
