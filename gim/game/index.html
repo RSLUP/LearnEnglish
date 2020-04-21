@@ -24,9 +24,13 @@
 
     <form id="frm">
      <center><div class="back">
-<table align="center" border="0" style="padding-top:30px;">
+<table align="center" border="0" style="padding-top:100px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.5);" >
   <tr>
-    <td colspan="2" height="50px" align="center"><table align="center"><tr><td><div id="lvl"></div> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></td> <td><div id="some_div">Time : 00 Seconds</div></td></tr></table>   </td>
+      <td colspan="2" align="center" style="background-color: rgb(202, 168, 80);"><font style="font-size:larger; font-family: Cambria;">Virtual Zoo</td>    
+  </tr>
+  <tr>
+    <td  align="center" style="background-color: goldenrod;"><div id="lvl">&nbsp;</td>
+      <td align="center"  style="background-color: goldenrod;"><div id="some_div">&nbsp;</div>  </td>
     
   </tr>
   <tr>
@@ -93,36 +97,40 @@
             
         </div>
         
-      </td><td>      
-        
+      </td>
+      <td align="center" style="background-color:rgb(214, 169, 54);">      
+        <br>
+        <div id="pic"></div>
+        <div id="pic2"></div>
+        <div id="pic3"></div>
+        <div id="pic4"></div>
+        <div id="pic5"></div>
+        <div id="pic6"></div>
+        <div id="pic7"></div>
+        <div id="pic8"></div>
+        <div id="pic9"></div>
+        <div id="pic10"></div>
            
-            <div id="frame2">
+            <div id="frame2">   
+
             </div>
     </td>
     
   </tr>
   <tr>
-    <td colspan="2" height="40px" align="center">
+    <td colspan="2" height="40px" align="right" style="background-color: goldenrod;">
+    
       <input  type="button" class="con" id="btnStart"  value="Start" onclick="timer()">
       <input  type="button" class="con" id="btnNext"  value="Match" >
       <input  type="submit" class="con" id="btn"  value="Try Again" >
       
-    
+    &nbsp;
     </td>
 
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <div id="pic"></div>
-      <div id="pic2"></div>
-      <div id="pic3"></div>
-      <div id="pic4"></div>
-      <div id="pic5"></div>
-      <div id="pic6"></div>
-      <div id="pic7"></div>
-      <div id="pic8"></div>
-      <div id="pic9"></div>
-      <div id="pic10"></div>
+     
 
     </td>
 
@@ -343,8 +351,8 @@ $("#btnStart").click(function(){
  
   var x = document.createElement("IMG");
   x.setAttribute("src", "img/duck.jpg");
-  x.setAttribute("width", "304");
-  x.setAttribute("height", "228");
+  x.setAttribute("width", "150");
+  x.setAttribute("height", "100");
   x.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic").append(x);
@@ -760,7 +768,7 @@ $("#btn40").click(function(){
 
 
 
-
+      var score=0;
 
 
        var lvlCount=1;
@@ -794,15 +802,15 @@ $("#btn40").click(function(){
               //   console.log(arr);
               if(subCount==4)
               {
-
+                score=score+10;
                 alert("Level 1 Completed.!");
                 $("#frame2").empty();
                 count=0;
-
+                
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p2.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic2").append(y);
@@ -854,10 +862,9 @@ $("#btn40").click(function(){
                 
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p3.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
-
   $("#pic3").append(y);
               }
               else
@@ -901,8 +908,8 @@ $("#btn40").click(function(){
                 count=0;
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p4.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic4").append(y);
@@ -949,8 +956,8 @@ $("#btn40").click(function(){
                
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p5.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic5").append(y);
@@ -995,8 +1002,8 @@ $("#btn40").click(function(){
                 
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p6.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic6").append(y);
@@ -1042,8 +1049,8 @@ $("#btn40").click(function(){
                 
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p7.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic7").append(y);
@@ -1088,8 +1095,8 @@ $("#btn40").click(function(){
                 count=0;
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p8.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic8").append(y);
@@ -1134,8 +1141,8 @@ $("#btn40").click(function(){
                 count=0;
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p9.jpeg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Rock");
 
   $("#pic9").append(y);
@@ -1178,8 +1185,8 @@ $("#btn40").click(function(){
                 count=0;
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p10.jpg");
-  y.setAttribute("width", "304");
-  y.setAttribute("height", "228");
+  y.setAttribute("width", "150");
+  y.setAttribute("height", "100");
   y.setAttribute("alt", "The Pulpit Rock");
 
   $("#pic10").append(y);
