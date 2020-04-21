@@ -81,6 +81,7 @@ function showSlides() {
 
 
 // functioalitiy for the quizez
+
 var Quiz = function(){
   var self = this;
   this.init = function(){
