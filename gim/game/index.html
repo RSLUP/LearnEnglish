@@ -37,7 +37,7 @@
     <td>
       <div id="frame1">
         
-        
+       
 
         <button class="btn" id="btn1"  type="button">O </button>
         <button class="btn" id="btn2"  type="button">L</button>
@@ -768,7 +768,7 @@ $("#btn40").click(function(){
 
 
 
-      var score=0;
+    
 
 
        var lvlCount=1;
@@ -802,7 +802,7 @@ $("#btn40").click(function(){
               //   console.log(arr);
               if(subCount==4)
               {
-                score=score+10;
+                
                 alert("Level 1 Completed.!");
                 $("#frame2").empty();
                 count=0;
@@ -1225,10 +1225,11 @@ $("#btn40").click(function(){
               if(subCount==4)
               {
                 alert("Level 10 Completed.!  Game Win...!!!!!!!!!");
-
+               
                 $("#frame2").empty();
                 count=0;
-                
+                $("#some_div").hide();
+                $("#btn").prop("disabled",false);
               }
               else
               {
@@ -1257,6 +1258,8 @@ $("#btn40").click(function(){
             alert("Words did not matched.!");
             $("#btn").prop("disabled",false);
             $("#btnNext").prop("disabled",true);
+            $("#some_div").hide();
+           
         }
          
 
