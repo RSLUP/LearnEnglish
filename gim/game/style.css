@@ -1,25 +1,23 @@
 #frame1{
    
    
-    width: 380px;
-    height: 230px;
-    background-color: green;
+    width: 370px;
+    height: 180px;
+    background-color: blueviolet;
     border-width: 1px;
-    border-style: groove;
     border-color: black;
     padding: 10px;
-    padding-bottom:20px ;
+  
 
 }
 
 #frame2{
    
   
-    width: 380px;
-    height: 230px;
+    width: 370px;
+    height: 180px;
     background-color: gray;
     border-width: 1px;
-    border-style: dotted;
     border-color: black;
     padding: 10px;
 }

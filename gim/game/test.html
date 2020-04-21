@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+ 
+    </head>
+    <body>
+        <div id="some_div"></div>
+        <script>
+            var timeLeft = 20;
+            var elem = document.getElementById('some_div');
+            var timerId = setInterval(countdown, 1000);
+            
+            function countdown() {
+                if (timeLeft == -1) {
+                    clearTimeout(timerId);
+                    doSomething();
+                } else {
+                    elem.innerHTML = "Time :" + timeLeft ;
+                    timeLeft--;
+                }
+            }
+            
+            function doSomething() {
+                alert("Hi");
+                "<input type=button value=Try >"
+            }
+                    </script>
+    </body>
+</html>
