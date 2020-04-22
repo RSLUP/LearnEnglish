@@ -84,7 +84,7 @@ function login()
         window.location.href = "index.html";
         return;     
     }
-    if(user===txtuser.value && pass!==txtpass.value)
+    if(user===txtuser && pass!==txtpass)
     {
         message.innerHTML = "Invalid password!";
         alert("Invalid password!");

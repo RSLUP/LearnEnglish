@@ -85,8 +85,8 @@ function stop_the_game() {
 function highScore() {
     
 
-    alert('Score : ' + localStorage.getItem("hg_score")); 
-    console.log('Score : ' + localStorage.getItem("hg_score")); 
+    alert('High Score : ' + localStorage.getItem("hg_score")); 
+    console.log('High Score : ' + localStorage.getItem("hg_score")); 
 }
 
 function check_High_Score(){
