@@ -89,7 +89,7 @@ form h2
     left: 50%;
 }
 
-.input-div.focus .i i
+.input-div.focus .in i
 {
     color: #3196c5;
 }
@@ -111,19 +111,31 @@ form h2
 {
     margin-bottom: 4px;
 }
-.i
+.in
 {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.i i
+.in i
 {
     color: #d9d9d9;
     transition: 0.3s;
 }
 
+.eye i{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    color: #d9d9d9;
+    cursor: pointer;
+
+}
+.eye i:hover{
+    color: #3196c5;
+
+}
 .input-div > div
 {
     position: relative;

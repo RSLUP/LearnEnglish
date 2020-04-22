@@ -99,6 +99,22 @@ function login()
     }
 }
 
+
+//show password when hover
+$(function(){
+  $('i').hover(function(){
+    $('.txtpass').attr('type','text');
+    },function(){
+      $('.txtpass').attr('type','password');
+    });
+});
+
+
+
+
+
+
+
 //redirect to login page
 
 function runFirst()
