@@ -65,6 +65,7 @@ function flipCard()
        {
         console.log("Done");
         win();
+        gameStop();
        }
        
     }
@@ -72,6 +73,12 @@ function flipCard()
 
     
 }
+
+function home()
+{
+    window.location.href = "index.html";
+}
+
 
 //check for cards match
 function checkForMatch()
