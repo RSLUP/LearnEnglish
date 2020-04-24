@@ -84,10 +84,16 @@ function login()
         window.location.href = "index.html";
         return;     
     }
-    if(user===txtuser.value && pass!==txtpass.value)
+    if(user===txtuser && pass!==txtpass)
     {
-        message.innerHTML = "Invalid password!";
-        alert("Invalid password!");
+        message.innerHTML = "Please Enter correct password!";
+        alert("Please Enter correct password!");
+        return;
+    }
+    if(txtuser==="" && txtpass==="")
+    {
+        message.innerHTML = "Please Enter username and password!";
+        alert("Please Enter username and password!");
         return;
     }
     else
@@ -98,6 +104,22 @@ function login()
 
     }
 }
+
+
+//show password when hover
+$(function(){
+  $('i').hover(function(){
+    $('.txtpass').attr('type','text');
+    },function(){
+      $('.txtpass').attr('type','password');
+    });
+});
+
+
+
+
+
+
 
 //redirect to login page
 
