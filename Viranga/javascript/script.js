@@ -86,8 +86,14 @@ function login()
     }
     if(user===txtuser && pass!==txtpass)
     {
-        message.innerHTML = "Invalid password!";
-        alert("Invalid password!");
+        message.innerHTML = "Please Enter correct password!";
+        alert("Please Enter correct password!");
+        return;
+    }
+    if(txtuser==="" && txtpass==="")
+    {
+        message.innerHTML = "Please Enter username and password!";
+        alert("Please Enter username and password!");
         return;
     }
     else

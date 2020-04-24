@@ -33,7 +33,7 @@ function zeroPad(num,places)
 }
 
 
-
+var countCard =0 ;
 
 //flip card
 function flipCard()
@@ -51,9 +51,24 @@ function flipCard()
         return;
     }
     
-        hasFlippedCard=false;
-        secondCard = this;
-        checkForMatch();
+    
+    hasFlippedCard=false;
+    secondCard = this;
+    checkForMatch();
+    
+
+    if(checkForMatch()===true)
+    {
+       countCard++;
+       console.log(countCard);
+       if(countCard===6)
+       {
+        console.log("Done");
+        win();
+       }
+       
+    }
+
 
     
 }
@@ -64,11 +79,15 @@ function checkForMatch()
     if(firstCard.dataset.card===secondCard.dataset.card)
     {
         disableCards();
+        return true;
        
+      
+    
     }
     else
     {
         unFlipCards();
+        return false;
         
     }
 }

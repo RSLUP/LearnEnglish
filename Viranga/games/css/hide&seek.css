@@ -270,6 +270,12 @@ body
     display: none;
     transition: background-color 500ms, font-size 500ms;
 }
+
+
+.winText h1{
+    font-size: 25px;
+}
+
 .winText .box
 {
     
