@@ -14,6 +14,10 @@
 
   $con=mysqli_connect("localhost","root","","game");
 
+  $sql_name="select * from login where login_id='".$id."' ";
+  $result_name = mysqli_query($con, $sql_name);	
+  $row_name=mysqli_fetch_row($result_name); 
+
   if(isset($_POST["btnScore"]))
   {
 
@@ -61,9 +65,13 @@
 
     <form id="frm" method="post">
      <center><div class="back">
+    
 <table align="center" border="0" style="padding-top:90px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.5);" >
+
   <tr>
-    <td colspan="2" align="right" style="color:white;"><a href="logout.php" style="text-decoration:none;">Logout<td>
+  <td align="left">&nbsp; Player Name : <?php echo"".$row_name[1]; ?></td>
+    <td  align="right" style="color:white;"><a href="logout.php" style="text-decoration:none;">Logout<td>
+    
     </tr>
   <tr>
       <td colspan="2" align="center" style="background-color: rgb(202, 168, 80);"><font style="font-size:larger; font-family: Cambria;">Virtual Zoo</td>    
