@@ -1,4 +1,46 @@
 
+<?php
+
+  session_start();
+
+
+
+  if(!isset($_SESSION["s_id"])) 
+  {
+    header("Location:index.php");  
+  }
+
+  $id=$_SESSION["s_id"];
+
+  $con=mysqli_connect("localhost","root","","game");
+
+  $sql_name="select * from login where login_id='".$id."' ";
+  $result_name = mysqli_query($con, $sql_name);	
+  $row_name=mysqli_fetch_row($result_name); 
+
+  if(isset($_POST["btnScore"]))
+  {
+
+    $score=$_POST["txtS"];
+
+    $sql = "insert into score(id,score) values('$id','$score')";
+        
+    if(mysqli_query($con,$sql))
+    {
+        echo "<script>alert('Recordes inserted ..!!');</script>";
+        //header("Location:index.php");
+       
+    }
+    else
+    {
+      echo"Error".mysqli_error($con);
+    }
+  }
+  
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,9 +54,8 @@
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
     crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" >
 
-    
     
                 
 
@@ -22,9 +63,16 @@
   </head>
   <body>
 
-    <form id="frm">
+    <form id="frm" method="post">
      <center><div class="back">
-<table align="center" border="0" style="padding-top:100px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.5);" >
+    
+<table align="center" border="0" style="padding-top:90px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.5);" >
+
+  <tr>
+  <td align="left">&nbsp; Player Name : <?php echo"".$row_name[1]; ?></td>
+    <td  align="right" style="color:white;"><a href="logout.php" style="text-decoration:none;">Logout<td>
+    
+    </tr>
   <tr>
       <td colspan="2" align="center" style="background-color: rgb(202, 168, 80);"><font style="font-size:larger; font-family: Cambria;">Virtual Zoo</td>    
   </tr>
@@ -118,7 +166,9 @@
     
   </tr>
   <tr>
-    <td colspan="2" height="40px" align="right" style="background-color: goldenrod;">
+    <td align="center">Score:<input type="text" name="txtS" id="txtScore" value="0" style="font-size:15px; color:black; background-color:goldenrod; width:40px;" readonly="readonly"> <input  type="submit" class="con" name="btnScore" id="btnScore"  value="Save Score" hidden></td>
+    <td height="40px" align="right" style="background-color: goldenrod;">
+    
     
       <input  type="button" class="con" id="btnStart"  value="Start" onclick="timer()">
       <input  type="button" class="con" id="btnNext"  value="Match" >
@@ -139,6 +189,27 @@
   </tr>
 </table></div></center> 
 </form>  
+
+<br>
+<br>
+
+
+<h3 align="center">Recent Score : </h3>
+<?php
+
+  $sql_score="select * from score where id='".$id."' ";
+
+  $result_score = mysqli_query($con, $sql_score);	
+
+  echo"<table align=center><tr>";
+  while($row = mysqli_fetch_array($result_score))
+  {
+    echo " <tr><td>".$row[1]."</td></tr> ";
+  }
+  echo"</tr></table>";
+
+?>
+
 
 
     <script>
@@ -772,16 +843,18 @@ $("#btn40").click(function(){
 
 
        var lvlCount=1;
-
+       var score=0;
+      
       $("#btnNext").click(function(x,timerId,timeLeft){
      
         timeLeft=-1;
         
       
         
-     
+        
+        
 
-     
+       
         if((lvlCount==1 || lvlCount==2 || lvlCount==3 || lvlCount==4 || lvlCount==5 || lvlCount==6 || lvlCount==7 || lvlCount==8 || lvlCount==9 || lvlCount==10) && (count ==4))
         {
           if(lvlCount==1 && count>3)
@@ -806,7 +879,11 @@ $("#btn40").click(function(){
                 alert("Level 1 Completed.!");
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
                 
+                
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p2.jpg");
   y.setAttribute("width", "150");
@@ -859,7 +936,9 @@ $("#btn40").click(function(){
                 alert("Level 2 Completed.!");
                 $("#frame2").empty();
                 count=0;
-                
+                score=score+10;
+                document.getElementById("txtScore").value=score;
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p3.jpg");
   y.setAttribute("width", "150");
@@ -906,6 +985,9 @@ $("#btn40").click(function(){
                 alert("Level 3 Completed.!");
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p4.jpg");
   y.setAttribute("width", "150");
@@ -953,7 +1035,9 @@ $("#btn40").click(function(){
                 alert("Level 4 Completed.!");
                 $("#frame2").empty();
                 count=0;
-               
+                score=score+10;
+                document.getElementById("txtScore").value=score;
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p5.jpg");
   y.setAttribute("width", "150");
@@ -999,6 +1083,8 @@ $("#btn40").click(function(){
                 alert("Level 5 Completed.!");
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
                 
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p6.jpg");
@@ -1046,7 +1132,9 @@ $("#btn40").click(function(){
                 alert("Level 6 Completed.!");
                 $("#frame2").empty();
                 count=0;
-                
+                score=score+10;
+                document.getElementById("txtScore").value=score;
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p7.jpg");
   y.setAttribute("width", "150");
@@ -1093,6 +1181,8 @@ $("#btn40").click(function(){
                 alert("Level 7 Completed.!");
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p8.jpg");
   y.setAttribute("width", "150");
@@ -1139,6 +1229,9 @@ $("#btn40").click(function(){
                 alert("Level 8 Completed.!");
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p9.jpeg");
   y.setAttribute("width", "150");
@@ -1183,6 +1276,9 @@ $("#btn40").click(function(){
                 alert("Level 9 Completed.!");
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
+
                 var y = document.createElement("IMG");
   y.setAttribute("src", "img/p10.jpg");
   y.setAttribute("width", "150");
@@ -1228,8 +1324,11 @@ $("#btn40").click(function(){
                
                 $("#frame2").empty();
                 count=0;
+                score=score+10;
+                document.getElementById("txtScore").value=score;
                 $("#some_div").hide();
                 $("#btn").prop("disabled",false);
+                $("#btnScore").show();
               }
               else
               {
@@ -1259,6 +1358,7 @@ $("#btn40").click(function(){
             $("#btn").prop("disabled",false);
             $("#btnNext").prop("disabled",true);
             $("#some_div").hide();
+            $("#btnScore").show();
            
         }
          
