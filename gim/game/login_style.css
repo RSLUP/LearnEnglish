@@ -63,3 +63,17 @@ body{
     font-size: 20px;
     color: maroon;
 }
+
+.join{
+
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: maroon;
+}
+.join:hover{
+
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: maroon;
+    text-decoration: underline;
+}

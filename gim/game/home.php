@@ -1,4 +1,15 @@
 
+<?php
+
+  session_start();
+  if(!isset($_SESSION["s_id"])) 
+  {
+    header("Location:index.php");  
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,7 +35,10 @@
 
     <form id="frm">
      <center><div class="back">
-<table align="center" border="0" style="padding-top:100px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.5);" >
+<table align="center" border="0" style="padding-top:90px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.5);" >
+  <tr>
+    <td><a href="logout.php">logout<td>
+    </tr>
   <tr>
       <td colspan="2" align="center" style="background-color: rgb(202, 168, 80);"><font style="font-size:larger; font-family: Cambria;">Virtual Zoo</td>    
   </tr>
