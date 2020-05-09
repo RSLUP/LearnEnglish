@@ -28,11 +28,11 @@ var drawScore = function(){
 
 var gameOver = function(){
     clearInterval(intervalId);
-    ctx.font= "60px Courier";
+    ctx.font= "40px Courier";
     ctx.fillStyle = "Black";
     ctx.textAlign = "center";
     ctx.textBaseLine = "middle";
-    ctx.fillText("Game Over:", width/2, height/2);
+    ctx.fillText("Game Over:" +score, width/2, height/2);
 };
 
 var circle = function(x, y, radius, fillCircle) {

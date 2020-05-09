@@ -112,7 +112,7 @@ function loadNextQuestion() {
         nextBtn.textContent = 'Finish';
     }
     if(currentQuestion == totQuestions){
-        container.style.display = none;
+        quizContainer.style.display = none;
         resultCont.style.display = '';
         resultCont.textContent = 'Your Score: ' + score;
         return;

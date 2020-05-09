@@ -1,195 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-      background: rgb(217,217,217);
-      background: linear-gradient(rgba(217,217,217,1) 0%, rgba(255,255,255,1) 100%);
-    }
-  </style>
-
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English</title>
+    <title>English School</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
-  <!--            
-    <script>    
-      function checkValidation()
-      {
-
-          var loginDate=new Date().toISOString().split('T');
-           if(sessionStorage.getItem("UserName")=="")
-          {
-              window.location.href = "login.html";
-             
-          }
-      }
-  </script>
-    -->
 </head>
 
-<body style="background-color:white;" class="clearfix" onload="checkValidation()">
-  
 
+
+<body>
   <header class="clearfix">
     <div class="logo">
-      <h1 style="text-align:center;">Learn English - Parts of Speech</h1>
+      <h1 style="text-align: center;">English School - A Better Place to learn English</h1>
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href= "index.html"> Home </a></li>
-      <li><a href= "tences.html"> Tences</a></li>
-      <li><a href= "mainQuiz.html"> Take a Quiz </a></li>
-      <li><a href= "#"> Contact Us</a></li>
-    </ul>
-  </nav>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="tenses.html">Tenses</a>
+    <a href="mainQuiz.html">Take a Quiz</a>
+    <a href="game.html">Play Games</a>
+    <a href="#logout">Log-Out</a>
+  </div>
 
-  
 
-  
+<div class="pText">
+  <h1 style="text-align: center;">Parts of Speech</h1>
+  <p>There are eight parts of speech in the English language: noun, pronoun, verb, adjective, adverb, preposition, conjunction, and interjection. The part of speech indicates how the word functions in meaning as well as grammatically within the sentence. An individual word can function as more than one part of speech when used in different</p>
+</div>
 
-  <table style="width:100%" class="tableContent">
-    <div class="tableBorder"> 
-      <tr style="background-color: rgb(255,210,32);" style="float:center;"  >
-        <td  height="100px">
-          <font color="black"> 
-            <h2>Nouns</h2>
-            <h3><i>people, places, and things (and animals)</i></h3>
-            <h4>Example: Dog, Cat, Garden, Work, Music, Town, Manila, Teacher, Bob</h4>
-            <h4>Uses: The <u>sun</u> shines</h4>
-          </font>
+  <!-- Noun Container -->
+  <div class="conNoun">
+        <label class="ttlNoun"> 1. Nouns </label>
+        <p>
+          A noun is a word for a person, place, or thing. Everything we can see or talk about is represented by a word that names it. That "naming" word is called a noun.
+        </p>
 
-          
-        </td>
+        <table>
+          <th></th>
+          <th></th>
 
-        <!--
-          <div class="qNoun">
-        <div class="nounContent">
-          <h1> Which one is not a Noun</h1>
-        </div>
-      </div>
-        -->
-        
-        <td width="225px">
-        </td>
-      </tr>
+          <tr>
+            <td>
+              <img src="img/imgNoun.png" class="imgNoun">
+            </td>
+            <td>
+              <p style="align-content: 20px;">
+                <h3> Example: </h3>
+                <ul>
+                  <li> <b>People: </b>soldier, Alan, cousin, lawyer</li>
+                  <li> <b>Animals: </b>aardvark, rat, shark, Mickey</li>
+                  <li> <b>Places: </b>house, London, factory, shelter</li>
+                  <li> <b>Things: </b>table, London Bridge, chisel, nitrogen, month, inch, cooking</li>
+                </ul>
 
-      <tr style="background-color: rgb(255,210,32);">        
+                <h3> Uses: </h3>
+                <ul>
+                  <li><i>The young <u>girl</u> brought me a very long <u>letter</u> from the <u>teacher</u>, and then she quickly disappeared</i></li>
+                </ul>
+
+              </p>
+            </td>
+          </tr>
+        </table>      
+  </div>
+
+  <!-- Pronoun Container -->
+  <div class="conPro">
+    <label class="ttlPro"> 2. Pronouns </label>
+    <p>
+      A pronoun is a word used in place of a noun. A pronoun is usually substituted for a specific noun, which is called its antecedent.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
         <td>
-          <font color="black">
-            <h2>Pronouns</h2>
-            <h3><i>Replace nouns</i></h3>
-            <h4>Example: he, I, its, me, my, she, that, this, those, us, who, whom, you</h4>
-            <h4>Uses: John is hungry. <u>He</u> wants to eat</h4>
-          </font>
+          <img src="img/imgPro.png" class="imgPro">
         </td>
-
-        <td width="225px">
-        </td>
-      </tr>
-
-      <tr style="background-color: rgb(255,210,32);">
         <td>
-          <font color="black">
-            <h2>Verbs</h2>
-            <h3>Show <i>action</i> or <i>being</i></h3>
-            <h4>Example: run, go, have, invite, laughed, listen, playing, singing, walk</h4>
-            <h4>Uses: The dog, and cat <u>are running</u></h4>
-          </font>
-        </td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> she, we, they, it</li>
+            </ul>
 
-        <td width="225px"> 
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The young girl brought <u>me</u> a very long letter from the teacher, and then <u>she</u> quickly disappeared. Oh my!</i></li>
+            </ul>
+
+          </p>
         </td>
       </tr>
+    </table>   
+  </div>
 
-      <tr style="background-color: rgb(255,210,32);">
+  <!-- Verb Container -->
+  <div class="conVrb">
+    <label class="ttlVrb"> 3. Verbs
+  </label>
+    <p>
+      The verb in a sentence expresses action or being. There is a main verb and sometimes one or more helping verbs.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
         <td>
-          <font color="black">
-            <h2>Adjectives</h2>
-            <h3><i>Describe nouns</i> </h3>
-            <h4>Example: angry, brave, healthy, little, old, red, smart, two, some, good, big, interesting</h4>
-            <h4>Uses: <u>Brown</u> dog, <u>Fat</u> cat, <u>Big</u> graden</h4>
-          </font>
+          <img src="img/imgVerb.png" class="imgVerb">
         </td>
-
-        <td width="225px"> 
-        </td>
-      </tr>
-
-      <tr style="background-color: rgb(255,210,32);">
         <td>
-          <font color="black">
-            <h2>Adverbs</h2>
-            <h3><i>describe verbs, adjectives</i> or other <i>adverbs</i> </h3>
-            <h4>Example: badly, fully, hardly, nearly, never, quickly, silently, well, very, really, almost</h4>
-            <h4>Uses: Runs <u>quickly,</u> Eats <u>very</u> slowly</h4>
-          </font>
-        </td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> jump, is, write, become</li>
+            </ul>
 
-        <td width="225px"> 
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The young girl <u>brought</u> me a very long letter from the teacher, and then she quickly <u>disappeared</u>. Oh my!</i></li>
+            </ul>
+
+          </p>
         </td>
       </tr>
+    </table>
 
-      <tr style="background-color: rgb(255,210,32);">
+  </div>
+
+  <!-- Adjective Container -->
+  <div class="conAdj">
+    <label class="ttlAdj"> 4. Adjectives
+  </label>
+    <p>
+      An adjective is a word used to modify or describe a noun or a pronoun. It usually answers the question of which one, what kind, or how many.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
         <td>
-          <font color="black">
-            <h2>Articles</h2>
-            <h3><i>signal</i> that a <i> noun</i> is going to follow</h3>
-            <h4>Example: the, a, an</h4>
-            <h4>Uses: <u>The</u> dog, <u>The</u> cat</h4>
-          </font>
+          <img src="img/imgAdj.png" class="imgAdj">
         </td>
-
-        <td width="225px"> 
-        </td>
-      </tr>
-
-      <tr style="background-color: rgb(255,210,32);">
         <td>
-          <font color="black">
-            <h2>Propositions</h2>
-            <h3>Show <i>relationship</i> between words in a sentence</h3>
-            <h4>Example: above, before, except, from, in, near, of, since, between, upon, with, to, at, after, on</h4>
-            <h4>Uses: I am going <u>to</u> my Garden</h4>
-          </font>
-        </td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> pretty, old, blue, smart</li>
+            </ul>
 
-        <td width="225px"> 
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The <u>young</u> girl brought me a very <u>long</u> letter from the teacher, and then she quickly disappeared. Oh my!</i></li>
+            </ul>
+
+          </p>
         </td>
       </tr>
+    </table>
+  </div>
 
-      <tr style="background-color: rgb(255,210,32);">
+  <!-- Adverb Container -->
+  <div class="conAdv">
+    <label class="ttlAdv"> 5. Adverbs
+  </label>
+    <p>
+      An adverb describes or modifies a verb, an adjective, or another adverb, but never a noun. It usually answers the questions of when, where, how, why, under what conditions, or to what degree. Adverbs often end in -ly.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
         <td>
-          <font color="black">
-            <h2>Conjunctions</h2>
-            <h3><i>Connect</i> words, phrases, clauses or sentences</h3>
-            <h4>Example: and, or, but, so, after, before, unless, either, neither, because, since</h4>
-            <h4>Uses: I was tires <u>so</u> I went to sleep</h4>
-          </font>
+          <img src="img/imgAdv.png" class="imgAdv">
         </td>
-
-        <td width="225px"> 
-        </td>
-      </tr>
-
-      <tr style="background-color: rgb(255,210,32);">
         <td>
-          <font color="black">
-            <h2>Interjections</h2>
-            <h3>Exclamations that express <i>strong feelings</i></h3>
-            <h4>Example: aha!, gosh!, great!, hey!, oh!, oops!, phew!, oh!, ouch!, hi!, well</h4>
-            <h4>Uses: <u>Oops!</u> I spilled the milk</h4>
-        </font>
-        </td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> gently, extremely, carefully, well</li>
+            </ul>
 
-        <td width="225px"> 
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The young girl brought me a <u>very</u> long letter from the teacher, and then she <u>quickly</u> disappeared. Oh my!</i></li>
+            </ul>
+
+          </p>
         </td>
       </tr>
-      
-    </div>
-  </table>
+    </table>
+  </div>
+
+  <!-- Article Container -->
+  <div class="conArt">
+    <label class="ttlArt"> 6. Articles
+  </label>
+    <p>
+      Articles are words that define a noun as specific or unspecific. 
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
+        <td>
+          <img src="img/imgArt.png" class="imgArt">
+        </td>
+        <td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> the, a, an</li>
+            </ul>
+
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>After <u>the</u> long day, <u>the</u> cup of tea tasted particularly good.</i></li>
+            </ul>
+
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Prepositions Container -->
+  <div class="conPre">
+    <label class="ttlPre"> 7. Prepositions
+  </label>
+    <p>
+      A preposition is a word placed before a noun or pronoun to form a phrase modifying another word in the sentence. Therefore a preposition is always part of a prepositional phrase.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
+        <td>
+          <img src="img/imgPre.png" class="imgPre">
+        </td>
+        <td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> by, with, about, until</li>
+            </ul>
+
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The young girl brought me a very long letter <u>from</u> the teacher, and then she quickly disappeared. Oh my!</i></li>
+            </ul>
+
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Conjunctions Container -->
+  <div class="conCnj">
+    <label class="ttlCnj"> 8. Conjunctions
+  </label>
+    <p>
+      A conjunction joins words, phrases, or clauses, and indicates the relationship between the elements joined.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
+        <td>
+          <img src="img/imgCon.png" class="imgCon">
+        </td>
+        <td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> and, but, or, while, because</li>
+            </ul>
+
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The young girl brought me a very long letter from the teacher, <u>and</u> then she quickly disappeared. Oh my!</i></li>
+            </ul>
+
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Interjections Container -->
+  <div class="conInt">
+    <label class="ttlInt"> 9. Interjections
+  </label>
+    <p>
+      An interjection is a word used to express emotion. It is often followed by an exclamation point.
+    </p>
+
+    <table>
+      <th></th>
+      <th></th>
+
+      <tr>
+        <td>
+          <img src="img/imgInt.png" class="imgInt">
+        </td>
+        <td>
+          <p style="align-content: 20px;">
+            <h3> Example: </h3>
+            <ul>
+              <li> Oh!   Wow!   Oops!</li>
+            </ul>
+
+            <h3> Uses: </h3>
+            <ul>
+              <li><i>The young girl brought me a very long letter from the teacher, and then she quickly disappeared. <u>Oh my!</u></i></li>
+            </ul>
+
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
 </body>
 </html>
