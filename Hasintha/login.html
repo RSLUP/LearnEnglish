@@ -1,106 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+ 
     <script src="js/login.js"></script>
-
-    <style>
-
-        .body {
-            position: fixed;
-            overflow: scroll;
-            width: 100%;
-            top: -20px;
-            right: -40px;
-            bottom: -40px;
-            width: auto;
-            height: auto;
-            background-size: cover;
-        }
-
-        .head {
-            position: absolute;
-            top: calc(50% - 35px);
-            left: calc(50% - 255px);
-        }
-
-        .header div {
-            float: left;
-            color: #fff;
-            font-size: 40px;
-            font-weight: 200;
-        }
-
-        .header div span{
-            color: #f29e20;
-        }
-
-        .login {
-            position: absolute;
-            top: calc(50%- 75px);
-            left: calc(50% - 50px);
-            height: 150px;
-            width: 350px;
-            padding: 10px;
-        }
-
-        .login input [type=text] {
-            width: 250px;
-            height: 30px;
-            background: transparent;
-            border: 1px solid rgba(255,255,255,0.7);
-            color: #fff;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 4px;
-        }
-
-        .login input [type=button]{
-            width: 260px;
-            height: 35px;
-            background: #fff;
-            border: 1px solid #fff;
-            cursor: pointer;
-            border-radius: 2px;
-            color: #a18d6c;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 4px;
-        }
-
-        .login input [type=button]:hover {
-            opacity: 0.8;
-        }
-
-        .login input [type=button]:active {
-            opacity: 0.6;
-        }
-
-        .login input [type=text]:focus {
-            outline: none;
-            border: 1px solid rgba(255,255,255,0.9);
-        }
-
-        .login input [type=password]:focus {
-            outline: none;
-            border: 1px solid rgba(255,255,255,0.9);
-        }
-
-        .login input [type=button]:focus {
-            outline: none;
-        }
-
-        ::-webkit-input-placeholder {
-            color:rgba(255,255,255,0.6);        
-        }
-
-        ::-moz-input-placeholder{
-            color:rgba(255,255,255,0.6);   
-        }
-
-    </style>
+    
 </head>
 <body oncontextmenu="return false">
     <div class="body"></div>
@@ -111,11 +21,13 @@
     </div>
 
     <br>
-    <form name="login">
-        <div class="login">
-            <input type="text" placeholder="username" name="userid" id="userIn"><br>
-            <input type="password" placeholder="password" name="psw" id="pswIn"><br>
-            <input type="button" onclick="check(this.form)" value="Login"/> 
+    <form>
+        <div class="loginFrm">
+            <label class="ttlLogin">Log-In</label>
+
+            <input class="loginFrmTxt" type="text" placeholder="username" name="userid" id="userIn"><br>
+            <input class="loginFrmPsw" type="password" placeholder="password" name="psw" id="pswIn"><br>
+            <input class="loginFrmBtn" type="button" onclick="check(this.form)" value="Login"/> 
         </div>
     </form>
     
@@ -124,7 +36,6 @@
         {
             if(form.userid.value == "RSLUP" && form.psw.value == "r5Lup@Ac9"){
                 localStorage.setItem("UserName","RSLUP");
-                localStorage.setItem("Passwrd","r5Lup@Ac9");
                 localStorage.setItem("LogDate",new Date().toISOString().split('T'));
                 
                 window.open('index.html');
