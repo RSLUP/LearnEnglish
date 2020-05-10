@@ -17,7 +17,7 @@
 					<img src="img/login.png" alt="login">
 				</div>
 
-				<form action="index01.html" class="loginform">
+				<form action="index01.php" class="loginform">
 
 					<h2 class="logintitle">Member Login</h2>
 					<div class="inputbox" >

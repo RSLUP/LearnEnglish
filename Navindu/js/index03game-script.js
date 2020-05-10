@@ -241,7 +241,7 @@ function infoAndSessionCheck(){
     var logTime = localStorage.getItem("logTimeDisplay");
     if(logDate==null || sessionDate.toDateString() != logDate){
         alert("Session Expired \n Please login!");
-        window.location.href = "index00.html";
+        window.location.href = "index.php";
     }
 
     //Game Instructions

@@ -9,7 +9,7 @@ function sessionCheck(){
     if(logDate==null || sessionDate.toDateString() != logDate) 
     {
         alert("Session Expired \n Please login!");
-        window.location.href = "index00.html";
+        window.location.href = "index.php";
     }
     else{
         document.getElementById("loggeduser").innerHTML="Logged as : <b>" + logUser + "</b> | @ " + logTime;
