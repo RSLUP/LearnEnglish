@@ -49,16 +49,16 @@ function retrive_func() {
     var stored_date = localStorage.getItem("date");
 
     if ((stored_date !== n[0]) || (stored_name == null)) {
-        window.location.href= "login.html";
+        window.location.href= "login.php";
 
-        // window.open("login.html");
+        // window.open("login.php");
     } else {
         alert("Page Loaded:).");
     }
 }
 function logout_func(){
     localStorage.removeItem("username");
-    window.location ="login.html"
+    window.location ="login.php"
 
 }
 
