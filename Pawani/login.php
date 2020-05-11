@@ -10,14 +10,13 @@
 
 <body>
 
-        <form id="login_form" name="login_form" method="POST" action="log.php">
+        <form id="login_form" name="login_form" method="POST" action="conn.php">
 
 
         <img src="images/login_back.jpg" id="login_img" alt="">
         <h1 id="login_topic">LOG IN</h1>
         <div id="label_div">
             <input id="un" type="text" name="username" placeholder="username">
-            <span class="message"></span>
             <br><br>
             <input id="pw" type="password" name="password" placeholder="password">
             <br><br>
