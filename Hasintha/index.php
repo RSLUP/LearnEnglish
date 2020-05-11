@@ -1,3 +1,34 @@
+<?php
+   include("config.php");
+   session_start();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myusername = mysqli_real_escape_string($db,$_POST['userid']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['psw']); 
+      
+      $sql = "SELECT username FROM users WHERE username = '$myusername' and password = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+      
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1) {
+        //  session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         header("location: home.html");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,29 +52,14 @@
     </div>
 
     <br>
-    <form>
+    <form action = "" method = "post">
         <div class="loginFrm">
             <label class="ttlLogin">Log-In</label>
 
             <input class="loginFrmTxt" type="text" placeholder="username" name="userid" id="userIn"><br>
             <input class="loginFrmPsw" type="password" placeholder="password" name="psw" id="pswIn"><br>
-            <input class="loginFrmBtn" type="button" onclick="check(this.form)" value="Login"/> 
+            <input class="loginFrmBtn" type="submit" value="Login"/> 
         </div>
     </form>
-    
-    <script language="javascript">
-        function check(form)
-        {
-            if(form.userid.value == "RSLUP" && form.psw.value == "r5Lup@Ac9"){
-                localStorage.setItem("UserName","RSLUP");
-                localStorage.setItem("LogDate",new Date().toISOString().split('T'));
-                
-                window.open('index.html');
-            }
-            else{
-                alert("The Password is incorrect");
-            }
-        }
-    </script>
 </body>
 </html>
