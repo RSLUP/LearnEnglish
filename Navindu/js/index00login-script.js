@@ -13,7 +13,7 @@ function redirect(form){
 		localStorage.setItem("logTimeDisplay", logintime.toLocaleString());
 		//alert(logtime.toDateString());
 
-		window.location.href = "index01.html";
+		window.location.href = "index01.php";
 	}
 	
 	else{

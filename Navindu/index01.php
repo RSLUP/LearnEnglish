@@ -11,23 +11,7 @@
     <body onload="sessionCheck()">
         <div class="wrapper">
 
-            <div class="top-bar clearfix">
-                <div class="top-bar-logo">
-                    <img src="img/logo.png" height="40px" alt="Logo English Grammar">
-                </div>
-                <div class="top-bar-title">
-                    <h1>English Grammar</h1>
-                </div>
-                
-                <div class="navigate">
-                    <a href="index01.html">Parts of speech</a>
-                    <a href="index02.html">English Tenses</a>
-                    <a href="index03-game.html">Game</a>
-                </div>
-                <div class="logout">
-                    <a href="index00.html"><img src="img/logout.png" height="40px" alt="Logout"></a>
-                </div>
-            </div>
+            <?php include('./components/navigation.php')?>
 
             <div class="mainbody">
                 <div class="userlog">
@@ -483,11 +467,7 @@
                     </div>
                 </div> <!--Quiz Modal Box Elements-->
     
-                <div class="bottom-bar clearfix">
-                    <div class="bottom-bar-title">
-                        <h1>&copy 2020 Navindu Kavishka</h1>
-                    </div>
-                </div>
+                <?php include('components/footer.php')?>
     
             </div>
             
