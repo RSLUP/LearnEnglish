@@ -1,3 +1,9 @@
+<?php
+    include('session2.php');
+    if(!isset($_SESSION['login_user'])){
+    header("location:Login.php"); // Redirecting To Home Page
+    }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,18 +24,18 @@
         <nav class="nav" >
           <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
          <ul>
-         <li><a href="EnglishHub.html"> Home </a></li>
-         <li><a href="grammar.html">Grammar</a></li>
+         <li><a href="EnglishHub.php"> Home </a></li>
+         <li><a href="grammar.php">Grammar</a></li>
          <li><a href="#">Vocabulary</a></li>
-         <li><a href="speaking.html">Speaking</a></li>
+         <li><a href="speaking.php">Speaking</a></li>
          <li><a href="#">Writing </a></li>
-         <li><a href="minigame.html">Mini games</a></li>
+         <li><a href="minigame.php">Mini games</a></li>
          <li><a href="#">Quizes </a>
         <ul>
-          <li><a href="grammarquiz.html">Grammar</a></li>
-          <li><a href="speakingquiz.html">Speaking</a></li>
+          <li><a href="grammarquiz.php">Grammar</a></li>
+          <li><a href="speakingquiz.php">Speaking</a></li>
         </ul></li>
-        <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
+        <!--<li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>-->
         <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>
         </ul>
         </nav>
