@@ -1,0 +1,30 @@
+// cretae game database
+
+create database game;
+
+
+//create login table
+
+CREATE TABLE login (
+  login_id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  username varchar(50) NOT NULL,
+  password varchar(50) NOT NULL
+) ;
+
+
+//create score table
+
+CREATE TABLE score (id int(10) NOT NULL,score int(10) NOT NULL);
+ 
+  
+
+//insert data to login table 
+
+INSERT INTO login (login_id, username, password) VALUES(1143, 'kelum', '123');
+
+
+//insert data to score table 
+
+INSERT INTO score (id, score) VALUES (1143, 10),(1143, 10);
+
+
