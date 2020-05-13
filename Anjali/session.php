@@ -14,8 +14,8 @@
    		$password = $_POST["txtPassword"];
          
 
-   		$conn = mysqli_connect("localhost","root","","learnenglish");
-   		$query = "select username, password from user where username ='$username' and password ='$password' limit 1";
+   		$conn = mysqli_connect("localhost","root","","english");
+   		$query = "SELECT username, password FROM user WHERE username ='$username' AND password ='$password' limit 1";
 
    			$stmt = $conn->prepare($query);
    			$stmt->execute();

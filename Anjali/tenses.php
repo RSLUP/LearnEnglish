@@ -23,7 +23,7 @@
             <a href="englishIndex.php"><h1>LEARN ENGLISH</h1>  </a>  
             <ul>
                 <li><a href="englishIndex.php">Home</a></li>
-                <li><a href="tenses.[php]">English Tenses </a></li>   
+                <li><a href="tenses.php">English Tenses </a></li>   
                 <li><a href="login.php">Login </a></li>  
                   
                 <li><a href="#" onclick="timeStamp()">profile </a></li> 
