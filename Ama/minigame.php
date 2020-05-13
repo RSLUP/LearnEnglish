@@ -139,6 +139,8 @@
       <button id="play-again" onclick="reload();"> Play Again </button>
         <button id="rules" ><a href="#rule-and-reg">Rules and Regulations</a> </button>
         <button id="show-ans"><a href = "#answer-grid" >Show Answers</a></button>
+        <button><a href = "game.php" >Done </a></button>
+        <button id="History"><a href = "history.php" >Show Answers</a></button>
     
 
   </div>
@@ -289,7 +291,7 @@
     <tr>
       <td>
         <div><button id="show-score" onclick="wrong();">Show My Score</button></div>
-        <div id="my-score"> </div>
+        <div id="my-score" name = "txtpoints" method="post"> </div>
       </td>
     </tr>
   </table>
