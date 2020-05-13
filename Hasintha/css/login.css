@@ -1,7 +1,136 @@
+.head {
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 255px);
+}
 
+.body {
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    top: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
 
 .head {
     position: absolute;
     top: calc(50% - 35px);
     left: calc(50% - 255px);
 }
+
+.header div {
+    float: left;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.header div span{
+    color: #f29e20;
+}
+
+.loginFrm {
+    overflow: auto;
+    height: 280px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgb(203, 249, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 14px rgb(189, 189, 189);
+}
+
+.loginFrmTxt{
+    width: 265px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(29, 29, 29, 0.7);
+    color: #000;
+    font-size: 20px;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    padding: 4px;
+    margin: 10px 15px 10px 10px;
+}
+
+.loginFrmPsw{
+    width: 265px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(29, 29, 29, 0.7);
+    color: #000;
+    font-size: 20px;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    padding: 4px;
+    margin: 10px 15px 10px 10px;
+}
+
+.loginFrmBtn{
+    width: 120px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid rgb(29, 29, 29);
+    cursor: pointer;
+    border-radius: 2px;
+    color:rgba(29, 29, 29);
+    font-size: 16px;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    padding: 4px;
+    margin-left: 88px;
+    margin-top: 10px;
+}
+
+
+
+.loginFrmBtn:hover {
+    opacity: 0.8;
+}
+
+.loginFrmBtn:active {
+    opacity: 0.6;
+}
+
+.loginFrmTxt:focus {
+    outline: none;
+    border: 2px solid  #343432;
+}
+
+.loginFrmPsw:focus {
+    outline: none;
+    border: 2px solid #343432;
+}
+
+.loginFrmBtn:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color:rgba(255,255,255,0.6);        
+}
+
+::-moz-input-placeholder{
+    color:rgba(255,255,255,0.6);   
+}
+
+
+.ttlLogin {
+    width: 260px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 28px;
+  }

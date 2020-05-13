@@ -1,0 +1,511 @@
+/*=======================================================================================================*/
+/*=======================================================================================================*/
+/*===============================Tenses Page=========================================*/
+/**/
+
+.clearFix {overflow: auto;}
+
+header .logo h1 {
+    font-variant: small-caps;
+    font-size: 48px;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    color: #343432;
+    
+}
+
+header .logo h2 {
+    font-size: 36px;
+    font-family: Advent Pro;
+    letter-spacing: -1px;
+    color: #343432;
+    
+}
+
+.topnav {
+    overflow: auto;
+    background-color: #01C5FF;
+    box-shadow: 0px 0px 12px rgb(189, 189, 189);
+  }
+  
+.topnav a {
+    float: left;
+    color: #343432;
+    text-align: center;
+    padding: 20px 74px;
+    text-decoration: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: ABeeZee;
+    font-weight: bolder ;
+    letter-spacing: 4px;
+  }
+  
+.topnav a:hover {
+    background-color: #fff;
+    color: black;
+  }
+  
+.topnav a.active {
+    background-color: #343432;
+    color: white;
+  }
+
+.pText h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #343432;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+.pText p {
+    text-align: center;
+    color: #343432;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-size: 28px;
+    text-align: justify center;
+    width: 1320px;
+    align-content: center;
+    margin-top: 10px;
+  } 
+
+/*Containers*/
+
+/*Simple Tense*/
+.conSim {
+    overflow: auto;
+    height: 520px;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background: rgb(203, 249, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 14px rgb(189, 189, 189);
+}
+    
+.conSim p {
+  text-align: center;
+  color: #343432;
+  font-family: 'Lexend Deca';
+  font-weight: normal;
+  font-size: 24px;
+  text-align: justify center;
+  align-content: center;
+  margin-top: 10px;
+} 
+  
+.conSim ul{
+    list-style-type: square;
+}
+  
+.conSim li{
+  font-family: 'Lexend Deca';
+  font-weight: normal;
+  font-size: 21px;
+}
+  
+.SimPast {
+  width: 350px;
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  vertical-align: middle;
+  background:  #343432;
+  margin: 10px 0 10px 10px;
+  color:#fff;
+  text-align: center;
+  font-family: 'Lexend Deca';
+  font-weight: bold;
+  font-size: 26px;
+}
+  
+.SimPre {
+    width: 350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 26px;
+}
+  
+.SimFut {
+    width: 350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 26px;
+}
+  
+.conSim table,th{
+    width: 1200px;
+  
+}
+  
+.conSim table,tr{
+    background-color: #fff;
+}
+  
+.conSim h3{
+    text-indent: 20px;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ttlNoun {
+    width: 1165px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.conSim h4{
+    text-indent: 25px;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+    }
+
+/*======================================================================================================*/
+/*======================================================================================================*/
+/*======================================================================================================*/
+/*Continous Tense*/
+.conCon {
+    overflow: auto;
+    height: 590px;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(600px);
+    background: rgb(203, 249, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 14px rgb(189, 189, 189);
+  }
+    
+  .conCon p {
+  text-align: center;
+  color: #343432;
+  font-family: 'Lexend Deca';
+  font-weight: normal;
+  font-size: 24px;
+  text-align: justify center;
+  align-content: center;
+  margin-top: 10px;
+  } 
+  
+  .conCon ul{
+    list-style-type: square;
+  }
+  
+  .conCon li{
+  font-family: 'Lexend Deca';
+  font-weight: normal;
+  font-size: 21px;
+  }
+  
+  .ConPast {
+  width: 350px;
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  vertical-align: middle;
+  background:  #343432;
+  margin: 10px 0 10px 10px;
+  color:#fff;
+  text-align: center;
+  font-family: 'Lexend Deca';
+  font-weight: bold;
+  font-size: 26px;
+  }
+  
+  .ConPre {
+    width: 350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 26px;
+    }
+  
+  .ConFut {
+    width: 350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 26px;
+    }
+  
+  .conCon table,th{
+    width: 1200px;
+  
+  }
+  
+  .conCon table,tr{
+    background-color: #fff;
+  }
+  
+  .conCon h3{
+    text-indent: 20px;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    }
+
+.conCon h4{
+    text-indent: 25px;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+    }
+
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+
+/*Perfect Tense*/
+.conPer {
+    overflow: auto;
+    height: 610px;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(1270px);
+    background: rgb(203, 249, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 14px rgb(189, 189, 189);
+}
+
+.conPer p {
+    text-align: center;
+    color: #343432;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-size: 24px;
+    text-align: justify center;
+    align-content: center;
+    margin-top: 10px;
+    } 
+
+    .conPer ul{
+      list-style-type: square;
+    }
+    
+    .conPer li{
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-size: 21px;
+    }
+    
+    .PerPast {
+    width: 350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 26px;
+    }
+    
+    .PerPre {
+      width: 350px;
+      display: inline-block;
+      padding: 10px 0 10px 15px;
+      vertical-align: middle;
+      background:  #343432;
+      margin: 10px 0 10px 10px;
+      color:#fff;
+      text-align: center;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 26px;
+      }
+    
+    .PerFut {
+      width: 350px;
+      display: inline-block;
+      padding: 10px 0 10px 15px;
+      vertical-align: middle;
+      background:  #343432;
+      margin: 10px 0 10px 10px;
+      color:#fff;
+      text-align: center;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 26px;
+      }
+    
+    .conPer table,th{
+      width: 1200px;
+    
+    }
+    
+    .conPer table,tr{
+      background-color: #fff;
+    }
+    
+    .conPer h3{
+      text-indent: 20px;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      }
+  
+      .conPer h4{
+      text-indent: 25px;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 17px;
+      text-align: left;
+      }
+  
+
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+
+/*Perfect Continous Tense*/
+.conPerCon {
+    overflow: auto;
+    height: 640px;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(1960px);
+    background: rgb(203, 249, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 14px rgb(189, 189, 189);
+}
+
+.conPerCon p {
+    text-align: center;
+    color: #343432;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-size: 24px;
+    text-align: justify center;
+    align-content: center;
+    margin-top: 10px;
+    } 
+
+    .conPerCon ul{
+      list-style-type: square;
+    }
+    
+    .conPerCon li{
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-size: 21px;
+    }
+    
+    .PerConPast {
+    width: 350px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:  #343432;
+    margin: 10px 0 10px 10px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-weight: bold;
+    font-size: 26px;
+    }
+    
+    .PerConPre {
+      width: 350px;
+      display: inline-block;
+      padding: 10px 0 10px 15px;
+      vertical-align: middle;
+      background:  #343432;
+      margin: 10px 0 10px 10px;
+      color:#fff;
+      text-align: center;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 26px;
+      }
+    
+    .PerConFut {
+      width: 350px;
+      display: inline-block;
+      padding: 10px 0 10px 15px;
+      vertical-align: middle;
+      background:  #343432;
+      margin: 10px 0 10px 10px;
+      color:#fff;
+      text-align: center;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 26px;
+      }
+    
+    .conPerCon table,th{
+      width: 1200px;
+    
+    }
+    
+    .conPerCon table,tr{
+      background-color: #fff;
+    }
+    
+    .conPerCon h3{
+      text-indent: 20px;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      }
+  
+      .conPerCon h4{
+      text-indent: 25px;
+      font-family: 'Lexend Deca';
+      font-weight: bold;
+      font-size: 17px;
+      text-align: left;
+      }
