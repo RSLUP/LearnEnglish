@@ -30,9 +30,10 @@
     <ul>
       <li><a href="grammarquiz.php">Grammar</a></li>
       <li><a href="speakingquiz.php">Speaking</a></li>
+      <li><a href = "logoutSession.php">Logout</li>  
     </ul></li>
-   <!-- <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>-->
-    <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li> 
+   <!-- <li><input type = "submit"  class = "button" value = "User Details" onclick= "showuserdetails();"></li>
+    <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li> -->
     </ul>
     
     </nav>

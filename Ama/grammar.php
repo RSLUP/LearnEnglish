@@ -16,7 +16,8 @@
    <script type="text/javascript" src="js/javascript.js"></script>
    <script type="text/javascript" src="js/login.js"></script>
 </head>
-<body onload="getuserdetails()">
+<!--<body onload="getuserdetails()">-->
+    <body>
     <div class="dropdown">
         <nav class="nav" >
           <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
@@ -33,7 +34,8 @@
           <li><a href="speakingquiz.php">Speaking</a></li>
         </ul></li>
         <li><input type = "submit"  class = "button" value = "User Details"></li>
-        <li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>
+        <!--<li><input type = "submit"  class = "button" value = "Logout" onclick= "logout();"></li>-->
+        <li><a href = "logoutSession.php">Logout</li>  
         </ul>
         </nav>
       </div>

@@ -100,12 +100,12 @@ function nounHighlight()
 
     }*/
 
-    function logout()
+   /* function logout()
     {
         localStorage.removeItem("key");
         window.location ="login.php"
     }
-  /*  function showuserdetails()
+     function showuserdetails()
     {
         var logtime = localStorage.getItem("LogTime");
         var check = localStorage.getItem("key");

@@ -1,11 +1,11 @@
 <?php
 
-    $conn = mysqli_connect("localhost", "root", "", "trafalgar");
+    $conn = mysqli_connect("localhost", "root", "", "EnglishHub");
     session_start();
 
     $user_check = $_SESSION['login_user'];
 
-    $query = "SELECT username from customeraccount where username = '$user_check'";
+    $query = "SELECT username from accounts where username = '$user_check'";
     $ses_sql = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($ses_sql);
     $login_session = $row['username'];

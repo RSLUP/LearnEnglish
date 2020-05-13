@@ -130,7 +130,7 @@
       <li><a href="grammarquiz.php">Grammar</a></li>
       <li><a href="speakingquiz.php">Speaking</a></li>
     </ul></li>
-      
+    <li><a href = "logoutSession.php">Logout</li>  <!--new-->
     </ul>
     </nav>
   </div> <br><br> <br><br>
