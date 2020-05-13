@@ -1,3 +1,9 @@
+<?php
+include('session.php'); // Includes session Script
+if(isset($_SESSION['login_user'])){
+header("location: EnglishHub.php"); // Redirecting To home Page
+}
+?>
 <html>
     <head>
         <title>Login-EnglishHub</title>
@@ -17,19 +23,19 @@
                 </td>
                 <td width="800">
                     <div class = "wrap">
-                        <form class = "loginForm" name="loginForm" action="EnglishHub.html">
+                        <form class = "loginForm" name="loginForm" method="POST">
                           <div class = "header">
                             <h2>Login Form</h2>
                             <p>Login to access EnglishHUb</p>
                           </div>
                           <div class = "grp">
-                            <input type = "text"  class = "input" placeholder="username" id="username">
+                            <input type = "text"  name="txtUsername" class = "input" placeholder="username" id="username">
                           </div >
                           <div class = "grp">
-                            <input type = "password" class = "input" placeholder="password" name="password">
+                            <input type = "password" name="txtPassword" class = "input" placeholder="password" name="password">
                           </div>
                            <div class = "grp">
-                           <input type = "submit"  class = "button" value = "LOGIN" onclick= "return (validate());">                          
+                           <input type = "submit"  name = "btnSubmit" class = "button" value = "LOGIN" onclick= "return (validate());">                          
                           </div>
                           <div>
                             <br><center>Don't have an account? <a href="#">Sign Up</a></center>

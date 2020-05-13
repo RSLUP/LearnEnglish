@@ -12,7 +12,7 @@ function validate()
         document.loginForm.username.focus();
         return false;
     }
-    else{
+  /*  else{
       if (typeof(Storage) !== "undefined") {
         
         var val = document.getElementById("username").value;
@@ -38,13 +38,13 @@ function validate()
       {
         document.getElementById("log").innerHTML = "Sorry, your browser does not support Web Storage...";
       }
-    }
+    }*/
     
-    if (localStorage.clickcount) {
+  /*  if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount) + 1;
     } else {
       localStorage.clickcount = 1;
-    }
+    }*/
    
 return (true);
 }

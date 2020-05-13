@@ -74,7 +74,7 @@ function nounHighlight()
         alert(" Hey! How are you? \n\n aha !I knew it. \n\n What a beautiful shot! \n\n Thank god! you survived.");
     }
 
-    function getuserdetails()
+    /*function getuserdetails()
     {
         var today = new Date();  
         var dd = today.getDate();
@@ -98,14 +98,14 @@ function nounHighlight()
            // alert("hello");          
         }  
 
-    }
+    }*/
 
-    function logout()
+   /* function logout()
     {
         localStorage.removeItem("key");
-        window.location ="login.html"
+        window.location ="login.php"
     }
-    function showuserdetails()
+     function showuserdetails()
     {
         var logtime = localStorage.getItem("LogTime");
         var check = localStorage.getItem("key");
@@ -115,4 +115,4 @@ function nounHighlight()
             alert("Hello, "+user+ "\nWelcome to the EnglishHub. \nThis is your "+ localStorage.clickcount+ " logging session to our website.\n Your logging time to the session is: "+logtime);
            
         }
-    }
+    }*/

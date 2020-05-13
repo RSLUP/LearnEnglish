@@ -1,3 +1,9 @@
+<?php
+    include('session2.php');
+    if(!isset($_SESSION['login_user'])){
+    header("location:Login.php"); // Redirecting To Home Page
+    }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,18 +119,18 @@
     <nav class="nav" >
       <!--<div align="left"><img class="logo" src="img/logo2.jpg/"></div>-->
      <ul>
-     <li><a href="EnglishHub.html"> Home </a></li>
-     <li><a href="grammar.html">Grammar</a></li>
+     <li><a href="EnglishHub.php"> Home </a></li>
+     <li><a href="grammar.php">Grammar</a></li>
      <li><a href="#">Vocabulary</a></li>
-     <li><a href="speaking.html">Speaking</a></li>
+     <li><a href="speaking.php">Speaking</a></li>
      <li><a href="#">Writing </a></li>
-     <li><a href="miniGame/minigame.html">Mini games</a></li>
+     <li><a href="miniGame/minigame.php">Mini games</a></li>
      <li><a href="#">Quizes </a>
     <ul>
-      <li><a href="grammarquiz.html">Grammar</a></li>
-      <li><a href="speakingquiz.html">Speaking</a></li>
+      <li><a href="grammarquiz.php">Grammar</a></li>
+      <li><a href="speakingquiz.php">Speaking</a></li>
     </ul></li>
-      
+    <li><a href = "logoutSession.php">Logout</li>  <!--new-->
     </ul>
     </nav>
   </div> <br><br> <br><br>
@@ -133,6 +139,8 @@
       <button id="play-again" onclick="reload();"> Play Again </button>
         <button id="rules" ><a href="#rule-and-reg">Rules and Regulations</a> </button>
         <button id="show-ans"><a href = "#answer-grid" >Show Answers</a></button>
+        <button><a href = "game.php" >Done </a></button>
+        <button id="History"><a href = "history.php" >Show Answers</a></button>
     
 
   </div>
@@ -283,7 +291,7 @@
     <tr>
       <td>
         <div><button id="show-score" onclick="wrong();">Show My Score</button></div>
-        <div id="my-score"> </div>
+        <div id="my-score" name = "txtpoints" method="post"> </div>
       </td>
     </tr>
   </table>
