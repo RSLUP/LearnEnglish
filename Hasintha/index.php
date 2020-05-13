@@ -9,6 +9,7 @@
       $mypassword = mysqli_real_escape_string($db,$_POST['psw']); 
       
       $sql = "SELECT username FROM users WHERE username = '$myusername' and password = '$mypassword'";
+      $timestamp = date('Y/m/d H:i:s', time());
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
@@ -20,9 +21,10 @@
 		
       if($count == 1) {
         //  session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
-         
-         header("location: home.html");
+        $_SESSION['login_user'] = $myusername;
+        $sql = "INSERT INTO usersessions VALUES('$myusername','$timestamp')";
+        $result = mysqli_query($db,$sql); 
+        header("location: home.html");
       }else {
          $error = "Your Login Name or Password is invalid";
       }

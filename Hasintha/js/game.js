@@ -33,6 +33,27 @@ var gameOver = function(){
     ctx.textAlign = "center";
     ctx.textBaseLine = "middle";
     ctx.fillText("Game Over:" +score, width/2, height/2);
+    
+    //Insert Game session data
+    /*
+    var mysql = require('mysql');
+
+    var con = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "",
+        database: "userdb"
+    });
+
+    con.connect(function(err) {
+        if (err) throw err;
+        var sql = "INSERT INTO gamedata (score, scoreTime) VALUES (score, date())";
+        con.query(sql, function (err, result) {
+          if (err) throw err;
+        });
+      });
+
+      */
 };
 
 var circle = function(x, y, radius, fillCircle) {
