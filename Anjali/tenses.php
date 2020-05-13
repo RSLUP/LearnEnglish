@@ -1,3 +1,9 @@
+<?php
+    include('sessionConfig.php');
+    if(!isset($_SESSION['login_user'])){
+    header("location:login.php"); // Redirecting To Home Page
+    }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +20,12 @@
 <body>
     <div class ="pagetitle">
         <nav>
-            <a href="englishIndex.html"><h1>LEARN ENGLISH</h1>  </a>  
+            <a href="englishIndex.php"><h1>LEARN ENGLISH</h1>  </a>  
             <ul>
-                <li><a href="englishIndex.html">Home</a></li>
-                <li><a href="tenses.html">English Tenses </a></li>   
-                <li><a href="login.html">Login </a></li>  
-                <li><a href="login.html">Login </a></li>   
+                <li><a href="englishIndex.php">Home</a></li>
+                <li><a href="tenses.php">English Tenses </a></li>   
+                <li><a href="login.php">Login </a></li>  
+                  
                 <li><a href="#" onclick="timeStamp()">profile </a></li> 
             </ul>
          </nav>   
