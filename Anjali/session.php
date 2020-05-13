@@ -1,14 +1,12 @@
 <?php
-
-
    session_start();
-   $error = '';
+   
 
    if (isset($_POST["btnSubmit"]))
    {
    	if (empty($_POST["txtUsername"]) || empty($_POST["txtPassword"]))
    	{
-   		$error = "Enter login details";
+		echo"<script type='text/javascript'> alert ('Enter login details!');</script>";
    	}
    	else
    	{
@@ -31,11 +29,11 @@
    		}
          else
          {
-			$error = "Username or Password is Invalid!";
+			
 			echo"<script type='text/javascript'> alert ('Username or Password is Invalid!');</script>";
          }
    		
 		mysqli_close($conn); 
    	}
-   } 
+}
  ?>

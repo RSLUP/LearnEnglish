@@ -1,7 +1,7 @@
 function validateData()
 	{
       
-            var date = new Date().toISOString().split('T');
+           var date = new Date().toISOString().split('T');
             localStorage.setItem("date",date); 
             window.location.href ="englishIndex.php";  
             return false;
