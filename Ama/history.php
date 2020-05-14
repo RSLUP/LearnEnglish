@@ -20,8 +20,8 @@ if ($result->num_rows > 0) {
   
     echo"<table border='2'>
 		<tr>
-			<th colspan='5'>Points: <input type='text' name=''></th>
-		</tr>
+			<th colspan='5'>Points: <input type='text'></th>
+		</tr>";
 		
     while($row = $result->fetch_assoc()) 
     {
@@ -37,8 +37,8 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
+
 ?>
-    ?>
 
 
 

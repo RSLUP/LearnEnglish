@@ -1,9 +1,17 @@
 <?php
+    include('session2.php');
+    if(!isset($_SESSION['login_user'])){
+    header("location:Login.php"); // Redirecting To Home Page
+    }
+ ?>
+
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "EnglishHub";
 
+include("session.php");
 session_start();
 
 $user_check = $_SESSION['login_user'];

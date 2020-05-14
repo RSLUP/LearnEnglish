@@ -35,7 +35,8 @@ header("location: EnglishHub.php"); // Redirecting To home Page
                             <input type = "password" name="txtPassword" class = "input" placeholder="password" name="password">
                           </div>
                            <div class = "grp">
-                           <input type = "submit"  name = "btnSubmit" class = "button" value = "LOGIN" onclick= "return (validate());">                          
+                          <!-- <input type = "submit"  name = "btnSubmit" class = "button" value = "LOGIN" onclick= "return (validate());">  -->  
+                          <input type = "submit"  name = "btnSubmit" class = "button" value = "LOGIN">                       
                           </div>
                           <div>
                             <br><center>Don't have an account? <a href="#">Sign Up</a></center>
