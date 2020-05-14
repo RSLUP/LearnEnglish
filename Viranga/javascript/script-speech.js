@@ -232,21 +232,20 @@ function quizOver()
     totalQuestionSpan2.innerHTML = questions.length;
     let percen = (score/questions.length)*100;
     percentage.innerHTML = (percen.toFixed(2) +"%");
-    
-    
-       
+          
 }
+
+var attempt = 0;
 function getResult()
 {
     
+
     
-   
     let percen = (score/questions.length)*100;
-   
     localStorage.setItem("marks",percen.toFixed(2));
        
     
-    //localStorage.setItem("marks",percen.toFixed(2));
+    localStorage.setItem("marks",percen.toFixed(2));
     alert("Attempt " + " : "+ localStorage.getItem("marks")+"%");
     
     //get result to consol

@@ -226,3 +226,17 @@ body {
     
 }
 
+
+.cloud{
+    animation: cloud-anim 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+@keyframes cloud-anim{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(5%);
+  
+    }
+}

@@ -350,7 +350,16 @@ nav ul li ul li a:hover{
 	animation: drop 1.5s ease;
 }
 
-
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
 
 
 .img-zoom:hover{
@@ -396,16 +405,7 @@ nav ul li ul li a:hover{
 }
 
 
-@keyframes drop {
-	0% {
-		opacity: 0;
-		transform: translateY(-80px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
+
 
 /*make page responsive*/
 @media screen and (max-width: 1056px) {
@@ -509,6 +509,9 @@ nav ul li ul li a:hover{
 		width: 125px;
 	}
 	nav ul li ul li a{
+		font-size: 10px;
+	}
+	.avatar i{
 		font-size: 10px;
 	}
 }
