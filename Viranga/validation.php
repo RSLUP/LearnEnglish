@@ -17,7 +17,7 @@
     $num = mysqli_num_rows($result);
 
     if($num == 1){
-       header('location:index.html');
+       header('location:index.php');
     }
     else{
         header('location:login.php');

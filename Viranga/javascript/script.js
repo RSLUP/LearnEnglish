@@ -138,7 +138,7 @@ function runFirst()
     if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
     {
         alert('Session Expired..!');
-        window.location.href = "login.html";
+        window.location.href = "login.php";
                     
     }
     
@@ -174,7 +174,7 @@ function logout()
 {
     localStorage.clear();
     alert('Logging Out..!');
-    window.location.href = "login.html";
+    window.location.href = "login.php";
    
 }
 //stick header

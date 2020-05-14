@@ -1,3 +1,8 @@
+<?php
+
+    session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -65,9 +70,7 @@
 
 			<div class="avatar">
 				<i class="fas fa-user" onclick="profile()"><span class="display-label">Profile</span></i>
-				
-
-                <i class="fas fa-sign-out-alt" onclick="logout()"><span class="display-label">Log Out</span></i>
+                <a href="login.php"><i class="fas fa-sign-out-alt"><span class="display-label">Log Out</span></i></a>
 
 			</div>
 		</header>
