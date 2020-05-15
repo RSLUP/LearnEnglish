@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = check_input($_POST["password"]);
         $fpassword=$password;
 
-        $query=mysqli_query($conn,"select * from `user` where username='$fusername' and password='$fpassword'");
+        $query=mysqli_query($conn,"select * from `loginform` where User='$fusername' and Password='$fpassword'");
 
         if(mysqli_num_rows($query)==0){
             $_SESSION['msg'] = "Login Failed, noo Invalid Input!";
