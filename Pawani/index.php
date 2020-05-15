@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Simple Chat System using AJAX</title>
+    <title>login</title>
     <link rel="stylesheet" href="css/login_style.css">
 </head>
 <body>
