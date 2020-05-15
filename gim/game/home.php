@@ -27,7 +27,7 @@
         
     if(mysqli_query($con,$sql))
     {
-        echo "<script>alert('Recordes inserted ..!!');</script>";
+        echo "<script>alert('Score saved ..!!');</script>";
         //header("Location:index.php");
        
     }
@@ -54,7 +54,7 @@
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
     crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>" >
 
     
                 
@@ -70,7 +70,7 @@
 
   <tr>
   <td align="left">&nbsp; Player Name : <?php echo"".$row_name[1]; ?></td>
-    <td  align="right" style="color:white;"><a href="logout.php" style="text-decoration:none;">Logout<td>
+    <td  align="right" style="color:white;"><a href="logout.php" class="logout" ><img src="img/logout.png" class="ico" width="20px" height="20px"><td>
     
     </tr>
   <tr>
@@ -194,14 +194,15 @@
 <br>
 
 
-<h3 align="center">Recent Score : </h3>
+
+
 <?php
 
   $sql_score="select * from score where id='".$id."' ";
 
   $result_score = mysqli_query($con, $sql_score);	
 
-  echo"<table align=center><tr>";
+  echo"<table id=customers align=center> <th> Recent Score </th><tr>";
   while($row = mysqli_fetch_array($result_score))
   {
     echo " <tr><td>".$row[1]."</td></tr> ";

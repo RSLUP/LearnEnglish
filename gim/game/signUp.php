@@ -14,18 +14,37 @@ if(isset($_POST["btnLogin"]))
 
     if($user!="" && $pass!="")
     {
-        $sql = "insert into login(username,password) values('$user','$pass')";
-        
-        if(mysqli_query($con,$sql))
+        $sql_count="select count(login_id) from login where username='".$user."' ";
+
+        $result_count = mysqli_query($con, $sql_count);	
+        $row_count=mysqli_fetch_row($result_count); 
+
+        if($row_count[0]==0)
         {
-            echo "Recordes inserted ..!!";
-            header("Location:index.php");
-           
+            $sql = "insert into login(username,password) values('$user','$pass')";
+        
+            if(mysqli_query($con,$sql))
+            {
+                echo"<script>alert('signup successfull..!!');</script>";
+                header("Location:index.php");
+               
+            }
+            else
+            {
+              echo"Error".mysqli_error($con);
+            }
         }
         else
         {
-          echo"Error".mysqli_error($con);
+            echo"<script>alert('Player already signup..!!..Use another name');</script>";
         }
+
+        
+
+    }
+    else
+    {
+        echo"<script>alert('you cannot input null fields..!!');</script>";
     }
 
 
