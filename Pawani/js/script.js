@@ -31,7 +31,7 @@ function retrive_func() {
     var stored_date = localStorage.getItem("date");
 
     if ((stored_date !== n[0]) || (stored_name == null)) {
-        window.location.href= "login.php";
+        window.location.href= "index.php";
     } else {
         alert("Page Loaded:).");
     }
@@ -40,7 +40,7 @@ function retrive_func() {
 
 function logout_func(){
     localStorage.removeItem("username");
-    window.location ="login.php"
+    window.location ="index.php"
 
 }
 

@@ -1,9 +1,9 @@
 <?php
-$conn = mysqli_connect("localhost","root","","login_details");
 
-// Check connection
-if (mysqli_connect_errno())
-{
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
+//MySQLi Procedural
+$conn = mysqli_connect("localhost", "root", "", "one1");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>

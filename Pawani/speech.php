@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <title>Eight Parts of Speech</title>
     <link rel="stylesheet" href="../Pawani/css/indexpage_style.css">
-<!--    <meta name="viewport" content="width=device-width,user-scalable=no">-->
+    <!--    <meta name="viewport" content="width=device-width,user-scalable=no">-->
 
 </head>
-<body onload="retrive_func()">
+<!--<body onload="retrive_func()">-->
 
 <header>
     <img src="../Pawani/images/logo.png" alt="">
     <h1 id="header_topic">It's Time to Learn English</h1>
     <h1 id="logout" onclick="logout_func()">Log out</h1>
-<!--    <h1 id="userdetails" onclick="userdetails()">user details</h1>-->
+    <!--    <h1 id="userdetails" onclick="userdetails()">user details</h1>-->
 
 </header>
 
@@ -21,11 +21,11 @@
 <ul id="buttonul">
     <h1 id="topic">Follow our lessons.....</h1>
     <li class="lessons"><a href="#seperatediv" style="text-decoration: none;color: white" >
-        Eight Parts of Speech</a></li>
+            Eight Parts of Speech</a></li>
     <li class="lessons"><a href="../Pawani/tenses.html" style="text-decoration: none;color: white">
-        Tenses</a></li>
-    <li class="lessons"><a href="../Pawani/quiz.html" style="text-decoration: none;color: white">
-        Quiz</a></li>
+            Tenses</a></li>
+    <li class="lessons"><a href="quiz.php" style="text-decoration: none;color: white">
+            Quiz</a></li>
 </ul>
 
 <div id="seperatediv"></div>
@@ -192,7 +192,7 @@
 </div>
 
 <footer>
-    <a href="index.html"><h3 id="footermain">Top</h3></a>
+    <a href="first.php"><h3 id="footermain">Top</h3></a>
     <a href="mailto:pubudikalwp@gmail.com"><h3 id="footercontent" style="font-family: cursive">contact me :pubudikalwp@gmail.com</h3></a>
 </footer>
 
@@ -201,3 +201,4 @@
 
 
 </html>
+
