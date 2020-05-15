@@ -25,6 +25,10 @@
         {
             header("Location:home.php"); 
         }
+        else
+        {
+            echo"<script>alert('Your email or password incorrect..!!');</script>";
+        }
 
     }
 
