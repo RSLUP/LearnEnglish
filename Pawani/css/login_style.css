@@ -42,13 +42,13 @@
 }
 
 
-#login_button {
-    background-color: rgba(234,171,62,0.91);
-    color: white;
-    font-size: 17px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: sans-serif;
-    cursor: pointer;
-}
+/*#login_button {*/
+/*    background-color: rgba(234,171,62,0.91);*/
+/*    color: black;*/
+/*    font-size: 17px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    padding: 10px;*/
+/*    font-family: sans-serif;*/
+/*    cursor: pointer;*/
+/*}*/

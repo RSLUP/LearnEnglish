@@ -10,12 +10,12 @@ if(window.localStorage){
         var d = new Date();
         var n = d.toISOString().split('T');
         localStorage.setItem('date', n[0]);
-        // window.open("index.html");
-        //window.location.replace("index.html");
-         window.location.href= "index.html";
-        // location.href= "index.html";
-        // window.location="index.html";
-        // window.open("index.html","_self");
+        // window.open("first.php");
+        //window.location.replace("first.php");
+         window.location.href= "first.php";
+        // location.href= "first.php";
+        // window.location="first.php";
+        // window.open("first.php","_self");
 
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -49,16 +49,16 @@ function retrive_func() {
     var stored_date = localStorage.getItem("date");
 
     if ((stored_date !== n[0]) || (stored_name == null)) {
-        window.location.href= "login.html";
+        window.location.href= "index.php";
 
-        // window.open("login.html");
+        // window.open("index.php");
     } else {
         alert("Page Loaded:).");
     }
 }
 function logout_func(){
     localStorage.removeItem("username");
-    window.location ="login.html"
+    window.location ="index.php"
 
 }
 

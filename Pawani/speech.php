@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Eight Parts of Speech</title>
-    <link rel="stylesheet" href="css/indexpage_style.css">
-<!--    <meta name="viewport" content="width=device-width,user-scalable=no">-->
+    <link rel="stylesheet" href="../Pawani/css/indexpage_style.css">
+    <!--    <meta name="viewport" content="width=device-width,user-scalable=no">-->
 
 </head>
-<body onload="retrive_func()">
+<!--<body onload="retrive_func()">-->
 
 <header>
-    <img src="images/logo.png" alt="">
+    <img src="../Pawani/images/logo.png" alt="">
     <h1 id="header_topic">It's Time to Learn English</h1>
     <h1 id="logout" onclick="logout_func()">Log out</h1>
-<!--    <h1 id="userdetails" onclick="userdetails()">user details</h1>-->
+    <!--    <h1 id="userdetails" onclick="userdetails()">user details</h1>-->
 
 </header>
 
-<img id="back1" src="images/bavkground.png" alt="">
+<img id="back1" src="../Pawani/images/bavkground.png" alt="">
 <ul id="buttonul">
     <h1 id="topic">Follow our lessons.....</h1>
     <li class="lessons"><a href="#seperatediv" style="text-decoration: none;color: white" >
-        Eight Parts of Speech</a></li>
-    <li class="lessons"><a href="tenses.html" style="text-decoration: none;color: white">
-        Tenses</a></li>
-    <li class="lessons"><a href="quiz.html" style="text-decoration: none;color: white">
-        Quiz</a></li>
+            Eight Parts of Speech</a></li>
+    <li class="lessons"><a href="../Pawani/tenses.html" style="text-decoration: none;color: white">
+            Tenses</a></li>
+    <li class="lessons"><a href="quiz.php" style="text-decoration: none;color: white">
+            Quiz</a></li>
 </ul>
 
 <div id="seperatediv"></div>
@@ -49,16 +49,16 @@
         </ol>
 
         <ul id="ul1">
-            <li><img id="b1" src="images/baloon1_noun.png" alt=""></li>
-            <li><img id="b2" src="images/baloon2_verb.png" alt=""></li>
-            <li><img id="b3" src="images/balloon3_pronoun.png" alt=""></li>
-            <li><img id="b4" src="images/balloon_adjective.png" alt=""></li>
+            <li><img id="b1" src="../Pawani/images/baloon1_noun.png" alt=""></li>
+            <li><img id="b2" src="../Pawani/images/baloon2_verb.png" alt=""></li>
+            <li><img id="b3" src="../Pawani/images/balloon3_pronoun.png" alt=""></li>
+            <li><img id="b4" src="../Pawani/images/balloon_adjective.png" alt=""></li>
         </ul>
         <ul id="ul2">
-            <li><img id="b5" src="images/baloon5_adverb.png" alt=""></li>
-            <li><img id="b6" src="images/balloon6_preposition.png" alt=""></li>
-            <li><img id="b7" src="images/balloon7_conjunction.png" alt=""></li>
-            <li><img id="b8" src="images/balloon8_interjection.png" alt=""></li>
+            <li><img id="b5" src="../Pawani/images/baloon5_adverb.png" alt=""></li>
+            <li><img id="b6" src="../Pawani/images/balloon6_preposition.png" alt=""></li>
+            <li><img id="b7" src="../Pawani/images/balloon7_conjunction.png" alt=""></li>
+            <li><img id="b8" src="../Pawani/images/balloon8_interjection.png" alt=""></li>
         </ul>
 
 
@@ -80,8 +80,8 @@
             <i style="color: darkred">Anna</i> goes to <i style="color: darkred">school</i>
         </h3>
 
-        <img id="noungif" src="gif/sunshines.gif" alt="">
-        <img id="nounimg" src="images/school_noun.png" alt="">
+        <img id="noungif" src="../Pawani/gif/sunshines.gif" alt="">
+        <img id="nounimg" src="../Pawani/images/school_noun.png" alt="">
     </div>
 
     <div id="tdiv2">
@@ -92,7 +92,7 @@
             run,go,have,invite,laugh,listen,playing,<br>singing,walk
         </p>
 
-        <img id="verbgif" src="gif/dancing.gif" alt="">
+        <img id="verbgif" src="../Pawani/gif/dancing.gif" alt="">
         <h3 id="verbex1">
             The girl and boy are <i style="color: darkred">dancing.</i>
         </h3>
@@ -107,7 +107,7 @@
             he,I,its,me,my,she,that,this,those,us,<br>who,whom,you
         </p>
 
-        <img id="pronounimg" src="images/hungry%20boy.jpg" alt="">
+        <img id="pronounimg" src="../Pawani/images/hungry%20boy.jpg" alt="">
         <h3 id="pronounex">
             Jack is hungry.<i style="color: darkred">He</i> wants to eat
         </h3>
@@ -121,7 +121,7 @@
             angry,brave,healthy,little,old,smart,small,two,<br>some,good,big,interesting
         </p>
 
-        <img id="adjimage" src="images/cat.png" alt="">
+        <img id="adjimage" src="../Pawani/images/cat.png" alt="">
 
         <h3 id="adjex1">
             <i style="color: darkred">Thin</i> cat
@@ -138,7 +138,7 @@
             badly,fully,hardly,nearly,never,quickly,<br>silently,well,very,really,almost
         </p>
 
-        <img id="advgif" src="gif/running.gif" alt="">
+        <img id="advgif" src="../Pawani/gif/running.gif" alt="">
 
         <h3 id="advex1">
             Runs <i style="color: darkred">quickly</i>
@@ -151,8 +151,8 @@
             <b>Examples:-</b><br>
             above,before,except,from,in,near,of,<br>since,between,upon,while,with,to,<br>at,after,on
         </p>
-        <img id="preposimg1" src="images/flower.png" alt="">
-        <img id="preposimg2" src="images/butterfly.png" alt="">
+        <img id="preposimg1" src="../Pawani/images/flower.png" alt="">
+        <img id="preposimg2" src="../Pawani/images/butterfly.png" alt="">
 
         <h3 id="preposex1">
             The butterfly flies <i style="color: darkred">near</i> the flower
@@ -166,7 +166,7 @@
             and,or,but,so,after,before,unless,either,neither,<br>because,since
         </p>
 
-        <img id="conjgif" src="gif/tired.gif" alt="">
+        <img id="conjgif" src="../Pawani/gif/tired.gif" alt="">
         <h3 id="conjex1">I was tired <i style="color: darkred">so </i>I went to sleep</h3>
 
     </div>
@@ -178,7 +178,7 @@
             aha!,gosh!,great!,hey!,hi!,hooray!,<br>oh!,ouch!,wel!,phew!,oops!
         </p>
 
-        <img id="interimg" src="images/ops.png" alt="">
+        <img id="interimg" src="../Pawani/images/ops.png" alt="">
 
         <h3 id="interex"><i style="color: darkred">Oops!</i> I broke the glass</h3>
     </div>
@@ -188,16 +188,17 @@
 
 <div id="summarydiv">
     <h1 id="summarytopic"><u>Summary of Lesson</u></h1>
-    <img  id="summaryimg" src="images/summaryimg.png" alt="">
+    <img id="summaryimg" src="../Pawani/images/summaryimg.png" alt="">
 </div>
 
 <footer>
-    <a href="index.html"><h3 id="footermain">Top</h3></a>
+    <a href="first.php"><h3 id="footermain">Top</h3></a>
     <a href="mailto:pubudikalwp@gmail.com"><h3 id="footercontent" style="font-family: cursive">contact me :pubudikalwp@gmail.com</h3></a>
 </footer>
 
-<script src="js/login_script.js"></script>
+<script src="../Pawani/js/login_script.js"></script>
 </body>
 
 
 </html>
+

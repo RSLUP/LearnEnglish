@@ -7,10 +7,10 @@
 </head>
 
 
-<body onload="retrive_func()">
+<!--<body onload="retrive_func()">-->
 <header>
     <img src="images/logo.png" alt="">
-    <a href="index.html" style=""> <h1 id="headerh1">It's Time to Learn English</h1></a>
+    <a href="../dir/index.html" style=""> <h1 id="headerh1">It's Time to Learn English</h1></a>
     <h1 id="logout" onclick="logout_func()">Log out</h1>
     <h1 id="userdetails" onclick="userdetails()">user details</h1>
 
@@ -161,7 +161,7 @@
     </div>
 
 <footer>
-    <a href="quiz.html"><h3 id="footermain">Top</h3></a>
+    <a href="quiz.php"><h3 id="footermain">Top</h3></a>
     <a href="mailto:pubudikalwp@gmail.com"><h3 id="footercontent" style="font-family: cursive">contact me :pubudikalwp@gmail.com</h3></a>
 </footer>
 
