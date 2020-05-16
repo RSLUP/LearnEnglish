@@ -16,11 +16,13 @@
     if(isset($_POST["btnLogin"]))
     {
         
+       
         $user=mysqli_real_escape_string($con,$_POST["txtUser"]);
         $pass=mysqli_real_escape_string($con,$_POST["txtPass"]);
+   
 
-
-        $sql="select * from login where username=? AND password=?";
+        
+        $sql="select * from login where username=?";
 
         $stmt=mysqli_stmt_init($con);
 
@@ -30,14 +32,16 @@
         }
         else
         {
-            mysqli_stmt_bind_param($stmt,"ss",$user,$pass);
+           
+            mysqli_stmt_bind_param($stmt,"s",$user);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);	
        
-       
             $row=mysqli_fetch_row($result); 
+
+            
        
-            if($user==$row[1] && $pass==$row[2])
+            if(password_verify($pass , $row[2]))
             { 
                 $_SESSION["s_id"]= $row[0];
                 header("Location:home.php"); 
@@ -74,7 +78,7 @@
     
         <center><div class="box">
 
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
             <table align="center" class="tbl">
 
                 <tr>
