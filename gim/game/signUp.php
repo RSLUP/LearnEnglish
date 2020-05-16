@@ -16,6 +16,8 @@ if(isset($_POST["btnLogin"]))
     {
         $sql_count="select count(login_id) from login where username='".$user."' ";
 
+        
+
         $result_count = mysqli_query($con, $sql_count);	
         $row_count=mysqli_fetch_row($result_count); 
 
@@ -63,7 +65,7 @@ if(isset($_POST["btnLogin"]))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="login_style.css?v=<?php echo time(); ?>" >
+<link rel="stylesheet" type="text/css" href="login_style.css" >
 </head>
 <body>
 <div class="cover">
