@@ -54,7 +54,7 @@
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
     crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>" >
+    <link rel="stylesheet" href="style.css" >
 
     
                 

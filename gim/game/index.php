@@ -3,38 +3,63 @@
 
     session_start();
 
-   
+    if(isset($_SESSION["s_id"]))
+    {
+        header("Location: home.php");
+    }
+    
 
     $con=mysqli_connect("localhost","root","","game");
 
+    
+
     if(isset($_POST["btnLogin"]))
     {
-        $user=$_POST["txtUser"];
-        $pass=$_POST["txtPass"];
+        
+       
+        $user=mysqli_real_escape_string($con,$_POST["txtUser"]);
+        $pass=mysqli_real_escape_string($con,$_POST["txtPass"]);
+   
 
+        
+        $sql="select * from login where username=?";
 
+        $stmt=mysqli_stmt_init($con);
 
-        $sql="select * from login where username='".$user."' AND password='".$pass."' ";
-
-        $result = mysqli_query($con, $sql);	
-        $row=mysqli_fetch_row($result); 
-
-        $_SESSION["s_id"]= $row[0];
-
-        if($user==$row[1] && $pass==$row[2])
+        if(!mysqli_stmt_prepare($stmt,$sql))
         {
-            header("Location:home.php"); 
+            echo"<script>alert('SQL Failed.!');</script>";
         }
         else
         {
-            echo"<script>alert('Your email or password incorrect..!!');</script>";
+           
+            mysqli_stmt_bind_param($stmt,"s",$user);
+            mysqli_stmt_execute($stmt);
+            $result = mysqli_stmt_get_result($stmt);	
+       
+            $row=mysqli_fetch_row($result); 
+
+            
+       
+            if(password_verify($pass , $row[2]))
+            { 
+                $_SESSION["s_id"]= $row[0];
+                header("Location:home.php"); 
+            }
+            else
+            {
+                echo"<script>alert('Your email or password incorrect..!!');</script>";
+            }
+       
         }
+
+        
+      
 
     }
 
-
    
-
+  
 ?>
 
 
@@ -42,7 +67,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="login_style.css?v=<?php echo time(); ?>" >
+    <link rel="stylesheet" type="text/css" href="login_style.css" >
 </head>
 <body>
     <div class="cover">
@@ -53,7 +78,7 @@
     
         <center><div class="box">
 
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
             <table align="center" class="tbl">
 
                 <tr>

@@ -1,7 +1,14 @@
 
 <?php
 
-//session_start();
+
+session_start();
+    
+if(isset($_SESSION["s_id"]))
+{
+    header("Location: home.php");
+}
+
 
 $con=mysqli_connect("localhost","root","","game");
 
@@ -9,30 +16,40 @@ if(isset($_POST["btnLogin"]))
 {
 
 
-    $user=$_POST["txtUser"];
-    $pass=$_POST["txtPass"];
+    $user=mysqli_real_escape_string($con,$_POST["txtUser"]);
+    $pass=mysqli_real_escape_string($con,$_POST["txtPass"]);
+   
+
+    $hashPwd=password_hash($pass,PASSWORD_DEFAULT);
 
     if($user!="" && $pass!="")
     {
         $sql_count="select count(login_id) from login where username='".$user."' ";
+
+
 
         $result_count = mysqli_query($con, $sql_count);	
         $row_count=mysqli_fetch_row($result_count); 
 
         if($row_count[0]==0)
         {
-            $sql = "insert into login(username,password) values('$user','$pass')";
+            $sql = "insert into login(username,password) values(?,?)";
         
-            if(mysqli_query($con,$sql))
+            $stmt=mysqli_stmt_init($con);
+
+            if(!mysqli_stmt_prepare($stmt,$sql))
             {
-                echo"<script>alert('signup successfull..!!');</script>";
-                header("Location:index.php");
-               
+                echo"Error";
             }
             else
             {
-              echo"Error".mysqli_error($con);
+                mysqli_stmt_bind_param($stmt,"ss",$user,$hashPwd);
+                mysqli_stmt_execute($stmt);
+
+                echo"<script>alert('successfully  signup..!');</script>";
             }
+
+           
         }
         else
         {
@@ -63,7 +80,7 @@ if(isset($_POST["btnLogin"]))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="login_style.css?v=<?php echo time(); ?>" >
+<link rel="stylesheet" type="text/css" href="login_style.css" >
 </head>
 <body>
 <div class="cover">
@@ -103,6 +120,12 @@ if(isset($_POST["btnLogin"]))
             </tr>
             <tr>
                 <td><input type="submit" name="btnLogin" value="Sign Up" class="btn"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td align="center" class="join"><a href="index.php" style="text-decoration:none;">Login</a></td>
             </tr>
         </table>
     <form>
