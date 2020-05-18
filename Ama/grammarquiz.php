@@ -3,6 +3,11 @@
     if(!isset($_SESSION['login_user'])){
     header("location:Login.php"); // Redirecting To login Page
     }
+    if(isset($_POST["start"]))
+    {
+
+        echo "<a href = '#quiz'>";
+    }
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,6 +55,8 @@
 
  <h1>Please consider you have only 3 attempts for a one logging session</h1>
 <form id="quiz" name="quiz">
+<input type = "submit" value="start">
+<br><br> <br><br> <br><br>
     <p class = "questions"> 1. How many tenses are there in English?</p>
     <input type="radio" id="rd" name="q1" value="6"> 6 <br>
     <span id="ans1"><input type="radio" id="rd" name="q1" value="12"> 12 <br></span>
