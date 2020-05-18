@@ -39,7 +39,7 @@ header("location: EnglishHub.php"); // Redirecting To home Page
                           <input type = "submit"  name = "btnSubmit" class = "button" value = "LOGIN">                       
                           </div>
                           <div>
-                            <br><center>Don't have an account? <a href="signup.html">Sign Up</a></center>
+                            <br><center>Don't have an account? <a href="signup.php">Sign Up</a></center>
                           </div>
                         </form>
                       </div>

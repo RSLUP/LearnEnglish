@@ -12,7 +12,7 @@ $password = "";
 $dbname = "EnglishHub";
 
 include("session.php");
-session_start();
+
 
 $user_check = $_SESSION['login_user'];
 $points = $_POST["txtpoints"];

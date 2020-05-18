@@ -1,7 +1,7 @@
 <?php
     include('session2.php');
     if(!isset($_SESSION['login_user'])){
-    header("location:Login.php"); // Redirecting To Home Page
+    header("location:Login.php"); // Redirecting To login Page
     }
  ?>
 <!DOCTYPE html>

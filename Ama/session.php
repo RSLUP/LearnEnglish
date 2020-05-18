@@ -21,7 +21,7 @@ if (isset($_POST['btnSubmit']))
             $stmt->execute();
             $stmt->bind_result($username, $password);
             $stmt->store_result();
-
+//stmt - used to execute the same statement repeatedly with high efficiency. 
         if($stmt->fetch())
         {
             $_SESSION['login_user'] = $username;
