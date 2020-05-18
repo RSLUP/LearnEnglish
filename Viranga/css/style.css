@@ -218,7 +218,9 @@ nav ul li ul li a:hover{
 	background-color: white;
 	font-size: 15px;
 	
+	
 }
+
 @media screen and (max-width: 1200px) {
 	.avatar i .display-label{
 		width: 75px;
@@ -653,7 +655,7 @@ nav ul li ul li a:hover{
 /*-----------------------------*/
 /*footer home*/
 .footer{
-	position: relative;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;

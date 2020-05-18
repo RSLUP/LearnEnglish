@@ -1,3 +1,5 @@
+<!-- php add -->
+
 <?php
 	session_start();
 ?>
@@ -27,40 +29,40 @@
 
 
 
-		<header>
+		<header class="myHeader">
 			
 			<div class="logo-container">
 				<img src="./img/le-logo.png" alt="logo" onclick="mainPage()" />
 				
 				
 
-				<h4><a  class="logo" href="index.html">LearnEnglish</a> </h4>
+				<h4><a  class="logo" href="index.php">LearnEnglish</a> </h4>
 			</div>
 
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					
 					<li><a href="#">Learn more <i class="fa fa-caret-down"></i></a>
 						<ul>
-							<li><a href="speech.html">&#10097 8 Parts of Speech</a></li>
-							<li><a href="tenses.html">&#10097 12 Verb Tenses</a></li>
+							<li><a href="speech.php">&#10097 8 Parts of Speech</a></li>
+							<li><a href="tenses.php">&#10097 12 Verb Tenses</a></li>
 								
 						</ul>
 					</li>
 
 					<li><a href="#">Take a Quiz <i class="fa fa-caret-down"></i></a>
 						<ul>
-							<li><a href="quiz-speech.html">&#10097 Quiz on 8 Parts of Speech</a></li>
-							<li><a href="quiz-tenses.html">&#10097 Quiz on 12 Verb Tenses</a></li>
+							<li><a href="quiz-speech.php">&#10097 Quiz on 8 Parts of Speech</a></li>
+							<li><a href="quiz-tenses.php">&#10097 Quiz on 12 Verb Tenses</a></li>
 								
 						</ul>
 					</li>
 		
 					<li><a href="#">Games <i class="fa fa-caret-down"></i></a>
 						<ul>
-							<li><a href="hide&seek.html">&#10097 Hide & Seek</a></li>
-							<li><a href="catch-eggs.html">&#10097 Catch Eggs</a></li>
+							<li><a href="hide&seek.php">&#10097 Hide & Seek</a></li>
+							<li><a href="catch-eggs.php">&#10097 Catch Eggs</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -121,8 +123,8 @@
 						</p>
 					</div>
 					<div class="cta">
-						<button class="cta-style"><a href="speech.html">8 Parts of Speech</a></button>
-						<button class="cta-style" ><a href="tenses.html">12 Verb Tenses</a></button>
+						<button class="cta-style"><a href="speech.php">8 Parts of Speech</a></button>
+						<button class="cta-style" ><a href="tenses.php">12 Verb Tenses</a></button>
 					</div>
 				</div>
 				<div class="cover fade">
@@ -135,6 +137,7 @@
 		</main>
 		<!--profile details-->
 			
+		<!-- php add -->
 		<section class="profile-details">
 			<div class="profile-outer">
 				<div class="close">
@@ -144,12 +147,13 @@
 					
 					<img class="p-img" src="./img/profile.svg" alt="">
 					<div class="profile-cont">
-						<h1>Hi, <span class="uname"></span></h1>
+						<h1>Hi, <?php echo ($_SESSION['userName']); ?></h1>
 						<br>
 						<img class="profile-img" src="./img/avatar.png" alt="avatar" />
 						
-						<h4>Name : <span class="uname2"></span></h4>
-						<h4>Logging Time : <span class="utime"></span></h4>
+						<h4>Name : <?php echo ($_SESSION['userName']); ?></h4>
+						<h4>Email : <?php echo ($_SESSION['userMail']); ?></h4>
+						<!-- <h4>Logging Time : <span class="utime"></span></h4> -->
 					</div>
 					
 				</div>

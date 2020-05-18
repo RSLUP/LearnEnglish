@@ -41,14 +41,32 @@
                         
                         <h2>Signup</h2>
                         <br>
+                        
+                        <!-- error message -->
+                        <?php
+                            if(isset($_GET['error'])){
+                                if($_GET['error'] == 'passwordCheck'){
+                                    echo '<p class="wrongpara">Password do not Match.. Try Again!</p>';
+                                }
+                                else if($_GET['error'] == 'userAlreaadyIn'){
+                                    echo '<p class="wrongpara">Username already taken try another one!</p>';
+                                }
+                            }
+                           
+                        ?>
+                        
+                        
+                        <br>
+                        <!-- input fields -->
+
                         <div class="input-div one">
-                                <div class="in">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div>
-                                    <h5>Username</h5>
-                                    <input class="input txtuser" type="text" name="user" required>
-                                </div>
+                            <div class="in">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5>Username</h5>
+                                <input class="input txtuser" type="text" name="user" required>
+                            </div>
                         </div>
 
 
@@ -84,9 +102,7 @@
                             <div>
                                 <h5>Repeat Password</h5>
                                 <input class="input txtpass" type="password" name="pwd_repeat" required>
-                                <div class="eye">
-                                    <i class="fas fa-eye"></i>
-                                </div>
+                                
                             </div>
                             
                         </div>

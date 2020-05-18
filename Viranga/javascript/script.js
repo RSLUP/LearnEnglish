@@ -158,8 +158,8 @@ function details()
 function profile()
 {
     userd.classList.add("show");
-    document.querySelector(".uname").innerHTML = localStorage.getItem("userName");
-    document.querySelector(".uname2").innerHTML = localStorage.getItem("userName");
+    // document.querySelector(".uname").innerHTML = localStorage.getItem("userName");
+    // document.querySelector(".uname2").innerHTML = localStorage.getItem("userName");
     document.querySelector(".utime").innerHTML = localStorage.getItem("logDate");
 }
 
@@ -207,7 +207,7 @@ function topFunction() {
 //go home
 function mainPage()
 {
-  window.location.href = "index.html";
+  window.location.href = "index.php";
 }
 
 //tabs

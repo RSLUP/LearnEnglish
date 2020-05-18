@@ -42,13 +42,27 @@
                     
                         <h2>WELCOME</h2>
                         <br>
+                        <!-- error message -->
+                        <?php
+                            if(isset($_GET['error'])){
+                                if($_GET['error'] == 'WrongPasswrod'){
+                                    echo '<p class="wrongpara">Incorrect Password.. Try Again!</p>';
+                                }
+                                else if($_GET['error'] == 'NoUserExists'){
+                                    echo '<p class="wrongpara">No user exists with this username or email.</p>';
+                                    
+                                }
+                            }
+                           
+                        ?>
+                        <br>
                         <div class="input-div one">
                             <div class="in">
                                 <i class="fas fa-user"></i>
                             </div>
                             <div>
                                 <h5>Username / Email</h5>
-                                <input class="input txtuser" type="text" name="usermail" required>
+                                <input class="input txtuser" type="text" name="usermail"  required>
                             </div>
                         </div>
 

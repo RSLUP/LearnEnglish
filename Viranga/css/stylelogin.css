@@ -152,11 +152,13 @@ form h2
     transition: 0.3s;
     
 }
-.para
+.wrongpara
 {
     color: red;
     font-size: 0.9rem;
-    
+    border-style: solid;
+    border: red;
+    border-radius: 10%;
     font-family: sans-serif;
 }
 .signmessage{

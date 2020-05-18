@@ -24,7 +24,7 @@
 
 
         if($password !== $passwordRepeat){
-            header("location: signup.php?error=passwordcheck&user=".$username."&email=".$email);
+            header("location: signup.php?error=passwordCheck&user=".$username."&email=".$email);
             exit();
         }
 
@@ -47,7 +47,7 @@
 
                 if($resultCheck>0)
                 {
-                    header("location: signup.php?error=UsernameAlreadyTaken&email=".$email);
+                    header("location: signup.php?error=userAlreaadyIn&email=".$email);
                     exit();
                 }
                 else{
