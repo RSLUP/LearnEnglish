@@ -20,6 +20,11 @@
 		<title>LearnEnglish - Speech</title>
 	</head>
 	<body>
+        <?php
+			if(!isset($_SESSION['userName'])){
+				header("location: login.php?Error=notLogging");
+			}
+		?>
 		<header class="myHeader">
         <div class="logo-container">
 				<img src="./img/le-logo.png" alt="logo" onclick="mainPage()" />

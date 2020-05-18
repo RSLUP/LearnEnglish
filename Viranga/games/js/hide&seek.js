@@ -162,3 +162,17 @@ function tryAgain()
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+function profile()
+{
+    userd.classList.add("show");
+    // document.querySelector(".uname").innerHTML = localStorage.getItem("userName");
+    // document.querySelector(".uname2").innerHTML = localStorage.getItem("userName");
+    document.querySelector(".utime").innerHTML = localStorage.getItem("logDate");
+}
+
+
+function exitUd()
+{
+    userd.classList.remove("show");
+}

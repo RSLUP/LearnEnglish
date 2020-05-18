@@ -59,6 +59,7 @@
                         <br>
                         <!-- input fields -->
 
+                       
                         <div class="input-div one">
                             <div class="in">
                                 <i class="fas fa-user"></i>
@@ -80,6 +81,7 @@
                                 <input class="input txtuser" type="email" name="email" required>
                             </div>
                         </div>
+                        
 
                         
 

@@ -17,6 +17,7 @@
             die("Connection failed: ".mysqli_connect_error());
         }
 
+        
         $username = $_POST['user'];
         $email = $_POST['email'];
         $password = $_POST['pwd'];

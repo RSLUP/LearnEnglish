@@ -172,6 +172,7 @@ form h2
     cursor: pointer;
     text-decoration: none;
     color: #999;
+    border: none;
     
 }
 .sign:hover{
