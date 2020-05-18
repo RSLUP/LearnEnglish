@@ -67,43 +67,43 @@ const form = document.querySelector(".form");
 const user = "RSLUP";
 const pass = "r5Lup@Ac9";
 
-function login()
-{
-    var txtuser = document.querySelector(".txtuser").value;
-    var txtpass = document.querySelector(".txtpass").value;
+// function login()
+// {
+//     var txtuser = document.querySelector(".txtuser").value;
+//     var txtpass = document.querySelector(".txtpass").value;
 
-    if(user===txtuser && pass===txtpass)
-    {
+//     if(user===txtuser && pass===txtpass)
+//     {
         
-        var date = new Date().toISOString().split('T');
+//         var date = new Date().toISOString().split('T');
         
-        //if data are correct store them in local
-        localStorage.setItem("userName", txtuser);
-        localStorage.setItem("logDate", date[0]);   
+//         //if data are correct store them in local
+//         localStorage.setItem("userName", txtuser);
+//         localStorage.setItem("logDate", date[0]);   
 
-        window.location.href = "index.html";
-        return;     
-    }
-    if(user===txtuser && pass!==txtpass)
-    {
-        message.innerHTML = "Please Enter correct password!";
-        alert("Please Enter correct password!");
-        return;
-    }
-    if(txtuser==="" && txtpass==="")
-    {
-        message.innerHTML = "Please Enter username and password!";
-        alert("Please Enter username and password!");
-        return;
-    }
-    else
+//         window.location.href = "index.html";
+//         return;     
+//     }
+//     if(user===txtuser && pass!==txtpass)
+//     {
+//         message.innerHTML = "Please Enter correct password!";
+//         alert("Please Enter correct password!");
+//         return;
+//     }
+//     if(txtuser==="" && txtpass==="")
+//     {
+//         message.innerHTML = "Please Enter username and password!";
+//         alert("Please Enter username and password!");
+//         return;
+//     }
+//     else
 
-    {
-        message.innerHTML = "Invalid username and password!";
-        alert("Invalid username and password!");
+//     {
+//         message.innerHTML = "Invalid username and password!";
+//         alert("Invalid username and password!");
 
-    }
-}
+//     }
+// }
 
 
 //show password when hover
@@ -123,27 +123,27 @@ $(function(){
 
 //redirect to login page
 
-function runFirst()
-{   
-    var now = new Date();
-    var today=now.toISOString().split('T');
-    console.log(localStorage.getItem("userName"));
-    console.log(localStorage.getItem("logDate"));
-    console.log(today[0]);
-    //profile.innerHTML = localStorage.getItem("userName");
+// function runFirst()
+// {   
+//     var now = new Date();
+//     var today=now.toISOString().split('T');
+//     // console.log(localStorage.getItem("userName"));
+//     console.log(localStorage.getItem("logDate"));
+//     console.log(today[0]);
+//     //profile.innerHTML = localStorage.getItem("userName");
     
 
                
-
-    if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
-    {
-        alert('Session Expired..!');
-        window.location.href = "login.php";
+//     // if(localStorage.getItem("userName")=="" ||  localStorage.getItem("logDate")!=today[0])
+//     if(ocalStorage.getItem("logDate")!=today[0])
+//     {
+//         alert('Session Expired..!');
+//         window.location.href = "login.php";
                     
-    }
+//     }
     
     
-}
+// }
 //show user details
 
 const userd = document.querySelector(".profile-details");

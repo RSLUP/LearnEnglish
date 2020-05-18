@@ -1,9 +1,5 @@
 <?php
-
-    session_start();
-	if(!isset($_SESSION['username'])){
-		header('location:login.php');
-	}
+	session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +17,12 @@
 		
 		<title>LearnEnglish</title>
 	</head>
-	<body onload="runFirst()">
+	<body>
+		
+
+
+
+
 		<header>
 			
 			<div class="logo-container">
@@ -72,7 +73,7 @@
 
 			<div class="avatar">
 				<i class="fas fa-user" onclick="profile()"><span class="display-label">Profile</span></i>
-                <a href="login.php"><i class="fas fa-sign-out-alt"><span class="display-label">Log Out</span></i></a>
+                <a href="login.php"><i class="fas fa-sign-out-alt"><span class="display-label" name="logout">Log Out</span></i></a>
 
 			</div>
 		</header>

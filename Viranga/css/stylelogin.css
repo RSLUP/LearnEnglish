@@ -168,6 +168,9 @@ form h2
 }
 .sign{
     cursor: pointer;
+    text-decoration: none;
+    color: #999;
+    
 }
 .sign:hover{
     color: #3196c5;
@@ -190,7 +193,7 @@ form h2
     font-family: sans-serif;
 }
 
-a
+.forgetPwd a
 {
     display: block;
     text-align: right;
@@ -200,7 +203,7 @@ a
     transition: 0.3s;
     font-family: sans-serif;
 }
-a:hover
+.forgetPwd a:hover
 {
     color: #3895d3;
 }
@@ -268,7 +271,7 @@ a:hover
 	margin: auto;
 	text-align: center;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	border-radius: 10px;
 	display: flex;
 	align-items: center;
@@ -340,6 +343,10 @@ a:hover
     .p-img
     {
         display: none;
+    }
+    .profile-cont
+    {
+        display: flex;
     }
     
 }
@@ -444,7 +451,7 @@ a:hover
     display: block;
     list-style: none;
     width: 25px;
-    height: 25px;
+    height: 100%;
     font-size: 45px;
     animation: animate 20s linear infinite;
     bottom: -150px;

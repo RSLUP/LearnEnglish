@@ -1,25 +1,26 @@
 <?php
-
     session_start();
+    $_SESSION['message'] = '';
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LearnEnglish-Login</title>
-        <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnEnglish-SignUp</title>
+    <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
     
-        <link
-                href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-                rel="stylesheet"
-            />
-            <script src="https://kit.fontawesome.com/717367e0a7.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-        
-    </head>
+  
+    <link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/717367e0a7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    
+</head>
     <body>
 
         <img class="wave" src="img/wave.png">
@@ -27,30 +28,42 @@
         <div class="container">
             <div class="img">
 
-                <img src="img/img.svg">
+                <img src="img/signin.svg">
                 
             </div>
             
             <div class="login-container">
                 <div class="form2">
                     <!-- action="speech.html" -->
-                    <form class="form" action="login.inc.php" method="post"> 
-                        <br>
-                        <br>
+                    <form action="signup.inc.php" method="post"> 
 
                         <img src="img/avatar.png" class="avatar">
-                    
-                        <h2>WELCOME</h2>
+                        
+                        <h2>Signup</h2>
                         <br>
                         <div class="input-div one">
+                                <div class="in">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h5>Username</h5>
+                                    <input class="input txtuser" type="text" name="user" required>
+                                </div>
+                        </div>
+
+
+
+                        <div class="input-div one">
                             <div class="in">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div>
-                                <h5>Username / Email</h5>
-                                <input class="input txtuser" type="text" name="usermail" required>
+                                <h5>Email</h5>
+                                <input class="input txtuser" type="email" name="email" required>
                             </div>
                         </div>
+
+                        
 
                         <div class="input-div two">
                             <div class="in">
@@ -59,22 +72,37 @@
                             <div>
                                 <h5>Password</h5>
                                 <input class="input txtpass" type="password" name="pwd" required>
+                    
+                            </div>
+                            
+                        </div>
+
+                        <div class="input-div two">
+                            <div class="in">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div>
+                                <h5>Repeat Password</h5>
+                                <input class="input txtpass" type="password" name="pwd_repeat" required>
                                 <div class="eye">
                                     <i class="fas fa-eye"></i>
                                 </div>
                             </div>
+                            
                         </div>
-                        <div class="forgetPwd">
-                            <a href="#">Forgot Password?</a>
+
+
+                        <button type="submit" class="btn submit" name="signup">Signup</button>
+                        <br>
+
+                        <div class="errorMsg">
+                            <?=$_SESSION['message']?>
                         </div>
-                        <button type="submit" class="btn submit" name="login">login</button>
-                        <!-- <button type="button" class="btn submit" onclick="login()">login</button> -->
-                        <p class="para message"></p>
-                        <br>
-                        <p class="signmessage">Don't you have an acoount..? <a href="signup.php"><span class="sign"> Signup</span></a></p>
-                        <br>
-                    </form>
-                    
+
+
+
+                    </form>   
+                
                 </div>
                 <!--back circles-->
 
@@ -99,7 +127,7 @@
             </div>
         </div>
 
-        
+      
 
 
 
