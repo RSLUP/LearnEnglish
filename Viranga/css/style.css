@@ -213,6 +213,12 @@ nav ul li ul li a:hover{
 	z-index: 100;
 
 }
+.avatar button{
+	border: none;
+	background-color: white;
+	font-size: 15px;
+	
+}
 @media screen and (max-width: 1200px) {
 	.avatar i .display-label{
 		width: 75px;

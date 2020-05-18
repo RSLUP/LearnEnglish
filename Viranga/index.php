@@ -19,7 +19,11 @@
 	</head>
 	<body>
 		
-
+		<?php
+			if(!isset($_SESSION['userName'])){
+				header("location: login.php?Error=notLogging");
+			}
+		?>
 
 
 
@@ -73,8 +77,9 @@
 
 			<div class="avatar">
 				<i class="fas fa-user" onclick="profile()"><span class="display-label">Profile</span></i>
-                <a href="login.php"><i class="fas fa-sign-out-alt"><span class="display-label" name="logout">Log Out</span></i></a>
-
+				<form action="logout.inc.php" method="post">
+					<button type="submit"><i class="fas fa-sign-out-alt"><span class="display-label" name="logout">Log Out</span></i></button>
+				</form>
 			</div>
 		</header>
 

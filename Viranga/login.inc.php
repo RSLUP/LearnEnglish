@@ -35,7 +35,8 @@
                     else if($pwdCheck == true){
                         session_start();
                         $_SESSION['userId'] = $row['id'];
-                        $_SESSION['userId'] = $row['username'];
+                        $_SESSION['userName'] = $row['username'];
+                        $_SESSION['userMail'] = $row['email'];
 
 
                         header("location: index.php?Login=Success");
