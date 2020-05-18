@@ -18,31 +18,29 @@ if ($conn->connect_error) {
 
 if ($result->num_rows > 0) {
   
-    echo"<table border='2'>
+   /* echo"<table border='2'>
 		<tr>
 			<th colspan='5'>Points: <input type='text'></th>
-		</tr>";
+		</tr>";*/
+
+        echo"points: <br><br><br>";
 		
     while($row = $result->fetch_assoc()) 
     {
-        echo"<tr>
+       /* echo"<tr>
 				<td height='20'><label>{$row['points']}</label></td>
 			
-				</tr>";
+				</tr>";*/
+                echo"<label>{$row['points']}</label>";
     }
-    echo"</table>";
+   
 
 } else {
     echo "0 results";
 }
-
-$conn->close();
+}
+//$conn->close();
+mysqli_close($conn);
 
 ?>
-
-
-
-
-
-
 

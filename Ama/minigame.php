@@ -3,6 +3,13 @@
     if(!isset($_SESSION['login_user'])){
     header("location:Login.php"); // Redirecting To Home Page
     }
+    if(isset($_POST["start"]))
+    {
+     /* if(isset($_SESSION['login_user'])){
+        header("location:minigame.php");*/
+        echo "<a href = '#main-table'>";
+    }
+  
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -134,8 +141,9 @@
     </ul>
     </nav>
   </div> <br><br> <br><br>
+  <form metho="post">
   <div class="nav2" align="middle">
-     <button id="start" onclick="timeStart();" > Start </button>
+     <button id="start" onclick="timeStart();" name="start" > Start </button>
       <button id="play-again" onclick="reload();"> Play Again </button>
         <button id="rules" ><a href="#rule-and-reg">Rules and Regulations</a> </button>
         <button id="show-ans"><a href = "#answer-grid" >Show Answers</a></button>
@@ -144,6 +152,7 @@
     
 
   </div>
+  </form>
   <div id="initial-pic" align="middle">
     <img src="miniGame/sudoku1.gif">
   </div>
