@@ -17,7 +17,7 @@
             die("Connection failed: ".mysqli_connect_error());
         }
 
-        
+        $fullname = $_POST['fname'];
         $username = $_POST['user'];
         $email = $_POST['email'];
         $password = $_POST['pwd'];
@@ -25,7 +25,7 @@
 
 
         if($password !== $passwordRepeat){
-            header("location: signup.php?error=passwordCheck&user=".$username."&email=".$email);
+            header("location: signup.php?error=passwordCheck&fullname=".$fullname."&user=".$username."&email=".$email);
             exit();
         }
 
@@ -52,7 +52,7 @@
                     exit();
                 }
                 else{
-                    $sql = "INSERT INTO users (username, email, userpwd) VALUES (?, ?, ?)";
+                    $sql = "INSERT INTO users (username, fullname, email, userpwd) VALUES (?, ?, ?, ?)";
                     $stmt = mysqli_stmt_init($conn);
 
                     if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -63,7 +63,7 @@
 
                         $hashpassword = password_hash($password, PASSWORD_DEFAULT);
                 
-                        mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashpassword);
+                        mysqli_stmt_bind_param($stmt, "ssss", $username, $fullname, $email, $hashpassword);
                         mysqli_stmt_execute($stmt);
                         header("location: login.php?signup=success");
                         exit();

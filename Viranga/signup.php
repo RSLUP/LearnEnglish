@@ -59,6 +59,16 @@
                         <br>
                         <!-- input fields -->
 
+                        <div class="input-div one">
+                            <div class="in">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5>Full Name</h5>
+                                <input class="input txtuser" type="text" name="fname" required>
+                            </div>
+                        </div>
+
                        
                         <div class="input-div one">
                             <div class="in">

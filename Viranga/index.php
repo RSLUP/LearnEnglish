@@ -150,8 +150,10 @@
 						<h1>Hi, <?php echo ($_SESSION['userName']); ?></h1>
 						<br>
 						<img class="profile-img" src="./img/avatar.png" alt="avatar" />
-						
-						<h4>Name : <?php echo ($_SESSION['userName']); ?></h4>
+						<br>
+						<br>
+						<h4>Username : <?php echo ($_SESSION['userName']); ?></h4>
+						<h4>FUll Name : <?php echo ($_SESSION['fullName']); ?></h4>
 						<h4>Email : <?php echo ($_SESSION['userMail']); ?></h4>
 						<!-- <h4>Logging Time : <span class="utime"></span></h4> -->
 					</div>

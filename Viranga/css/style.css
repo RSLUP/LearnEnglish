@@ -737,6 +737,9 @@ nav ul li ul li a:hover{
 .profile-cont h1{
 	color: #f5f5f5;
 }
+.profile-cont h4{
+	color: #242424;
+}
 .p-img{
 	padding-left: 10px;
 	position: relative;
