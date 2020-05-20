@@ -213,6 +213,14 @@ nav ul li ul li a:hover{
 	z-index: 100;
 
 }
+.avatar button{
+	border: none;
+	background-color: white;
+	font-size: 15px;
+	
+	
+}
+
 @media screen and (max-width: 1200px) {
 	.avatar i .display-label{
 		width: 75px;
@@ -647,7 +655,7 @@ nav ul li ul li a:hover{
 /*-----------------------------*/
 /*footer home*/
 .footer{
-	position: relative;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -728,6 +736,9 @@ nav ul li ul li a:hover{
 }
 .profile-cont h1{
 	color: #f5f5f5;
+}
+.profile-cont h4{
+	color: #242424;
 }
 .p-img{
 	padding-left: 10px;
