@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+<?php
+    require_once('./components/loginprocess.php');
+    if(isset($_SESSION['uname'])){
+        header("location: index01.php");
+    }
+ ?>
 
+<!DOCTYPE html>
 <html>
     <head>
 
 	    <title>Login</title>	
     	<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
-	
 	</head>
 
     <body>
-
 		<div class="container">
 			<div class="login">
 
@@ -17,30 +21,31 @@
 					<img src="img/login.png" alt="login">
 				</div>
 
-				<form action="index01.php" class="loginform">
+				<form method="POST" action="index.php" name="loginform" class="loginform">
 
 					<h2 class="logintitle">Member Login</h2>
 					<div class="inputbox" >
-						<img class="iconmail" width="20px" src="img/email.png" alt="email">
-						<input class="input" type="text" name="email" placeholder="Email">
+						<img class="iconmail" width="20px" src="img/email.png" alt="Username">
+						<input class="input" type="text" name="inputuser" placeholder="Username">
 					</div>
-					<div class="inputbox" >
+					<div class="inputbox">
 						<img class="iconpassword" width="20px" src="img/password.png" alt="password">
-						<input class="input" type="password" name="pass" placeholder="Password">
+						<input class="input" type="password" name="inputpass" placeholder="Password">
 					</div>
 					<div class="errormsg">
-						<p id="Error"></p>
+						<?php 
+							if(isset($errors) && !empty($errors)){
+								echo $errors;
+							}
+						?>
 					</div>
 					<div class="btnarea">
-						<button type="button" class="loginbtn" onclick="redirect(this.form)" id="loginBtn">Login</button>
+						<button name="submit" class="loginbtn" id="loginBtn">Login<button>
 					</div>
 
-				</form> <!--Login form-->
+				</form>
 
 			</div>
 		</div>
-
-        <script type="text/javascript" src="js/index00login-script.js"></script>
-
     </body>
 </html>

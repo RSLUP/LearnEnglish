@@ -1,3 +1,10 @@
+<?php
+    require_once('./components/loginprocess.php');
+    if(!isset($_SESSION['uname'])){
+        header("location:index.php");
+    }
+ ?>
+ 
 <!doctype html>
 <html>
 
@@ -8,14 +15,17 @@
         
     </head>
 
-    <body onload="sessionCheck()">
+    <body >
         <div class="wrapper">
 
             <?php include('./components/navigation.php')?>
 
             <div class="mainbody">
                 <div class="userlog">
-                    <p id="loggeduser"></p>
+                    <p id="loggeduser"><b>
+                        Logged as : 
+                        <?php echo $_SESSION['uname'];?> </b>
+                    </p>
                 </div>
     
                 <div class="intro">
@@ -1339,9 +1349,6 @@
      
             <script type="text/javascript" src="js/index02quiz-script.js"></script>
             <script type="text/javascript" src="js/index02more-script.js"></script>
-            <script type="text/javascript" src="js/sessionCheck.js"></script>
-            <script type="text/javascript" src="js/index00login-script.js"></script>
-
     </body>
 
 </html>

@@ -14,7 +14,7 @@
         <a href="index03-game.php">Game</a>
     </div>
     <div class="logout">
-        <a href="index.php"><img src="img/logout.png" height="40px" alt="Logout"></a>
+        <a href="./components/logoutprocess.php"><img src="img/logout.png" height="40px" alt="Logout"></a>
     </div>
 
 </div>
