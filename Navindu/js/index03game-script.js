@@ -234,16 +234,6 @@ var modalBody = document.getElementById("modalBody");
 
 
 function infoAndSessionCheck(){
-    //Session check
-    var sessionDate = new Date();
-    var logDate = localStorage.getItem("logDateCheck");
-    var logUser = localStorage.getItem("logUser");
-    var logTime = localStorage.getItem("logTimeDisplay");
-    if(logDate==null || sessionDate.toDateString() != logDate){
-        alert("Session Expired \n Please login!");
-        window.location.href = "index.php";
-    }
-
     //Game Instructions
     modal.style.display="block";
     button.addEventListener("click",startfunction);
@@ -255,5 +245,6 @@ function startfunction(){
 }
 
 function restartfunction(){
-    location.reload();
+    window.location.href = "./components/gamescore.php";
+    //location.reload();
 }

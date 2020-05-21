@@ -1,3 +1,10 @@
+<?php
+    require_once('./components/loginprocess.php');
+    if(!isset($_SESSION['uname'])){
+        header("location:index.php");
+    }
+ ?>
+ 
 <!doctype html>
 
 <html>
@@ -12,7 +19,7 @@
 
         <div class="score">
             <h1>Score</h1>
-            <h1 id="score">0</h1>
+            <div name="userscore" method="postg"><h1 id="score">02</h1></div>
         </div>
 
         <!--Modal Box Elements-->
@@ -43,7 +50,6 @@
         </div>
 
         <script type="text/javascript" src="js/index03game-script.js"></script>
-        <script type="text/javascript" src="js/sessionCheck.js"></script>
 
     </body>
 
